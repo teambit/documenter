@@ -1,0 +1,21 @@
+{
+  "bit": {
+    "env": {},
+    "extensions": {
+      "run": {
+        "build": [
+          "react"
+        ]
+      }
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "defaultScope": "bit.evangalist"
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17"
+  }
+}

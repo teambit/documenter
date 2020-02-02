@@ -1,0 +1,121 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documatation, please see: https://docs.bit.dev/configuration
+**/
+{
+  "$schema": "",
+
+  /**
+   * main configuration of the Bit workspace.
+  **/
+  "workspace": {
+    /**
+    * set the default structure of components in your project.
+    **/
+    "components": "",
+
+    /**
+     * default scope for components to be exported to. absolute require paths for components
+     * will be generated accordingly. 
+    */
+    "defaultScope": ""
+  },
+
+  /**
+   * main configuraiton for component dependency resolution. 
+  **/  
+  "dependnecyResolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
+     * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
+     * and totally removes the need of a 'node_modules' directory in your project.
+    */
+    "packageManager": "npm",
+
+    /**
+    * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
+    * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
+    * an invalid state that can cause build failures or incompatible dependency versions.
+    * (For historical reasons, JavaScript package managers generally do not treat this invalid
+    * state as an error.)
+    *
+    * The default value is false to avoid legacy compatibility issues.
+    * It is strongly recommended to set strictPeerDependencies=true.
+    */
+    "strictPeerDependnecies": true,
+
+    /**
+     * map of extra arguments to pass to the configured package manager upon the installation
+     * of dependencies.
+    */
+    "extraArgs": []
+  },
+
+  /**
+   * main configuration for composer, Bit's UI.
+  */
+  "compose": {
+    "defaultComponent": "app"
+  },
+
+  /**
+   * main configuration file for handling the build process of components.
+  */
+  "build": {
+    /**
+     * specify the number of concurrent build processes for Bit to run. default value
+     * depends on the operating system and the number of available CPU cores.  
+    */
+    "parallelism": 4,
+
+    /**
+     * configure build tasks. configuration of build tasks is basically a map of `task name`
+     * pointed to an array of tasks. each task can be either a bash command or an extension
+     * which exposes a task.  
+    */
+    "tasks": {
+      "build": ["tsc -d", "eslint"],
+      "test": ["tsc -d", ""]
+    }
+  },
+
+  /**
+   * configure the creation of new components in your workspace through the `bit create` command.
+   * this is helpful for setting component standards. 
+  **/  
+  "create": {
+    /**
+     * default component template for Bit to use for creation of components upon `bit create`.
+     * default template is: 
+    */ 
+    "default": ""
+  },
+
+  /**
+   * configuration for the legacy extension system.
+  */
+  "extensions": {
+  },
+
+  /**
+   * workspace overrides allow to override configuration of components in your workspace.
+   * this is extreamly useful for upgrading, aligning and building components with a 
+   * new set of dependencies
+  **/
+  "overrides": {
+    "ui/*": {
+      "run": {
+        "build": ["react"],
+        "test": ["tsc -d", ""]
+      }
+    },
+    "server/*": {}
+  }
+
+  /**
+   * automate Bit workflow with Git.
+  */
+  // "gitPolicy": {
+
+  // }
+}
