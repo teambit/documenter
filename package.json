@@ -3,9 +3,7 @@
     "env": {},
     "extensions": {
       "run": {
-        "build": [
-          "react"
-        ]
+        "build": ["react"]
       }
     },
     "componentsDefaultDirectory": "components/{name}",

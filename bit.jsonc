@@ -12,7 +12,7 @@
     /**
     * set the default structure of components in your project.
     **/
-    "components": "",
+    "components": "components/*",
 
     /**
      * default scope for components to be exported to. absolute require paths for components
@@ -71,24 +71,24 @@
     /**
      * configure build tasks. configuration of build tasks is basically a map of `task name`
      * pointed to an array of tasks. each task can be either a bash command or an extension
-     * which exposes a task.  
+     * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["tsc -d", "eslint"],
-      "test": ["tsc -d", ""]
+      "build": ["react"],
+      "test": ["mocha"]
     }
   },
 
   /**
    * configure the creation of new components in your workspace through the `bit create` command.
-   * this is helpful for setting component standards. 
+   * this is helpful for setting component structure standards. 
   **/  
   "create": {
     /**
      * default component template for Bit to use for creation of components upon `bit create`.
      * default template is: 
     */ 
-    "default": ""
+    "defaultTemplate": ""
   },
 
   /**
@@ -100,16 +100,25 @@
   /**
    * workspace overrides allow to override configuration of components in your workspace.
    * this is extreamly useful for upgrading, aligning and building components with a 
-   * new set of dependencies
+   * new set of dependencies.
   **/
   "overrides": {
     "ui/*": {
-      "run": {
-        "build": ["react"],
-        "test": ["tsc -d", ""]
+      "build": {
+        "tasks": ["react"]
+      },
+      "app": {
+        "build": {
+          "tasks": {
+            "build": ["react", "deploy"],
+            "test": ["mocha"]
+          }
+        }
       }
     },
-    "server/*": {}
+    "server/*": {
+      "build": [""]
+    }
   }
 
   /**
