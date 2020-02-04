@@ -2,7 +2,7 @@
   "bit": {
     "env": {},
     "extensions": {
-      "run": {
+      "Pipes": {
         "build": ["react"]
       }
     },
