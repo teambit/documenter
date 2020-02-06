@@ -3,7 +3,9 @@
     "env": {},
     "extensions": {
       "Pipes": {
-        "build": ["react"]
+        "build": [
+          "react"
+        ]
       }
     },
     "componentsDefaultDirectory": "components/{name}",
