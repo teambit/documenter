@@ -2,5 +2,7 @@ import React from 'react';
 import { Logo } from '@bit/bit.evangalist.logo';
 
 export function App() {
-  return <Logo />;
+  return (
+    <div>My logo: <Logo /></div>
+  );
 };

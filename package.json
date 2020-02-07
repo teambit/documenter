@@ -2,8 +2,17 @@
   "bit": {
     "env": {},
     "extensions": {
-      "run": {
-        "build": ["react"]
+      "extensions/react-ts": {},
+      "pipes": {
+        "build": [
+          "extensions/react-ts"
+        ],
+        "start": [
+          "build",
+          "serve"
+        ],
+        "test": [],
+        "e2e": []
       }
     },
     "componentsDefaultDirectory": "components/{name}",
@@ -11,9 +20,15 @@
     "defaultScope": "bit.evangalist"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "react": "^16.12.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.17"
+    "@types/react": "^16.9.17",
+    "bit-bin": "file://../bit"
+  },
+  "scripts": {
+    "postinstall": "bit link"
   }
 }

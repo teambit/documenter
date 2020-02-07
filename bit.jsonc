@@ -119,12 +119,12 @@
     "server/*": {
       "build": [""]
     }
-  }
+  },
 
   /**
    * automate Bit workflow with Git.
   */
-  // "gitPolicy": {
-
-  // }
+  "gitPolicy": {
+    
+  }
 }

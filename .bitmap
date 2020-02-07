@@ -19,6 +19,29 @@
         "origin": "AUTHORED",
         "exported": false
     },
+    "extensions/react-ts": {
+        "files": [
+            {
+                "relativePath": "extensions/react/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "extensions/react/react.manifest.js",
+                "test": false,
+                "name": "react.manifest.js"
+            },
+            {
+                "relativePath": "extensions/react/transpile.js",
+                "test": false,
+                "name": "transpile.js"
+            }
+        ],
+        "mainFile": "extensions/react/index.js",
+        "trackDir": "extensions/react",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "help": {
         "files": [
             {
@@ -45,6 +68,16 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "components/logo/logo.spec.tsx",
+                "test": false,
+                "name": "logo.spec.tsx"
+            },
+            {
+                "relativePath": "components/logo/logo.story.ts",
+                "test": false,
+                "name": "logo.story.ts"
+            },
+            {
                 "relativePath": "components/logo/logo.tsx",
                 "test": false,
                 "name": "logo.tsx"
@@ -55,5 +88,5 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "version": "14.7.3"
+    "version": "14.7.4"
 }
