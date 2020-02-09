@@ -5,7 +5,9 @@
       "extensions/react-ts": {},
       "pipes": {
         "build": [
-          "extensions/react-ts"
+          "extensions/react-ts",
+          "tsc -d",
+          "echo "
         ],
         "start": [
           "build",
@@ -13,6 +15,15 @@
         ],
         "test": [],
         "e2e": []
+      }
+    },
+    "overrides": {
+      "extensions/*": {
+        "extensions": {
+          "pipes": {
+            "build": []
+          }
+        }  
       }
     },
     "componentsDefaultDirectory": "components/{name}",

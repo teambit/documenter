@@ -4,7 +4,7 @@
 **/
 {
   "$schema": "",
-
+ 
   /**
    * main configuration of the Bit workspace.
   **/
@@ -30,7 +30,7 @@
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "npm",
+    "packageManager": "librarian",
 
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
@@ -61,7 +61,7 @@
   /**
    * main configuration file for handling the build process of components.
   */
-  "build": {
+  "actions": {
     /**
      * specify the number of concurrent build processes for Bit to run. default value
      * depends on the operating system and the number of available CPU cores.  
@@ -74,8 +74,9 @@
      * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["react"],
-      "test": ["mocha"]
+      "build": ["compile", "test", "deploy"],
+      "test": ["test", "e2e"],
+      "e2e": []
     }
   },
 
@@ -89,6 +90,40 @@
      * default template is: 
     */ 
     "defaultTemplate": ""
+  },
+
+  /**
+   * configuration for component compilation. can be any component which implments Compiler interface by default. 
+  **/
+  "compile": {
+  },
+
+  /**
+   * configuration for component testing.
+  **/
+  "test": {
+    
+  },
+
+  /**
+   * configuration for component linting.
+  **/
+  "lint": {
+
+  },
+
+  /**
+   * configuration for component doc generation.
+  **/
+  "docs": {
+
+  },
+
+  /**
+   * component deployment configuration
+  **/
+  "deploy": {
+
   },
 
   /**
@@ -107,6 +142,9 @@
       "build": {
         "tasks": ["react"]
       },
+      "devDependencies": {
+        "@bit/bit.envs.react-ts": "0.9.0"
+      },
       "app": {
         "build": {
           "tasks": {
@@ -115,6 +153,9 @@
           }
         }
       }
+    },
+    "ui/app": {
+
     },
     "server/*": {
       "build": [""]

@@ -1,16 +1,14 @@
-console.log('hi there cool love');
-// const gulp = require('gulp');
-// const ts = require('gulp-typescript');
+const gulp = require('gulp');
+const ts = require('gulp-typescript');
+const tsconfig = require('./default-tsconfig');
 
-// function transpile() {
-//   const tsProject = ts.createProject('tsconfig.json');
+const tsProject = ts.createProject(tsconfig);
 
-//   gulp.task('compile', () => {
-//     return gulp
-//       .src('**/*.ts')
-//       .pipe(tsProject())
-//       .pipe(gulp.dest('dist'));
-//   });
-// }
+gulp.task('default', () => {
+  return gulp
+    .src('**/*.ts')
+    .pipe(tsProject())
+    .pipe(gulp.dest('dist'));
+});
 
-// module.exports = transpile;
+gulp.start('default');
