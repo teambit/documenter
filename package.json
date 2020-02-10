@@ -2,7 +2,6 @@
   "bit": {
     "env": {},
     "extensions": {
-      "extensions/react-ts": {},
       "pipes": {
         "build": [
           "extensions/react-ts"
