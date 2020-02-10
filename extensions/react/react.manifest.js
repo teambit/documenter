@@ -13,10 +13,10 @@ module.exports = {
 };
 
 function fooAction(component) {
-  const res = await component.capsule.run('./tranpile');
-  
+  console.log('hi from foo');
 }
 
-function defaultAction(component) {
-
+async function defaultAction(component) {
+  const {stdout} = await component.capsule.run('./transpile');
+  console.log(stdout);
 }

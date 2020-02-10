@@ -22,6 +22,11 @@
     "extensions/react-ts": {
         "files": [
             {
+                "relativePath": "extensions/react/default-tsconfig.js",
+                "test": false,
+                "name": "default-tsconfig.js"
+            },
+            {
                 "relativePath": "extensions/react/index.js",
                 "test": false,
                 "name": "index.js"
@@ -88,5 +93,5 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "version": "14.7.4"
+    "version": "14.7.5-dev.1"
 }

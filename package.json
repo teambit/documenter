@@ -5,9 +5,7 @@
       "extensions/react-ts": {},
       "pipes": {
         "build": [
-          "extensions/react-ts",
-          "tsc -d",
-          "echo "
+          "extensions/react-ts"
         ],
         "start": [
           "build",
@@ -37,7 +35,7 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.17",
-    "bit-bin": "file://../bit"
+    "bit-bin": "latest"
   },
   "scripts": {
     "postinstall": "bit link"
