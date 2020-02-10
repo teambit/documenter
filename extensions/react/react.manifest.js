@@ -7,13 +7,14 @@ module.exports = {
     default: defaultAction,
     transpile: fooAction 
   },
-  provider: async (config, [pipes]) => {
+  provider: async (config, [pipes, test]) => {
     return {};
   }
 };
 
 function fooAction(component) {
   console.log('hi from foo');
+  
 }
 
 async function defaultAction(component) {

@@ -61,7 +61,7 @@
   /**
    * main configuration file for handling the build process of components.
   */
-  "actions": {
+  "run": {
     /**
      * specify the number of concurrent build processes for Bit to run. default value
      * depends on the operating system and the number of available CPU cores.  
@@ -74,9 +74,9 @@
      * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["compile", "test", "deploy"],
-      "test": ["test", "e2e"],
-      "e2e": []
+      "build": ["@compile", "@test:table", "@deploy"],
+      "test": ["@test:interactive"],
+      "e2e": ["compile"]
     }
   },
 
@@ -96,13 +96,13 @@
    * configuration for component compilation. can be any component which implments Compiler interface by default. 
   **/
   "compile": {
+    "id": "bit.envs/compilers/react"
   },
 
   /**
    * configuration for component testing.
   **/
   "test": {
-    
   },
 
   /**
