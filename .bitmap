@@ -73,14 +73,19 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "components/logo/logo.e2e.spec.tsx",
+                "test": false,
+                "name": "logo.e2e.spec.tsx"
+            },
+            {
+                "relativePath": "components/logo/logo.simulation.ts",
+                "test": false,
+                "name": "logo.simulation.ts"
+            },
+            {
                 "relativePath": "components/logo/logo.spec.tsx",
                 "test": false,
                 "name": "logo.spec.tsx"
-            },
-            {
-                "relativePath": "components/logo/logo.story.ts",
-                "test": false,
-                "name": "logo.story.ts"
             },
             {
                 "relativePath": "components/logo/logo.tsx",

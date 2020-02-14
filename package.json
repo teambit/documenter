@@ -4,7 +4,7 @@
     "extensions": {
       "pipes": {
         "build": [
-          "extensions/react-ts"
+          "@compile"
         ],
         "start": [
           "build",

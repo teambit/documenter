@@ -14,7 +14,7 @@ module.exports = {
 
 function fooAction(component) {
   console.log('hi from foo');
-  
+  const capsule = component.capsule;
 }
 
 async function defaultAction(component) {

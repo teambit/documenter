@@ -74,16 +74,15 @@
      * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["@compile", "@test:table", "@deploy"],
-      "test": ["@test:interactive"],
-      "e2e": ["compile"]
+      "build": ["@compile"],
+      "e2e": []
     }
   },
 
   /**
    * configure the creation of new components in your workspace through the `bit create` command.
    * this is helpful for setting component structure standards. 
-  **/  
+  **/
   "create": {
     /**
      * default component template for Bit to use for creation of components upon `bit create`.
@@ -96,7 +95,7 @@
    * configuration for component compilation. can be any component which implments Compiler interface by default. 
   **/
   "compile": {
-    "id": "bit.envs/compilers/react"
+    "id": "bit.envs/react-ts"
   },
 
   /**
