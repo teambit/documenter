@@ -4,7 +4,7 @@
     "extensions": {
       "pipes": {
         "build": [
-          "@compile"
+          "react"
         ],
         "start": [
           "build",
