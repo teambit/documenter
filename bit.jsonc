@@ -74,7 +74,7 @@
      * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["@compile"],
+      "build": ["extensions/react-ts"],
       "e2e": []
     }
   },

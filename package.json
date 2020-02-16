@@ -2,9 +2,9 @@
   "bit": {
     "env": {},
     "extensions": {
-      "pipes": {
+      "scripts": {
         "build": [
-          "react"
+          "extensions/react-ts"
         ],
         "start": [
           "build",
@@ -12,7 +12,8 @@
         ],
         "test": [],
         "e2e": []
-      }
+      },
+      "extensions/react-ts": {}
     },
     "overrides": {
       "extensions/*": {

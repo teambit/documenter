@@ -1,23 +1,10 @@
-const { PipesExt } = require('bit-bin/dist/extensions/pipes');
+const { ScriptsExt } = require('bit-bin/dist/extensions/scripts');
 
 module.exports = {
   name: 'extensions/react-ts',
-  dependencies: [PipesExt],
-  actions: {
-    default: defaultAction,
-    transpile: fooAction 
-  },
-  provider: async (config, [pipes, test]) => {
+  dependencies: [ScriptsExt],
+  provider: async (config, [scripts]) => {
+    scripts.register({name: 'extensions/react-ts'}, './transpile');
     return {};
   }
 };
-
-function fooAction(component) {
-  console.log('hi from foo');
-  const capsule = component.capsule;
-}
-
-async function defaultAction(component) {
-  const {stdout} = await component.capsule.run('./transpile');
-  console.log(stdout);
-}
