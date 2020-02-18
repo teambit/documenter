@@ -1,4 +1,4 @@
-const { ScriptsExt } = require('bit-bin/dist/extensions/scripts');
+const { ScriptsExt } = require('bit-bin/extensions/scripts');
 
 module.exports = {
   name: 'extensions/react-ts',
@@ -8,7 +8,8 @@ module.exports = {
   },
   provider: async (config, [scripts]) => {
     scripts.register({name: 'extensions/react-ts'}, './transpile');
-    // scripts.register('./transpile', 'foo');
-    return {};
+    return {
+      
+    };
   }
 };

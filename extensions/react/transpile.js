@@ -1,15 +1,23 @@
-console.log('hello world');
-// const gulp = require('gulp');
-// const ts = require('gulp-typescript');
-// const tsconfig = require('./default-tsconfig');
+console.log(process.cwd());
+const gulp = require('gulp');
+const ts = require('gulp-typescript');
+const typescript = require('typescript');
+const merge = require('merge2');
+const tsconfig = require('./default-tsconfig');
 
-// const tsProject = ts.createProject(tsconfig);
+const tsProject = ts.createProject(tsconfig);
 
-// gulp.task('default', () => {
-//   return gulp
-//     .src('**/*.ts')
-//     .pipe(tsProject())
-//     .pipe(gulp.dest('dist'));
-// });
+gulp.task('default', () => {
+  const tsResult = gulp
+    .src(['*.ts', '*.tsx'])
+    .pipe(tsProject())
 
-// gulp.start('default');
+  return merge([
+    tsResult.dts.pipe(gulp.dest('dist')),
+    tsResult.js.pipe(gulp.dest('dist'))
+  ]);
+});
+
+gulp.series('default')((err) => {
+  if (err) console.error(err);
+});
