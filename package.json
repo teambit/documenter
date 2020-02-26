@@ -13,7 +13,10 @@
         "test": [],
         "e2e": []
       },
-      "extensions/react-ts": {}
+      "extensions/react-ts": {},
+      "create": {
+        "template": "extensions/react-ts"
+      }
     },
     "overrides": {
       "extensions/*": {
