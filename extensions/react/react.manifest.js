@@ -3,6 +3,9 @@ const { CreateExt } = require('bit-bin/extensions/create');
 module.exports = {
   name: 'extensions/react-ts',
   dependencies: [ CreateExt],
+  config: {
+
+  },
   provider: async ([create]) => {
     create.register({ name: 'extensions/react-ts' }, getTemplates);
     return {
