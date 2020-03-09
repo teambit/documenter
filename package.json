@@ -2,9 +2,9 @@
   "bit": {
     "env": {},
     "extensions": {
-      "scripts": {
+      "flows": {
         "build": [
-          "extensions/react-ts"
+          "#@bit/bit.evangalist.extensions.react-ts:transpile"
         ],
         "start": [
           "build",
@@ -18,18 +18,18 @@
         "template": "extensions/react-ts"
       }
     },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "defaultScope": "bit.evangalist",
     "overrides": {
       "extensions/*": {
         "extensions": {
-          "pipes": {
+          "flows": {
             "build": []
           }
         }
       }
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm",
-    "defaultScope": "bit.evangalist"
+    }
   },
   "dependencies": {
     "gulp": "^4.0.2",

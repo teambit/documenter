@@ -1,14 +1,9 @@
-const { ScriptsExt } = require('bit-bin/extensions/scripts');
 const { CreateExt } = require('bit-bin/extensions/create');
 
 module.exports = {
   name: 'extensions/react-ts',
-  dependencies: [ScriptsExt, CreateExt],
-  config: {
-
-  },
-  provider: async (config, [scripts, create]) => {
-    scripts.register({name: 'extensions/react-ts'}, './transpile');
+  dependencies: [ CreateExt],
+  provider: async ([create]) => {
     create.register({ name: 'extensions/react-ts' }, getTemplates);
     return {
 
