@@ -1,30 +1,39 @@
 /**
  * this is the main configuration file of your bit workspace.
- * for full documatation, please see: https://docs.bit.dev/configuration
+ * for full documentation, please see: https://docs.bit.dev/configuration
 **/
 {
   "$schema": "",
- 
+
   /**
    * main configuration of the Bit workspace.
   **/
   "workspace": {
+
+    /**
+     * applies only on bit.dev. configure the main owner of your workspace.
+    **/
+    "owner": "ripples",
+
     /**
     * set the default structure of components in your project.
     **/
-    "components": "components/*",
-
-    /**
-     * default scope for components to be exported to. absolute require paths for components
-     * will be generated accordingly. 
-    */
-    "defaultScope": ""
+    "components": [
+      {
+        "defaultScope": "ui",
+        "directory": "base"
+      },
+      {
+        "defaultScope": "extensions",
+        "directory": "extensions"
+      }
+    ]
   },
 
   /**
-   * main configuraiton for component dependency resolution. 
-  **/  
-  "dependnecyResolver": {
+   * main configuration for component dependency resolution.
+  **/
+  "dependencyResolver": {
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
@@ -42,7 +51,7 @@
     * The default value is false to avoid legacy compatibility issues.
     * It is strongly recommended to set strictPeerDependencies=true.
     */
-    "strictPeerDependnecies": true,
+    "strictPeerDependencies": true,
 
     /**
      * map of extra arguments to pass to the configured package manager upon the installation
@@ -52,112 +61,88 @@
   },
 
   /**
-   * main configuration for composer, Bit's UI.
-  */
-  "compose": {
-    "defaultComponent": "app"
-  },
-
-  /**
-   * main configuration file for handling the build process of components.
-  */
-  "run": {
-    /**
-     * specify the number of concurrent build processes for Bit to run. default value
-     * depends on the operating system and the number of available CPU cores.  
-    */
-    "parallelism": 4,
-
-    /**
-     * configure build tasks. configuration of build tasks is basically a map of `task name`
-     * pointed to an array of tasks. each task can be either a bash command or an extension
-     * which exposes a task. reserverd task names: build, test, runs on pre-tag.
-    */
-    "tasks": {
-      "build": ["extensions/react-ts"],
-      "e2e": []
-    }
-  },
-
-  /**
-   * configure the creation of new components in your workspace through the `bit create` command.
-   * this is helpful for setting component structure standards. 
-  **/
-  "create": {
-    /**
-     * default component template for Bit to use for creation of components upon `bit create`.
-     * default template is: 
-    */ 
-    "defaultTemplate": ""
-  },
-
-  /**
-   * configuration for component compilation. can be any component which implments Compiler interface by default. 
-  **/
-  "compile": {
-    "id": "bit.envs/react-ts"
-  },
-
-  /**
-   * configuration for component testing.
-  **/
-  "test": {
-  },
-
-  /**
-   * configuration for component linting.
-  **/
-  "lint": {
-
-  },
-
-  /**
-   * configuration for component doc generation.
-  **/
-  "docs": {
-
-  },
-
-  /**
-   * component deployment configuration
-  **/
-  "deploy": {
-
-  },
-
-  /**
-   * configuration for the legacy extension system.
-  */
-  "extensions": {
-  },
-
-  /**
-   * workspace overrides allow to override configuration of components in your workspace.
-   * this is extreamly useful for upgrading, aligning and building components with a 
+   * workspace variants allow to set different subsets of configuration for components in your workspace.
+   * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
   **/
-  "overrides": {
-    "ui/*": {
-      "build": {
-        "tasks": ["react"]
+  "variants": {
+    /**
+     * wildcards can be used to configure components under a specific namespace.
+     * this configuration applies the react extensions on all components the `ui` namespace.
+    **/
+    "base/*": {
+      /**
+       * apply the react environment on all ui components.
+        **/
+      "extensions/react": {
+        /**
+         * turn on typescript compiler.
+        **/
+        "typescript": true,
+
+        /**
+         * root component is the one to be deployed and served.
+        **/
+        "root": "ui/homepage",
+
+        /**
+         * sets react version to be bigger or equal to 16.0.0.
+         * this will add react and @types/react (in case typescript is turned on) as peer dependencies
+         * with this SemVer.
+        **/
+        "version": ">=16.0.0"
       },
-      "devDependencies": {
-        "@bit/bit.envs.react-ts": "0.9.0"
-      },
-      "app": {
+
+      "base/fragments/*": {
+        /**
+        * main configuration file for handling the build process of components.
+        */
         "build": {
+          /**
+          * configure build tasks. configuration of build tasks is basically a map of `task name`
+          * pointed to an array of tasks. each task can be either a bash command or an extension
+          * which exposes a task. reserved task names: build, test, runs on pre-tag.
+          */
           "tasks": {
-            "build": ["react", "deploy"],
-            "test": ["mocha"]
+            "build": ["extensions/react-ts"]
           }
         }
+      },
+
+      /**
+       * configure storybook extension on all ui components. :TODO: @gilad please define config for
+       * storybook extension
+      */
+      "extensions/storybook": {}
+    },
+
+    /**
+     * variants can be applied to a component in any namespace level.
+     * the configuration below sets all components under `base` to be compatible with all versions of
+     * react 15 as well.
+    **/
+    "ui/base/*": {
+      "peerDependencies": {
+        "react": ">15.0.1"
       }
     },
-    "ui/app": {
 
-    },
-    "server/*": {
-      "build": [""]
+    "extensions/*": {
+      /**
+       * configure extensions to be compiled by the TypeScript environment.
+      */
+      "typescript": {},
+      /**
+       * configure the creation of new components in your workspace through the `bit create` command.
+       * this is helpful for setting component structure standards.
+      **/
+      "create": {
+        /**
+         * default component template for Bit to use for creation of components upon `bit create`.
+         * default template is:
+        */
+        "defaultTemplate": "bit.create/extension"
+      }
     }
   },
 
@@ -165,6 +150,9 @@
    * automate Bit workflow with Git.
   */
   "gitPolicy": {
-    
+    /**
+     * fetch dependency and component updates on `git pull`.
+    **/
+    "dependencyUpdateOnPull": true
   }
 }
