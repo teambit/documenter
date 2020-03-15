@@ -30,6 +30,10 @@
     ]
   },
 
+  "extensions/react-ts": {
+    "template": "react"
+  },
+
   /**
    * main configuration for component dependency resolution.
   **/
@@ -59,6 +63,8 @@
     */
     "extraArgs": []
   },
+
+
 
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -149,10 +155,10 @@
   /**
    * automate Bit workflow with Git.
   */
-  "gitPolicy": {
-    /**
-     * fetch dependency and component updates on `git pull`.
-    **/
-    "dependencyUpdateOnPull": true
-  }
+  // "gitPolicy": {
+  //   /**
+  //    * fetch dependency and component updates on `git pull`.
+  //   **/
+  //   "dependencyUpdateOnPull": true
+  // }
 }
