@@ -9,9 +9,10 @@ module.exports = {
 
   },
   provider: async ([create, workspaceConfig]) => {
-    console.log('am i running')
+    console.log('provider for react ext started')
 
     const myConfig = workspaceConfig.workspaceSettings.getExtensionConfig(this.name);
+    console.log('config for react ext:')
     console.log(myConfig)
     create.register({ name: 'extensions/react-ts' }, getTemplates);
     return {
