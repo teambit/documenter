@@ -1,20 +1,19 @@
 const { CreateExt } = require('bit-bin/extensions/create');
 const { WorkspaceConfigExt } = require('bit-bin/extensions/workspace-config');
 
+const EXT_NAME = 'extensions/react-ts';
+
 module.exports = {
-  name: 'extensions/react-ts',
+  name: EXT_NAME,
   // dependencies: [ CreateExt, WorkspaceConfigExt],
   dependencies: [ WorkspaceConfigExt],
   config: {
 
   },
-  provider: async ([create, workspaceConfig]) => {
-    console.log('provider for react ext started')
-
-    const myConfig = workspaceConfig.workspaceSettings.getExtensionConfig(this.name);
-    console.log('config for react ext:')
-    console.log(myConfig)
-    create.register({ name: 'extensions/react-ts' }, getTemplates);
+  // provider: async ([create, workspaceConfig]) => {
+  provider: async ([workspaceConfig]) => {
+    const myConfig = workspaceConfig.workspaceSettings.getExtensionConfig(EXT_NAME);
+    create.register({ name: EXT_NAME }, getTemplates);
     return {
 
     };
