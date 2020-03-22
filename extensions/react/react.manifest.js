@@ -13,7 +13,8 @@ module.exports = {
   // provider: async ([create, workspaceConfig]) => {
   provider: async ([workspaceConfig]) => {
     const myConfig = workspaceConfig.workspaceSettings.getExtensionConfig(EXT_NAME);
-    create.register({ name: EXT_NAME }, getTemplates);
+    // create.register({ name: EXT_NAME }, getTemplates);
+    console.log('myConfig', myConfig)
     return {
 
     };
