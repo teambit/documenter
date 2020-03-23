@@ -45,6 +45,27 @@
   },
 
   /**
+   * main configuration file for handling the build process of components.
+  */
+  "flows": {
+    /**
+     * specify the number of concurrent build processes for Bit to run. default value
+     * depends on the operating system and the number of available CPU cores.  
+    */
+    "parallelism": 4,
+
+    /**
+     * configure build tasks. configuration of build tasks is basically a map of `task name`
+     * pointed to an array of tasks. each task can be either a bash command or an extension
+     * which exposes a task. reserverd task names: build, test, runs on pre-tag.
+    */
+    "tasks": {
+      "build": ["extensions/react-ts:transpile"],
+      "e2e": []
+    }
+  },
+
+  /**
    * main configuration for component dependency resolution.
   **/
   "dependencyResolver": {
@@ -160,7 +181,7 @@
         "defaultTemplate": "bit.create/extension"
       }
     }
-  },
+  }
 
   /**
    * automate Bit workflow with Git.
