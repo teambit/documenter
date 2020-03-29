@@ -187,6 +187,59 @@
           "defaultTemplate": "bit.create/extension"
         }
       }
+    },
+    "app": {
+      "extensions": {
+        /**
+        * main configuration file for handling the build process of components.
+        */
+        "flows": {
+          /**
+          * configure build tasks. configuration of build tasks is basically a map of `task name`
+          * pointed to an array of tasks. each task can be either a bash command or an extension
+          * which exposes a task. reserved task names: build, test, runs on pre-tag.
+          */
+          "tasks": {
+            "build": ["extensions/react-ts"]
+          }
+        }
+      }
+    },
+
+    "help": {
+      "extensions": {
+        /**
+        * main configuration file for handling the build process of components.
+        */
+        "flows": {
+          /**
+          * configure build tasks. configuration of build tasks is basically a map of `task name`
+          * pointed to an array of tasks. each task can be either a bash command or an extension
+          * which exposes a task. reserved task names: build, test, runs on pre-tag.
+          */
+          "tasks": {
+            "build": ["extensions/react-ts"]
+          }
+        }
+      }
+    },
+
+    "logo": {
+      "extensions": {
+        /**
+        * main configuration file for handling the build process of components.
+        */
+        "flows": {
+          /**
+          * configure build tasks. configuration of build tasks is basically a map of `task name`
+          * pointed to an array of tasks. each task can be either a bash command or an extension
+          * which exposes a task. reserved task names: build, test, runs on pre-tag.
+          */
+          "tasks": {
+            "build": ["extensions/react-ts"]
+          }
+        }
+      }
     }
   }
 
