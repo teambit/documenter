@@ -50,7 +50,7 @@
   "flows": {
     /**
      * specify the number of concurrent build processes for Bit to run. default value
-     * depends on the operating system and the number of available CPU cores.  
+     * depends on the operating system and the number of available CPU cores.
     */
     "parallelism": 4,
 
@@ -60,7 +60,7 @@
      * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["extensions/react-ts:transpile"],
+      "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"],
       "e2e": []
     }
   },
@@ -145,7 +145,7 @@
             * which exposes a task. reserved task names: build, test, runs on pre-tag.
             */
             "tasks": {
-              "build": ["extensions/react-ts"]
+              "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
             }
           }
         }
@@ -190,6 +190,7 @@
     },
     "app": {
       "extensions": {
+        "extensions/react-ts": {},
         /**
         * main configuration file for handling the build process of components.
         */
@@ -200,7 +201,7 @@
           * which exposes a task. reserved task names: build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["extensions/react-ts"]
+            "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
         }
       }
@@ -211,6 +212,7 @@
         /**
         * main configuration file for handling the build process of components.
         */
+        "extensions/react-ts": {},
         "flows": {
           /**
           * configure build tasks. configuration of build tasks is basically a map of `task name`
@@ -218,7 +220,7 @@
           * which exposes a task. reserved task names: build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["extensions/react-ts"]
+            "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
         }
       }
@@ -229,6 +231,7 @@
         /**
         * main configuration file for handling the build process of components.
         */
+        "extensions/react-ts": {},
         "flows": {
           /**
           * configure build tasks. configuration of build tasks is basically a map of `task name`
@@ -236,7 +239,7 @@
           * which exposes a task. reserved task names: build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["extensions/react-ts"]
+            "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
         }
       }
