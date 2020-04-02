@@ -209,6 +209,9 @@
 
     "help": {
       "extensions": {
+        "compile": {
+          "compiler": "#@bit/bit.evangalist.extensions.react-ts:transpile"
+        },
         /**
         * main configuration file for handling the build process of components.
         */
