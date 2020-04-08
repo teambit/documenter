@@ -19,6 +19,24 @@
         "origin": "AUTHORED",
         "exported": false
     },
+    "extensions/dummy": {
+        "files": [
+            {
+                "relativePath": "dummy.manifest.js",
+                "test": false,
+                "name": "dummy.manifest.js"
+            },
+            {
+                "relativePath": "index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "index.js",
+        "rootDir": "extensions/dummy",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "extensions/react-ts": {
         "files": [
             {
@@ -98,5 +116,5 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "version": "14.7.6"
+    "version": "14.7.7-dev.3"
 }

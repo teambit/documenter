@@ -174,7 +174,7 @@
         /**
         * configure extensions to be compiled by the TypeScript environment.
         */
-        "typescript": {},
+        // "typescript": {},
         /**
         * configure the creation of new components in your workspace through the `bit create` command.
         * this is helpful for setting component structure standards.
@@ -203,7 +203,8 @@
           "tasks": {
             "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
-        }
+        },
+        "extensions/react-ts": {}
       }
     },
 
@@ -225,7 +226,8 @@
           "tasks": {
             "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
-        }
+        },
+        "extensions/react-ts": {}
       }
     },
 
@@ -244,7 +246,8 @@
           "tasks": {
             "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
-        }
+        },
+        "extensions/react-ts": {}
       }
     }
   }
