@@ -1,4 +1,3 @@
-console.log(process.cwd());
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
 const typescript = require('typescript');

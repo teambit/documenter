@@ -15,9 +15,7 @@ module.exports = {
   provider: async ([workspaceConfig, component]) => {
     const myConfig = workspaceConfig.workspaceSettings.getExtensionConfig(EXT_NAME);
     // create.register({ name: EXT_NAME }, getTemplates);
-    console.log('myConfig', myConfig)
     component.registerAddConfig(EXT_NAME, config => {
-      console.log('config registration hook is running for react');
       return {
         'some-key-added-by-react': 'some-val-added-by-react',
         extensions: {
