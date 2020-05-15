@@ -60,7 +60,7 @@
      * which exposes a task. reserverd task names: build, test, runs on pre-tag.
     */
     "tasks": {
-      "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"],
+      "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"],
       "e2e": []
     }
   },
@@ -145,7 +145,7 @@
             * which exposes a task. reserved task names: build, test, runs on pre-tag.
             */
             "tasks": {
-              "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
+              "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
             }
           }
         }
@@ -201,7 +201,7 @@
           * which exposes a task. reserved task names: build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
+            "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
         },
         "extensions/react-ts": {}
@@ -210,13 +210,13 @@
 
     "help": {
       "extensions": {
+        "extensions/react-ts": {},
         "compile": {
-          "compiler": "#@bit/bit.evangalist.extensions.react-ts:transpile"
+          "compiler": "@bit/bit.evangalist.extensions.react-ts"
         },
         /**
         * main configuration file for handling the build process of components.
         */
-        "extensions/react-ts": {},
         "flows": {
           /**
           * configure build tasks. configuration of build tasks is basically a map of `task name`
@@ -224,10 +224,9 @@
           * which exposes a task. reserved task names: build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
+            "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
-        },
-        "extensions/react-ts": {}
+        }
       }
     },
 
@@ -244,7 +243,7 @@
           * which exposes a task. reserved task names: build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["#@bit/bit.evangalist.extensions.react-ts:transpile"]
+            "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
         },
         "extensions/react-ts": {}

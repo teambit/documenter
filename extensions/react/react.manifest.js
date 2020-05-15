@@ -25,9 +25,13 @@ module.exports = {
         }
       };
     });
-    return {};
+    return {
+      defineCompiler
+    };
   }
 };
+
+const defineCompiler = () => ({ taskFile: 'transpile' });
 
 function getTemplates(name) {
   return {
