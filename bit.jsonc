@@ -188,27 +188,7 @@
         }
       }
     },
-    "app": {
-      "extensions": {
-        "extensions/react-ts": {},
-        /**
-        * main configuration file for handling the build process of components.
-        */
-        "flows": {
-          /**
-          * configure build tasks. configuration of build tasks is basically a map of `task name`
-          * pointed to an array of tasks. each task can be either a bash command or an extension
-          * which exposes a task. reserved task names: build, test, runs on pre-tag.
-          */
-          "tasks": {
-            "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
-          }
-        },
-        "extensions/react-ts": {}
-      }
-    },
-
-    "help": {
+    "*": {
       "extensions": {
         "extensions/react-ts": {},
         "compile": {
@@ -221,32 +201,12 @@
           /**
           * configure build tasks. configuration of build tasks is basically a map of `task name`
           * pointed to an array of tasks. each task can be either a bash command or an extension
-          * which exposes a task. reserved task names: build, test, runs on pre-tag.
+          * which exposes a task. reserved task names:  build, test, runs on pre-tag.
           */
           "tasks": {
             "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
           }
         }
-      }
-    },
-
-    "logo": {
-      "extensions": {
-        /**
-        * main configuration file for handling the build process of components.
-        */
-        "extensions/react-ts": {},
-        "flows": {
-          /**
-          * configure build tasks. configuration of build tasks is basically a map of `task name`
-          * pointed to an array of tasks. each task can be either a bash command or an extension
-          * which exposes a task. reserved task names: build, test, runs on pre-tag.
-          */
-          "tasks": {
-            "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
-          }
-        },
-        "extensions/react-ts": {}
       }
     }
   }
