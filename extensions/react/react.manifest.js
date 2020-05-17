@@ -13,18 +13,6 @@ module.exports = {
   },
   // provider: async ([create, workspaceConfig, component]) => {
   provider: async ([workspaceConfig, component]) => {
-    const myConfig = workspaceConfig.workspaceSettings.getExtensionConfig(EXT_NAME);
-    // create.register({ name: EXT_NAME }, getTemplates);
-    component.registerAddConfig(EXT_NAME, config => {
-      return {
-        'some-key-added-by-react': 'some-val-added-by-react',
-        extensions: {
-          'extensions/dummy': {
-            'some-key-for-dummy': 'some-val-for-dummy'
-          }
-        }
-      };
-    });
     return {
       defineCompiler
     };

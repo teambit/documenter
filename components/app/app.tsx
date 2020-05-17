@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from '@bit/bit.evangalist.logo';
+import { Logo } from '@bit/bit.evangalist.ui.logo';
 
 export function App() {
   return (

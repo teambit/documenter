@@ -1,30 +1,24 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/
-{
+**/{
   "$schema": "",
-
   /**
    * main configuration of the Bit workspace.
   **/
   "workspace": {
-
     /**
      * applies only on bit.dev. configure the main owner of your workspace.
     **/
     "owner": "ripples",
-
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
     "defaultScope": "bit.evangalist",
-
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
     "defaultDirectory": "components",
-
     /**
     * set the default structure of components in your project.
     **/
@@ -39,30 +33,8 @@
       }
     ]
   },
-
   "extensions/react-ts": {
     "template": "react"
-  },
-
-  /**
-   * main configuration file for handling the build process of components.
-  */
-  "flows": {
-    /**
-     * specify the number of concurrent build processes for Bit to run. default value
-     * depends on the operating system and the number of available CPU cores.
-    */
-    "parallelism": 4,
-
-    /**
-     * configure build tasks. configuration of build tasks is basically a map of `task name`
-     * pointed to an array of tasks. each task can be either a bash command or an extension
-     * which exposes a task. reserverd task names: build, test, runs on pre-tag.
-    */
-    "tasks": {
-      "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"],
-      "e2e": []
-    }
   },
 
   /**
@@ -75,7 +47,6 @@
      * and totally removes the need of a 'node_modules' directory in your project.
     */
     "packageManager": "librarian",
-
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -87,16 +58,12 @@
     * It is strongly recommended to set strictPeerDependencies=true.
     */
     "strictPeerDependencies": true,
-
     /**
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
     */
     "extraArgs": []
   },
-
-
-
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
@@ -107,74 +74,15 @@
      * wildcards can be used to configure components under a specific namespace.
      * this configuration applies the react extensions on all components the `ui` namespace.
     **/
-    "base/*": {
-      "extensions": {
-
-        /**
-        * apply the react environment on all ui components.
-          **/
-        "extensions/react": {
-          /**
-          * turn on typescript compiler.
-          **/
-          "typescript": true,
-
-          /**
-          * root component is the one to be deployed and served.
-          **/
-          "root": "ui/homepage",
-
-          /**
-          * sets react version to be bigger or equal to 16.0.0.
-          * this will add react and @types/react (in case typescript is turned on) as peer dependencies
-          * with this SemVer.
-          **/
-          "version": ">=16.0.0"
-        }
-      },
-
-      "base/fragments/*": {
-        "extensions": {
-          /**
-          * main configuration file for handling the build process of components.
-          */
-          "flows": {
-            /**
-            * configure build tasks. configuration of build tasks is basically a map of `task name`
-            * pointed to an array of tasks. each task can be either a bash command or an extension
-            * which exposes a task. reserved task names: build, test, runs on pre-tag.
-            */
-            "tasks": {
-              "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
-            }
-          }
-        }
-      },
-
-      /**
-       * configure storybook extension on all ui components. :TODO: @gilad please define config for
-       * storybook extension
-      */
-      "extensions/storybook": {}
-    },
-
-    /**
-     * variants can be applied to a component in any namespace level.
-     * the configuration below sets all components under `base` to be compatible with all versions of
-     * react 15 as well.
-    **/
-    "ui/base/*": {
-      "peerDependencies": {
-        "react": ">15.0.1"
-      }
-    },
-
     "extensions/*": {
       "extensions": {
         /**
         * configure extensions to be compiled by the TypeScript environment.
         */
         // "typescript": {},
+        // "@teambit/envs": {
+          // "env": "@teambit/base"
+        // },
         /**
         * configure the creation of new components in your workspace through the `bit create` command.
         * this is helpful for setting component structure standards.
@@ -188,11 +96,14 @@
         }
       }
     },
-    "*": {
+    "ui/*": {
       "extensions": {
         "extensions/react-ts": {},
         "compile": {
           "compiler": "@bit/bit.evangalist.extensions.react-ts"
+        },
+        "@teambit/envs": {
+          "env": "React"
         },
         /**
         * main configuration file for handling the build process of components.
@@ -204,20 +115,12 @@
           * which exposes a task. reserved task names:  build, test, runs on pre-tag.
           */
           "tasks": {
-            "build": ["@bit/bit.evangalist.extensions.react-ts:transpile"]
+            "build": [
+              "@bit/bit.evangalist.extensions.react-ts:transpile"
+            ]
           }
         }
       }
     }
   }
-
-  /**
-   * automate Bit workflow with Git.
-  */
-  // "gitPolicy": {
-  //   /**
-  //    * fetch dependency and component updates on `git pull`.
-  //   **/
-  //   "dependencyUpdateOnPull": true
-  // }
 }
