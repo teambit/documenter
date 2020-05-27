@@ -39,7 +39,7 @@
             {
                 "relativePath": "index.ts",
                 "test": false,
-                "name": "index.ts"
+                "name": "index.tsx"
             }
         ],
         "mainFile": "index.ts",
@@ -55,12 +55,12 @@
                 "name": "help.tsx"
             },
             {
-                "relativePath": "index.ts",
+                "relativePath": "index.tsx",
                 "test": false,
-                "name": "index.ts"
+                "name": "index.tsx"
             }
         ],
-        "mainFile": "index.ts",
+        "mainFile": "index.tsx",
         "rootDir": "components/help",
         "origin": "AUTHORED",
         "exported": false
@@ -68,19 +68,19 @@
     "ui/logo": {
         "files": [
             {
-                "relativePath": "index.ts",
+                "relativePath": "index.tsx",
                 "test": false,
-                "name": "index.ts"
+                "name": "index.tsx"
             },
             {
-                "relativePath": "logo.e2e.spec.tsx",
+                "relativePath": "logo.composite.tsx",
                 "test": false,
-                "name": "logo.e2e.spec.tsx"
+                "name": "logo.composite.tsx"
             },
             {
-                "relativePath": "logo.simulation.ts",
+                "relativePath": "logo.docs.tsx",
                 "test": false,
-                "name": "logo.simulation.ts"
+                "name": "logo.docs.tsx"
             },
             {
                 "relativePath": "logo.spec.tsx",
@@ -93,7 +93,7 @@
                 "name": "logo.tsx"
             }
         ],
-        "mainFile": "index.ts",
+        "mainFile": "index.tsx",
         "rootDir": "components/logo",
         "origin": "AUTHORED",
         "exported": false
