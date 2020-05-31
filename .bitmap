@@ -32,6 +32,11 @@
     "ui/app": {
         "files": [
             {
+                "relativePath": "app.spec.tsx",
+                "test": false,
+                "name": "app.spec.tsx"
+            },
+            {
                 "relativePath": "app.tsx",
                 "test": false,
                 "name": "app.tsx"
@@ -49,6 +54,11 @@
     },
     "ui/help": {
         "files": [
+            {
+                "relativePath": "help.spec.tsx",
+                "test": false,
+                "name": "help.spec.tsx"
+            },
             {
                 "relativePath": "help.tsx",
                 "test": false,

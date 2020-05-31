@@ -15,5 +15,5 @@ export function Logo({ text }: LogoProps) {
 }
 
 Logo.defaultProps = {
-  text: 'Bit'
+  text: 'bit'
 };
