@@ -1,36 +1,4 @@
 {
-  "bit": {
-    "env": {},
-    "extensions": {
-      "flows": {
-        "build": [
-          "#@bit/bit.evangalist.extensions.react-ts:transpile"
-        ],
-        "start": [
-          "build",
-          "serve"
-        ],
-        "test": [],
-        "e2e": []
-      },
-      "extensions/react-ts": {},
-      "create": {
-        "template": "extensions/react-ts"
-      }
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm",
-    "defaultScope": "bit.evangalist",
-    "overrides": {
-      "extensions/*": {
-        "extensions": {
-          "flows": {
-            "build": []
-          }
-        }
-      }
-    }
-  },
   "dependencies": {
     "@babel/preset-env": "^7.10.1",
     "@babel/preset-react": "^7.10.1",
