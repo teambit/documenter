@@ -2,7 +2,7 @@ import { Tester } from '@teambit/tester';
 import { React } from '@teambit/react';
 
 /**
- * A React component environment configured with best practices for teambit.
+ * Allows to override the implemntation of Environment services and extend to new.
  */
 export class ReactBitDevEnv {
   /**

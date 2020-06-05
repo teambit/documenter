@@ -13,10 +13,11 @@ export class ReactBitDev {
     react.overrideJestConfig(require.resolve('./jest/jest.config.js'));
 
     envs.register(compose(
-      react.env, 
-      {}
+      {
+      }
     ));
 
     return new ReactBitDev();
   }
 }
+te

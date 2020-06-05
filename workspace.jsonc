@@ -60,68 +60,23 @@
     */
     "extraArgs": []
   },
-  /**
-   * automate Bit workflow with Git.
-  */
-  // "@teambit/git": {
-  /**
-     * fetch dependency and component updates on `git pull`.
-    **/
-  // "dependencyUpdateOnPull": true
-  // },
+
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
   **/
   "@teambit/variants": {
-    /**
-     * wildcards can be used to configure components under a specific namespace.
-     * this configuration applies the react extensions on all components the `ui` namespace.
-    **/
-    "extensions/*": {
-      /**
-      * configure extensions to be compiled by the TypeScript environment.
-      */
-      // "typescript": {},
-      // "@teambit/envs": {
-        // "env": "@teambit/base"
-      // },
-      /**
-      * configure the creation of new components in your workspace through the `bit create` command.
-      * this is helpful for setting component structure standards.
-      **/
-      "@teambit/create": {
-        /**
-        * default component template for Bit to use for creation of components upon `bit create`.
-        * default template is:
-        */
-        "defaultTemplate": "bit.create/extension"
-      }
-    },
+    // /**
+    //  * wildcards can be used to configure components under a specific namespace.
+    //  * this configuration applies the react extensions on all components the `ui` namespace.
+    // **/
+    // "extensions/*": {
+    // },
     "ui/*": {
-      "extensions/react-ts": {},
-      "compile": {
-        "compiler": "@bit/bit.evangalist.extensions.react-ts"
-      },
       "Environments": {
         "env": "React",
         "config": {}
-      },
-      /**
-      * main configuration file for handling the build process of components.
-      */
-      "flows": {
-        /**
-        * configure build tasks. configuration of build tasks is basically a map of `task name`
-        * pointed to an array of tasks. each task can be either a bash command or an extension
-        * which exposes a task. reserved task names:  build, test, runs on pre-tag.
-        */
-        "tasks": {
-          "build": [
-            "@bit/bit.evangalist.extensions.react-ts:transpile"
-          ]
-        }
       }
     }
   }
