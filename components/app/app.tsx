@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from '@bit/bit.evangalist.ui.logo';
+import { Logo } from '@bit/bit.test-scope.ui.logo';
 
 export function App() {
   return (
