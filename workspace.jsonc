@@ -14,7 +14,7 @@
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    // "defaultScope": "my-scope",
+    "defaultScope": "bit.test-scope",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
