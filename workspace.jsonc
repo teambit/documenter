@@ -71,8 +71,15 @@
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
     // **/
-    // "extensions/*": {
-    // },
+    "extensions/*": {
+      // "Environments": {
+      //   "env": "@teambit/generic",
+      //   "config": {
+      //     "compiler": "bit.envs/compiler/typescript",
+      //     "tester": "bit.envs/tester/jest"
+      //   }
+      // }
+    },
     "ui/*": {
       "Environments": {
         "env": "React",
