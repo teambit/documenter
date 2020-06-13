@@ -81,8 +81,8 @@
       // }
     },
     "ui/*": {
-      "Environments": {
-        "env": "React",
+      "@teambit/envs": {
+        "env": "@teambit/react",
         "config": {}
       }
     }
