@@ -1,0 +1,51 @@
+.copyBox {
+  border-radius: 6px;
+  background: var(--bg-dent);
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 11px;
+
+  > div {
+    user-select: all;
+    overflow: scroll;
+    white-space: pre;
+    // margin-right: 20px;
+  }
+}
+.button {
+  cursor: pointer;
+  line-height: inherit;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--bg-topping-highlight);
+  color: var(--base-color);
+  outline: none;
+}
+.rightSection {
+  display: flex;
+}
+
+.copyIcon {
+	font-size: 18px;
+}
+
+.copiedMessage {
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+	border-radius: 12px;
+	font-size: 12px;
+	color: var(--cta-button-text);
+	background-color: var(--primary-label-bg);
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 500ms, opacity 500ms ease-in-out;
+
+	&.showMessage {
+		opacity: 1;
+		visibility: visible;
+	}
+}
