@@ -4,7 +4,7 @@ import { PropTable } from "./prop-table";
 import { Paragraph } from "@bit/bit.base-ui.text.paragraph";
 import { ConsumableLinks } from "@bit/bit.test-scope.ui.consumable-links";
 import { LinkedHeading } from "@bit/bit.test-scope.ui.linked-heading";
-import { HighlightedText } from "../extension-components/highlighted-text";
+import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import styles from "./prop-table.module.scss";
 
