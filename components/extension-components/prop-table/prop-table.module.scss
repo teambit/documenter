@@ -1,0 +1,41 @@
+
+.propRow {
+    border: 1px solid var(--border-color, var(--light-grey, #ededed));
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 10px 20px;
+}
+
+.titleRow {
+    padding: 10px 20px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.title {
+    margin: unset;
+}
+
+.required {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.name {
+    margin-right: 5px;
+}
+
+
+.type {
+    display: inline-block;
+    background-color: var(--light-purple, #eceaff);
+    font-family: monospace;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+}
