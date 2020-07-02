@@ -12,7 +12,7 @@ export type SubtitleProps = {} & ParagraphProps;
  */
 export function Subtitle({ children, className, ...rest }: SubtitleProps) {
   return (
-    <Paragraph className={classNames(mutedText, styles.maxWidth, className)} size={PossibleSizes.xxl} {...rest}>
+    <Paragraph className={classNames(mutedText, styles.subTitle, className)} size={PossibleSizes.xxl} {...rest}>
       {children}
     </Paragraph>
   );

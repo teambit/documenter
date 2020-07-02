@@ -1,1 +1,1 @@
-export { PropTable } from './prop-table';
+// export { PropTable } from './prop-table';

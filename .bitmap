@@ -139,6 +139,29 @@
         "origin": "AUTHORED",
         "exported": false
     },
+    "ui/label": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "label.module.scss",
+                "test": false,
+                "name": "label.module.scss"
+            },
+            {
+                "relativePath": "label.tsx",
+                "test": false,
+                "name": "label.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/label",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "ui/linked-heading": {
         "files": [
             {
@@ -223,5 +246,127 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "version": "14.8.0-dev.6"
+    "ui/property-table": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "prop-table.module.scss",
+                "test": false,
+                "name": "prop-table.module.scss"
+            },
+            {
+                "relativePath": "prop-table.tsx",
+                "test": false,
+                "name": "prop-table.tsx"
+            },
+            {
+                "relativePath": "table-cell/heading-cell.tsx",
+                "test": false,
+                "name": "heading-cell.tsx"
+            },
+            {
+                "relativePath": "table-cell/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "table-cell/table-cell.module.scss",
+                "test": false,
+                "name": "table-cell.module.scss"
+            },
+            {
+                "relativePath": "table-cell/table-cell.tsx",
+                "test": false,
+                "name": "table-cell.tsx"
+            },
+            {
+                "relativePath": "table-heading-row.tsx",
+                "test": false,
+                "name": "table-heading-row.tsx"
+            },
+            {
+                "relativePath": "table-row.tsx",
+                "test": false,
+                "name": "table-row.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/prop-table",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/separator": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "separator.module.scss",
+                "test": false,
+                "name": "separator.module.scss"
+            },
+            {
+                "relativePath": "separator.tsx",
+                "test": false,
+                "name": "separator.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/separator",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/sub-title": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "sub-title.module.scss",
+                "test": false,
+                "name": "sub-title.module.scss"
+            },
+            {
+                "relativePath": "sub-title.tsx",
+                "test": false,
+                "name": "sub-title.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/sub-title",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/version-tag": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "version-tag.module.scss",
+                "test": false,
+                "name": "version-tag.module.scss"
+            },
+            {
+                "relativePath": "version-tag.tsx",
+                "test": false,
+                "name": "version-tag.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/version-tag",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "version": "14.8.3-dev.3"
 }
