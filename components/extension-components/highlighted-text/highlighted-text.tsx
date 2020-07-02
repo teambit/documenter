@@ -3,10 +3,11 @@ import classNames from "classnames";
 import { Paragraph, ParagraphProps } from "@bit/bit.base-ui.text.paragraph";
 import styles from "./highlighted-text.module.scss";
 
+export type HighlightedTextProps = {} & ParagraphProps;
+
 /**
  * a <p> element with text highlighting
  */
-type HighlightedTextProps = {} & ParagraphProps;
 export function HighlightedText({
   children,
   className,

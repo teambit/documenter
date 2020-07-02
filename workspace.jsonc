@@ -9,6 +9,10 @@
   **/
   "@teambit/workspace": {
     /**
+     * name of the workspace.
+    **/
+    "name": "documenter",
+    /**
      * applies only on bit.dev. configure the main owner of your workspace.
     **/
     // "defaultOwner": "teambit",

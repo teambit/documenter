@@ -18,7 +18,7 @@ type TableProps = {
   headings: string[];
   rows: Row[];
 };
-
+// :TODO refactor ASAP
 export function PropTable({headings, rows}: TableProps) {
     
   return (
