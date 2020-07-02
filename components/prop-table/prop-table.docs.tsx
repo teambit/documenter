@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { PropTable } from "@bit/bit.test-scope.ui.property-table";
-import { Paragraph } from "@bit/bit.base-ui.text.paragraph";
+import { Paragraph } from "@bit/bit.test-scope.ui.paragraph";
 import { H1 } from "@bit/bit.evangelist.elements.heading";
 import { ConsumableLinks } from "@bit/bit.test-scope.ui.consumable-links";
 import { LinkedHeading } from "@bit/bit.test-scope.ui.linked-heading";
@@ -14,28 +14,28 @@ import { Label } from "@bit/bit.test-scope.ui.label";
 import styles from "./prop-table.module.scss";
 
 const tableData = {
-  headings: ["name", "type", "description", "required", "defaultValue"],
+  headings: ["name", "type", "defaultValue", "description"],
   rows: [
     {
       name: "as",
       type: "ElementType",
-      description: "20 minutes",
       required: true,
-      defaultValue: "An element type to render as (string or function).",
+      defaultValue: "20 minutes",
+      description: "An element type to render as (string or function).",
     },
     {
       name: "as",
       type: "ElementType",
-      description: "20 minutes",
       required: true,
-      defaultValue: "An element type to render as (string or function).",
+      defaultValue: "20 minutes",
+      description: "An element type to render as (string or function).",
     },
     {
       name: "as",
       type: "ElementType",
-      description: "20 minutes",
       required: true,
-      defaultValue: "An element type to render as (string or function).",
+      defaultValue: "20 minutes",
+      description: "An element type to render as (string or function).",
     },
   ],
 };
@@ -52,10 +52,10 @@ export default () => {
   return (
     <div>
       <div className={styles.topRow}>
-        <H1 size={PossibleSizes.lg} className={styles.marginRight}>{title}</H1>
+        <H1 size={PossibleSizes.lg} style={{letterSpacing:"0"}} className={styles.marginRight}>{title}</H1>
         <VersionTag />
       </div>
-      <Subtitle className={styles.marginBottom}>{abstract}</Subtitle>
+      <Subtitle className={classNames(styles.marginBottom, styles.maxWidth)}>{abstract}</Subtitle>
       <div className={styles.marginBottom}>
         {labels.map((x) => (
           <Label className={styles.marginRight} key={x}>
@@ -64,7 +64,7 @@ export default () => {
         ))}
       </div>
       <Separator className={styles.marginBottom} />
-      <div className={classNames(styles.maxWidth, styles.marginBottom)}>
+      <div className={classNames(styles.maxWidth, styles.sectionMargin)}>
         <ConsumableLinks data={consumableLinks} />
         <Paragraph>
           You can set the type of the choice to be either a radio or a checkbox.
@@ -72,11 +72,11 @@ export default () => {
           Choice Group.
         </Paragraph>
       </div>
-      <div className={classNames(styles.marginBottom)}>
+      <div className={classNames(styles.sectionMargin)}>
         <LinkedHeading title="Simulations" link="simulations" />
         <GreyCube />
       </div>
-      <div className={classNames(styles.marginBottom)}>
+      <div className={classNames(styles.sectionMargin)}>
         <LinkedHeading title="Examples" link="examples" />
         <LinkedHeading title="RadioGroup" size="xs" link="radio-group" />
         <Paragraph className={classNames(styles.marginBottom, styles.maxWidth)}>
@@ -98,11 +98,11 @@ export default () => {
   );
 };
 
-export const labels = ["property table", "props", "properties"]; // docs are also auto-generated through an extension.
+export const labels = ["chart", "graph", "ui-component", "react"]; // docs are also auto-generated through an extension.
 
-export const title = "Title";
+export const title = "Radio";
 
-export const abstract = "property table for documenting components";
+export const abstract = "Radio Buttons are graphical interface elements that allow user to choose only one of a predefined set of mutually exclusive options.";
 
 // this is just a placeholder component
 function GreyCube() {

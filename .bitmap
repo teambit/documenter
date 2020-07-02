@@ -119,6 +119,11 @@
     "ui/highlighted-text": {
         "files": [
             {
+                "relativePath": "highlighted-test.composition.tsx",
+                "test": false,
+                "name": "highlighted-test.composition.tsx"
+            },
+            {
                 "relativePath": "highlighted-text.module.scss",
                 "test": false,
                 "name": "highlighted-text.module.scss"
@@ -215,6 +220,29 @@
         ],
         "mainFile": "index.tsx",
         "rootDir": "components/logo",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/paragraph": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "paragraph.module.scss",
+                "test": false,
+                "name": "paragraph.module.scss"
+            },
+            {
+                "relativePath": "paragraph.tsx",
+                "test": false,
+                "name": "paragraph.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/paragraph",
         "origin": "AUTHORED",
         "exported": false
     },

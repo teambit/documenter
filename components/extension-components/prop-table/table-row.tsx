@@ -28,6 +28,7 @@ export function TableRow({ row, colNumber }: TableRowProps) {
         if (title === "name") {
           return (
             <TableCell key={index}>
+              <div className={styles.mobileTitle}>{title}</div>
               <div className={styles.name}>{row[title]}</div>
               {row["required"] && (
                 <div className={styles.required}>(Required)</div>
@@ -38,13 +39,19 @@ export function TableRow({ row, colNumber }: TableRowProps) {
         if (title === "type") {
           return (
             <TableCell key={index}>
-              <HighlightedText size={PossibleSizes.xs} key={index}>
+              <div className={styles.mobileTitle}>{title}</div>
+              <HighlightedText size={PossibleSizes.xs} key={index} element="p">
                 {row[title]}
               </HighlightedText>
             </TableCell>
           );
         }
-        return <TableCell key={index}>{row[title]}</TableCell>;
+        return (
+          <TableCell key={index}>
+            <div className={styles.mobileTitle}>{title}</div>
+            {row[title]}
+          </TableCell>
+        );
       })}
     </Grid>
   );

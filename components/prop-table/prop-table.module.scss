@@ -5,11 +5,16 @@
 
 .topRow {
 	display: flex;
-	align-items: center;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .marginBottom {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+}
+
+.sectionMargin {
+    margin-bottom: 50px;
 }
 
 .maxWidth {
