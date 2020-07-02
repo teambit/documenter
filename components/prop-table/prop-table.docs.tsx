@@ -52,7 +52,7 @@ export default () => {
   return (
     <div>
       <div className={styles.topRow}>
-        <H1 size={PossibleSizes.lg} style={{letterSpacing:"0"}} className={styles.marginRight}>{title}</H1>
+        <H1 size={PossibleSizes.lg} className={styles.marginRight}>{title}</H1>
         <VersionTag />
       </div>
       <Subtitle className={classNames(styles.marginBottom, styles.maxWidth)}>{abstract}</Subtitle>
