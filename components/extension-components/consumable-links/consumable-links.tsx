@@ -2,9 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import { Grid } from "@bit/bit.base-ui.layout.grid-component";
-import { H5 } from "@bit/bit.evangelist.elements.heading";
 import { CopyBox } from "@bit/bit.test-scope.ui.copy-box";
 import styles from "./consumable-links.module.scss";
+import { Paragraph } from "@bit/bit.base-ui.text.paragraph";
 
 export type ConsumableLinksData = {
   /**
@@ -36,9 +36,9 @@ export function ConsumableLinks({
     <div className={className} {...rest}>
       {data.map((method, index) => (
         <Grid key={index} colMd={2} className={classNames(styles.copyMethod)}>
-          <H5 className={styles.copyTitle} size={PossibleSizes.xxs}>
+          <Paragraph className={styles.copyTitle} size={PossibleSizes.sm}>
             {method.title}
-          </H5>
+          </Paragraph>
           <CopyBox className={styles.copyBox}>{method.link}</CopyBox>
         </Grid>
       ))}

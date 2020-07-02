@@ -1,11 +1,12 @@
 .copyMethod {
     align-content: center;
     margin-bottom: 16px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .copyTitle {
     margin: unset;
     display: flex;
     align-items: center;
+    font-weight: bold;
 }

@@ -1,11 +1,16 @@
 import React from "react";
 import classNames from "classnames";
-import { PropTable } from "./prop-table";
+import { PropTable } from "@bit/bit.test-scope.ui.property-table";
 import { Paragraph } from "@bit/bit.base-ui.text.paragraph";
+import { H1 } from "@bit/bit.evangelist.elements.heading";
 import { ConsumableLinks } from "@bit/bit.test-scope.ui.consumable-links";
 import { LinkedHeading } from "@bit/bit.test-scope.ui.linked-heading";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
+import { VersionTag } from "@bit/bit.test-scope.ui.version-tag";
+import { Subtitle } from "@bit/bit.test-scope.ui.sub-title";
+import { Separator } from "@bit/bit.test-scope.ui.separator";
+import { Label } from "@bit/bit.test-scope.ui.label";
 import styles from "./prop-table.module.scss";
 
 const tableData = {
@@ -46,6 +51,19 @@ const consumableLinks = [
 export default () => {
   return (
     <div>
+      <div className={styles.topRow}>
+        <H1 size={PossibleSizes.lg} className={styles.marginRight}>{title}</H1>
+        <VersionTag />
+      </div>
+      <Subtitle className={styles.marginBottom}>{abstract}</Subtitle>
+      <div className={styles.marginBottom}>
+        {labels.map((x) => (
+          <Label className={styles.marginRight} key={x}>
+            {x}
+          </Label>
+        ))}
+      </div>
+      <Separator className={styles.marginBottom} />
       <div className={classNames(styles.maxWidth, styles.marginBottom)}>
         <ConsumableLinks data={consumableLinks} />
         <Paragraph>
@@ -61,10 +79,14 @@ export default () => {
       <div className={classNames(styles.marginBottom)}>
         <LinkedHeading title="Examples" link="examples" />
         <LinkedHeading title="RadioGroup" size="xs" link="radio-group" />
-        <Paragraph className={styles.marginBottom}>
-          <HighlightedText element="span" size={PossibleSizes.xs}>RadioGroup</HighlightedText>{" "}
+        <Paragraph className={classNames(styles.marginBottom, styles.maxWidth)}>
+          <HighlightedText element="span" size={PossibleSizes.xs}>
+            RadioGroup
+          </HighlightedText>{" "}
           is a helpful wrapper used to group{" "}
-          <HighlightedText element="span" size={PossibleSizes.xs}>radio</HighlightedText>{" "}
+          <HighlightedText element="span" size={PossibleSizes.xs}>
+            radio
+          </HighlightedText>{" "}
           components that provides an easier API, and proper keyboard
           accessibility to the group.
         </Paragraph>
@@ -78,8 +100,9 @@ export default () => {
 
 export const labels = ["property table", "props", "properties"]; // docs are also auto-generated through an extension.
 
-export const abstract = "property table for documenting components";
+export const title = "Title";
 
+export const abstract = "property table for documenting components";
 
 // this is just a placeholder component
 function GreyCube() {
