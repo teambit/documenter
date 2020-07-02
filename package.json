@@ -45,7 +45,7 @@
     "react-refresh": "^0.8.2"
   },
   "scripts": {
-    "postinstall": "bit link"
+    "postinstall": "bd link"
   },
   "bit": {
     "env": {},
