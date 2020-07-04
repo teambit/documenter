@@ -28,7 +28,7 @@ export function LinkedHeading({title, link, size, className, ...rest}: LinkedHea
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
       <H3 className={styles.heading} size={PossibleSizes[size || 'sm']}>{title}</H3>
-      <Anchor href={link}></Anchor>
+      <Anchor className={styles.anchor} href={link}></Anchor>
     </div>
   );
 }

@@ -1,8 +1,12 @@
 .linkedHeading {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 }
 
 .heading {
-	margin-right: 5px;
+	margin-right: 8px;
+}
+
+.anchor {
+	transform: translateY(4px);
 }
