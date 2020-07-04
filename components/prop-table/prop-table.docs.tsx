@@ -11,7 +11,7 @@ import { VersionTag } from "@bit/bit.test-scope.ui.version-tag";
 import { Subtitle } from "@bit/bit.test-scope.ui.sub-title";
 import { Separator } from "@bit/bit.test-scope.ui.separator";
 import { Label } from "@bit/bit.test-scope.ui.label";
-import { Section } from "../extension-components/section";
+import { Section } from "@bit/bit.test-scope.ui.section";
 import styles from "./prop-table.module.scss";
 import spacing from "./docs-spacer.module.scss";
 

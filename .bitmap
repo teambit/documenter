@@ -101,11 +101,6 @@
                 "name": "README.md"
             },
             {
-                "relativePath": "heading-margins.module.scss",
-                "test": false,
-                "name": "heading-margins.module.scss"
-            },
-            {
                 "relativePath": "heading-sizes.module.scss",
                 "test": false,
                 "name": "heading-sizes.module.scss"
