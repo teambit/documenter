@@ -1,6 +1,6 @@
 // import React from "react";
 // import classNames from "classnames";
-// import { H5 } from "@bit/bit.evangelist.elements.heading";
+// import { H5 } from "@bit/bit.test-scope.ui.heading";
 // import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 // import { Grid } from "@bit/bit.base-ui.layout.grid-component";
 // import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";

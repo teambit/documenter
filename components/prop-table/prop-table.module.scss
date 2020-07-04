@@ -3,10 +3,12 @@
     margin-right: 10px;
 }
 
-.topRow {
+.titleRow {
 	display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    .mainTitle {
+        margin-bottom: 16px;
+    }
 }
 
 .marginBottom {

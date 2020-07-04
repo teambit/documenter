@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Paragraph as BaseParagraph, ParagraphProps as BaseProps } from "@bit/bit.base-ui.text.paragraph";
+import { Paragraph as BaseParagraph } from "@bit/bit.base-ui.text.paragraph";
 import styles from './paragraph.module.scss';
 
 /**
@@ -8,7 +8,7 @@ import styles from './paragraph.module.scss';
  */
 export type ParagraphProps = {
   
-} & BaseProps;
+} & React.HTMLAttributes<HTMLParagraphElement>;
 export function Paragraph({children, className, ...rest}: ParagraphProps) {
   return (
     <BaseParagraph {...rest} className={classNames(styles.paragraph, className)}>

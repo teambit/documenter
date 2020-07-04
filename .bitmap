@@ -93,6 +93,44 @@
         "origin": "AUTHORED",
         "exported": false
     },
+    "ui/heading": {
+        "files": [
+            {
+                "relativePath": "README.md",
+                "test": false,
+                "name": "README.md"
+            },
+            {
+                "relativePath": "heading-margins.module.scss",
+                "test": false,
+                "name": "heading-margins.module.scss"
+            },
+            {
+                "relativePath": "heading-sizes.module.scss",
+                "test": false,
+                "name": "heading-sizes.module.scss"
+            },
+            {
+                "relativePath": "heading.module.scss",
+                "test": false,
+                "name": "heading.module.scss"
+            },
+            {
+                "relativePath": "heading.tsx",
+                "test": false,
+                "name": "heading.tsx"
+            },
+            {
+                "relativePath": "index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "index.tsx",
+        "rootDir": "components/extension-components/heading",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "ui/help": {
         "files": [
             {
@@ -249,6 +287,11 @@
     "ui/prop-table": {
         "files": [
             {
+                "relativePath": "docs-spacer.module.scss",
+                "test": false,
+                "name": "docs-spacer.module.scss"
+            },
+            {
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
@@ -324,6 +367,29 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/prop-table",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/section": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "section.module.scss",
+                "test": false,
+                "name": "section.module.scss"
+            },
+            {
+                "relativePath": "section.tsx",
+                "test": false,
+                "name": "section.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/section",
         "origin": "AUTHORED",
         "exported": false
     },

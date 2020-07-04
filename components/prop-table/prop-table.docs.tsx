@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { PropTable } from "@bit/bit.test-scope.ui.property-table";
 import { Paragraph } from "@bit/bit.test-scope.ui.paragraph";
-import { H1 } from "@bit/bit.evangelist.elements.heading";
+import { H1 } from "@bit/bit.test-scope.ui.heading";
 import { ConsumableLinks } from "@bit/bit.test-scope.ui.consumable-links";
 import { LinkedHeading } from "@bit/bit.test-scope.ui.linked-heading";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
@@ -11,7 +11,9 @@ import { VersionTag } from "@bit/bit.test-scope.ui.version-tag";
 import { Subtitle } from "@bit/bit.test-scope.ui.sub-title";
 import { Separator } from "@bit/bit.test-scope.ui.separator";
 import { Label } from "@bit/bit.test-scope.ui.label";
+import { Section } from "../extension-components/section";
 import styles from "./prop-table.module.scss";
+import spacing from "./docs-spacer.module.scss";
 
 const tableData = {
   headings: ["name", "type", "defaultValue", "description"],
@@ -28,14 +30,14 @@ const tableData = {
       type: "ElementType",
       required: true,
       defaultValue: "20 minutes",
-      description: "An element type to render as (string or function).",
+      description: "An element type to render.",
     },
     {
       name: "as",
       type: "ElementType",
       required: true,
       defaultValue: "20 minutes",
-      description: "An element type to render as (string or function).",
+      description: "An element type to render.",
     },
   ],
 };
@@ -50,36 +52,60 @@ const consumableLinks = [
 
 export default () => {
   return (
-    <div>
-      <div className={styles.topRow}>
-        <H1 size={PossibleSizes.lg} className={styles.marginRight}>{title}</H1>
+    <div className={spacing.docsStyles}>
+      <div className={classNames(styles.titleRow, spacing.mainTitleMargin)}>
+        <H1 size={PossibleSizes.lg} className={classNames(styles.mainTitle, styles.marginRight)}>
+          {title}
+        </H1>
         <VersionTag />
       </div>
-      <Subtitle className={classNames(styles.marginBottom, styles.maxWidth)}>{abstract}</Subtitle>
-      <div className={styles.marginBottom}>
+      <Subtitle
+        className={classNames(spacing.paragraphMargin, styles.maxWidth)}
+      >
+        {abstract}
+      </Subtitle>
+      <Section className={spacing.paragraphMargin}>
         {labels.map((x) => (
           <Label className={styles.marginRight} key={x}>
             {x}
           </Label>
         ))}
-      </div>
-      <Separator className={styles.marginBottom} />
-      <div className={classNames(styles.maxWidth, styles.sectionMargin)}>
-        <ConsumableLinks data={consumableLinks} />
+      </Section>
+      <Separator className={spacing.paragraphMargin} />
+      <Section className={classNames(styles.maxWidth, styles.sectionMargin)}>
+        <ConsumableLinks
+          data={consumableLinks}
+          className={spacing.paragraphMargin}
+        />
         <Paragraph>
           You can set the type of the choice to be either a radio or a checkbox.
           Using radio type allows you to use Choice component inside Google’s
           Choice Group.
         </Paragraph>
-      </div>
-      <div className={classNames(styles.sectionMargin)}>
-        <LinkedHeading title="Simulations" link="simulations" />
+      </Section>
+      <Section className={classNames(styles.sectionMargin)}>
+        <LinkedHeading
+          title="Simulations"
+          link="simulations"
+          className={spacing.secondaryTitleMargin}
+        />
         <GreyCube />
-      </div>
-      <div className={classNames(styles.sectionMargin)}>
-        <LinkedHeading title="Examples" link="examples" />
-        <LinkedHeading title="RadioGroup" size="xs" link="radio-group" />
-        <Paragraph className={classNames(styles.marginBottom, styles.maxWidth)}>
+      </Section>
+      <Section className={classNames(styles.sectionMargin)}>
+        <LinkedHeading
+          title="Examples"
+          link="examples"
+          className={spacing.secondaryTitleMargin}
+        />
+        <LinkedHeading
+          title="RadioGroup"
+          size="xs"
+          link="radio-group"
+          className={spacing.secondaryTitleMargin}
+        />
+        <Paragraph
+          className={classNames(spacing.paragraphMargin, styles.maxWidth)}
+        >
           <HighlightedText element="span" size={PossibleSizes.xs}>
             RadioGroup
           </HighlightedText>{" "}
@@ -91,9 +117,15 @@ export default () => {
           accessibility to the group.
         </Paragraph>
         <GreyCube />
-      </div>
-      <LinkedHeading title="Properties" link="properties" />
-      <PropTable headings={tableData.headings} rows={tableData.rows} />
+      </Section>
+      <Section className={classNames(styles.sectionMargin)}>
+        <LinkedHeading
+          title="Properties"
+          link="properties"
+          className={spacing.secondaryTitleMargin}
+        />
+        <PropTable headings={tableData.headings} rows={tableData.rows} />
+      </Section>
     </div>
   );
 };
@@ -102,7 +134,8 @@ export const labels = ["chart", "graph", "ui-component", "react"]; // docs are a
 
 export const title = "Radio";
 
-export const abstract = "Radio Buttons are graphical interface elements that allow user to choose only one of a predefined set of mutually exclusive options.";
+export const abstract =
+  "Radio Buttons are graphical interface elements that allow user to choose only one of a predefined set of mutually exclusive options.";
 
 // this is just a placeholder component
 function GreyCube() {
