@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { H5 } from "@bit/bit.evangelist.elements.heading";
+import { H5 } from "@bit/bit.test-scope.ui.heading";
 import { TableCellProps } from "./table-cell";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import styles from "./table-cell.module.scss";
