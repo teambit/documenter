@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { PropTable } from "@bit/bit.test-scope.ui.property-table";
 import { Paragraph } from "@bit/bit.test-scope.ui.paragraph";
 import { H1 } from "@bit/bit.test-scope.ui.heading";
-import { ConsumableLinks } from "@bit/bit.test-scope.ui.consumable-links";
+import { ConsumableLink } from "@bit/bit.test-scope.ui.consumable-links";
 import { LinkedHeading } from "@bit/bit.test-scope.ui.linked-heading";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
@@ -42,19 +42,23 @@ const tableData = {
   ],
 };
 
-const consumableLinks = [
-  { title: "install package", link: "@google.material-ui/radio" },
-  {
-    title: "Import from CDN",
-    link: "https://esm.bit.dev/@google/material-ui/radio/",
-  },
-];
+const consumableLink1 = {
+  title: "install package",
+  link: "@google.material-ui/radio",
+};
+const consumableLink2 = {
+  title: "Import from CDN",
+  link: "https://esm.bit.dev/@google/material-ui/radio/",
+};
 
 export default () => {
   return (
     <div className={spacing.docsStyles}>
       <div className={classNames(styles.titleRow, spacing.mainTitleMargin)}>
-        <H1 size={PossibleSizes.lg} className={classNames(styles.mainTitle, styles.marginRight)}>
+        <H1
+          size={PossibleSizes.lg}
+          className={classNames(styles.mainTitle, styles.marginRight)}
+        >
           {title}
         </H1>
         <VersionTag />
@@ -73,8 +77,12 @@ export default () => {
       </Section>
       <Separator className={spacing.paragraphMargin} />
       <Section className={classNames(styles.maxWidth, styles.sectionMargin)}>
-        <ConsumableLinks
-          data={consumableLinks}
+        <ConsumableLink
+          {...consumableLink1}
+          className={spacing.paragraphMargin}
+        />
+        <ConsumableLink
+          {...consumableLink2}
           className={spacing.paragraphMargin}
         />
         <Paragraph>

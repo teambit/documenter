@@ -7,23 +7,43 @@ import { ColNumber } from "./prop-table";
 import { TableCell } from "./table-cell";
 import styles from "./prop-table.module.scss";
 
-type TableRowProps = {
+export type TableRowProps = {
+  /**
+   * the number of columns to show in the row
+   */
   colNumber: ColNumber;
+  /**
+   * the data to be shown in the row
+   */
   row: RowType;
+  /**
+   * the heading row, by which the row data is ordered 
+   */
+  headings: string[];
 };
+
+export type DefaultValueProp = {
+  value: string;
+  computed?: boolean;
+  __typename?: string
+}
 
 export type RowType = {
   name: string;
   type: string;
   description: string;
   required: boolean;
-  defaultValue: string;
+  defaultValue?: DefaultValueProp;
 };
 
-export function TableRow({ row, colNumber }: TableRowProps) {
+/**
+ * 
+ * Renders a row in the table according to the order of the headings. 
+ */
+export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
   return (
     <Grid colMd={colNumber} className={classNames(styles.propRow)}>
-      {Object.keys(row).map((title, index) => {
+      {headings.map((title, index) => {
         if (title === "required") return;
         if (title === "name") {
           return (
@@ -38,13 +58,21 @@ export function TableRow({ row, colNumber }: TableRowProps) {
         }
         if (title === "type") {
           return (
-            <TableCell key={index}>
+            <TableCell className={styles.typeColumn} key={index}>
               <div className={styles.mobileTitle}>{title}</div>
               <HighlightedText size={PossibleSizes.xs} key={index} element="p">
                 {row[title]}
               </HighlightedText>
             </TableCell>
           );
+        }
+        if(title === 'defaultValue') {
+          return (
+            <TableCell key={index}>
+            <div className={styles.mobileTitle}>{title}</div>
+            {row[title] && row[title].value}
+          </TableCell>
+          )
         }
         return (
           <TableCell key={index}>
