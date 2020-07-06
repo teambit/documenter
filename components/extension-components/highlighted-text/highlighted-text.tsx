@@ -6,7 +6,7 @@ import styles from "./highlighted-text.module.scss";
 export type HighlightedTextProps = {} & ParagraphProps;
 
 /**
- * a <p> element with text highlighting
+ * A <p> element with text highlighting
  */
 export function HighlightedText({
   children,

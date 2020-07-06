@@ -31,13 +31,14 @@ export const ExampleLinks2 = () => {
   );
 };
 
-// this does not work
-ExampleLinks.canvas = {
-  width: 300,
-  height: 300,
-};
+
+// ExampleLinks.canvas = {
+//   width: 300,
+//   height: 300,
+// };
 
 const styles = {
-  maxWidth: "80%",
+  minWidth: "700px",
   margin: "auto",
+  marginTop: "20px",
 };

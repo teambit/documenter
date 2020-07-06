@@ -6,13 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 9px 11px;
 
-  > div {
+  .leftSection {
     user-select: all;
-    overflow: scroll;
+    // overflow: scroll;
     white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
     // margin-right: 20px;
   }
 }
@@ -26,26 +27,31 @@
 }
 .rightSection {
   display: flex;
+  position: relative;
+  padding-left: 15px;
 }
 
 .copyIcon {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .copiedMessage {
-	display: flex;
-	align-items: center;
-	padding: 0 5px;
-	border-radius: 12px;
-	font-size: 12px;
-	color: var(--cta-button-text);
-	background-color: var(--primary-label-bg);
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 500ms, opacity 500ms ease-in-out;
+  position: absolute;
+  right: 30px;
+  top: 1px;
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--cta-button-text);
+  background-color: var(--primary-label-bg);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 500ms, opacity 500ms ease-in-out;
 
-	&.showMessage {
-		opacity: 1;
-		visibility: visible;
-	}
+  &.showMessage {
+    opacity: 1;
+    visibility: visible;
+  }
 }

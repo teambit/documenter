@@ -5,9 +5,9 @@ type ClientContextProps = {
     children: JSX.Element;
   };
   
-  export function ClientContext({ children }: ClientContextProps) {
+  export function ClientContext({ children, ...rest }: ClientContextProps) {
     return (
-      <Theme>
+      <Theme {...rest}>
         {/* // dev link for icons */}
         <link rel="stylesheet" href="https://i.icomoon.io/public/9dc81da9ad/Bit/style.css"></link>
         {children}

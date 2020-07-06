@@ -4,6 +4,11 @@
     "theme/client-context": {
         "files": [
             {
+                "relativePath": "client-context.module.scss",
+                "test": false,
+                "name": "client-context.module.scss"
+            },
+            {
                 "relativePath": "client-context.tsx",
                 "test": false,
                 "name": "client-context.tsx"
@@ -27,6 +32,11 @@
                 "name": "anchor.composition.tsx"
             },
             {
+                "relativePath": "anchor.docs.tsx",
+                "test": false,
+                "name": "anchor.docs.tsx"
+            },
+            {
                 "relativePath": "anchor.module.scss",
                 "test": false,
                 "name": "anchor.module.scss"
@@ -47,35 +57,17 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "ui/app": {
-        "files": [
-            {
-                "relativePath": "app.spec.tsx",
-                "test": false,
-                "name": "app.spec.tsx"
-            },
-            {
-                "relativePath": "app.tsx",
-                "test": false,
-                "name": "app.tsx"
-            },
-            {
-                "relativePath": "index.ts",
-                "test": false,
-                "name": "index.tsx"
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/app",
-        "origin": "AUTHORED",
-        "exported": false
-    },
     "ui/consumable-link": {
         "files": [
             {
                 "relativePath": "consumable-link.composition.tsx",
                 "test": false,
                 "name": "consumable-link.composition.tsx"
+            },
+            {
+                "relativePath": "consumable-link.docs.tsx",
+                "test": false,
+                "name": "consumable-link.docs.tsx"
             },
             {
                 "relativePath": "consumable-link.module.scss",
@@ -104,6 +96,11 @@
                 "relativePath": "copy-box.composition.tsx",
                 "test": false,
                 "name": "copy-box.composition.tsx"
+            },
+            {
+                "relativePath": "copy-box.docs.tsx",
+                "test": false,
+                "name": "copy-box.docs.tsx"
             },
             {
                 "relativePath": "copy-box.module.scss",
@@ -139,6 +136,16 @@
                 "name": "heading-sizes.module.scss"
             },
             {
+                "relativePath": "heading.compositions.tsx",
+                "test": false,
+                "name": "heading.compositions.tsx"
+            },
+            {
+                "relativePath": "heading.docs.tsx",
+                "test": false,
+                "name": "heading.docs.tsx"
+            },
+            {
                 "relativePath": "heading.module.scss",
                 "test": false,
                 "name": "heading.module.scss"
@@ -159,35 +166,17 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "ui/help": {
-        "files": [
-            {
-                "relativePath": "help.spec.tsx",
-                "test": false,
-                "name": "help.spec.tsx"
-            },
-            {
-                "relativePath": "help.tsx",
-                "test": false,
-                "name": "help.tsx"
-            },
-            {
-                "relativePath": "index.tsx",
-                "test": false,
-                "name": "index.tsx"
-            }
-        ],
-        "mainFile": "index.tsx",
-        "rootDir": "components/help",
-        "origin": "AUTHORED",
-        "exported": false
-    },
     "ui/highlighted-text": {
         "files": [
             {
                 "relativePath": "highlighted-test.composition.tsx",
                 "test": false,
                 "name": "highlighted-test.composition.tsx"
+            },
+            {
+                "relativePath": "highlighted-test.docs.tsx",
+                "test": false,
+                "name": "highlighted-test.docs.tsx"
             },
             {
                 "relativePath": "highlighted-text.module.scss",
@@ -218,6 +207,16 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "label.composition.tsx",
+                "test": false,
+                "name": "label.composition.tsx"
+            },
+            {
+                "relativePath": "label.docs.tsx",
+                "test": false,
+                "name": "label.docs.tsx"
+            },
+            {
                 "relativePath": "label.module.scss",
                 "test": false,
                 "name": "label.module.scss"
@@ -241,6 +240,16 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "linked-heading.composition.tsx",
+                "test": false,
+                "name": "linked-heading.composition.tsx"
+            },
+            {
+                "relativePath": "linked-heading.docs.tsx",
+                "test": false,
+                "name": "linked-heading.docs.tsx"
+            },
+            {
                 "relativePath": "linked-heading.module.scss",
                 "test": false,
                 "name": "linked-heading.module.scss"
@@ -256,45 +265,22 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "ui/logo": {
-        "files": [
-            {
-                "relativePath": "index.tsx",
-                "test": false,
-                "name": "index.tsx"
-            },
-            {
-                "relativePath": "logo.composite.tsx",
-                "test": false,
-                "name": "logo.composite.tsx"
-            },
-            {
-                "relativePath": "logo.docs.tsx",
-                "test": false,
-                "name": "logo.docs.tsx"
-            },
-            {
-                "relativePath": "logo.spec.tsx",
-                "test": false,
-                "name": "logo.spec.tsx"
-            },
-            {
-                "relativePath": "logo.tsx",
-                "test": false,
-                "name": "logo.tsx"
-            }
-        ],
-        "mainFile": "index.tsx",
-        "rootDir": "components/logo",
-        "origin": "AUTHORED",
-        "exported": false
-    },
     "ui/paragraph": {
         "files": [
             {
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "paragraph.composition.tsx",
+                "test": false,
+                "name": "paragraph.composition.tsx"
+            },
+            {
+                "relativePath": "paragraph.docs.tsx",
+                "test": false,
+                "name": "paragraph.docs.tsx"
             },
             {
                 "relativePath": "paragraph.module.scss",
@@ -312,45 +298,22 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "ui/prop-table": {
-        "files": [
-            {
-                "relativePath": "docs-spacer.module.scss",
-                "test": false,
-                "name": "docs-spacer.module.scss"
-            },
-            {
-                "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "prop-table.docs.tsx",
-                "test": false,
-                "name": "prop-table.docs.tsx"
-            },
-            {
-                "relativePath": "prop-table.module.scss",
-                "test": false,
-                "name": "prop-table.module.scss"
-            },
-            {
-                "relativePath": "prop-table.tsx",
-                "test": false,
-                "name": "prop-table.tsx"
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/prop-table",
-        "origin": "AUTHORED",
-        "exported": false
-    },
     "ui/property-table": {
         "files": [
             {
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "prop-table.composition.tsx",
+                "test": false,
+                "name": "prop-table.composition.tsx"
+            },
+            {
+                "relativePath": "prop-table.docs.tsx",
+                "test": false,
+                "name": "prop-table.docs.tsx"
             },
             {
                 "relativePath": "prop-table.module.scss",
@@ -406,6 +369,11 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "section.docs.tsx",
+                "test": false,
+                "name": "section.docs.tsx"
+            },
+            {
                 "relativePath": "section.module.scss",
                 "test": false,
                 "name": "section.module.scss"
@@ -427,6 +395,16 @@
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "separator.composition.tsx",
+                "test": false,
+                "name": "separator.composition.tsx"
+            },
+            {
+                "relativePath": "separator.docs.tsx",
+                "test": false,
+                "name": "separator.docs.tsx"
             },
             {
                 "relativePath": "separator.module.scss",
@@ -452,6 +430,16 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "sub-title.composition.tsx",
+                "test": false,
+                "name": "sub-title.composition.tsx"
+            },
+            {
+                "relativePath": "sub-title.docs.tsx",
+                "test": false,
+                "name": "sub-title.docs.tsx"
+            },
+            {
                 "relativePath": "sub-title.module.scss",
                 "test": false,
                 "name": "sub-title.module.scss"
@@ -473,6 +461,16 @@
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "version-tag.composition.tsx",
+                "test": false,
+                "name": "version-tag.composition.tsx"
+            },
+            {
+                "relativePath": "version-tag.docs.tsx",
+                "test": false,
+                "name": "version-tag.docs.tsx"
             },
             {
                 "relativePath": "version-tag.module.scss",

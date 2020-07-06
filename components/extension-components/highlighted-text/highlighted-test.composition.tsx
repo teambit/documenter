@@ -20,5 +20,4 @@ export function SmallText() {
 
 SmallText.canvas = {
   width: 300,
-  height: 200
 };

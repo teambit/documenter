@@ -26,7 +26,7 @@ export function CopyBox({ children, className, ...rest }: CopyBoxProps) {
 
   return (
     <Grid colMd={2} className={classNames(styles.copyBox, className)} {...rest}>
-      <div>{children}</div>
+      <div className={styles.leftSection}>{children}</div>
       <div className={styles.rightSection}>
         <div className={classNames(styles.copiedMessage, {[styles.showMessage]: isCopied})}>Copied</div>
         <button className={styles.button} onClick={handleClick}>

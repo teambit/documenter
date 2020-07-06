@@ -6,11 +6,9 @@ export const ExampleLinks = () => {
     
   return (
     <ClientContext>
-      <div style={styles}>
-        <CopyBox>
+        <CopyBox style={styles}>
             npm install @bit.bit.test-scope.copy-box
         </CopyBox>
-      </div>
     </ClientContext>
   );
 };
@@ -18,17 +16,18 @@ export const ExampleLinks = () => {
 export const ExampleLinks2 = () => {
   return (
     <ClientContext>
-      <div style={styles}>
-        <CopyBox>
+        <CopyBox style={styles2}>
             npm install @bit.bit.test-scope.copy-box2
         </CopyBox>
-      </div>
     </ClientContext>
   );
 };
 
 
 const styles = {
-    maxWidth: '80%',
-    margin: 'auto'
+    maxWidth: '600px',
+}
+
+const styles2 = {
+    maxWidth: '200px',
 }

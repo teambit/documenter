@@ -11,7 +11,7 @@ type AnchorProps = {
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 /**
- * an anchor component with an icon for linking your docs
+ * An anchor component with an icon for linking your docs
  */
 export function Anchor(props: AnchorProps) {
   const href = props.href && `#${props.href}`;

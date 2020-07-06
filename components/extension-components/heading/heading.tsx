@@ -12,6 +12,13 @@ export type HeaderProps = {
   size?: PossibleSizes;
 } & HeadingProps;
 
+/**
+ * A set of concrete heading for the workspace docs.
+ * H1, H2, H3, H4, H5, H6.
+ *
+ * To keep a consistent look to the site, headers come in a limited set of sizes.
+ * While each header corresponds to a default font-size, it can be overridden using the size prop:
+ */
 export function H1(props: HeaderProps) {
   return (
     <Heading
