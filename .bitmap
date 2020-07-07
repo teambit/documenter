@@ -4,11 +4,6 @@
     "theme/client-context": {
         "files": [
             {
-                "relativePath": "client-context.module.scss",
-                "test": false,
-                "name": "client-context.module.scss"
-            },
-            {
                 "relativePath": "client-context.tsx",
                 "test": false,
                 "name": "client-context.tsx"
@@ -177,6 +172,11 @@
                 "relativePath": "highlighted-test.docs.tsx",
                 "test": false,
                 "name": "highlighted-test.docs.tsx"
+            },
+            {
+                "relativePath": "highlighted-text.docs.tsx",
+                "test": false,
+                "name": "highlighted-text.docs.tsx"
             },
             {
                 "relativePath": "highlighted-text.module.scss",
@@ -488,5 +488,5 @@
         "origin": "AUTHORED",
         "exported": false
     },
-    "version": "14.8.3-dev.3"
+    "version": "14.8.6"
 }

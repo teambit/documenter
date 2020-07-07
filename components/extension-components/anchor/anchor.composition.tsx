@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor } from "./anchor";
+import { Anchor } from './anchor';
 import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
 import { H1 } from "@bit/bit.test-scope.ui.heading";
 
