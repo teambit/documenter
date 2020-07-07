@@ -18,6 +18,6 @@ export function SmallText() {
   );
 };
 
-SmallText.canvas = {
-  width: 300,
-};
+// SmallText.canvas = {
+//   width: 300,
+// };
