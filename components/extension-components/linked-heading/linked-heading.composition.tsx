@@ -5,21 +5,21 @@ import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
 export const Default = () => {
   return (
     <ClientContext>
-      <LinkedHeading title="default" link="link" />
+      <LinkedHeading link="link">Default title</LinkedHeading>
     </ClientContext>
   );
 };
 export const Large = () => {
   return (
     <ClientContext>
-      <LinkedHeading size='xl' title="large" link="link" />
+      <LinkedHeading size='xl' link="link">Large</LinkedHeading>
     </ClientContext>
   );
 };
 export const Small = () => {
   return (
     <ClientContext>
-      <LinkedHeading size='xs' title="small" link="link" />
+      <LinkedHeading size='xs' link="link">Small</LinkedHeading>
     </ClientContext>
   );
 };

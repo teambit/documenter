@@ -14,7 +14,7 @@ export const AnchorComponentWithHeading = () => {
   );
 };
 
-export const AnchorComponent = () => {
+export const SimpleAnchor = () => {
   return (
     <ClientContext>
         <Anchor href="example" />
@@ -22,8 +22,7 @@ export const AnchorComponent = () => {
   );
 };
 
-AnchorComponent.canvas = {
-  margin: 'auto',
+SimpleAnchor.canvas = {
   width: 200
 }
 
