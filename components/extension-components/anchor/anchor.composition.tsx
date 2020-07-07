@@ -23,6 +23,6 @@ export const SimpleAnchor = () => {
 };
 
 SimpleAnchor.canvas = {
-  width: 200
+  width: 50
 }
 

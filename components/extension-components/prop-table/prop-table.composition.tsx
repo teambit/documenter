@@ -4,7 +4,7 @@ import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
 
 // tODO - make text stay single line
-export const Xxs = () => {
+export const PropertyTableExample = () => {
   return (
     <ClientContext>
       <div >

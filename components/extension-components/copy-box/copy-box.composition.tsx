@@ -2,7 +2,7 @@ import React from "react";
 import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
 import { CopyBox } from "./copy-box";
 
-export const ExampleLinks = () => {
+export const WideCopyBoxExample = () => {
     
   return (
     <ClientContext>
@@ -13,7 +13,7 @@ export const ExampleLinks = () => {
   );
 };
 
-export const ExampleLinks2 = () => {
+export const NarrowCopyBoxExample = () => {
   return (
     <ClientContext>
         <CopyBox style={styles2}>

@@ -3,7 +3,7 @@ import { Subtitle } from "./sub-title";
 import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
 
 // tODO - make text stay single line
-export const Xxs = () => {
+export const SubtitleExample = () => {
   return (
     <ClientContext>
       <div >

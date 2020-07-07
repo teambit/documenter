@@ -11,7 +11,7 @@ const link2 = {
   title: "install with npm",
   link: "npm install @bit.bit.test-scope.consumable-link",
 };
-export const ExampleLinks = () => {
+export const BitImportExample = () => {
   return (
     <ClientContext>
       <div style={styles}>
@@ -21,7 +21,7 @@ export const ExampleLinks = () => {
   );
 };
 
-export const ExampleLinks2 = () => {
+export const NpmInstallExample = () => {
   return (
     <ClientContext>
       <div style={styles}>
