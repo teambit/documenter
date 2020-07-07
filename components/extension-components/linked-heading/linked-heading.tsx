@@ -24,7 +24,7 @@ export type LinkedHeadingProps = {
    * class name to attach.
    */
   className: string
-} & React.HTMLAttributes<HTMLDivElement>;
+};
 
 /**
  * section heading with anchor link
