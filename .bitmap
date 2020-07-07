@@ -131,9 +131,9 @@
                 "name": "heading-sizes.module.scss"
             },
             {
-                "relativePath": "heading.compositions.tsx",
+                "relativePath": "heading.composition.tsx",
                 "test": false,
-                "name": "heading.compositions.tsx"
+                "name": "heading.composition.tsx"
             },
             {
                 "relativePath": "heading.docs.tsx",
