@@ -3,10 +3,17 @@ import { Label } from "./label";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
 
-export const LargeText = () => {
+export const LightLabel = () => {
   return (
     <ClientContext>
-      <Label>label</Label>
+      <Label>light label</Label>
+    </ClientContext>
+  );
+};
+export const DarkLabel = () => {
+  return (
+    <ClientContext>
+      <Label style={{backgroundColor: '#414141', color: 'white'}}>dark label</Label>
     </ClientContext>
   );
 };

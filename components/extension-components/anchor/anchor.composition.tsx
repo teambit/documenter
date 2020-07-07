@@ -7,7 +7,7 @@ export const AnchorComponentWithHeading = () => {
   return (
     <ClientContext>
       <div style={{display: 'inline-flex', alignItems: 'center'}}>
-        <H1 style={{marginRight: '10px'}}>example anchor</H1>
+        <H1 style={{marginRight: '10px'}}>example</H1>
         <Anchor href="example" />
       </div>
     </ClientContext>

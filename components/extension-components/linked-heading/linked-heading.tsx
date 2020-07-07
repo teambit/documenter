@@ -31,7 +31,6 @@ export type LinkedHeadingProps = {
  * section heading with anchor link
  */
 export function LinkedHeading({ children, link, size, className, ...rest }: LinkedHeadingProps) {
-  
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
       <H3 className={styles.heading} size={PossibleSizes[size || 'sm']}>{children}</H3>
