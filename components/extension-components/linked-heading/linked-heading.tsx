@@ -10,7 +10,6 @@ export type LinkedHeadingProps = {
    * title string
    */
   children: React.ReactNode,
-
   /**
    * anchor link to section
    */
