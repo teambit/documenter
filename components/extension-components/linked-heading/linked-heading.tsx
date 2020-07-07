@@ -9,7 +9,7 @@ export type LinkedHeadingProps = {
   /**
    * title string
    */
-  title: string,
+  children: React.Component,
   /**
    * anchor link to section
    */
@@ -24,16 +24,16 @@ export type LinkedHeadingProps = {
    * class name to attach.
    */
   className: string
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * section heading with anchor link
  */
-export function LinkedHeading({title, link, size, className, ...rest}: LinkedHeadingProps) {
+export function LinkedHeading({children, link, size, className, ...rest}: LinkedHeadingProps) {
   
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
-      <H3 className={styles.heading} size={PossibleSizes[size || 'sm']}>{title}</H3>
+      <H3 className={styles.heading} size={PossibleSizes[size || 'sm']}>{children}</H3>
       <Anchor className={styles.anchor} href={link}></Anchor>
     </div>
   );
