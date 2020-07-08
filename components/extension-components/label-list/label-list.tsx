@@ -5,18 +5,21 @@ import styles from './label-list.module.scss';
 
 type LabelListProps = {
   onPick?: (label: string) => any;
-  children?: string[];
-} & React.InputHTMLAttributes<HTMLDivElement>;
+  children: string[];
+} & React.HTMLAttributes<HTMLDivElement>;
 
-export function LabelList(props: LabelListProps) {
-  const { children, className, onPick, ...rest } = props;
+/**
+ * 
+ * renders an array of labels
+ */
+export function LabelList({children, className, onPick, ...rest}: LabelListProps) {
 
   return (
     <div {...rest} className={classnames(className, styles.labelList)}>
       {children &&
-        children.map(x => (
-          <Label key={x} onPick={props.onPick}>
-            {x}
+        children.map((label: string) => (
+          <Label key={label} onPick={onPick}>
+            {label}
           </Label>
         ))}
     </div>

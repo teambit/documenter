@@ -4,7 +4,7 @@ import styles from './section.module.scss';
 
 export type SectionProps = {
   className?: string
-} & React.HTMLAttributes<HTMLHeadingElement>;
+} & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * 
