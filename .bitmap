@@ -232,6 +232,39 @@
         "origin": "AUTHORED",
         "exported": false
     },
+    "ui/label-list": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "label-list.composition.tsx",
+                "test": false,
+                "name": "label-list.composition.tsx"
+            },
+            {
+                "relativePath": "label-list.docs.tsx",
+                "test": false,
+                "name": "label-list.docs.tsx"
+            },
+            {
+                "relativePath": "label-list.module.scss",
+                "test": false,
+                "name": "label-list.module.scss"
+            },
+            {
+                "relativePath": "label-list.tsx",
+                "test": false,
+                "name": "label-list.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/label-list",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "ui/linked-heading": {
         "files": [
             {
@@ -367,6 +400,11 @@
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "section.composition.tsx",
+                "test": false,
+                "name": "section.composition.tsx"
             },
             {
                 "relativePath": "section.docs.tsx",
