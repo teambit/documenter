@@ -3,8 +3,8 @@ import classNames from "classnames";
 import { H5 } from "@bit/bit.test-scope.ui.heading";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import { Grid } from "@bit/bit.base-ui.layout.grid-component";
-import { ColNumber } from "./prop-table";
-import styles from "./prop-table.module.scss";
+import { ColNumber } from "../table";
+import styles from "./table-row.module.scss";
 
 export type HeadingRowProps = {
     headings: string[];

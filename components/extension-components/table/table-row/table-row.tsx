@@ -3,9 +3,9 @@ import classNames from "classnames";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import { Grid } from "@bit/bit.base-ui.layout.grid-component";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
-import { ColNumber } from "./prop-table";
-import { TableCell } from "./table-cell";
-import styles from "./prop-table.module.scss";
+import { ColNumber } from "../table";
+import { TableCell } from "../table-cell";
+import styles from "./table-row.module.scss";
 
 export type TableRowProps = {
   /**
