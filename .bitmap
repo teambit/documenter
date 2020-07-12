@@ -471,46 +471,6 @@
                 "name": "index.ts"
             },
             {
-                "relativePath": "table-cell/heading-cell.tsx",
-                "test": false,
-                "name": "heading-cell.tsx"
-            },
-            {
-                "relativePath": "table-cell/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "table-cell/table-cell.module.scss",
-                "test": false,
-                "name": "table-cell.module.scss"
-            },
-            {
-                "relativePath": "table-cell/table-cell.tsx",
-                "test": false,
-                "name": "table-cell.tsx"
-            },
-            {
-                "relativePath": "table-row/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "table-row/table-heading-row.tsx",
-                "test": false,
-                "name": "table-heading-row.tsx"
-            },
-            {
-                "relativePath": "table-row/table-row.module.scss",
-                "test": false,
-                "name": "table-row.module.scss"
-            },
-            {
-                "relativePath": "table-row/table-row.tsx",
-                "test": false,
-                "name": "table-row.tsx"
-            },
-            {
                 "relativePath": "table.composition.tsx",
                 "test": false,
                 "name": "table.composition.tsx"
@@ -533,6 +493,98 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/table",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/table-column": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "table-column.module.scss",
+                "test": false,
+                "name": "table-column.module.scss"
+            },
+            {
+                "relativePath": "table-column.tsx",
+                "test": false,
+                "name": "table-column.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/table-column",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/table-heading-column": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "table-heading-column.module.scss",
+                "test": false,
+                "name": "table-heading-column.module.scss"
+            },
+            {
+                "relativePath": "table-heading-column.tsx",
+                "test": false,
+                "name": "table-heading-column.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/table-heading-column",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/table-heading-row": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "table-heading-row.module.scss",
+                "test": false,
+                "name": "table-heading-row.module.scss"
+            },
+            {
+                "relativePath": "table-heading-row.tsx",
+                "test": false,
+                "name": "table-heading-row.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/table-heading-row",
+        "origin": "AUTHORED",
+        "exported": false
+    },
+    "ui/table-row": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "table-row.module.scss",
+                "test": false,
+                "name": "table-row.module.scss"
+            },
+            {
+                "relativePath": "table-row.tsx",
+                "test": false,
+                "name": "table-row.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/table-row",
         "origin": "AUTHORED",
         "exported": false
     },

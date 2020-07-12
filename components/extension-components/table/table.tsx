@@ -1,6 +1,6 @@
 import React from "react";
-import { HeadingRow } from "./table-row";
-import { TableRow, RowType } from "./table-row";
+import { HeadingRow } from "@bit/bit.test-scope.ui.table-heading-row";
+import { TableRow, RowType } from "@bit/bit.test-scope.ui.table-row";
 
 export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
 
