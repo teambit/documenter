@@ -1,0 +1,12 @@
+{
+  "componentId": {
+    "name": "ui/property-table"
+  },
+  "propagate": false,
+  "extensions": {
+    "@teambit/envs": {
+      "env": "@teambit/react",
+      "config": {}
+    }
+  }
+}
