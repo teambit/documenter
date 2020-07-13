@@ -9,14 +9,15 @@ export type TableHeadingColumnProps = {} & React.HTMLAttributes<HTMLDivElement>;
 /**
  * Title heading column for using in the table heading
  */
-export function HeadingColumn({ title, className, ...rest }: TableHeadingColumnProps) {
+export function HeadingColumn({ children, className, ...rest }: TableHeadingColumnProps) {
+
   return (
     <div className={classNames(styles.headingColumn, className)} {...rest}>
       <H5
         className={classNames(styles.title)}
         size={PossibleSizes.xxs}
       >
-        {title}
+        {children}
       </H5>
     </div>
   );

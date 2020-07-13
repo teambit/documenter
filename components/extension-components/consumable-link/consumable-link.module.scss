@@ -1,6 +1,7 @@
 .copyMethod {
     align-content: center;
-    margin-bottom: 16px;
+    // TODO - remove hard coded margin
+    margin-bottom: 32px;
     grid-template-columns: 1fr 4fr;
 }
 

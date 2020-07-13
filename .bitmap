@@ -12,6 +12,11 @@
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "sizes.module.scss",
+                "test": false,
+                "name": "sizes.module.scss"
             }
         ],
         "mainFile": "index.ts",
