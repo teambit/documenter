@@ -70,7 +70,7 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
           return (
             <TableCell key={index}>
             <div className={styles.mobileTitle}>{title}</div>
-            {row[title] && row[title].value}
+            {row[title] && row[title]?.value}
           </TableCell>
           )
         }
