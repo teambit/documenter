@@ -9,6 +9,11 @@
                 "name": "client-context.tsx"
             },
             {
+                "relativePath": "global.module.scss",
+                "test": false,
+                "name": "global.module.scss"
+            },
+            {
                 "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
