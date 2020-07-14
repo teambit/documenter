@@ -3,9 +3,23 @@ import classNames from "classnames";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 import { Grid } from "@bit/bit.base-ui.layout.grid-component";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
-import { ColNumber } from "./prop-table";
-import { TableCell } from "./table-cell";
-import styles from "./prop-table.module.scss";
+import { ColNumber } from "@bit/bit.test-scope.ui.table/table";
+import { TableColumn } from "@bit/bit.test-scope.ui.table-column";
+import styles from "./table-row.module.scss";
+
+export type DefaultValueProp = {
+  value: string;
+  computed?: boolean;
+  __typename?: string
+}
+
+export type RowType = {
+  name: string;
+  type: string;
+  description: string;
+  required: boolean;
+  defaultValue?: DefaultValueProp;
+};
 
 export type TableRowProps = {
   /**
@@ -22,19 +36,6 @@ export type TableRowProps = {
   headings: string[];
 };
 
-export type DefaultValueProp = {
-  value: string;
-  computed?: boolean;
-  __typename?: string
-}
-
-export type RowType = {
-  name: string;
-  type: string;
-  description: string;
-  required: boolean;
-  defaultValue?: DefaultValueProp;
-};
 
 /**
  * 
@@ -47,38 +48,38 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
         if (title === "required") return;
         if (title === "name") {
           return (
-            <TableCell key={index}>
+            <TableColumn key={index}>
               <div className={styles.mobileTitle}>{title}</div>
               <div className={styles.name}>{row[title]}</div>
               {row["required"] && (
                 <div className={styles.required}>(Required)</div>
               )}
-            </TableCell>
+            </TableColumn>
           );
         }
         if (title === "type") {
           return (
-            <TableCell className={styles.typeColumn} key={index}>
+            <TableColumn className={styles.typeColumn} key={index}>
               <div className={styles.mobileTitle}>{title}</div>
               <HighlightedText size={PossibleSizes.xs} key={index} element="p">
                 {row[title]}
               </HighlightedText>
-            </TableCell>
+            </TableColumn>
           );
         }
         if(title === 'defaultValue') {
           return (
-            <TableCell key={index}>
+            <TableColumn key={index}>
             <div className={styles.mobileTitle}>{title}</div>
             {row[title] && row[title]?.value}
-          </TableCell>
+          </TableColumn>
           )
         }
         return (
-          <TableCell key={index}>
+          <TableColumn key={index}>
             <div className={styles.mobileTitle}>{title}</div>
             {row[title]}
-          </TableCell>
+          </TableColumn>
         );
       })}
     </Grid>

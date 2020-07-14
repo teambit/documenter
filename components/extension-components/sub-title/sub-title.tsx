@@ -16,7 +16,7 @@ export function Subtitle({ children, className, ...rest }: SubtitleProps) {
     <Paragraph
       element="p"
       className={classNames(mutedText, styles.subTitle, className)}
-      size={PossibleSizes.xxl}
+      size={PossibleSizes.xl}
       {...rest}
     >
       {children}

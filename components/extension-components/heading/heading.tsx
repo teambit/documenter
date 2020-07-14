@@ -6,6 +6,7 @@ import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
 
 import sizeStyles from "./heading-sizes.module.scss";
 import styles from "./heading.module.scss";
+import margins from "./margins.module.scss";
 
 export type HeaderProps = {
   /** font-size for the header */
@@ -26,7 +27,8 @@ export function H1(props: HeaderProps) {
       {...props}
       className={classNames(
         styles.h1,
-        sizeStyles[props.size || "xl"],
+        margins.h1,
+        sizeStyles[props.size || "lg"],
         props.className
       )}
     />

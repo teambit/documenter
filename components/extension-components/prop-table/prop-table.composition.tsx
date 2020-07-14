@@ -8,14 +8,13 @@ export const PropertyTableExample = () => {
   return (
     <ClientContext>
       <div >
-      <PropTable headings={tableData.headings} rows={tableData.rows} />
+      <PropTable rows={tableData.rows} />
       </div>
     </ClientContext>
   );
 };
 
 const tableData = {
-    headings: ["name", "type", "defaultValue", "description"],
     rows: [
       {
         name: "heading",
