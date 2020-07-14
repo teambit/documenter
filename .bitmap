@@ -164,6 +164,11 @@
                 "relativePath": "index.tsx",
                 "test": false,
                 "name": "index.tsx"
+            },
+            {
+                "relativePath": "margins.module.scss",
+                "test": false,
+                "name": "margins.module.scss"
             }
         ],
         "mainFile": "index.tsx",
