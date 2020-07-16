@@ -45,8 +45,7 @@
     "@types/react": "^16.9.17",
     "react-refresh": "^0.8.2"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "bit": {
     "env": {},
     "componentsDefaultDirectory": "components/{name}",
