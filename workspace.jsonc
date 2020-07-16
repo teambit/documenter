@@ -90,6 +90,12 @@
         "env": "@teambit/react",
         "config": {}
       }
+    },
+    "theme/*": {
+      "@teambit/envs": {
+        "env": "@teambit/react",
+        "config": {}
+      }
     }
   }
 }
