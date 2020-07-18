@@ -25,7 +25,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/client-context",
+        "rootDir": "components/client-context",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -58,7 +58,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/anchor",
+        "rootDir": "components/anchor",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -91,7 +91,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/consumable-link",
+        "rootDir": "components/consumable-link",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -124,7 +124,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/copy-box",
+        "rootDir": "components/copy-box",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -172,7 +172,7 @@
             }
         ],
         "mainFile": "index.tsx",
-        "rootDir": "components/extension-components/heading",
+        "rootDir": "components/heading",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -210,7 +210,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/highlighted-text",
+        "rootDir": "components/highlighted-text",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -243,7 +243,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/label",
+        "rootDir": "components/label",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -276,7 +276,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/label-list",
+        "rootDir": "components/label-list",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -309,7 +309,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/linked-heading",
+        "rootDir": "components/linked-heading",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -342,7 +342,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/paragraph",
+        "rootDir": "components/paragraph",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -375,7 +375,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/prop-table",
+        "rootDir": "components/prop-table",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -408,7 +408,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/section",
+        "rootDir": "components/section",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -441,7 +441,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/separator",
+        "rootDir": "components/separator",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -474,7 +474,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/sub-title",
+        "rootDir": "components/sub-title",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -507,7 +507,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/table",
+        "rootDir": "components/table",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -530,7 +530,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/table-column",
+        "rootDir": "components/table-column",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -553,7 +553,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/table-heading-column",
+        "rootDir": "components/table-heading-column",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -576,7 +576,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/table-heading-row",
+        "rootDir": "components/table-heading-row",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -599,7 +599,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/table-row",
+        "rootDir": "components/table-row",
         "origin": "AUTHORED",
         "exported": false
     },
@@ -632,7 +632,7 @@
             }
         ],
         "mainFile": "index.ts",
-        "rootDir": "components/extension-components/version-tag",
+        "rootDir": "components/version-tag",
         "origin": "AUTHORED",
         "exported": false
     },
