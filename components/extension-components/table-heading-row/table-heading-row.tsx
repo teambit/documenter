@@ -16,7 +16,7 @@ export function HeadingRow({headings, colNumber}: HeadingRowProps) {
       {headings.map((title: string, index: number) => {
         if (title === "required") return;
         return (
-          <HeadingColumn key={index}>
+          <HeadingColumn key={index} className={styles.titleCol}>
             {title}
           </HeadingColumn>
           
