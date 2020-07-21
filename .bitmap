@@ -27,7 +27,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/client-context",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/anchor": {
         "files": [
@@ -60,7 +61,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/anchor",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/consumable-link": {
         "files": [
@@ -93,7 +95,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/consumable-link",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/copy-box": {
         "files": [
@@ -126,7 +129,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/copy-box",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/heading": {
         "files": [
@@ -174,7 +178,8 @@
         "mainFile": "index.tsx",
         "rootDir": "components/extension-components/heading",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/highlighted-text": {
         "files": [
@@ -212,7 +217,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/highlighted-text",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/label": {
         "files": [
@@ -245,7 +251,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/label",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/label-list": {
         "files": [
@@ -278,7 +285,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/label-list",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/linked-heading": {
         "files": [
@@ -311,7 +319,42 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/linked-heading",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
+    },
+    "ui/list": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "list.composition.tsx",
+                "test": false,
+                "name": "list.composition.tsx"
+            },
+            {
+                "relativePath": "list.docs.tsx",
+                "test": false,
+                "name": "list.docs.tsx"
+            },
+            {
+                "relativePath": "list.module.scss",
+                "test": false,
+                "name": "list.module.scss"
+            },
+            {
+                "relativePath": "list.tsx",
+                "test": false,
+                "name": "list.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/list",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
     },
     "ui/paragraph": {
         "files": [
@@ -344,7 +387,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/paragraph",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/property-table": {
         "files": [
@@ -377,7 +421,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/prop-table",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/section": {
         "files": [
@@ -410,7 +455,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/section",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/separator": {
         "files": [
@@ -443,7 +489,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/separator",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/sub-title": {
         "files": [
@@ -476,7 +523,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/sub-title",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/table": {
         "files": [
@@ -509,7 +557,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/table",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/table-column": {
         "files": [
@@ -532,7 +581,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/table-column",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/table-heading-column": {
         "files": [
@@ -555,7 +605,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/table-heading-column",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/table-heading-row": {
         "files": [
@@ -578,7 +629,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/table-heading-row",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/table-row": {
         "files": [
@@ -601,7 +653,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/table-row",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "ui/version-tag": {
         "files": [
@@ -634,7 +687,8 @@
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/version-tag",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": false,
+        "lanes": []
     },
     "version": "14.8.8"
 }

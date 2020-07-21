@@ -1,0 +1,11 @@
+.list {
+	list-style: revert;
+	list-style-position: inside;
+}
+
+.item {
+	// not sure if the div should be included here
+	> ol, ul, div {
+		margin-left: 30px;
+	}
+}
