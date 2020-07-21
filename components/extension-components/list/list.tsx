@@ -15,15 +15,19 @@ type ListProps = {
    * override styles of the items in the list
    */
   itemClass?: string;
+  /**
+   * controls the space between li's
+   */
+  spacing?: 'sm' | 'md' | 'lg' | 'xl';
 } & React.OlHTMLAttributes<HTMLOListElement>;
 
 /**
  * A list component. Can be an ordered or an un-ordered list.
  */
-export function List({className, itemClass, children, element, ...rest}: ListProps) {
+export function List({className, itemClass, children, element, spacing, ...rest}: ListProps) {
   const Element = element || 'ul';
   return (
-    <Element {...rest} className={classNames(styles.list, className)}>
+    <Element {...rest} className={classNames(styles.list, styles[spacing], className)}>
       {children.map((item) => <li className={classNames(styles.item, itemClass)}>{item}</li>)}
     </Element>
   );

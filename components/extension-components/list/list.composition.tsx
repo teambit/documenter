@@ -17,6 +17,27 @@ export const SimpleBulletList = () => {
   );
 };
 
+export const SimpleBulletListWithSmallSpacing = () => {
+  return (
+    <ClientContext>
+      <CanvasWrapper>
+        <H5 style={{marginBottom: 30}}>A simple list with small spacing</H5>
+        <List spacing="sm">{["one", "two", "three"]}</List>
+      </CanvasWrapper>
+    </ClientContext>
+  );
+};
+export const SimpleBulletListWithLargeSpacing = () => {
+  return (
+    <ClientContext>
+      <CanvasWrapper>
+        <H5 style={{marginBottom: 30}}>A simple list with large spacing</H5>
+        <List spacing="lg">{["one", "two", "three"]}</List>
+      </CanvasWrapper>
+    </ClientContext>
+  );
+};
+
 export const SimpleNumberedList = () => {
   return (
     <ClientContext>
