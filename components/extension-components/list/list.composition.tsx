@@ -27,12 +27,32 @@ export const SimpleBulletListWithSmallSpacing = () => {
     </ClientContext>
   );
 };
+export const SimpleBulletListWithMediumSpacing = () => {
+  return (
+    <ClientContext>
+      <CanvasWrapper>
+        <H5 style={{marginBottom: 30}}>A simple list with medium spacing</H5>
+        <List spacing="md">{["one", "two", "three"]}</List>
+      </CanvasWrapper>
+    </ClientContext>
+  );
+};
 export const SimpleBulletListWithLargeSpacing = () => {
   return (
     <ClientContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A simple list with large spacing</H5>
         <List spacing="lg">{["one", "two", "three"]}</List>
+      </CanvasWrapper>
+    </ClientContext>
+  );
+};
+export const SimpleBulletListWithExtraLargeSpacing = () => {
+  return (
+    <ClientContext>
+      <CanvasWrapper>
+        <H5 style={{marginBottom: 30}}>A simple list with extra large spacing</H5>
+        <List spacing="xl">{["one", "two", "three"]}</List>
       </CanvasWrapper>
     </ClientContext>
   );
@@ -99,7 +119,7 @@ export const NumberedListWithBlockElement = () => {
           {[
             "one",
             "two",
-            <CopyBox>any element can be placed in the list</CopyBox>,
+            <CopyBox style={{marginBottom: 10}}>any element can be placed in the list</CopyBox>,
             "three",
           ]}
         </List>
