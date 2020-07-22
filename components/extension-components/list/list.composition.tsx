@@ -38,7 +38,7 @@ export const SimpleBulletListWithLargeSpacing = () => {
   );
 };
 
-export const SimpleNumberedList = () => {
+export const SimpleNumberedListWithInlineComponent = () => {
   return (
     <ClientContext>
       <CanvasWrapper>
@@ -56,7 +56,7 @@ export const SimpleNumberedList = () => {
   );
 };
 
-export const SimpleAnchor2 = () => {
+export const NumberedListWithNestedNumberedList = () => {
   return (
     <ClientContext>
       <CanvasWrapper>
@@ -73,7 +73,7 @@ export const SimpleAnchor2 = () => {
     </ClientContext>
   );
 };
-export const SimpleAnchor3 = () => {
+export const NumberedListWithNestedBulletList = () => {
   return (
     <ClientContext>
       <CanvasWrapper>
@@ -90,7 +90,7 @@ export const SimpleAnchor3 = () => {
     </ClientContext>
   );
 };
-export const SimpleAnchor5 = () => {
+export const NumberedListWithBlockElement = () => {
   return (
     <ClientContext>
       <CanvasWrapper>
