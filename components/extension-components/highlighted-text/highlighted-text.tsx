@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { Paragraph, ParagraphProps } from "@bit/bit.base-ui.text.paragraph";
+import { Paragraph, ParagraphProps } from "@bit/bit.test-scope.ui.paragraph";
 import styles from "./highlighted-text.module.scss";
 
 export type HighlightedTextProps = {} & ParagraphProps;
