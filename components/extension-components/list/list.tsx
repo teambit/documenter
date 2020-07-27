@@ -27,7 +27,7 @@ type ListProps = {
 export function List({className, itemClass, children, element, spacing, ...rest}: ListProps) {
   const Element = element || 'ul';
   return (
-    <Element {...rest} className={classNames(styles.list, styles[spacing], className)}>
+    <Element {...rest} className={classNames(styles.list, styles[spacing || 'none'], className)}>
       {children.map((item) => <li className={classNames(styles.item, itemClass)}>{item}</li>)}
     </Element>
   );
