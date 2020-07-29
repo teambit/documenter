@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import copy from "copy-to-clipboard";
 import classNames from "classnames";
+import { CopiedMessage } from "@bit/bit.test-scope.ui.copied-message";
 import { Icon } from "@bit/bit.evangelist.elements.icon";
 import { Grid } from "@bit/bit.base-ui.layout.grid-component";
 import styles from "./copy-box.module.scss";
@@ -28,7 +29,7 @@ export function CopyBox({ children, className, ...rest }: CopyBoxProps) {
     <Grid colMd={2} className={classNames(styles.copyBox, className)} {...rest}>
       <div className={styles.leftSection}>{children}</div>
       <div className={styles.rightSection}>
-        <div className={classNames(styles.copiedMessage, {[styles.showMessage]: isCopied})}>Copied</div>
+      <CopiedMessage show={isCopied} className={styles.copiedMessage} />
         <button className={styles.button} onClick={handleClick}>
           <Icon className={styles.copyIcon} of="copy-cmp" />
         </button>
