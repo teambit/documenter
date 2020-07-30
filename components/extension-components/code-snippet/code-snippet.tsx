@@ -9,24 +9,30 @@ import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import styles from "./code-snippet.module.scss";
 
-type AnchorProps = {
+type CodeSnippetProps = {
   /**
-   * specifies the anchor link to the section
+   * the code string to show and to be copied to clipboard
    */
   codeString: string;
+  /**
+   * a class to override the highlighter class
+   */
   frameClass?: string;
+  /**
+   * the theme to be used in the highlighter
+   */
   theme?: any;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
- * An anchor component with an icon for linking your docs
+ * A code snippet component
  */
 export function CodeSnippet({
   className,
   codeString,
   frameClass,
   theme,
-}: AnchorProps) {
+}: CodeSnippetProps) {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleClick = () => {
