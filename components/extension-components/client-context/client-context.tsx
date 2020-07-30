@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from 'classnames';
+import 'reset-css';
 import { Theme } from "@bit/bit.base-ui.theme.theme-provider";
 import sizes from "./sizes.module.scss";
 import global from './global.module.scss'; // TODO - rename

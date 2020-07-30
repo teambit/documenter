@@ -64,6 +64,40 @@
         "exported": false,
         "lanes": []
     },
+    "ui/code-snippet": {
+        "files": [
+            {
+                "relativePath": "code-snippet.composition.tsx",
+                "test": false,
+                "name": "code-snippet.composition.tsx"
+            },
+            {
+                "relativePath": "code-snippet.docs.tsx",
+                "test": false,
+                "name": "code-snippet.docs.tsx"
+            },
+            {
+                "relativePath": "code-snippet.module.scss",
+                "test": false,
+                "name": "code-snippet.module.scss"
+            },
+            {
+                "relativePath": "code-snippet.tsx",
+                "test": false,
+                "name": "code-snippet.tsx"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/code-snippet",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "ui/consumable-link": {
         "files": [
             {
@@ -94,6 +128,40 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/extension-components/consumable-link",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "ui/copied-message": {
+        "files": [
+            {
+                "relativePath": "copied-message.composition.tsx",
+                "test": false,
+                "name": "copied-message.composition.tsx"
+            },
+            {
+                "relativePath": "copied-message.docs.tsx",
+                "test": false,
+                "name": "copied-message.docs.tsx"
+            },
+            {
+                "relativePath": "copied-message.module.scss",
+                "test": false,
+                "name": "copied-message.module.scss"
+            },
+            {
+                "relativePath": "copied-message.tsx",
+                "test": false,
+                "name": "copied-message.tsx"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/extension-components/copied-message",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -184,14 +252,9 @@
     "ui/highlighted-text": {
         "files": [
             {
-                "relativePath": "highlighted-test.composition.tsx",
+                "relativePath": "highlighted-text.composition.tsx",
                 "test": false,
-                "name": "highlighted-test.composition.tsx"
-            },
-            {
-                "relativePath": "highlighted-test.docs.tsx",
-                "test": false,
-                "name": "highlighted-test.docs.tsx"
+                "name": "highlighted-text.composition.tsx"
             },
             {
                 "relativePath": "highlighted-text.docs.tsx",

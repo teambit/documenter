@@ -28,7 +28,7 @@ export function List({className, itemClass, children, element, spacing, ...rest}
   const Element = element || 'ul';
   return (
     <Element {...rest} className={classNames(styles.list, styles[spacing || 'none'], className)}>
-      {children.map((item) => <li className={classNames(styles.item, itemClass)}>{item}</li>)}
+      {children.map((item, index) => <li key={index} className={classNames(styles.item, itemClass)}>{item}</li>)}
     </Element>
   );
 }
