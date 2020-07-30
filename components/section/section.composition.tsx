@@ -1,13 +1,13 @@
 import React from "react";
 import { Section } from "./section";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 export const Xxs = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <Section>
           section content
       </Section>
-    </ClientContext>
+    </ThemeContext>
   );
 };

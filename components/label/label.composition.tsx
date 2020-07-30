@@ -1,20 +1,20 @@
 import React from "react";
 import { Label } from "./label";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 export const LightLabel = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <Label>light label</Label>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const DarkLabel = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <Label style={{backgroundColor: '#414141', color: 'white'}}>dark label</Label>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

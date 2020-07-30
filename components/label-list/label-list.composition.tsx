@@ -1,6 +1,6 @@
 import React from "react";
 import { LabelList } from "./label-list";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 const list = [
   'light label',
@@ -10,8 +10,8 @@ const list = [
 
 export const LightLabel = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <LabelList>{list}</LabelList>
-    </ClientContext>
+    </ThemeContext>
   );
 };

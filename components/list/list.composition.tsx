@@ -1,5 +1,5 @@
 import React from "react";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 import { List } from "./list";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
 import { CopyBox } from "@bit/bit.test-scope.ui.copy-box/copy-box";
@@ -8,59 +8,59 @@ import { H5 } from "@bit/bit.test-scope.ui.heading";
 
 export const SimpleBulletList = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A simple list</H5>
         <List>{["one", "two", "three"]}</List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const SimpleBulletListWithSmallSpacing = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A simple list with small spacing</H5>
         <List spacing="sm">{["one", "two", "three"]}</List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const SimpleBulletListWithMediumSpacing = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A simple list with medium spacing</H5>
         <List spacing="md">{["one", "two", "three"]}</List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const SimpleBulletListWithLargeSpacing = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A simple list with large spacing</H5>
         <List spacing="lg">{["one", "two", "three"]}</List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const SimpleBulletListWithExtraLargeSpacing = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A simple list with extra large spacing</H5>
         <List spacing="xl">{["one", "two", "three"]}</List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const SimpleNumberedListWithInlineComponent = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
         <H5 style={{marginBottom: 30}}>A list with an inline component inside one of the items</H5>
         <List element="ol">
@@ -72,13 +72,13 @@ export const SimpleNumberedListWithInlineComponent = () => {
           ]}
         </List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const NumberedListWithNestedNumberedList = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
       <H5 style={{marginBottom: 30}}>A list an ordered list nested inside</H5>
         <List element="ol">
@@ -90,12 +90,12 @@ export const NumberedListWithNestedNumberedList = () => {
           ]}
         </List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const NumberedListWithNestedBulletList = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
       <H5 style={{marginBottom: 30}}>A list an un-ordered list nested inside</H5>
         <List element="ol">
@@ -107,12 +107,12 @@ export const NumberedListWithNestedBulletList = () => {
           ]}
         </List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const NumberedListWithBlockElement = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <CanvasWrapper>
       <H5 style={{marginBottom: 30}}>A list an element with a <HighlightedText>display: block</HighlightedText> inside</H5>
         <List element="ol">
@@ -124,7 +124,7 @@ export const NumberedListWithBlockElement = () => {
           ]}
         </List>
       </CanvasWrapper>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

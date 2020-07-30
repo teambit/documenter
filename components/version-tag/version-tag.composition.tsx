@@ -1,19 +1,19 @@
 import React from "react";
 import { VersionTag } from "./version-tag";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 // tODO - make text stay single line
 export const LatestTagExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
         <VersionTag></VersionTag>
-    </ClientContext>
+    </ThemeContext>
   )
 };
 export const VersionTagExample = () => {
     return (
-      <ClientContext>
+      <ThemeContext>
           <VersionTag>10.0.1</VersionTag>
-      </ClientContext>
+      </ThemeContext>
     )
 }

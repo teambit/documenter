@@ -1,24 +1,24 @@
 import React from "react";
 import { Anchor } from './anchor';
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 import { H1 } from "@bit/bit.test-scope.ui.heading";
 
 export const AnchorComponentWithHeading = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div style={{display: 'inline-flex', alignItems: 'center'}}>
         <H1 style={{marginRight: '10px'}}>example</H1>
         <Anchor href="example" />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const SimpleAnchor = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
         <Anchor href="example" />
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

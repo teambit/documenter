@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ConsumableLink } from "./consumable-link";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 const link = {
   title: "import using bit",
@@ -13,21 +13,21 @@ const link2 = {
 };
 export const BitImportExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div style={styles}>
         <ConsumableLink {...link} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const NpmInstallExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div style={styles}>
         <ConsumableLink {...link2} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

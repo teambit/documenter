@@ -1,35 +1,35 @@
 import React from "react";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 import { H1, H2, H3, H4, H5, H6 } from "./heading";
 
 export const HeadingXl = () => {
     return (
-  <ClientContext>
+  <ThemeContext>
     <H1 style={{whiteSpace: 'nowrap'}}>main header</H1>
-  </ClientContext>
+  </ThemeContext>
 )}
 export const HeadingLg = () => (
-  <ClientContext>
+  <ThemeContext>
     <H2 style={{whiteSpace: 'nowrap'}}>main header</H2>
-  </ClientContext>
+  </ThemeContext>
 )
 export const HeadingMd = () => (
-  <ClientContext>
+  <ThemeContext>
     <H3 style={{whiteSpace: 'nowrap'}}>main header</H3>
-  </ClientContext>
+  </ThemeContext>
 )
 export const HeadingSm = () => (
-  <ClientContext>
+  <ThemeContext>
     <H4 style={{whiteSpace: 'nowrap'}}>main header</H4>
-  </ClientContext>
+  </ThemeContext>
 )
 export const HeadingXs = () => (
-  <ClientContext>
+  <ThemeContext>
     <H5 style={{whiteSpace: 'nowrap'}}>main header</H5>
-  </ClientContext>
+  </ThemeContext>
 )
 export const HeadingXxs = () => (
-  <ClientContext>
+  <ThemeContext>
     <H6 style={{whiteSpace: 'nowrap'}}>main header</H6>
-  </ClientContext>
+  </ThemeContext>
 );

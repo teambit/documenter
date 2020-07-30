@@ -1,6 +1,6 @@
 import React from "react";
 import { CodeSnippet } from "./code-snippet";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (
@@ -12,7 +12,7 @@ const codeString = `export function Anchor(props: AnchorProps) {
 
 export const CodeSnippetExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div
         style={{
           display: "inline-flex",
@@ -22,6 +22,6 @@ export const CodeSnippetExample = () => {
       >
         <CodeSnippet codeString={codeString} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };

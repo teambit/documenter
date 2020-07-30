@@ -1,14 +1,14 @@
 import React from "react";
 import { Separator } from "./separator";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 // tODO - make text stay single line
 export const SeapartorExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div >
       <Separator style={{width: '100%'}} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };

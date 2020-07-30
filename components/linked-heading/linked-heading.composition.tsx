@@ -1,25 +1,25 @@
 import React from "react";
 import { LinkedHeading } from "./linked-heading";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 export const Large = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <LinkedHeading size='xl' link="link">large</LinkedHeading>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const Default = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <LinkedHeading link="link">default</LinkedHeading>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const Small = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <LinkedHeading size='xs' link="link">small</LinkedHeading>
-    </ClientContext>
+    </ThemeContext>
   );
 };

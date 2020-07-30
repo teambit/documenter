@@ -5,11 +5,11 @@ import { Theme } from "@bit/bit.base-ui.theme.theme-provider";
 import sizes from "./sizes.module.scss";
 import global from './global.module.scss'; // TODO - rename
 
-type ClientContextProps = {
+type ThemeContextProps = {
   children: JSX.Element;
 };
 
-export function ClientContext({ children, ...rest }: ClientContextProps) {
+export function ThemeContext({ children, ...rest }: ThemeContextProps) {
   return (
       <Theme {...rest} className={classNames(sizes.heading, global.overrides)}>
         {/* // dev link for icons */}

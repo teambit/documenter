@@ -1,14 +1,14 @@
 import React from "react";
 import { Table } from "./table";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 export const PropertyTableExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Table headings={tableData.headings} rows={tableData.rows} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CopiedMessage } from "./copied-message";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 import { Icon } from "@bit/bit.evangelist.elements.icon";
 import { H5 } from "@bit/bit.test-scope.ui.heading/heading";
 
@@ -14,11 +14,11 @@ const codeString = `export function Anchor(props: AnchorProps) {
 
 export const CopiedMessageExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div style={{position: 'relative'}}>
         <CopiedMessage show={true} style={{top: '-10px', right: '-20px'}} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const HiddenCopiedMessageExample = () => {
@@ -29,7 +29,7 @@ export const HiddenCopiedMessageExample = () => {
     setTimeout(() => setIsCopied(false), 2000);
   };
   return (
-    <ClientContext>
+    <ThemeContext>
       <div style={{position: 'relative', width: 200}}>
       <H5>Click icon to copy</H5>
       <Icon onClick={handleClick} of="copy-cmp" />
@@ -37,7 +37,7 @@ export const HiddenCopiedMessageExample = () => {
         style={{top: 23, right: 120}} 
         />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

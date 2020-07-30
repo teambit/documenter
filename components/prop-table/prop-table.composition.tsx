@@ -1,16 +1,16 @@
 import React from "react";
 import { PropTable } from "./prop-table";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 // tODO - make text stay single line
 export const PropertyTableExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div >
       <PropTable rows={tableData.rows} />
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 

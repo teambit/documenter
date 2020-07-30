@@ -1,71 +1,71 @@
 import React from "react";
 import { Paragraph } from "./paragraph";
 import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 // tODO - make text stay single line
 
 export const ParagraphXxl = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.xxl}>xxl text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const ParagraphXl = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.xl}>xl text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const ParagraphLg = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.lg}>lg text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const ParagraphMd = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.md}>md text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const ParagraphSm = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.sm}>sm text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 export const ParagraphXs = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.xs}>xs text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const ParagraphXxs = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
       <div>
         <Paragraph size={PossibleSizes.xxs}>xxs text</Paragraph>
       </div>
-    </ClientContext>
+    </ThemeContext>
   );
 };

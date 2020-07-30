@@ -1,25 +1,25 @@
 import React from "react";
-import { ClientContext } from "@bit/bit.test-scope.theme.client-context";
+import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 import { CopyBox } from "./copy-box";
 
 export const WideCopyBoxExample = () => {
     
   return (
-    <ClientContext>
+    <ThemeContext>
         <CopyBox style={styles}>
             npm install @bit.bit.test-scope.copy-box
         </CopyBox>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
 export const NarrowCopyBoxExample = () => {
   return (
-    <ClientContext>
+    <ThemeContext>
         <CopyBox style={styles2}>
             npm install @bit.bit.test-scope.copy-box2
         </CopyBox>
-    </ClientContext>
+    </ThemeContext>
   );
 };
 
