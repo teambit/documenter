@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import { PossibleSizes } from "@teambit.base-ui.theme.sizes";
-import { Grid } from "@teambit.base-ui.layout.grid-component";
+import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
+import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
 import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
 import { ColNumber } from "@bit/bit.test-scope.ui.table/table";
 import { TableColumn } from "@bit/bit.test-scope.ui.table-column";

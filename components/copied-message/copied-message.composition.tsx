@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CopiedMessage } from "./copied-message";
 import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
-import { Icon } from "@teambit.evangelist.elements.icon";
+import { Icon } from "@teambit/evangelist-temp.elements.icon";
 import { H5 } from "@bit/bit.test-scope.ui.heading/heading";
 
 const codeString = `export function Anchor(props: AnchorProps) {

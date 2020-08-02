@@ -1,6 +1,6 @@
 import React from "react";
 import { Paragraph } from "./paragraph";
-import { PossibleSizes } from "@teambit.base-ui.theme.sizes";
+import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
 import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 // tODO - make text stay single line

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { H3 } from '@bit/bit.test-scope.ui.heading';
-import { PossibleSizes } from '@teambit.base-ui.theme.sizes';
+import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
 import { Anchor } from '@bit/bit.test-scope.ui.anchor';
 import styles from './linked-heading.module.scss';
 

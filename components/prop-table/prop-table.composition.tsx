@@ -1,6 +1,5 @@
 import React from "react";
 import { PropTable } from "./prop-table";
-import { PossibleSizes } from "@teambit.base-ui.theme.sizes";
 import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
 
 // tODO - make text stay single line
