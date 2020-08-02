@@ -23,7 +23,7 @@ To keep a consistent look to the site, headers come in a limited set of sizes.
 While each header corresponds to a default font-size, it can be overridden using the size prop:
 
 ```tsx
-import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { PossibleSizes } from '@teambit.base-ui.theme.sizes';
 
 <H2 size={PossibleSizes.md}>A smaller h2</H2>
 ```

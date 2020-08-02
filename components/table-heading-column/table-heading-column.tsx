@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { H5 } from "@bit/bit.test-scope.ui.heading";
-import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
+import { PossibleSizes } from "@teambit.base-ui.theme.sizes";
 import styles from "./table-heading-column.module.scss";
 
 export type TableHeadingColumnProps = {} & React.HTMLAttributes<HTMLDivElement>;

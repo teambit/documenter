@@ -1,8 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import { Paragraph as BaseParagraph } from "@bit/bit.base-ui.text.paragraph";
+import { Paragraph as BaseParagraph } from "@teambit.base-ui.text.paragraph";
 import styles from "./paragraph.module.scss";
-import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
+import { PossibleSizes } from "@teambit.base-ui.theme.sizes";
 
 /**
  * a paragraph component

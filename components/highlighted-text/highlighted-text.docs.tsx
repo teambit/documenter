@@ -1,5 +1,5 @@
 import React from 'react';
-import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { PossibleSizes } from '@teambit.base-ui.theme.sizes';
 import { HighlightedText } from './highlighted-text';
 import { LargeText, SmallText } from './highlighted-text.composition';
 
