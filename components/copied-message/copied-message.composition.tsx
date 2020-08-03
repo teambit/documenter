@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CopiedMessage } from "./copied-message";
 import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 import { Icon } from "@teambit/evangelist-temp.elements.icon";
-import { H5 } from "@teambit/documenter-temp.ui.heading/heading";
+import { H5 } from "@teambit/documenter-temp.ui.heading";
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (

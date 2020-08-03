@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
 import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
 import { HighlightedText } from "@teambit/documenter-temp.ui.highlighted-text";
-import { ColNumber } from "@teambit/documenter-temp.ui.table/table";
+import { ColNumber } from "@teambit/documenter-temp.ui.table";
 import { TableColumn } from "@teambit/documenter-temp.ui.table-column";
 import styles from "./table-row.module.scss";
 
