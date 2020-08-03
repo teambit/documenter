@@ -1,0 +1,123 @@
+importers:
+  .:
+    dependencies:
+      '@types/classnames': 2.2.10
+      '@types/react': 16.9.43
+      react: 16.13.1
+    devDependencies:
+      classnames: 2.2.6
+    specifiers:
+      '@types/classnames': ^2.2.10
+      '@types/react': ^16.9.43
+      classnames: ^2.2.6
+      react: ^16.13.1
+  components/anchor:
+    specifiers: {}
+  components/code-snippet:
+    specifiers: {}
+  components/consumable-link:
+    specifiers: {}
+  components/copied-message:
+    specifiers: {}
+  components/copy-box:
+    specifiers: {}
+  components/heading:
+    specifiers: {}
+  components/highlighted-text:
+    specifiers: {}
+  components/label:
+    specifiers: {}
+  components/label-list:
+    specifiers: {}
+  components/linked-heading:
+    specifiers: {}
+  components/list:
+    specifiers: {}
+  components/paragraph:
+    specifiers: {}
+  components/prop-table:
+    specifiers: {}
+  components/section:
+    specifiers: {}
+  components/separator:
+    specifiers: {}
+  components/sub-title:
+    specifiers: {}
+  components/table:
+    specifiers: {}
+  components/table-column:
+    specifiers: {}
+  components/table-heading-column:
+    specifiers: {}
+  components/table-heading-row:
+    specifiers: {}
+  components/table-row:
+    specifiers: {}
+  components/theme-context:
+    specifiers: {}
+  components/version-tag:
+    specifiers: {}
+lockfileVersion: 5.1
+packages:
+  /@types/classnames/2.2.10:
+    dev: false
+    resolution:
+      integrity: sha512-1UzDldn9GfYYEsWWnn/P4wkTlkZDH7lDb0wBMGbtIQc9zXEQq7FlKBdZUn6OBqD8sKZZ2RQO2mAjGpXiDGoRmQ==
+  /@types/prop-types/15.7.3:
+    dev: false
+    resolution:
+      integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+  /@types/react/16.9.43:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      csstype: 2.6.13
+    dev: false
+    resolution:
+      integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==
+  /classnames/2.2.6:
+    dev: true
+    resolution:
+      integrity: sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+  /csstype/2.6.13:
+    dev: false
+    resolution:
+      integrity: sha512-ul26pfSQTZW8dcOnD2iiJssfXw0gdNVX9IJDH/X3K5DGPfj+fUYe3kB+swUY6BF3oZDxaID3AJt+9/ojSAE05A==
+  /js-tokens/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+  /loose-envify/1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+  /object-assign/4.1.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
+  /prop-types/15.7.2:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+    resolution:
+      integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  /react-is/16.13.1:
+    dev: false
+    resolution:
+      integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+  /react/16.13.1:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==

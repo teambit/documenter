@@ -24,19 +24,16 @@
      * set the default directory when there is no matching for the component in the components array.
      **/
     "defaultDirectory": "components",
-    /**
-    * set the default structure of components in your project.
-    **/
-    "components": [
-      {
-        "defaultScope": "ui",
-        "directory": "base"
-      },
-      {
-        "defaultScope": "extensions",
-        "directory": "extensions"
+
+    "extensions": {
+      "@teambit/dependency-resolver": {
+        "policy": {
+          "devDependencies": {
+            "@types/react": "16.9.43"
+          }
+        }
       }
-    ]
+    }
   },
   /**
    * main configuration for component dependency resolution.
@@ -47,7 +44,7 @@
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "npm",
+    "packageManager": "@teambit/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -63,7 +60,12 @@
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
     */
-    "extraArgs": []
+    "extraArgs": [],
+    "policy": {
+      "peerDependencies": {
+        "react": "^16.12.0"
+      }
+    }
   },
 
   /**
