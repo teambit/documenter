@@ -1,6 +1,6 @@
 import React from "react";
 import { CodeSnippet } from "./code-snippet";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (

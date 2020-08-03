@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ConsumableLink } from "./consumable-link";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 
 const link = {
   title: "import using bit",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import copy from "copy-to-clipboard";
 import classNames from "classnames";
-import { CopiedMessage } from "@bit/bit.test-scope.ui.copied-message";
+import { CopiedMessage } from "@teambit/documenter-temp.ui.copied-message";
 import { Icon } from "@teambit/evangelist-temp.elements.icon";
 import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
 import styles from "./copy-box.module.scss";

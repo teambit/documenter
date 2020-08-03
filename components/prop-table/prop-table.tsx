@@ -1,6 +1,6 @@
 import React from "react";
-import { Table } from "@bit/bit.test-scope.ui.table";
-import { RowType } from "@bit/bit.test-scope.ui.table-row";
+import { Table } from "@teambit/documenter-temp.ui.table";
+import { RowType } from "@teambit/documenter-temp.ui.table-row";
 
 export type TableProps = {
   /**

@@ -1,6 +1,6 @@
 import React from "react";
 import { Label } from "./label";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 
 export const LightLabel = () => {
   return (

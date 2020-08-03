@@ -1,7 +1,7 @@
 import React from "react";
 import { Anchor } from './anchor';
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
-import { H1 } from "@bit/bit.test-scope.ui.heading";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { H1 } from "@teambit/documenter-temp.ui.heading";
 
 export const AnchorComponentWithHeading = () => {
   return (

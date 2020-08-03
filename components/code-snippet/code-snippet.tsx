@@ -3,7 +3,7 @@ import classNames from "classnames";
 import copy from "copy-to-clipboard";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { Icon } from "@teambit/evangelist-temp.elements.icon";
-import { CopiedMessage } from "@bit/bit.test-scope.ui.copied-message";
+import { CopiedMessage } from "@teambit/documenter-temp.ui.copied-message";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 // import { xcode } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 

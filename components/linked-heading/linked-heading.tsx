@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import { H3 } from '@bit/bit.test-scope.ui.heading';
+import { H3 } from '@teambit/documenter-temp.ui.heading';
 import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
-import { Anchor } from '@bit/bit.test-scope.ui.anchor';
+import { Anchor } from '@teambit/documenter-temp.ui.anchor';
 import styles from './linked-heading.module.scss';
 
 export type LinkedHeadingProps = {

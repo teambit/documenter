@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { H5 } from "@bit/bit.test-scope.ui.heading";
+import { H5 } from "@teambit/documenter-temp.ui.heading";
 import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
 import styles from "./table-heading-column.module.scss";
 

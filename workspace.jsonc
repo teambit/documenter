@@ -19,24 +19,32 @@
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    "defaultScope": "bit.test-scope",
+    "defaultScope": "teambit2.documenter-temp",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
     "defaultDirectory": "components",
-    /**
-    * set the default structure of components in your project.
-    **/
-    "components": [
-      {
-        "defaultScope": "ui",
-        "directory": "base"
+    "extensions": {
+      "@teambit/dependency-resolver": {
+        "policy": {
+          "devDependencies": {
+            "react": "-"
+          },
+          "peerDependencies": {
+            "react": "^16.0.0"
+          }
+        }
       },
-      {
-        "defaultScope": "extensions",
-        "directory": "extensions"
+      "@teambit/pkg": {
+        "packageJson": {
+          "name": "@teambit/documenter-temp.{name}"
+        }
+      },
+      "@teambit/envs": {
+        "env": "@teambit/react",
+        "config": {}
       }
-    ]
+    }
   },
   /**
    * main configuration for component dependency resolution.
@@ -84,18 +92,6 @@
       //     "tester": "bit.envs/tester/jest"
       //   }
       // }
-    },
-    "ui/*": {
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
-    },
-    "theme/*": {
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
     }
   }
 }
