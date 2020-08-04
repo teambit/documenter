@@ -55,7 +55,7 @@
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "npm",
+    "packageManager": "@teambit/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -71,7 +71,32 @@
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
     */
-    "extraArgs": []
+    "extraArgs": [],
+    "policy": {
+      "dependencies": {
+        "reset-css": "^5.0.1",
+        "@teambit/base-ui-temp.constants.storage": "^0.0.11",
+        "@teambit/base-ui-temp.layout.breakpoints": "^0.0.11",
+        "@teambit/base-ui-temp.layout.grid-component": "^0.0.11",
+        "@teambit/base-ui-temp.text.heading": "^0.0.11",
+        "@teambit/base-ui-temp.text.muted-text": "^0.0.11",
+        "@teambit/base-ui-temp.text.paragraph": "^0.0.11",
+        "@teambit/base-ui-temp.text.themed-text": "^0.0.11",
+        "@teambit/base-ui-temp.theme.colors": "^0.0.11",
+        "@teambit/base-ui-temp.theme.sizes": "^0.0.11",
+        "@teambit/base-ui-temp.theme.theme-provider": "^0.0.11",
+        "@teambit/evangelist-temp.elements.button": "^0.0.1",
+        "@teambit/evangelist-temp.elements.heading": "^0.0.1",
+        "@teambit/evangelist-temp.elements.icon": "^0.0.1",
+        "@teambit/evangelist-temp.elements.image": "^0.0.1",
+        "@teambit/evangelist-temp.input.input": "^0.0.1",
+        "copy-to-clipboard": "^3.3.1",
+        "react-syntax-highlighter": "^13.0.0"
+      },
+      // "peerDependencies": {
+      //   "react": "^16.12.0"
+      // }
+    }
   },
 
   /**
@@ -90,6 +115,22 @@
       //   "config": {
       //     "compiler": "bit.envs/compiler/typescript",
       //     "tester": "bit.envs/tester/jest"
+      //   }
+      // }
+    },
+    "theme/*": {
+      // "@teambit/dependency-resolver": {
+      //   "policy": {
+      //     "dependencies": {
+      //       "@teambit/base-ui-temp.theme.theme-provider": "^0.0.10"
+      //     },
+      //     "devDependencies": {
+      //       "@types/react": "16.9.43",
+      //       "react": "-"
+      //     },
+      //     "peerDependencies": {
+      //       "react": "^16.0.0"
+      //     }
       //   }
       // }
     }

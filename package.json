@@ -2,6 +2,9 @@
   "dependencies": {
     "@babel/preset-env": "^7.10.1",
     "@babel/preset-react": "^7.10.1",
+    "@graphql-modules/core": "^0.7.17",
+    "@pnpm/store-connection-manager": "^0.3.23",
+    "@svgr/webpack": "^5.4.0",
     "@teambit/base-ui-temp.constants.storage": "^0.0.11",
     "@teambit/base-ui-temp.layout.breakpoints": "^0.0.11",
     "@teambit/base-ui-temp.layout.grid-component": "^0.0.11",
@@ -17,8 +20,6 @@
     "@teambit/evangelist-temp.elements.icon": "^0.0.1",
     "@teambit/evangelist-temp.elements.image": "^0.0.1",
     "@teambit/evangelist-temp.input.input": "^0.0.1",
-    "@graphql-modules/core": "^0.7.17",
-    "@svgr/webpack": "^5.4.0",
     "@types/node": "^14.0.6",
     "babel-plugin-named-asset-import": "^0.3.6",
     "classnames": "^2.2.6",
