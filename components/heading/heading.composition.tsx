@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 import { H1, H2, H3, H4, H5, H6 } from "./heading";
 
 export const HeadingXl = () => {

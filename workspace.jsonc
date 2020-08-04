@@ -19,19 +19,30 @@
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    "defaultScope": "bit.test-scope",
+    "defaultScope": "teambit2.documenter-temp",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
     "defaultDirectory": "components",
-
     "extensions": {
       "@teambit/dependency-resolver": {
         "policy": {
           "devDependencies": {
-            "@types/react": "16.9.43"
+            "react": "-"
+          },
+          "peerDependencies": {
+            "react": "^16.0.0"
           }
         }
+      },
+      "@teambit/pkg": {
+        "packageJson": {
+          "name": "@teambit/documenter-temp.{name}"
+        }
+      },
+      "@teambit/envs": {
+        "env": "@teambit/react",
+        "config": {}
       }
     }
   },
@@ -44,7 +55,7 @@
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "@teambit/pnpm",
+    "packageManager": "npm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -60,12 +71,7 @@
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
     */
-    "extraArgs": [],
-    "policy": {
-      "peerDependencies": {
-        "react": "^16.12.0"
-      }
-    }
+    "extraArgs": []
   },
 
   /**
@@ -86,18 +92,6 @@
       //     "tester": "bit.envs/tester/jest"
       //   }
       // }
-    },
-    "ui/*": {
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
-    },
-    "theme/*": {
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
     }
   }
 }

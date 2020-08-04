@@ -1,10 +1,10 @@
 import React from "react";
 import classNames from "classnames";
-import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
-import { Grid } from "@bit/bit.base-ui.layout.grid-component";
-import { CopyBox } from "@bit/bit.test-scope.ui.copy-box";
+import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
+import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
+import { CopyBox } from "@teambit/documenter-temp.ui.copy-box";
+import { Paragraph } from "@teambit/base-ui-temp.text.paragraph";
 import styles from "./consumable-link.module.scss";
-import { Paragraph } from "@bit/bit.base-ui.text.paragraph";
 
 
 export type ConsumableLinkProps = {

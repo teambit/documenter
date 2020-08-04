@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { CopiedMessage } from "./copied-message";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
-import { Icon } from "@bit/bit.evangelist.elements.icon";
-import { H5 } from "@bit/bit.test-scope.ui.heading/heading";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { Icon } from "@teambit/evangelist-temp.elements.icon";
+import { H5 } from "@teambit/documenter-temp.ui.heading";
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (

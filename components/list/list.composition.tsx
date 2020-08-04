@@ -1,9 +1,9 @@
 import React from "react";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 import { List } from "./list";
-import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
-import { CopyBox } from "@bit/bit.test-scope.ui.copy-box/copy-box";
-import { H5 } from "@bit/bit.test-scope.ui.heading";
+import { HighlightedText } from "@teambit/documenter-temp.ui.highlighted-text";
+import { CopyBox } from "@teambit/documenter-temp.ui.copy-box";
+import { H5 } from "@teambit/documenter-temp.ui.heading";
 
 
 export const SimpleBulletList = () => {
