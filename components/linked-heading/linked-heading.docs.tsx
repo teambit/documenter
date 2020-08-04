@@ -1,6 +1,6 @@
 import React from 'react';
-import { Paragraph } from '@bit/bit.test-scope.ui.paragraph';
-import { Section } from '@bit/bit.test-scope.ui.section';
+import { Paragraph } from '@teambit/documenter-temp.ui.paragraph';
+import { Section } from '@teambit/documenter-temp.ui.section';
 import { LinkedHeading } from './linked-heading';
 
 export default () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HighlightedText } from './highlighted-text';
-import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
 
 export const LargeText = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Separator } from "./separator";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 
 // tODO - make text stay single line
 export const SeapartorExample = () => {

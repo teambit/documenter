@@ -1,10 +1,10 @@
 import React from "react";
 import classNames from "classnames";
-import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
-import { Grid } from "@bit/bit.base-ui.layout.grid-component";
-import { HighlightedText } from "@bit/bit.test-scope.ui.highlighted-text";
-import { ColNumber } from "@bit/bit.test-scope.ui.table/table";
-import { TableColumn } from "@bit/bit.test-scope.ui.table-column";
+import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
+import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
+import { HighlightedText } from "@teambit/documenter-temp.ui.highlighted-text";
+import { ColNumber } from "@teambit/documenter-temp.ui.table";
+import { TableColumn } from "@teambit/documenter-temp.ui.table-column";
 import styles from "./table-row.module.scss";
 
 export type DefaultValueProp = {

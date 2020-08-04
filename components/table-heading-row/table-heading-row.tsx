@@ -1,8 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import { Grid } from "@bit/bit.base-ui.layout.grid-component";
-import { ColNumber } from "@bit/bit.test-scope.ui.table/table";
-import { HeadingColumn } from "@bit/bit.test-scope.ui.table-heading-column";
+import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
+import { ColNumber } from "@teambit/documenter-temp.ui.table";
+import { HeadingColumn } from "@teambit/documenter-temp.ui.table-heading-column";
 import styles from "./table-heading-row.module.scss";
 
 export type HeadingRowProps = {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import copy from "copy-to-clipboard";
 import classNames from "classnames";
-import { CopiedMessage } from "@bit/bit.test-scope.ui.copied-message";
-import { Icon } from "@bit/bit.evangelist.elements.icon";
-import { Grid } from "@bit/bit.base-ui.layout.grid-component";
+import { CopiedMessage } from "@teambit/documenter-temp.ui.copied-message";
+import { Icon } from "@teambit/evangelist-temp.elements.icon";
+import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
 import styles from "./copy-box.module.scss";
 
 export type CopyBoxProps = {
@@ -11,7 +11,7 @@ export type CopyBoxProps = {
    * specify the link to be copied to your clipboard
    */
   children: string;
-} & React.HTMLAttributes<HTMLDivElement>; // TODO - export GridProps in '@bit/bit.base-ui.layout.grid-component' and place here
+} & React.HTMLAttributes<HTMLDivElement>; // TODO - export GridProps in '@teambit/base-ui-temp.layout.grid-component' and place here
 
 /**
  *  A UI component that allows copying a link to the clipboard

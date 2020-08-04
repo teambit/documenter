@@ -1,7 +1,6 @@
 import React from "react";
 import { Label } from "./label";
-import { PossibleSizes } from "@bit/bit.base-ui.theme.sizes";
-import { ThemeContext } from "@bit/bit.test-scope.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 
 export const LightLabel = () => {
   return (
@@ -18,14 +17,3 @@ export const DarkLabel = () => {
   );
 };
 
-// export function SmallText() {
-//   return (
-//     <HighlightedText element="p" size={PossibleSizes.sm}>
-//       Small highlighted text.
-//     </HighlightedText>
-//   );
-// }
-
-// SmallText.canvas = {
-//   width: 300,
-// };
