@@ -117,22 +117,6 @@
       //     "tester": "bit.envs/tester/jest"
       //   }
       // }
-    },
-    "theme/*": {
-      // "@teambit/dependency-resolver": {
-      //   "policy": {
-      //     "dependencies": {
-      //       "@teambit/base-ui-temp.theme.theme-provider": "^0.0.10"
-      //     },
-      //     "devDependencies": {
-      //       "@types/react": "16.9.43",
-      //       "react": "-"
-      //     },
-      //     "peerDependencies": {
-      //       "react": "^16.0.0"
-      //     }
-      //   }
-      // }
     }
   }
 }
