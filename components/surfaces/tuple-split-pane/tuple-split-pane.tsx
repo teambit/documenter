@@ -7,7 +7,7 @@ import {Pane} from '@teambit/base-ui-temp.surfaces.split-pane';
 import { FatSplitter } from '@teambit/base-ui-temp.surfaces.fat-splitter';
 
 type Props = {
-	ratio?: number;
+	ratio?: number | string;
 	max?: number;
 	min?: number;
 	layout: Layout;

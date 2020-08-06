@@ -1,8 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 
-import Splitter from '../splitter';
-import { SplitterProps } from '../splitter';
+import Splitter from '@teambit/base-ui-temp.surfaces.splitter';
+import { SplitterProps } from '@teambit/base-ui-temp.surfaces.splitter';
 
 import styles from './fat-splitter.module.scss';
 

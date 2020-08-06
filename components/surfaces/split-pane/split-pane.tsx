@@ -5,7 +5,7 @@ import { SplitApi } from './types';
 
 
 type SplitPaneProps = {
-	ratio?: number;
+	ratio: number | string;
 	max?: number;
 	min?: number;
 	layout: Layout;
@@ -22,24 +22,25 @@ type SplitPaneState = {
 };
 
 export default class SplitPane extends PureComponent<SplitPaneProps, SplitPaneState> {
-	containerRef = React.createRef<HTMLDivElement>();
+	containerRef = React.createRef<HTMLDivElement | null>()
 
 	constructor(props: SplitPaneProps) {
 		super(props);
-		console.log("containerRef", this.containerRef)
+		// console.log("containerRef", this.containerRef)
 		const { ratio = 38 } = props;
-		this.state = { isDragging: false, sampledRatio: ratio };
+		// TODO - pass ratio to state with calculatePixelRatio
+		this.state = { isDragging: false, sampledRatio: 38 };
 	}
 
 	componentWillReceiveProps(nextProps: SplitPaneProps) {
 		const prevProps = this.props;
 		if (prevProps.ratio !== nextProps.ratio && nextProps.ratio !== undefined) {
-			this.setState({ sampledRatio: nextProps.ratio });
+			this.setState({sampledRatio: this.calculatePixelRatio(nextProps.ratio)})
 		}
 	}
 
 	componentDidMount() {
-		console.log("containerRef", this.containerRef)
+		this.setState({sampledRatio: this.calculatePixelRatio(this.props.ratio)})
 		document.addEventListener('mousemove', this.handleMouseMove);
 		document.addEventListener('mouseup', this.handleDragEnded);
 		document.addEventListener('mouseenter', this.handleMouseEnter);
@@ -69,6 +70,20 @@ export default class SplitPane extends PureComponent<SplitPaneProps, SplitPaneSt
 	handleDragStarted = () => {
 		this.setState({ isDragging: true });
 	};
+
+	calculatePixelRatio = (ratio: string | number) => {
+		if(typeof ratio === 'number') return ratio;
+		// TODO - extract to const
+		if(!this.containerRef.current) return 38;
+		// TODO - handle ratio which is not translatable to a number
+		const pixelRatio = +ratio.replace('px', '');
+		const nextRatio = pixelToRatio({
+			layout: this.props.layout,
+			size: pixelRatio,
+			element: this.containerRef.current
+		})
+		return nextRatio
+	}
 
 	handleDragEnded = () => {
 		if (!this.state.isDragging) return;
@@ -154,7 +169,7 @@ export default class SplitPane extends PureComponent<SplitPaneProps, SplitPaneSt
 		const ratio = this.actualRatio();
 
 		const draggingClass = isDragging ? 'split-pane-dragging' : '';
-		console.log("child", children)
+
 		const renderedChildren = children({
 			isDragging,
 			ratio,
@@ -183,25 +198,46 @@ function ratioFromCoordinates({
 	layout: Layout;
 	element: HTMLDivElement;
 }) {
+	
+	const boundingRect = element.getBoundingClientRect();
+	const { left, top } = boundingRect;
+
+	var size = 0;
+	if (layout.includes('row')) {
+		size = clientX - left;
+	} else if (layout.includes('column')) {
+		size = clientY - top;
+	} else {
+		return undefined;
+	}
+	return pixelToRatio({layout, size, element})
+}
+
+export function limitToRange(min: number, number: number, max: number) {
+	return Math.max(min, Math.min(number, max));
+}
+
+function pixelToRatio({
+	layout,
+	size,
+	element,
+}: {
+	layout: Layout;
+	size: number;
+	element: HTMLDivElement;
+}) {
 	const boundingRect = element.getBoundingClientRect();
 	const { height, left, top, width } = boundingRect;
 
 	var totalSize = 1;
-	var size = 0;
 
 	if (layout.includes('row')) {
 		totalSize = width;
-		size = clientX - left;
 	} else if (layout.includes('column')) {
 		totalSize = height;
-		size = clientY - top;
 	} else {
 		return undefined;
 	}
 
 	return (size / totalSize) * 100;
-}
-
-export function limitToRange(min: number, number: number, max: number) {
-	return Math.max(min, Math.min(number, max));
 }
