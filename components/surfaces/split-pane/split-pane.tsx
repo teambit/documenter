@@ -18,11 +18,11 @@ type SplitPaneState = {
 	/**
 	 * @description represents the actual ratio the user chose when dragging
 	 */
-	sampledRatio: number;
+	sampledRatio?: number;
 };
 
 export default class SplitPane extends PureComponent<SplitPaneProps, SplitPaneState> {
-	containerRef = React.createRef<HTMLDivElement | null>()
+	containerRef = React.createRef<HTMLDivElement>()
 
 	constructor(props: SplitPaneProps) {
 		super(props);
@@ -40,7 +40,7 @@ export default class SplitPane extends PureComponent<SplitPaneProps, SplitPaneSt
 	}
 
 	componentDidMount() {
-		this.setState({sampledRatio: this.calculatePixelRatio(this.props.ratio)})
+		this.setState({sampledRatio: this.calculatePixelRatio(this.props.ratio || 38)})
 		document.addEventListener('mousemove', this.handleMouseMove);
 		document.addEventListener('mouseup', this.handleDragEnded);
 		document.addEventListener('mouseenter', this.handleMouseEnter);
@@ -144,7 +144,7 @@ export default class SplitPane extends PureComponent<SplitPaneProps, SplitPaneSt
 
 		const { sampledRatio } = this.state;
 
-		var ratio = sampledRatio;
+		var ratio = sampledRatio || 38;
 		ratio = limitToRange(min, ratio, max);
 
 		if (layout.includes('first')) {

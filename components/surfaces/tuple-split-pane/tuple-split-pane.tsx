@@ -1,5 +1,5 @@
 import React, { ReactNode, ComponentType, PureComponent } from 'react';
-import { Layout } from '@bit/bit.rendering.constants.layouts';
+import { Layout } from '@teambit/base-ui-temp.layout.split-pane-layout';
 
 import SplitPane, { SplitApi } from '@teambit/base-ui-temp.surfaces.split-pane';
 import { SplitterProps } from '@teambit/base-ui-temp.surfaces.splitter/splitter-props';
@@ -43,7 +43,7 @@ export class TupleSplitPane extends PureComponent<Props> {
 		const [firstChild, secondChild] = children;
 
 		return (
-			<SplitPane layout={layout} min={min} max={max} ratio={ratio}>
+			<SplitPane layout={layout} min={min} max={max} ratio={ratio || 38}>
 				{({ isDragging, ratio, startDrag }: SplitApi) => (
 					<>
 						<Pane size={ratio}>

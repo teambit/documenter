@@ -1,4 +1,4 @@
-import { Layout } from '@bit/bit.rendering.constants.layouts';
+import { Layout } from '@teambit/base-ui-temp.layout.split-pane-layout';
 
 export type SplitterProps = {
 	layout: Layout;
