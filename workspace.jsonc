@@ -75,6 +75,9 @@
     "policy": {
       "dependencies": {
         "reset-css": "^5.0.1",
+        "classnames": "^2.2.6",
+        "@types/classnames": "^2.2.10",
+        "@types/react": "16.9.43",
         "@teambit/base-ui-temp.constants.storage": "^0.0.11",
         "@teambit/base-ui-temp.layout.breakpoints": "^0.0.11",
         "@teambit/base-ui-temp.layout.grid-component": "^0.0.11",
