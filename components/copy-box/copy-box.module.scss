@@ -7,14 +7,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 9px 11px;
+  min-width: 80px;
 
   .leftSection {
     user-select: all;
-    // overflow: scroll;
     white-space: pre;
     overflow: hidden;
     text-overflow: ellipsis;
-    // margin-right: 20px;
   }
   .copiedMessage {
     top: 1px;
@@ -31,11 +30,10 @@
 .rightSection {
   display: flex;
   position: relative;
-  padding-left: 15px;
 }
 
 .copyIcon {
-  font-size: 18px;
+  font-size: var(--p-lg);
 }
 
 
