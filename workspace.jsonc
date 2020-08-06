@@ -1,8 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/
-{
+**/{
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -19,7 +18,7 @@
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    "defaultScope": "teambit2.documenter-temp",
+     "defaultScope": "teambit2.base-ui-temp",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
@@ -37,7 +36,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/documenter-temp.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       },
       "@teambit/envs": {
@@ -73,7 +72,6 @@
     */
     "extraArgs": []
   },
-
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
