@@ -13,38 +13,13 @@
     **/
     "name": "documenter",
     /**
-     * applies only on bit.dev. configure the main owner of your workspace.
-    **/
-    // "defaultOwner": "teambit",
-    /**
      * set the default scope when there is no matching for the component in the components array.
      **/
     "defaultScope": "teambit2.documenter-temp",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
-    "defaultDirectory": "components",
-    "extensions": {
-      "@teambit/dependency-resolver": {
-        "policy": {
-          "devDependencies": {
-            "react": "-"
-          },
-          "peerDependencies": {
-            "react": "^16.0.0"
-          }
-        }
-      },
-      "@teambit/pkg": {
-        "packageJson": {
-          "name": "@teambit/documenter-temp.{name}"
-        }
-      },
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
-    }
+    "defaultDirectory": "components"
   },
   /**
    * main configuration for component dependency resolution.
@@ -73,6 +48,9 @@
     */
     "extraArgs": [],
     "policy": {
+      /** DevDependendies are defined by the type of file that imports the dependency.
+       * This is not a part of the policy.
+      **/
       "dependencies": {
         "reset-css": "^5.0.1",
         "classnames": "^2.2.6",
@@ -95,10 +73,7 @@
         "@teambit/evangelist-temp.input.input": "^0.0.1",
         "copy-to-clipboard": "^3.3.1",
         "react-syntax-highlighter": "^13.0.0"
-      },
-      // "peerDependencies": {
-      //   "react": "^16.12.0"
-      // }
+      }
     }
   },
 
@@ -112,14 +87,16 @@
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
     // **/
-    "extensions/*": {
-      // "Environments": {
-      //   "env": "@teambit/generic",
-      //   "config": {
-      //     "compiler": "bit.envs/compiler/typescript",
-      //     "tester": "bit.envs/tester/jest"
-      //   }
-      // }
+    "*": {
+      "@teambit/pkg": {
+        "packageJson": {
+          "name": "@teambit/documenter-temp.{name}"
+        }
+      },
+      "@teambit/envs": {
+        "env": "@teambit/react",
+        "config": {}
+      }
     }
   }
 }

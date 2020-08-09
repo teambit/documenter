@@ -16,13 +16,13 @@ importers:
       '@teambit/evangelist-temp.elements.icon': 0.0.1
       '@teambit/evangelist-temp.elements.image': 0.0.1
       '@teambit/evangelist-temp.input.input': 0.0.1
+      '@types/classnames': 2.2.10
       classnames: 2.2.6
       copy-to-clipboard: 3.3.1
-      react-syntax-highlighter: 13.2.1
+      react-syntax-highlighter: 13.3.1
       reset-css: 5.0.1
     devDependencies:
-      '@types/classnames': 2.2.10
-      '@types/react': 16.9.44
+      '@types/react': 16.9.45
     specifiers:
       '@teambit/base-ui-temp.constants.storage': ^0.0.11
       '@teambit/base-ui-temp.layout.breakpoints': ^0.0.11
@@ -40,10 +40,10 @@ importers:
       '@teambit/evangelist-temp.elements.image': ^0.0.1
       '@teambit/evangelist-temp.input.input': ^0.0.1
       '@types/classnames': ^2.2.10
-      '@types/react': ^16.9.44
+      '@types/react': ^16.9.45
       classnames: ^2.2.6
       copy-to-clipboard: ^3.3.1
-      react-syntax-highlighter: ^13.2.1
+      react-syntax-highlighter: ^13.3.1
       reset-css: ^5.0.1
   components/anchor:
     specifiers: {}
@@ -406,7 +406,7 @@ packages:
     resolution:
       integrity: sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
   /@types/classnames/2.2.10:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-1UzDldn9GfYYEsWWnn/P4wkTlkZDH7lDb0wBMGbtIQc9zXEQq7FlKBdZUn6OBqD8sKZZ2RQO2mAjGpXiDGoRmQ==
   /@types/color-name/1.1.1:
@@ -434,13 +434,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
-  /@types/react/16.9.44:
+  /@types/react/16.9.45:
     dependencies:
       '@types/prop-types': 15.7.3
       csstype: 3.0.2
     dev: true
     resolution:
-      integrity: sha512-BtLoJrXdW8DVZauKP+bY4Kmiq7ubcJq+H/aCpRfvPF7RAT3RwR73Sg8szdc2YasbAlWBDrQ6Q+AFM0KwtQY+WQ==
+      integrity: sha512-vv950slTF5UZ5eDOf13b8qC1SD4rTvkqg3HfaUKzr17U97oeJZAa+dUaIHn0QoOJflNTIt6Pem9MmapULs9dkA==
   /@types/yargs-parser/15.0.0:
     dev: false
     resolution:
@@ -716,6 +716,12 @@ packages:
       clipboard: 2.0.6
     resolution:
       integrity: sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
+  /prismjs/1.21.0:
+    dev: false
+    optionalDependencies:
+      clipboard: 2.0.6
+    resolution:
+      integrity: sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
   /property-information/5.5.0:
     dependencies:
       xtend: 4.0.2
@@ -726,18 +732,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-  /react-syntax-highlighter/13.2.1:
+  /react-syntax-highlighter/13.3.1:
     dependencies:
       '@babel/runtime': 7.11.2
       highlight.js: 10.1.2
       lowlight: 1.14.0
-      prismjs: 1.20.0
+      prismjs: 1.21.0
       refractor: 3.0.0
     dev: false
     peerDependencies:
       react: '>= 0.14.0'
     resolution:
-      integrity: sha512-O/AF/ll4I3Dp+2WuKbnF5yKG4b1BUncqcpTW6MIBDJPr2eGKqlNGS3Nv+lyCFtAIHx8N+/ktti8qH14Q5VjjcA==
+      integrity: sha512-GfIduBKlc7oebsEU4dpJPo04kVTEhSxe9F9hGWrzYVgGssJ06Kmf74LVOPp6pzj0Tj5pr5en8SKI8H2al4XeRA==
   /refractor/3.0.0:
     dependencies:
       hastscript: 5.1.2
