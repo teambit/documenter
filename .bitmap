@@ -98,7 +98,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/consumable-link@0.0.3": {
+    "teambit2.documenter-temp/ui/consumable-link@0.0.4": {
         "files": [
             {
                 "relativePath": "consumable-link.composition.tsx",
@@ -166,7 +166,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/copy-box@0.0.3": {
+    "teambit2.documenter-temp/ui/copy-box@0.0.4": {
         "files": [
             {
                 "relativePath": "copy-box.composition.tsx",
@@ -385,7 +385,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/list@0.0.3": {
+    "teambit2.documenter-temp/ui/list@0.0.4": {
         "files": [
             {
                 "relativePath": "index.ts",
