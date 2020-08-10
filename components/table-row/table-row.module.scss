@@ -16,6 +16,7 @@
 .mobileTitle {
     display: flex;
     flex-basis: 50%;
+    min-width: 110px;
     color: var(--text-muted);
     font-weight: bold;
     text-transform: uppercase;
