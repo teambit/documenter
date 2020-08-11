@@ -1,0 +1,31 @@
+.list {
+	list-style: revert;
+	list-style-position: inside;
+	&.sm {
+		> li {
+			margin: 5px 0;
+		}
+	}
+	&.md {
+		> li {
+			margin: 10px 0;
+		}
+	}
+	&.lg {
+		> li {
+			margin: 15px 0;
+		}
+	}
+	&.xl {
+		> li {
+			margin: 20px 0;
+		}
+	}
+}
+
+.item {
+	// not sure if the div should be included here
+	> ol, ul, div {
+		margin-left: 30px;
+	}
+}
