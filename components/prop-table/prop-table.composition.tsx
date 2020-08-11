@@ -17,24 +17,24 @@ const tableData = {
     rows: [
       {
         name: "heading",
-        type: "ElementType",
+        type: "string",
         description: "An element type to render as (string or function).",
         required: true,
         defaultValue: {value: "20 minutes"},
       },
       {
         name: "paragrapg",
-        type: "ElementType",
+        type: "string",
         description: "An element type to render.",
         required: true,
         defaultValue: {value: "20 minutes"},
       },
       {
         name: "as",
-        type: "ElementType",
+        type: "'h1' | 'h2' | 'h3'",
         description: "An element type to render.",
         required: true,
-        defaultValue: {value: "20 minutes"},
+        defaultValue: {value: "h1"},
       },
     ],
   };

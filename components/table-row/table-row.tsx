@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
 import { HighlightedText } from "@teambit/documenter-temp.ui.highlighted-text";
 import { ColNumber } from "@teambit/documenter-temp.ui.table";
@@ -50,10 +51,12 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
           return (
             <TableColumn key={index}>
               <div className={styles.mobileTitle}>{title}</div>
-              <div className={styles.name}>{row[title]}</div>
-              {row["required"] && (
-                <div className={styles.required}>(Required)</div>
-              )}
+              <div className={styles.columnContent}>
+                <div className={styles.name}>{row[title]}</div>
+                {row["required"] && (
+                  <div className={styles.required}>(Required)</div>
+                )}
+              </div>
             </TableColumn>
           );
         }
@@ -61,19 +64,22 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
           return (
             <TableColumn className={styles.typeColumn} key={index}>
               <div className={styles.mobileTitle}>{title}</div>
-              <HighlightedText size={PossibleSizes.xs} key={index} element="p">
+              <SyntaxHighlighter className={styles.highligted} theme={xcode}>
                 {row[title]}
-              </HighlightedText>
+              </SyntaxHighlighter>
             </TableColumn>
           );
         }
-        if(title === 'defaultValue') {
+        if (title === "defaultValue") {
           return (
             <TableColumn key={index}>
-            <div className={styles.mobileTitle}>{title}</div>
-            {row[title] && row[title]?.value}
-          </TableColumn>
-          )
+              <div className={styles.mobileTitle}>{title}</div>
+              {row[title] && row[title]?.value}
+            </TableColumn>
+          );
+        }
+        if (title === "description") {
+          return <TableColumn key={index}>{row[title]}</TableColumn>;
         }
         return (
           <TableColumn key={index}>

@@ -1,7 +1,6 @@
 
 .propRow {
-    border: 1px solid var(--border-color, var(--light-grey, #ededed));
-    border-radius: 5px;
+    border-bottom: 1px solid var(--border-color, var(--border-color, #ededed));
     margin-bottom: 8px;
     padding: 18px 20px;
 }
@@ -16,15 +15,24 @@
 
 .mobileTitle {
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 50%;
+    min-width: 110px;
+    color: var(--text-muted);
     font-weight: bold;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: var(--p-xxs);
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
 .column {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.columnContent {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -56,6 +64,11 @@
 }
 
 .typeColumn {
+    .highligted {
+        background: white !important;
+        padding: 0 !important;
+    }
+    
     @media screen and (min-width: 768px) {
         max-width: 150px;
     }
