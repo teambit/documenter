@@ -3,7 +3,6 @@ import classNames from "classnames";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
-import { HighlightedText } from "@teambit/documenter-temp.ui.highlighted-text";
 import { ColNumber } from "@teambit/documenter-temp.ui.table";
 import { TableColumn } from "@teambit/documenter-temp.ui.table-column";
 import styles from "./table-row.module.scss";
@@ -11,8 +10,8 @@ import styles from "./table-row.module.scss";
 export type DefaultValueProp = {
   value: string;
   computed?: boolean;
-  __typename?: string
-}
+  __typename?: string;
+};
 
 export type RowType = {
   name: string;
@@ -32,15 +31,14 @@ export type TableRowProps = {
    */
   row: RowType;
   /**
-   * the heading row, by which the row data is ordered 
+   * the heading row, by which the row data is ordered
    */
   headings: string[];
 };
 
-
 /**
- * 
- * Renders a row in the table according to the order of the headings. 
+ *
+ * Renders a row in the table according to the order of the headings.
  */
 export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
   return (
@@ -64,9 +62,11 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
           return (
             <TableColumn className={styles.typeColumn} key={index}>
               <div className={styles.mobileTitle}>{title}</div>
-              <SyntaxHighlighter className={styles.highligted} theme={xcode}>
-                {row[title]}
-              </SyntaxHighlighter>
+              <div className={styles.columnContent}>
+                <SyntaxHighlighter className={styles.highligted} theme={xcode}>
+                  {row[title]}
+                </SyntaxHighlighter>
+              </div>
             </TableColumn>
           );
         }
@@ -74,7 +74,9 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
           return (
             <TableColumn key={index}>
               <div className={styles.mobileTitle}>{title}</div>
-              {row[title] && row[title]?.value}
+              <div className={styles.columnContent}>
+                {row[title] && row[title]?.value}
+              </div>
             </TableColumn>
           );
         }
@@ -84,7 +86,7 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
         return (
           <TableColumn key={index}>
             <div className={styles.mobileTitle}>{title}</div>
-            {row[title]}
+            <div className={styles.columnContent}>{row[title]}</div>
           </TableColumn>
         );
       })}
