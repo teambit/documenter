@@ -93,10 +93,7 @@
           "name": "@teambit/documenter-temp.{name}"
         }
       },
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
+      "@teambit/react": {}
     }
   }
 }
