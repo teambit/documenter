@@ -1,8 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/
-{
+**/ {
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -71,12 +70,15 @@
         "@teambit/evangelist-temp.elements.icon": "^0.0.1",
         "@teambit/evangelist-temp.elements.image": "^0.0.1",
         "@teambit/evangelist-temp.input.input": "^0.0.1",
+        "@teambit/base-ui-temp.input.error": "^0.0.11",
+        "@teambit/base-ui-temp.css-components.roundness": "^0.0.11",
+        "prism-react-renderer": "^1.1.1",
+        "react-live": "^2.2.2",
         "copy-to-clipboard": "^3.3.1",
         "react-syntax-highlighter": "^13.0.0"
       }
     }
   },
-
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
