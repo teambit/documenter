@@ -1,6 +1,6 @@
-import React from "react";
-import { CodeSnippet } from "./code-snippet";
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import React from 'react';
+import { CodeSnippet } from './code-snippet';
+import { ThemeContext } from '@teambit/documenter-temp.theme.theme-context';
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (
@@ -15,12 +15,12 @@ export const CodeSnippetExample = () => {
     <ThemeContext>
       <div
         style={{
-          display: "inline-flex",
-          alignItems: "center",
-          maxWidth: "600px",
+          display: 'inline-flex',
+          alignItems: 'center',
+          maxWidth: '600px',
         }}
       >
-        <CodeSnippet codeString={codeString} />
+        <CodeSnippet>{codeString}</CodeSnippet>
       </div>
     </ThemeContext>
   );
