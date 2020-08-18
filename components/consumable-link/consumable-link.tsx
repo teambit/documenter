@@ -30,7 +30,7 @@ export function ConsumableLink({
   return (
     //TODO - fix copy box in small res
     <Grid colMd={2} className={classNames(styles.copyMethod, className)} {...rest}>
-      <Paragraph className={styles.copyTitle} size={PossibleSizes.sm}>
+      <Paragraph className={styles.copyTitle} size={PossibleSizes.xs}>
         {title}
       </Paragraph>
       <CopyBox className={styles.copyBox}>{link}</CopyBox>

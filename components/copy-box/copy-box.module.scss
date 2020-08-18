@@ -1,12 +1,13 @@
 .copyBox {
   border-radius: 6px;
-  font-size: 15px;
+  font-size: var(--p-xs);
   background: var(--bg-dent);
   border: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 11px;
+  padding: 0 11px;
+  height: 40px;
   min-width: 80px;
 
   .leftSection {
