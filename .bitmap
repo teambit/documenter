@@ -156,7 +156,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/consumable-link@0.0.5": {
+    "teambit2.documenter-temp/ui/consumable-link@0.0.6": {
         "files": [
             {
                 "relativePath": "consumable-link.composition.tsx",
@@ -224,7 +224,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/copy-box@0.0.5": {
+    "teambit2.documenter-temp/ui/copy-box@0.0.6": {
         "files": [
             {
                 "relativePath": "copy-box.composition.tsx",
@@ -341,7 +341,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/label-list@0.0.4": {
+    "teambit2.documenter-temp/ui/label-list@0.0.5": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -375,7 +375,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/label@0.0.4": {
+    "teambit2.documenter-temp/ui/label@0.0.5": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -443,7 +443,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.documenter-temp/ui/list@0.0.5": {
+    "teambit2.documenter-temp/ui/list@0.0.6": {
         "files": [
             {
                 "relativePath": "index.ts",
