@@ -31,7 +31,7 @@ export function PropTable({ rows, listViewResolution, showListView, ...rest }: T
   const [ref, { width }] = useDimensions();
   const debouncedSize = useDebounce(width, 300);
 
-  const isListView = showListView || +debouncedSize[0] <= listViewResolution;
+  const isListView = showListView || +debouncedSize[0] <= (listViewResolution || 0);
   
   // TODO - fix the initial render of mobile table
   return (

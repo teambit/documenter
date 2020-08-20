@@ -23,9 +23,10 @@ export type ParagraphProps = {
  *
  */
 export function Paragraph({ children, className, size, ...rest }: ParagraphProps) {
+  const paragraphSize = size ? PossibleSizes[size] : PossibleSizes.md;
   return (
     <BaseParagraph
-      size={PossibleSizes[size]}
+      size={paragraphSize}
       {...rest}
       className={classNames(styles.paragraph, className)}
     >
