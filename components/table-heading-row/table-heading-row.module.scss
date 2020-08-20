@@ -1,15 +1,13 @@
-
-
 .titleRow {
+  border-bottom: 1px solid var(--border-color, var(--border-color, #ededed));
+  padding: 18px 20px;
+  display: grid;
+  &.hide {
     display: none;
-    @media screen and (min-width: 768px) {
-        border-bottom: 1px solid var(--border-color, var(--border-color, #ededed));
-        padding: 18px 20px;
-        display: grid;
-    }
+  }
 }
 
 .titleCol {
-    text-transform: capitalize;
-    color: var(--text-muted);
+  text-transform: capitalize;
+  color: var(--text-muted);
 }

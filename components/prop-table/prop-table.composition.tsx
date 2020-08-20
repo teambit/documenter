@@ -6,9 +6,7 @@ import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 export const PropertyTableExample = () => {
   return (
     <ThemeContext>
-      <div >
-      <PropTable rows={tableData.rows} />
-      </div>
+      <PropTable rows={tableData.rows} listViewResolution={700} />
     </ThemeContext>
   );
 };
@@ -20,14 +18,27 @@ const tableData = {
         type: "string",
         description: "An element type to render as (string or function).",
         required: true,
-        defaultValue: {value: "20 minutes"},
+        defaultValue: {value: "h1"},
       },
       {
-        name: "paragrapg",
-        type: "string",
-        description: "An element type to render.",
+        name: "size",
+        type: "number",
+        description: "size of the element",
         required: true,
-        defaultValue: {value: "20 minutes"},
+        defaultValue: {value: "20"},
+      },
+      {
+        name: "options",
+        type: "Array",
+        description: "and array of override options",
+        required: false,
+      },
+      {
+        name: "columns",
+        type: "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12",
+        description: "number of columns to render",
+        required: true,
+        defaultValue: {value: "4"},
       },
       {
         name: "as",

@@ -3,7 +3,6 @@ import classNames from "classnames";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
-import { ColNumber } from "@teambit/documenter-temp.ui.table";
 import { TableColumn } from "@teambit/documenter-temp.ui.table-column";
 import styles from "./table-row.module.scss";
 
@@ -21,6 +20,8 @@ export type RowType = {
   defaultValue?: DefaultValueProp;
 };
 
+export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
+
 export type TableRowProps = {
   /**
    * the number of columns to show in the row
@@ -34,21 +35,41 @@ export type TableRowProps = {
    * the heading row, by which the row data is ordered
    */
   headings: string[];
+  /**
+   * display mobile styles
+   */
+  isListView?: boolean;
 };
 
 /**
  *
  * Renders a row in the table according to the order of the headings.
  */
-export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
+export function TableRow({
+  row,
+  colNumber = 4,
+  headings,
+  isListView,
+}: TableRowProps) {
   return (
-    <Grid colMd={colNumber} className={classNames(styles.propRow)}>
+    <Grid
+      col={colNumber}
+      className={classNames(styles.propRow, {
+        [styles.singleColumn]: isListView,
+      })}
+    >
       {headings.map((title, index) => {
         if (title === "required") return;
         if (title === "name") {
           return (
             <TableColumn key={index}>
-              <div className={styles.mobileTitle}>{title}</div>
+              <div
+                className={classNames(styles.mobileTitle, {
+                  [styles.show]: isListView,
+                })}
+              >
+                {title}
+              </div>
               <div className={styles.columnContent}>
                 <div className={styles.name}>{row[title]}</div>
                 {row["required"] && (
@@ -61,22 +82,34 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
         if (title === "type") {
           return (
             <TableColumn className={styles.typeColumn} key={index}>
-              <div className={styles.mobileTitle}>{title}</div>
-              <div className={styles.columnContent}>
-                <SyntaxHighlighter className={styles.highligted} theme={xcode}>
-                  {row[title]}
-                </SyntaxHighlighter>
+              <div
+                className={classNames(styles.mobileTitle, {
+                  [styles.show]: isListView,
+                })}
+              >
+                {title}
               </div>
+              <SyntaxHighlighter
+                theme={xcode}
+                language="javascript"
+                className={styles.highlighted}
+              >
+                {row[title]}
+              </SyntaxHighlighter>
             </TableColumn>
           );
         }
         if (title === "defaultValue") {
           return (
             <TableColumn key={index}>
-              <div className={styles.mobileTitle}>{title}</div>
-              <div className={styles.columnContent}>
-                {row[title] && row[title]?.value}
+              <div
+                className={classNames(styles.mobileTitle, {
+                  [styles.show]: isListView,
+                })}
+              >
+                {title}
               </div>
+              {row[title] && row[title]?.value}
             </TableColumn>
           );
         }
@@ -85,8 +118,14 @@ export function TableRow({ row, colNumber = 4, headings }: TableRowProps) {
         }
         return (
           <TableColumn key={index}>
-            <div className={styles.mobileTitle}>{title}</div>
-            <div className={styles.columnContent}>{row[title]}</div>
+            <div
+              className={classNames(styles.mobileTitle, {
+                [styles.show]: isListView,
+              })}
+            >
+              {title}
+            </div>
+            {row[title]}
           </TableColumn>
         );
       })}

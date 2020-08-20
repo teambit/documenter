@@ -6,7 +6,7 @@ export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TOD
 
 export type TableProps = {
   /**
-   * the heading row, by which the table data is ordered 
+   * the heading row, by which the table data is ordered
    */
   headings: string[];
   /**
@@ -17,25 +17,41 @@ export type TableProps = {
    * the number of columns to show in the table
    */
   colNumber?: ColNumber; // TODO - export Grid ColProps and use here
-};
+  /**
+   * display mobile styles
+   */
+  isListView?: boolean;
+} & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 /**
- * A table component that renders the properties of a component. The headings array determines how the data in the table is ordered. 
+ * A table component that renders the properties of a component. The headings array determines how the data in the table is ordered.
  * The number of columns is 4 by default.
  */
-export function Table({ headings, rows, colNumber }: TableProps) {
+export function Table({ headings, rows, colNumber, isListView, ...rest }: TableProps) {
   const cols = colNumber || 4;
   return (
-    <div>
-      <HeadingRow colNumber={cols} headings={headings} />
+    <div {...rest}>
+      <HeadingRow
+        isListView={isListView}
+        colNumber={cols}
+        headings={headings}
+      />
       {/* TODO - consider adding an id to use as a key instead of index */}
       {rows.map((row: RowType, index: number) => {
-        return <TableRow key={index} headings={headings} row={row} colNumber={cols} />;
+        return (
+          <TableRow
+            key={index}
+            isListView={isListView}
+            headings={headings}
+            row={row}
+            colNumber={cols}
+          />
+        );
       })}
     </div>
   );
 }
 
 Table.defaultProps = {
-  colNumber: 4
-}
+  colNumber: 4,
+};

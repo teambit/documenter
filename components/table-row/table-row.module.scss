@@ -3,26 +3,21 @@
     border-bottom: 1px solid var(--border-color, var(--border-color, #ededed));
     margin-bottom: 8px;
     padding: 18px 20px;
-}
-
-.titleRow {
-    display: none;
-    @media screen and (min-width: 768px) {
-        padding: 18px 20px;
-        display: grid;
+    &.singleColumn {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 .mobileTitle {
-    display: flex;
-    flex-basis: 50%;
-    min-width: 110px;
-    color: var(--text-muted);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: var(--p-xxs);
-    @media screen and (min-width: 768px) {
-        display: none;
+    display: none;
+    &.show {
+        display: flex;
+        flex-basis: 50%;
+        min-width: 110px;
+        color: var(--text-muted);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: var(--p-xxs);
     }
 }
 
@@ -64,12 +59,12 @@
 }
 
 .typeColumn {
-    .highligted {
+    .highlighted {
         background: white !important;
         padding: 0 !important;
-    }
-    
-    @media screen and (min-width: 768px) {
-        max-width: 150px;
+        white-space: pre-wrap;
+        > code > span {
+            color: rgb(57, 115, 0);
+        }
     }
 }
