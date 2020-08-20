@@ -6,7 +6,14 @@ import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 export const PropertyTableExample = () => {
   return (
     <ThemeContext>
-      <PropTable rows={tableData.rows} listViewResolution={700} />
+      <PropTable rows={tableData.rows} />
+    </ThemeContext>
+  );
+};
+export const PropertyTableListView = () => {
+  return (
+    <ThemeContext>
+      <PropTable rows={tableData.rows} listViewResolution={700} showListView />
     </ThemeContext>
   );
 };
@@ -50,3 +57,6 @@ const tableData = {
     ],
   };
   
+  PropertyTableExample.canvas = {
+    minWidth: '800px'
+  }
