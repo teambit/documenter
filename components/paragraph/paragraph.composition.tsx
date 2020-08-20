@@ -1,6 +1,5 @@
 import React from "react";
 import { Paragraph } from "./paragraph";
-import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
 import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 
 // tODO - make text stay single line
@@ -9,7 +8,7 @@ export const ParagraphXxl = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.xxl}>xxl text</Paragraph>
+        <Paragraph size="xxl">xxl text</Paragraph>
       </div>
     </ThemeContext>
   );
@@ -18,7 +17,7 @@ export const ParagraphXl = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.xl}>xl text</Paragraph>
+        <Paragraph size="xl">xl text</Paragraph>
       </div>
     </ThemeContext>
   );
@@ -27,7 +26,7 @@ export const ParagraphLg = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.lg}>lg text</Paragraph>
+        <Paragraph size="lg">lg text</Paragraph>
       </div>
     </ThemeContext>
   );
@@ -36,7 +35,7 @@ export const ParagraphMd = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.md}>md text</Paragraph>
+        <Paragraph size="md">md text</Paragraph>
       </div>
     </ThemeContext>
   );
@@ -45,7 +44,7 @@ export const ParagraphSm = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.sm}>sm text</Paragraph>
+        <Paragraph size="sm">sm text</Paragraph>
       </div>
     </ThemeContext>
   );
@@ -54,7 +53,7 @@ export const ParagraphXs = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.xs}>xs text</Paragraph>
+        <Paragraph size="xs">xs text</Paragraph>
       </div>
     </ThemeContext>
   );
@@ -64,7 +63,7 @@ export const ParagraphXxs = () => {
   return (
     <ThemeContext>
       <div>
-        <Paragraph size={PossibleSizes.xxs}>xxs text</Paragraph>
+        <Paragraph size="xxs">xxs text</Paragraph>
       </div>
     </ThemeContext>
   );

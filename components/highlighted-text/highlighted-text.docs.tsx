@@ -1,5 +1,4 @@
 import React from 'react';
-import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
 import { HighlightedText } from './highlighted-text';
 import { LargeText, SmallText } from './highlighted-text.composition';
 
@@ -30,10 +29,10 @@ export const examples = [
     )
   },
   {
-    scope: { HighlightedText, PossibleSizes },
+    scope: { HighlightedText },
     // prettier-ignore
     code: (
-`<HighlightedText element='p' size='lg' size={PossibleSizes.sm}>
+`<HighlightedText element='p' size='sm'>
   Large highlighted text.
 </HighlightedText>`
     )

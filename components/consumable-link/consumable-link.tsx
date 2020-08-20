@@ -1,9 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
 import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
 import { CopyBox } from "@teambit/documenter-temp.ui.copy-box";
-import { Paragraph } from "@teambit/base-ui-temp.text.paragraph";
+import { Paragraph } from "@teambit/documenter-temp.ui.paragraph";
 import styles from "./consumable-link.module.scss";
 
 
@@ -30,7 +29,7 @@ export function ConsumableLink({
   return (
     //TODO - fix copy box in small res
     <Grid colMd={2} className={classNames(styles.copyMethod, className)} {...rest}>
-      <Paragraph className={styles.copyTitle} size={PossibleSizes.xs}>
+      <Paragraph className={styles.copyTitle} size="xs">
         {title}
       </Paragraph>
       <CopyBox className={styles.copyBox}>{link}</CopyBox>

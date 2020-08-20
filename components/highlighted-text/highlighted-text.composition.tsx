@@ -1,10 +1,9 @@
 import React from 'react';
 import { HighlightedText } from './highlighted-text';
-import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
 
 export const LargeText = () => {
   return (
-    <HighlightedText element='p' size={PossibleSizes.lg}>
+    <HighlightedText element='p' size="lg">
       Large highlighted text.
     </HighlightedText>
   );
@@ -12,7 +11,7 @@ export const LargeText = () => {
 
 export function SmallText() {
   return (
-    <HighlightedText element='p' size={PossibleSizes.sm}>
+    <HighlightedText element='p' size="sm">
       Small highlighted text.
     </HighlightedText>
   );

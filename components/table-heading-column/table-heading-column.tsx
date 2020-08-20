@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import { H5 } from "@teambit/documenter-temp.ui.heading";
-import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
 import styles from "./table-heading-column.module.scss";
 
 export type TableHeadingColumnProps = {} & React.HTMLAttributes<HTMLDivElement>;
@@ -15,7 +14,7 @@ export function HeadingColumn({ children, className, ...rest }: TableHeadingColu
     <div className={classNames(styles.headingColumn, className)} {...rest}>
       <H5
         className={classNames(styles.title)}
-        size={PossibleSizes.xxs}
+        size="xxs"
       >
         {children}
       </H5>

@@ -1,16 +1,15 @@
 import React from "react";
 import classNames from "classnames";
-
 import { HeadingProps, Heading } from "@teambit/base-ui-temp.text.heading";
-import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
-
 import sizeStyles from "./heading-sizes.module.scss";
 import styles from "./heading.module.scss";
 import margins from "./margins.module.scss";
 
+export type Sizes = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
+
 export type HeaderProps = {
   /** font-size for the header */
-  size?: PossibleSizes;
+  size?: Sizes;
 } & HeadingProps;
 
 /**

@@ -11,7 +11,7 @@ export type ParagraphProps = {
   /**
    * Font size (from a list of presets).
    */
-  size?: PossibleSizes;
+  size?: "xxs"| "xs"| "sm"| "md"| "lg"| "xl"| "xxl"
   /**
    * The underlying html element
    */
@@ -22,9 +22,10 @@ export type ParagraphProps = {
  * Paragraph component prototype. Accepts all properties of a native Paragraph element.
  *
  */
-export function Paragraph({ children, className, ...rest }: ParagraphProps) {
+export function Paragraph({ children, className, size, ...rest }: ParagraphProps) {
   return (
     <BaseParagraph
+      size={PossibleSizes[size]}
       {...rest}
       className={classNames(styles.paragraph, className)}
     >
