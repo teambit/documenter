@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import useDimensions from "react-use-dimensions";
 import { useDebounce } from "use-debounce";
 import { Table } from "@teambit/documenter-temp.ui.table";
@@ -26,15 +26,8 @@ export type TableProps = {
 export function PropTable({ rows, listViewResolution, ...rest }: TableProps) {
   const [ref, { width }] = useDimensions();
   const debouncedSize = useDebounce(width, 300);
-  // const [isInListView, setTableView] = useState(null);
 
   const showListView = +debouncedSize[0] <= listViewResolution;
-  // useEffect(() => {
-  //   console.log("width", width, listViewResolution)
-  //   console.log("showListView", showListView)
-  //   console.log("debouncedSize", debouncedSize[0])
-  //   showListView && setTableView(true);
-  // })
   
   // TODO - fix the initial render of mobile table
   return (
