@@ -1,12 +1,12 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/ {
+**/{
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
   **/
-  "@teambit/workspace": {
+  "teambit.bit/workspace": {
     /**
      * name of the workspace.
     **/
@@ -23,13 +23,13 @@
   /**
    * main configuration for component dependency resolution.
   **/
-  "@teambit/dependency-resolver": {
+  "teambit.bit/dependency-resolver": {
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "@teambit/pnpm",
+    "packageManager": "teambit.bit/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -79,11 +79,11 @@
         "react": "16.13.1",
         "react-dom": "16.13.1",
         "react-use-dimensions": "^1.2.1",
-        "use-debounce": "^3.4.3",
+        "use-debounce": "^3.4.3"
       }
     }
   },
-  "@teambit/react": {
+  "teambit.bit/react": {
     "reactVersion": "^16.0.0"
   },
   /**
@@ -91,18 +91,19 @@
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
   **/
-  "@teambit/variants": {
+  "teambit.bit/variants": {
     // /**
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
     // **/
     "*": {
-      "@teambit/pkg": {
+      "propagate": false,
+      "teambit.bit/pkg": {
         "packageJson": {
           "name": "@teambit/documenter-temp.{name}"
         }
       },
-      "@teambit/react": {}
+      "teambit.bit/react": {}
     }
   }
 }
