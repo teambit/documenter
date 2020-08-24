@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/ {
+**/{
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -79,7 +79,7 @@
         "react": "16.13.1",
         "react-dom": "16.13.1",
         "react-use-dimensions": "^1.2.1",
-        "use-debounce": "^3.4.3",
+        "use-debounce": "^3.4.3"
       }
     }
   },
