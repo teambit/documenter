@@ -97,6 +97,7 @@
     //  * this configuration applies the react extensions on all components the `ui` namespace.
     // **/
     "*": {
+      "propagate": false,
       "teambit.bit/pkg": {
         "packageJson": {
           "name": "@teambit/documenter-temp.{name}"
