@@ -100,7 +100,8 @@
       "propagate": false,
       "teambit.bit/pkg": {
         "packageJson": {
-          "name": "@teambit/documenter.{name}"
+          "name": "@teambit/documenter.{name}",
+          "private": false
         }
       },
       "teambit.bit/react": {}
