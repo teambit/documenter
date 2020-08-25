@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import { Paragraph as BaseParagraph } from "@teambit/base-ui-temp.text.paragraph";
-import { PossibleSizes } from "@teambit/base-ui-temp.theme.sizes";
+import { Paragraph as BaseParagraph } from "@teambit/base-ui.text.paragraph";
+import { PossibleSizes } from "@teambit/base-ui.theme.sizes";
 import styles from "./paragraph.module.scss";
 
 /**

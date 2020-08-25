@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
+import { Grid } from "@teambit/base-ui.layout.grid-component";
 import { CopyBox } from "@teambit/documenter-temp.ui.copy-box";
 import { Paragraph } from "@teambit/documenter-temp.ui.paragraph";
 import styles from "./consumable-link.module.scss";

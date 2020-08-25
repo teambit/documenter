@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { HeadingProps, Heading } from "@teambit/base-ui-temp.text.heading";
+import { HeadingProps, Heading } from "@teambit/base-ui.text.heading";
 import sizeStyles from "./heading-sizes.module.scss";
 import styles from "./heading.module.scss";
 import margins from "./margins.module.scss";
