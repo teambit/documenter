@@ -6,7 +6,7 @@ import SyntaxHighlighter, {
 } from 'react-syntax-highlighter';
 
 import { Icon } from '@teambit/evangelist.elements.icon';
-import { CopiedMessage } from '@teambit/documenter-temp.ui.copied-message';
+import { CopiedMessage } from '@teambit/documenter.ui.copied-message';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs/';
 
 import styles from './code-snippet.module.scss';

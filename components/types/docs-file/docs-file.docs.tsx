@@ -1,7 +1,7 @@
 import React from 'react';
 import { Abstract } from './docs-file';
-import { CodeSnippet } from '@teambit/documenter-temp.ui.code-snippet';
-import { H3 } from '@teambit/documenter-temp.ui.heading';
+import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
+import { H3 } from '@teambit/documenter.ui.heading';
 
 export const abstract: Abstract =
   'Defines how a docs file is constructed, and supplies type for each export';

@@ -1,8 +1,8 @@
 import React from "react";
 import useDimensions from "react-use-dimensions";
 import { useDebounce } from "use-debounce";
-import { Table } from "@teambit/documenter-temp.ui.table";
-import { RowType } from "@teambit/documenter-temp.ui.table-row";
+import { Table } from "@teambit/documenter.ui.table";
+import { RowType } from "@teambit/documenter.ui.table-row";
 
 export type TableProps = {
   /**

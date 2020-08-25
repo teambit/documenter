@@ -1,6 +1,6 @@
 import React from 'react';
-import { Paragraph } from '@teambit/documenter-temp.ui.paragraph';
-import { Section } from '@teambit/documenter-temp.ui.section';
+import { Paragraph } from '@teambit/documenter.ui.paragraph';
+import { Section } from '@teambit/documenter.ui.section';
 import { LinkedHeading } from './linked-heading';
 
 export default () => {

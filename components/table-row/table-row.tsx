@@ -3,7 +3,7 @@ import classNames from "classnames";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Grid } from "@teambit/base-ui.layout.grid-component";
-import { TableColumn } from "@teambit/documenter-temp.ui.table-column";
+import { TableColumn } from "@teambit/documenter.ui.table-column";
 import styles from "./table-row.module.scss";
 
 export type DefaultValueProp = {

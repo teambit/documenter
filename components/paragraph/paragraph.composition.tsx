@@ -1,6 +1,6 @@
 import React from "react";
 import { Paragraph } from "./paragraph";
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 
 // tODO - make text stay single line
 

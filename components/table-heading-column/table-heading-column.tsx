@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { H5 } from "@teambit/documenter-temp.ui.heading";
+import { H5 } from "@teambit/documenter.ui.heading";
 import styles from "./table-heading-column.module.scss";
 
 export type TableHeadingColumnProps = {} & React.HTMLAttributes<HTMLDivElement>;

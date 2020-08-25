@@ -1,6 +1,6 @@
 import React from "react";
 import { LabelList } from "./label-list";
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 
 const list = [
   'light label',

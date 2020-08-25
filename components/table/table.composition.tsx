@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "./table";
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 
 export const PropertyTableExample = () => {
   return (
