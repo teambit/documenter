@@ -6,7 +6,7 @@ import sizes from "./sizes.module.scss";
 import global from './global.module.scss'; // TODO - rename
 
 type ThemeContextProps = {
-  children: JSX.Element;
+  children: JSX.Element
 };
 
 export function ThemeContext({ children, ...rest }: ThemeContextProps) {
