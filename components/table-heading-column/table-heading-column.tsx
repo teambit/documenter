@@ -12,12 +12,11 @@ export function HeadingColumn({ children, className, ...rest }: TableHeadingColu
 
   return (
     <div className={classNames(styles.headingColumn, className)} {...rest}>
-      <H5
+      <div
         className={classNames(styles.title)}
-        size="xxs"
       >
         {children}
-      </H5>
+      </div>
     </div>
   );
 }

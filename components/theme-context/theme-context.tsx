@@ -14,9 +14,10 @@ export function ThemeContext({ children, ...rest }: ThemeContextProps) {
       <Theme {...rest} className={classNames(sizes.heading, global.overrides)}>
         {/* // dev link for icons */}
         {/* TODO - decide if icons link needs to be here or separated */}
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
         <link
           rel="stylesheet"
-          href="https://i.icomoon.io/public/9dc81da9ad/Bit/style.css"
+          href="https://i.icomoon.io/public/9dc81da9ad/Bit/style.css?SameSite=None"
         ></link>
         {children}
       </Theme>

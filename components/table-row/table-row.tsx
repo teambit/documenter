@@ -17,7 +17,7 @@ export type RowType = {
   type: string;
   description: string;
   required: boolean;
-  defaultValue?: DefaultValueProp;
+  default?: DefaultValueProp;
 };
 
 export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
@@ -99,7 +99,7 @@ export function TableRow({
             </TableColumn>
           );
         }
-        if (title === "defaultValue") {
+        if (title === "default") {
           return (
             <TableColumn key={index}>
               <div
@@ -109,7 +109,9 @@ export function TableRow({
               >
                 {title}
               </div>
-              {row[title] && row[title]?.value}
+              <span className={styles.default}>
+                {(row[title] && row[title]?.value) || "-"}
+              </span>
             </TableColumn>
           );
         }

@@ -38,7 +38,7 @@ export function PropTable({ rows, listViewResolution, showListView, ...rest }: T
     <div ref={ref}>
       <Table
         {...rest}
-        headings={["name", "type", "defaultValue", "description"]}
+        headings={["name", "type", "default", "description"]}
         rows={rows}
         isListView={isListView}
       />

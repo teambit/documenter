@@ -13,28 +13,28 @@ export const PropertyTableExample = () => {
 };
 
 const tableData = {
-  headings: ["name", "type", "defaultValue", "description"],
+  headings: ["name", "type", "default", "description"],
   rows: [
     {
       name: "heading",
       type: "ElementType",
       description: "An element type to render as (string or function).",
       required: true,
-      defaultValue: { value: "20 minutes" },
+      default: { value: "20 minutes" },
     },
     {
       name: "paragrapg",
       type: "ElementType",
       description: "An element type to render.",
       required: true,
-      defaultValue: { value: "20 minutes" },
+      default: { value: "20 minutes" },
     },
     {
       name: "as",
       type: "ElementType",
       description: "An element type to render.",
       required: true,
-      defaultValue: { value: "20 minutes" },
+      default: { value: "20 minutes" },
     },
   ],
 };
