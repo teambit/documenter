@@ -15,7 +15,7 @@ export const examples = [
         ThemeContext,
         useState
     },
-    title: "Using the Copied Message component.",
+    title: "Using the Copied Message component",
     description: "Use it to indicate when a text has been copied.",
     code: `
     () => {

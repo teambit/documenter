@@ -1,6 +1,7 @@
-export const labels = ['react', 'ui-component'];
 import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 import { CopyBox } from "./copy-box";
+
+export const labels = ['react', 'ui-component'];
 
 export const examples = [
     {
