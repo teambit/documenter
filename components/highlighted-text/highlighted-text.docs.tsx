@@ -4,37 +4,56 @@ import { LargeText, SmallText } from './highlighted-text.composition';
 
 export const labels = ['react', 'ui-component', 'text'];
 
-export default () => {
-  return (
-    <div>
-      Text can be rendered in many different sizes.
-      <br />
-      Large:
-      <LargeText />
-      <br />
-      Small:
-      <SmallText />
-    </div>
-  );
-};
-
 export const examples = [
   {
     scope: { HighlightedText },
-    // prettier-ignore
-    code: (
-`<HighlightedText element='p' size='lg'>
-  Large highlighted text.
-</HighlightedText>`
-    )
+    title: 'Using the Highlighted Text component',
+    description: "This component returns a highlighted text in the from of either a 'p', 'div' or 'span' element.",
+    code:
+`
+<>
+  This is a 
+  <HighlightedText element='p'>
+    element.
+  </HighlightedText>
+  This is a 
+  <HighlightedText element='div'>
+    div element. 
+  </HighlightedText>
+  This is a 
+  <HighlightedText element='span'>
+    span element. 
+  </HighlightedText>
+</>
+`
   },
   {
     scope: { HighlightedText },
-    // prettier-ignore
-    code: (
-`<HighlightedText element='p' size='sm'>
-  Large highlighted text.
-</HighlightedText>`
-    )
-  },
+    description: 'Choose one of seven available sizes from "xxs" to "xxl"',
+    code: `
+<>
+<HighlightedText size='xxs'>
+  XX-Small Text
+</HighlightedText>
+<HighlightedText size='xm'>
+  Small Text
+</HighlightedText>
+<HighlightedText size='sm'>
+  Small Text
+</HighlightedText>
+<HighlightedText size='md'>
+  Medium Text
+</HighlightedText>
+<HighlightedText size='lg'>
+  Small Text
+</HighlightedText>
+<HighlightedText size='xl'>
+  X-Large Text
+</HighlightedText>
+<HighlightedText size='xxl'>
+  XX-Large Text
+</HighlightedText>
+</>
+    `
+  }
 ];
