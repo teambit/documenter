@@ -10,7 +10,7 @@ export const examples = [
         ThemeContext
     },
     title: "Using the Subtitle component.",
-    description: `The subtitle component renders a "muted" extra-large text (a 'p' element).`,
+    description: `The subtitle component renders a "muted" extra-large text (as a 'p' element).`,
     code: `
 <ThemeContext>
     <Subtitle >

@@ -1,3 +1,4 @@
+import React from 'react';
 import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 import { CopyBox } from "./copy-box";
 
@@ -10,7 +11,12 @@ export const examples = [
         ThemeContext
     },
     title: "Using the CopyBox component.",
-    description: "CopyBox copies its (string) children to the clipboard. It should only be used for single-lines (for code-snippets, use the CodeSnippet component.) ",
+    description: (
+        <>
+            <p>CopyBox copies its (string) children to the clipboard.</p> 
+            <p>It should not be used for more than a single line. For code-snippets, use the CodeSnippet component, instead.</p>
+        </>
+        ),
     code: `
 <ThemeContext>
     <CopyBox style={{width: "600px"}} >

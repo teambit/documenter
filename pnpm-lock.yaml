@@ -52,8 +52,8 @@ importers:
       '@teambit/evangelist-temp.elements.image': ^0.0.1
       '@teambit/evangelist-temp.input.input': ^0.0.1
       '@types/classnames': ^2.2.10
-      '@types/jest': 26.0.10
-      '@types/react': ^16.9.43
+      '@types/jest': ^26.0.10
+      '@types/react': 16.9.43
       '@types/react-router-dom': ~5.1.5
       classnames: ^2.2.6
       copy-to-clipboard: ^3.3.1
@@ -622,7 +622,7 @@ packages:
   /chalk/3.0.0:
     dependencies:
       ansi-styles: 4.2.1
-      supports-color: 7.1.0
+      supports-color: 7.2.0
     engines:
       node: '>=8'
     resolution:
@@ -1231,10 +1231,18 @@ packages:
   /supports-color/7.1.0:
     dependencies:
       has-flag: 4.0.0
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
+  /supports-color/7.2.0:
+    dependencies:
+      has-flag: 4.0.0
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   /tiny-emitter/2.1.0:
     dev: false
     optional: true

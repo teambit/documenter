@@ -19,6 +19,11 @@
                 "name": "sizes.module.scss"
             },
             {
+                "relativePath": "theme-context.docs.tsx",
+                "test": false,
+                "name": "theme-context.docs.tsx"
+            },
+            {
                 "relativePath": "theme-context.tsx",
                 "test": false,
                 "name": "theme-context.tsx"

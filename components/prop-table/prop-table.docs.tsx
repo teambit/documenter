@@ -1,3 +1,4 @@
+import React from 'react';
 import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
 import { PropTable } from "./prop-table";
 
@@ -11,8 +12,12 @@ export const examples = [
     {
     scope,
     title: "Using the Prop Table component.",
-    description: `The Prop Table renders an array of objects. The objects' shape and the corresponding table headers, are not cutomizable.  
-    Manually populating the Prop Table is discouraged as it should only use the component's code as a source of truth (this ensures the data displayed is always up-to-date).`,
+    description: (
+        <>
+            <p>The Prop Table renders an array of objects. The objects' shape and the corresponding table headers, are not cutomizable.</p> <br/> 
+            <p>Manually populating the Prop Table is discouraged as it should only use the component's code as a source of truth (this ensures the data displayed is always up-to-date).</p>
+        </>
+    ),
     code: `
 () => {
     const data = [
