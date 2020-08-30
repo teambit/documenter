@@ -17,7 +17,7 @@ export const examples = [
             <List>
             {[
                 `The 'headings' array defines the table's headers and their order.`,
-                `The 'data' array [of objects] defines the data to populate the table. Each object key corresponds to a column header, with two exeptions:`,
+                `The 'data' array [of objects] defines the data to populate the table. Each object key corresponds to a column header, with two exceptions:`,
                 <List element='ol'>
                     {[
                         `'required' is appended to the value of the 'name' column (and does not occupy its own column)`,

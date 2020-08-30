@@ -8,7 +8,7 @@ export const examples = [
   {
     scope: { HighlightedText },
     title: 'Using the Highlighted Text component',
-    description: "This component returns a highlighted text in the from of either a 'p', 'div' or 'span' element.",
+    description: "This component returns a highlighted text in the form of either a 'p', 'div', or 'span' element.",
     code:
 `
 <>
@@ -32,27 +32,27 @@ export const examples = [
     description: 'Choose one of seven available sizes from "xxs" to "xxl"',
     code: `
 <>
-<HighlightedText size='xxs'>
-  XX-Small Text
-</HighlightedText>
-<HighlightedText size='xm'>
-  Small Text
-</HighlightedText>
-<HighlightedText size='sm'>
-  Small Text
-</HighlightedText>
-<HighlightedText size='md'>
-  Medium Text
-</HighlightedText>
-<HighlightedText size='lg'>
-  Small Text
-</HighlightedText>
-<HighlightedText size='xl'>
-  X-Large Text
-</HighlightedText>
-<HighlightedText size='xxl'>
-  XX-Large Text
-</HighlightedText>
+  <HighlightedText size='xxs'>
+    XX-Small Text
+  </HighlightedText>
+  <HighlightedText size='xm'>
+    Small Text
+  </HighlightedText>
+  <HighlightedText size='sm'>
+    Small Text
+  </HighlightedText>
+  <HighlightedText size='md'>
+    Medium Text
+  </HighlightedText>
+  <HighlightedText size='lg'>
+    Small Text
+  </HighlightedText>
+  <HighlightedText size='xl'>
+    X-Large Text
+  </HighlightedText>
+  <HighlightedText size='xxl'>
+    XX-Large Text
+  </HighlightedText>
 </>
     `
   }

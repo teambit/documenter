@@ -12,7 +12,7 @@ export const examples = [
         ThemeContext
     },
     title: "Using the Anchor component",
-    description: `The Anchor compoennt can only link to itslef. 
+    description: `The Anchor component can only link to itself. 
 Place it to either side of the title you wish to point to, to have it scroll to the same vertical point on the page.`,
     code: `
 <ThemeContext>

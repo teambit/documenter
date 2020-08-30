@@ -9,7 +9,7 @@ export const examples = [
     {
     scope,
     title: "Using the CopyBox component.",
-    description: "The List component recieves an array and renders a list. Choose between an ordered list and an unordered list.",
+    description: "The List component receives an array and renders a list. Choose between an ordered list and an unordered list.",
     code: `
 <ThemeContext>
 // Ordered list

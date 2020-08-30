@@ -14,7 +14,7 @@ export const examples = [
     title: "Using the Prop Table component.",
     description: (
         <>
-            <p>The Prop Table renders an array of objects. The objects' shape and the corresponding table headers, are not cutomizable.</p> <br/> 
+            <p>The Prop Table renders an array of objects. The objects' shape and the corresponding table headers are not customizable.</p> <br/> 
             <p>Manually populating the Prop Table is discouraged as it should only use the component's code as a source of truth (this ensures the data displayed is always up-to-date).</p>
         </>
     ),
