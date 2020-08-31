@@ -20,12 +20,19 @@
   padding: 8px;
   box-sizing: border-box;
   border-left: none;
+  @media screen and (max-width: 768px) {
+	border-left: 1px solid var(--error-color);
+  }
 }
 .editor {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   box-sizing: border-box;
   font-size: 11px;
+  @media screen and (max-width: 768px) {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 6px;
+  }
 }
 .previewBox {
   position: relative;
@@ -38,20 +45,32 @@
   height: 100%;
   box-sizing: border-box;
   border-left: none;
+  min-height: 100px;
+  min-width: 100px;
+  @media screen and (max-width: 768px) {
+    border-top-left-radius: 6px;
+	border-bottom-right-radius: 0;
+	border-left: 1px solid var(--border-color);
+  }
 }
 
 .playground {
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
   > div {
     flex-basis: 50%;
     &:first-child {
-	font-family: Roboto mono;
+	  font-family: Roboto mono;
+	  min-height: 100px;
+	  min-width: 100px;
       outline: none;
       flex-grow: 1;
-	  flex-basis: 100%;
-	  > textarea {
-		outline: none;
-	  }
+      flex-basis: 100%;
+      > textarea {
+        outline: none;
+      }
     }
   }
 }
