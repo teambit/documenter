@@ -52,6 +52,8 @@
        * This is not a part of the policy.
       **/
       "dependencies": {
+        "@teambit/base-ui.surfaces.split-pane.split-pane": "0.2.8",
+        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "0.2.0",
         "@teambit/base-ui.constants.storage": "^0.1.5",
         "@teambit/base-ui.css-components.roundness": "^0.1.5",
         "@teambit/base-ui.input.error": "^0.1.5",
@@ -100,7 +102,9 @@
     "*": {
       "propagate": false,
       "teambit.bit/pkg": {
-        "packageManagerPublishArgs": ["--access public"],
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
         "packageJson": {
           "name": "@teambit/documenter.{name}",
           "private": false

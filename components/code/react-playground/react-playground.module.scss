@@ -20,57 +20,74 @@
   padding: 8px;
   box-sizing: border-box;
   border-left: none;
-  @media screen and (max-width: 768px) {
-	border-left: 1px solid var(--error-color);
-  }
+}
+.editorWrapper {
+  overflow: auto !important;
+  max-height: 450px;
+}
+.leftPane {
+  max-width: fit-content;
+  min-width: 150px;
+  background-color: #282c34;
+  max-width: 90%;
 }
 .editor {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   box-sizing: border-box;
   font-size: 11px;
-  @media screen and (max-width: 768px) {
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 6px;
+  min-height: 100px;
+  width: fit-content;
+  // overflow: auto !important;
+  > textarea {
+    white-space: pre !important;
+    width: 100% !important;
+    outline: none;
+  }
+  > pre {
+    white-space: pre !important;
+    width: fit-content !important;
+  }
+  
+}
+.splitter {
+  background-color: #282c34;
+  > div {
+    border-radius: 0;
+    border: none;
   }
 }
-.previewBox {
+.rightPane {
   position: relative;
-}
-.preview {
+  overflow: auto;
+  min-height: 100px;
   border: 1px solid var(--border-color);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  border-left: none;
+}
+.previewBox {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.preview {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   border-left: none;
-  min-height: 100px;
-  min-width: 100px;
-  @media screen and (max-width: 768px) {
-    border-top-left-radius: 6px;
-	border-bottom-right-radius: 0;
-	border-left: 1px solid var(--border-color);
-  }
 }
 
 .playground {
   display: flex;
-  @media screen and (max-width: 768px) {
-    flex-direction: column-reverse;
-  }
+  overflow: hidden;
+  max-height: 450px;
+  width: 100%;
+  border-radius: 6px;
+  
   > div {
-    flex-basis: 50%;
-    &:first-child {
-	  font-family: Roboto mono;
-	  min-height: 100px;
-	  min-width: 100px;
-      outline: none;
-      flex-grow: 1;
-      flex-basis: 100%;
-      > textarea {
-        outline: none;
-      }
-    }
+    width: 100%;
   }
 }
