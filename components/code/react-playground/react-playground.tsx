@@ -26,13 +26,14 @@ export function Playground({ code, scope }: PlaygroundProps) {
   const [ref, { width }] = useDimensions();
   const debouncedSize = useDebounce(width, 300);
   const placement =
-    +debouncedSize[0] <= 1000 ? Layout.columnReverse : Layout.row;
+    +debouncedSize[0] <= 500 ? Layout.columnReverse : Layout.row;
+  const isInColumnView = placement === "column reverse";
 
   return (
     <LiveProvider code={code} scope={scope} theme={prismTheme}>
       <div ref={ref} className={styles.playground}>
         <SplitPane className={styles.main} size={"50%"} layout={placement}>
-          <Pane className={styles.leftPane}>
+          <Pane className={classNames(styles.codePane, isInColumnView && styles.column)}>
             <div className={styles.editorWrapper}>
               <LiveEditor
                 className={classNames(styles.editor)}
@@ -41,11 +42,10 @@ export function Playground({ code, scope }: PlaygroundProps) {
             </div>
           </Pane>
           <HoverSplitter className={styles.splitter}></HoverSplitter>
-          <Pane className={styles.rightPane}>
+          <Pane className={classNames(styles.previewPane, isInColumnView && styles.column)}>
             <div className={styles.previewBox}>
-              <LivePreview /> 
-              {/* //className={classNames(styles.preview)} /> */}
-              <LiveError className={classNames(errorClass, styles.error)} />
+              <LivePreview />
+              <LiveError className={classNames(errorClass, styles.error, isInColumnView && styles.column)} />
             </div>
           </Pane>
         </SplitPane>

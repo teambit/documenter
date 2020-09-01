@@ -20,16 +20,31 @@
   padding: 8px;
   box-sizing: border-box;
   border-left: none;
+  &.column {
+    border: 1px solid var(--error-color);
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 0;
+  }
 }
 .editorWrapper {
   overflow: auto !important;
   max-height: 450px;
+  
 }
-.leftPane {
+.codePane {
   max-width: fit-content;
   min-width: 150px;
   background-color: #282c34;
   max-width: 90%;
+  &.column {
+    max-width: 100%;
+    height: 220px;
+    .editorWrapper {
+      max-width: 100%;
+      height: 220px;
+    }
+  }
 }
 .editor {
   border-top-left-radius: 6px;
@@ -38,7 +53,6 @@
   font-size: 11px;
   min-height: 100px;
   width: fit-content;
-  // overflow: auto !important;
   > textarea {
     white-space: pre !important;
     width: 100% !important;
@@ -57,7 +71,7 @@
     border: none;
   }
 }
-.rightPane {
+.previewPane {
   position: relative;
   overflow: auto;
   min-height: 100px;
@@ -65,6 +79,16 @@
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-left: none;
+  &.column {
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    min-height: 220px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 6px;
+    .editorWrapper {
+      max-height: 220px;
+    }
+  }
 }
 .previewBox {
   position: absolute;
