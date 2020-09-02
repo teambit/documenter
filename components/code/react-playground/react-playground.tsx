@@ -24,11 +24,13 @@ export type PlaygroundProps = {
 
 export function Playground({ code, scope }: PlaygroundProps) {
   const [ref, { width }] = useDimensions();
-  const debouncedSize = useDebounce(width, 300);
+  const debouncedSize = useDebounce(width, 300, {leading: true});
   const placement =
     +debouncedSize[0] <= 500 ? Layout.columnReverse : Layout.row;
   const isInColumnView = placement === "column reverse";
 
+  if(!width) return <div ref={ref} />
+  
   return (
     <LiveProvider code={code} scope={scope} theme={prismTheme}>
       <div ref={ref} className={styles.playground}>
