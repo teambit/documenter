@@ -36,6 +36,6 @@ export function Paragraph({ children, className, size, ...rest }: ParagraphProps
 }
 
 Paragraph.defaultProps = {
-  size: PossibleSizes.md,
+  size: 'md',
   element: 'p'
 }
