@@ -52,12 +52,11 @@
        * This is not a part of the policy.
       **/
       "dependencies": {
-        "@teambit/base-ui.surfaces.split-pane.split-pane": "0.2.10",
-        "teambit.base-ui.elements.image": "0.2.10",
-        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "0.2.10",
         "@teambit/base-ui.input.error": "^0.2.10",
         "@teambit/base-ui.layout.breakpoints": "^0.2.10",
         "@teambit/base-ui.layout.grid-component": "^0.2.10",
+        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "0.2.10",
+        "@teambit/base-ui.surfaces.split-pane.split-pane": "0.2.10",
         "@teambit/base-ui.text.heading": "^0.2.10",
         "@teambit/base-ui.text.muted-text": "^0.2.10",
         "@teambit/base-ui.text.paragraph": "^0.2.10",
