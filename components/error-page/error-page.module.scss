@@ -1,0 +1,20 @@
+.errorPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 24px;
+	text-align: center;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 24px;
+}
+.img {
+	max-width: 700px;
+	margin-bottom: 24px;
+	width: 100%;
+}
