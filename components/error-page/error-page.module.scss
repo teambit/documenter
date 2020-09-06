@@ -6,13 +6,14 @@
 	margin: auto;
 	padding: 24px;
 	text-align: center;
+	.title {
+		margin-bottom: 24px;
+		@media screen and (max-width: 480px){
+			font-size: var(--h-sm, 24px);		
+		}
+	}
 }
 
-.logo {
-	width: 70px;
-	height: 70px;
-	margin-bottom: 24px;
-}
 .img {
 	max-width: 700px;
 	margin-bottom: 24px;
