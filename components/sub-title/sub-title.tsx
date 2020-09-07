@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import { mutedText } from "@teambit/base-ui-temp.text.muted-text";
-import { Paragraph } from "@teambit/documenter-temp.ui.paragraph";
+import { mutedText } from "@teambit/base-ui.text.muted-text";
+import { Paragraph } from "@teambit/documenter.ui.paragraph";
 import styles from "./sub-title.module.scss";
 
 export type SubtitleProps = {} & React.HTMLAttributes<HTMLParagraphElement>;

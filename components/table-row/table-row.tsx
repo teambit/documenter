@@ -2,8 +2,8 @@ import React from "react";
 import classNames from "classnames";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { Grid } from "@teambit/base-ui-temp.layout.grid-component";
-import { TableColumn } from "@teambit/documenter-temp.ui.table-column";
+import { Grid } from "@teambit/base-ui.layout.grid-component";
+import { TableColumn } from "@teambit/documenter.ui.table-column";
 import styles from "./table-row.module.scss";
 
 export type DefaultValueProp = {
@@ -17,7 +17,7 @@ export type RowType = {
   type: string;
   description: string;
   required: boolean;
-  defaultValue?: DefaultValueProp;
+  default?: DefaultValueProp;
 };
 
 export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
@@ -99,7 +99,7 @@ export function TableRow({
             </TableColumn>
           );
         }
-        if (title === "defaultValue") {
+        if (title === "default") {
           return (
             <TableColumn key={index}>
               <div
@@ -109,7 +109,9 @@ export function TableRow({
               >
                 {title}
               </div>
-              {row[title] && row[title]?.value}
+              <span className={styles.default}>
+                {(row[title] && row[title]?.value) || "-"}
+              </span>
             </TableColumn>
           );
         }

@@ -1,6 +1,6 @@
 import React from "react";
 import { LinkedHeading } from "./linked-heading";
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 
 export const Large = () => {
   return (

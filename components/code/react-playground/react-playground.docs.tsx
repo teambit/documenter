@@ -1,12 +1,12 @@
 import React from 'react';
 import { Playground } from './react-playground';
-import { HighlightedText } from '@teambit/documenter-temp.ui.highlighted-text';
+import { HighlightedText } from '@teambit/documenter.ui.highlighted-text';
 
 import {
   Example,
   Abstract,
   Labels,
-} from '@teambit/documenter-temp.types.docs-file';
+} from '@teambit/documenter.types.docs-file';
 
 export const labels: Labels = [
   'react',

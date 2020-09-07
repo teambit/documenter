@@ -1,6 +1,6 @@
 import React from "react";
-import { HeadingRow } from "@teambit/documenter-temp.ui.table-heading-row";
-import { TableRow, RowType } from "@teambit/documenter-temp.ui.table-row";
+import { HeadingRow } from "@teambit/documenter.ui.table-heading-row";
+import { TableRow, RowType } from "@teambit/documenter.ui.table-row";
 
 export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import {Label} from '@teambit/documenter-temp.ui.label';
+import {Label} from '@teambit/documenter.ui.label';
 import styles from './label-list.module.scss';
 
 type LabelListProps = {
