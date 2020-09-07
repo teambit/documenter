@@ -1,4 +1,4 @@
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 import { Paragraph } from "./paragraph";
 
 export const labels = ['react', 'ui-component', 'text', 'paragraph', 'div', 'span'];

@@ -1,6 +1,6 @@
 import { Anchor } from './anchor';
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
-import { H5 } from "@teambit/documenter-temp.ui.heading"
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { H5 } from "@teambit/documenter.ui.heading"
 
 export const labels = ['react', 'ui-component', 'link']
 

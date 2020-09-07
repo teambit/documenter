@@ -1,6 +1,6 @@
-import { Paragraph } from '@teambit/documenter-temp.ui.paragraph';
-import { Label } from '@teambit/documenter-temp.ui.label';
-import { ThemeContext } from '@teambit/documenter-temp.theme.theme-context'
+import { Paragraph } from '@teambit/documenter.ui.paragraph';
+import { Label } from '@teambit/documenter.ui.label';
+import { ThemeContext } from '@teambit/documenter.theme.theme-context'
   
 export const labels = ['react', 'theme'];
 

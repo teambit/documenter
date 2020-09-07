@@ -1,6 +1,6 @@
 export const labels = ['react', 'ui-component', 'label'];
 
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 import { Label } from "./label";
 
 export const examples = [

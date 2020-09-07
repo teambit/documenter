@@ -1,4 +1,4 @@
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 import { List } from "./list";
 
 export const labels = ['react', 'ui-component', 'list', 'ol', 'ul']

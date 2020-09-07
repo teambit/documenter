@@ -1,5 +1,5 @@
 import { ConsumableLink } from "./consumable-link";
-import { ThemeContext } from "@teambit/documenter-temp.theme.theme-context";
+import { ThemeContext } from "@teambit/documenter.theme.theme-context";
 
 export const labels = ['react', 'ui-component']
 

@@ -1,5 +1,5 @@
-import { CodeSnippet } from '@teambit/documenter-temp.ui.code-snippet'
-import { ThemeContext } from '@teambit/documenter-temp.theme.theme-context'
+import { CodeSnippet } from '@teambit/documenter.ui.code-snippet'
+import { ThemeContext } from '@teambit/documenter.theme.theme-context'
 
 export const labels = ['react', 'ui-component', 'code snippet']
 export const abstract = 'A syntax highlighter for React snippets.'
