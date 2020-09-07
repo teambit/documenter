@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { H1 } from "@teambit/documenter.ui.heading";
 import styles from "./error-page.module.scss";
 
+
 type ErrorPageProps = {
   /**
    * specifies the type of error that was encountered
