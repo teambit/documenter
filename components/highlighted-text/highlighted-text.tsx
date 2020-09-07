@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { Paragraph, ParagraphProps } from "@teambit/documenter-temp.ui.paragraph";
+import { Paragraph, ParagraphProps } from "@teambit/documenter.ui.paragraph";
 import styles from "./highlighted-text.module.scss";
 
 export type HighlightedTextProps = {} & ParagraphProps;

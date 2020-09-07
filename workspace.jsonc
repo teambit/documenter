@@ -11,10 +11,11 @@
      * name of the workspace.
     **/
     "name": "documenter",
+    "icon": "https://static.bit.dev/bit-logo.svg",
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    "defaultScope": "teambit2.documenter-temp",
+    "defaultScope": "teambit.documenter",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
@@ -51,34 +52,31 @@
        * This is not a part of the policy.
       **/
       "dependencies": {
-        "reset-css": "^5.0.1",
-        "classnames": "^2.2.6",
+        "@teambit/base-ui.input.error": "^0.2.10",
+        "@teambit/base-ui.layout.breakpoints": "^0.2.10",
+        "@teambit/base-ui.layout.grid-component": "^0.2.10",
+        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "0.2.10",
+        "@teambit/base-ui.surfaces.split-pane.split-pane": "0.2.10",
+        "@teambit/base-ui.text.heading": "^0.2.10",
+        "@teambit/base-ui.text.muted-text": "^0.2.10",
+        "@teambit/base-ui.text.paragraph": "^0.2.10",
+        "@teambit/base-ui.text.themed-text": "^0.2.10",
+        "@teambit/base-ui.theme.colors": "^0.2.10",
+        "@teambit/base-ui.theme.sizes": "^0.2.10",
+        "@teambit/base-ui.theme.theme-provider": "^0.2.10",
+        "@teambit/evangelist.elements.icon": "^0.0.3",
+        "@teambit/evangelist.elements.image": "0.0.3",
         "@types/classnames": "^2.2.10",
         "@types/react": "16.9.43",
-        "@teambit/base-ui-temp.constants.storage": "^0.0.11",
-        "@teambit/base-ui-temp.layout.breakpoints": "^0.0.11",
-        "@teambit/base-ui-temp.layout.grid-component": "^0.0.11",
-        "@teambit/base-ui-temp.text.heading": "^0.0.11",
-        "@teambit/base-ui-temp.text.muted-text": "^0.0.11",
-        "@teambit/base-ui-temp.text.paragraph": "^0.0.11",
-        "@teambit/base-ui-temp.text.themed-text": "^0.0.11",
-        "@teambit/base-ui-temp.theme.colors": "^0.0.11",
-        "@teambit/base-ui-temp.theme.sizes": "^0.0.11",
-        "@teambit/base-ui-temp.theme.theme-provider": "^0.0.11",
-        "@teambit/evangelist-temp.elements.button": "^0.0.1",
-        "@teambit/evangelist-temp.elements.heading": "^0.0.1",
-        "@teambit/evangelist-temp.elements.icon": "^0.0.1",
-        "@teambit/evangelist-temp.elements.image": "^0.0.1",
-        "@teambit/evangelist-temp.input.input": "^0.0.1",
-        "@teambit/base-ui-temp.input.error": "^0.0.11",
-        "@teambit/base-ui-temp.css-components.roundness": "^0.0.11",
-        "prism-react-renderer": "^1.1.1",
-        "react-live": "^2.2.2",
+        "classnames": "^2.2.6",
         "copy-to-clipboard": "^3.3.1",
-        "react-syntax-highlighter": "^13.0.0",
+        "prism-react-renderer": "^1.1.1",
         "react": "16.13.1",
         "react-dom": "16.13.1",
+        "react-live": "^2.2.2",
+        "react-syntax-highlighter": "^13.0.0",
         "react-use-dimensions": "^1.2.1",
+        "reset-css": "^5.0.1",
         "use-debounce": "^3.4.3"
       }
     }
@@ -99,8 +97,12 @@
     "*": {
       "propagate": false,
       "teambit.bit/pkg": {
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
         "packageJson": {
-          "name": "@teambit/documenter-temp.{name}"
+          "name": "@teambit/documenter.{name}",
+          "private": false
         }
       },
       "teambit.bit/react": {}

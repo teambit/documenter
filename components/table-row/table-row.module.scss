@@ -41,18 +41,22 @@
 
 .required {
     color: var(--text-muted);
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .name {
     margin-right: 5px;
+    font-family: Roboto mono;
+    font-size: var(--p-xxs);
+    color: #4646c6;
 }
 
 
 .type {
     display: inline-block;
     background-color: var(--light-purple, #eceaff);
-    font-family: monospace;
+    font-family: Roboto mono;
+    font-size: var(--p-xxs);
     width: fit-content;
     padding: 5px;
     border-radius: 4px;
@@ -60,11 +64,19 @@
 
 .typeColumn {
     .highlighted {
-        background: white !important;
+        background: unset !important;
+        font-family: Roboto mono;
+        font-size: var(--p-xxs);
         padding: 0 !important;
         white-space: pre-wrap;
+        flex-basis: 50%;
         > code > span {
             color: rgb(57, 115, 0);
         }
     }
+}
+
+.default {
+    font-family: Roboto mono;
+    font-size: var(--p-xxs);
 }
