@@ -27,3 +27,4 @@ export function ServerErrorPage({ ...rest }: ServerErrorPageProps) {
     </ErrorPage>
   );
 }
+

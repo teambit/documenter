@@ -12,3 +12,4 @@ export function ExternalLink({ href, children, ...rest }: ExternalLinkProps) {
     </a>
   );
 }
+

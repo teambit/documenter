@@ -35,7 +35,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/pages/error@0.0.2": {
+    "teambit.documenter/pages/error@0.0.3": {
         "files": [
             {
                 "relativePath": "error-page.composition.tsx",
@@ -69,7 +69,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/pages/not-found@0.0.2": {
+    "teambit.documenter/pages/not-found@0.0.4": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -103,7 +103,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/pages/server-error@0.0.2": {
+    "teambit.documenter/pages/server-error@0.0.4": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -137,7 +137,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/routing/external-link@0.0.1": {
+    "teambit.documenter/routing/external-link@0.0.3": {
         "files": [
             {
                 "relativePath": "external-link.module.scss",
@@ -937,5 +937,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.10"
+    "version": "14.8.9-dev.12"
 }
