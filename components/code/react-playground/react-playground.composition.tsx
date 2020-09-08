@@ -12,7 +12,7 @@ const functionString = `
   const scope = { Button };
   const code = "<Button>my first playground button</Button>";
       
-  return <button>sfgsdfg </button>
+  return <button>Click Here</button>
 }`;
 
 export const HelloWorld = () => {

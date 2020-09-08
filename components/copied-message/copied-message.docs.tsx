@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { CopiedMessage } from "@teambit/documenter.ui.copied-message"
 import { ThemeContext } from "@teambit/documenter.theme.theme-context"
-import { Icon } from "@teambit/evangelist-temp.elements.icon";
+import { Icon } from "@teambit/evangelist.elements.icon";
 
 export const labels = ['react', 'ui-component']
 

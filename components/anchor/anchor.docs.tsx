@@ -13,7 +13,7 @@ export const examples = [
     },
     title: "Using the Anchor component",
     description: `The Anchor component can only link to itself. 
-Place it to either side of the title you wish to point to, to have it scroll to the same vertical point on the page.`,
+Place it to either side of the title you wish to point to, so as to have it scroll to the same vertical point on the page.`,
     code: `
 <ThemeContext>
     <div style={{display: 'inline-flex', alignItems: 'center'}}>
