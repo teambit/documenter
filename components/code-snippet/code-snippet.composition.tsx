@@ -17,7 +17,7 @@ export const CodeSnippetExample = () => {
         style={{
           display: 'inline-flex',
           alignItems: 'center',
-          maxWidth: '600px',
+          maxWidth: '700px',
         }}
       >
         <CodeSnippet>{codeString}</CodeSnippet>

@@ -1,10 +1,11 @@
 import React from "react";
 import classNames from "classnames";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Grid } from "@teambit/base-ui.layout.grid-component";
 import { TableColumn } from "@teambit/documenter.ui.table-column";
 import styles from "./table-row.module.scss";
+
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/default-highlight';
+import xcode from 'react-syntax-highlighter/dist/esm/styles/hljs/xcode';
 
 export type DefaultValueProp = {
   value: string;
