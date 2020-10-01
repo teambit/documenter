@@ -66,7 +66,6 @@ export function ImportAction({
 function Placeholder({ onClick }: any) {
   return (
     <div className={classNames(styles.placeholder)} onClick={onClick}>
-      <div className={styles.overlay} />
       <Icon of="package" />
       <div className={styles.content}>Import</div>
       <Icon className={styles.content} of="fat-arrow-down" />

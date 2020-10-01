@@ -16,19 +16,6 @@
     z-index: 2;
   }
 }
-.overlay {
-  display: none;
-  [data-open='true'] & {
-    cursor: auto;
-    display: unset;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  }
-}
 .top {
   border-bottom: 1px solid var(--border-color);
   padding: 19px 24px 24px;
