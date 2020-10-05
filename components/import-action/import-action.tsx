@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import { CopyBox } from "@teambit/documenter.ui.copy-box";
 import { Dropdown } from "@teambit/evangelist.surfaces.dropdown";
@@ -17,24 +17,16 @@ type ImportActionProps = {
   componentName: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function ImportAction({
-  copyLink,
-  componentName,
-}: ImportActionProps) {
-  const [isOpen, handleToggle] = useState(false);
-
+export function ImportAction({ copyLink, componentName }: ImportActionProps) {
   return (
     <div className={styles.importDropdown}>
       <Dropdown
         dropClass={styles.menu}
         placeholder=""
         clickToggles={false}
-        onClickOutside={() => handleToggle(false)}
-        onChange={() => handleToggle(!isOpen)}
-        open={isOpen}
-        PlaceholderComponent={() => (
-          <Placeholder onClick={() => handleToggle(!isOpen)} />
-        )}
+        clickOutside={true}
+        clickPlaceholderToggles={true}
+        PlaceholderComponent={Placeholder}
       >
         <div>
           <div className={styles.top}>
@@ -63,9 +55,9 @@ export function ImportAction({
   );
 }
 
-function Placeholder({ onClick }: any) {
+function Placeholder(props: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={classNames(styles.placeholder)} onClick={onClick}>
+    <div className={classNames(styles.placeholder)} {...props}>
       <Icon of="package" />
       <div className={styles.content}>Import</div>
       <Icon className={styles.content} of="fat-arrow-down" />

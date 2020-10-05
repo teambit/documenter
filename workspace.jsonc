@@ -66,7 +66,7 @@
         "@teambit/base-ui.theme.theme-provider": "^0.2.10",
         "@teambit/evangelist.elements.icon": "^0.0.3",
         "@teambit/evangelist.elements.image": "0.0.3",
-        "@teambit/evangelist.surfaces.dropdown": "0.0.4",
+        "@teambit/evangelist.surfaces.dropdown": "0.1.0",
         "@types/classnames": "^2.2.10",
         "@types/react": "16.9.43",
         "classnames": "^2.2.6",

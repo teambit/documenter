@@ -467,7 +467,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/ui/import-action@0.0.3": {
+    "teambit.documenter/ui/import-action@0.0.5": {
         "files": [
             {
                 "relativePath": "import-action.composition.tsx",
@@ -976,5 +976,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.35"
+    "version": "14.8.9-dev.38"
 }
