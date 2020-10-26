@@ -17,9 +17,9 @@ type ImportActionProps = {
   componentName: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function ImportAction({ copyLink, componentName }: ImportActionProps) {
+export function ImportAction({ copyLink, componentName, ...rest }: ImportActionProps) {
   return (
-    <div className={styles.importDropdown}>
+    <div className={styles.importDropdown} {...rest}>
       <Dropdown
         dropClass={styles.menu}
         placeholder=""
