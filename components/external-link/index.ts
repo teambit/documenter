@@ -1,1 +1,1 @@
-export { ExternalLinkProps, ExternalLink } from "./external-link";
+export * from "./external-link";

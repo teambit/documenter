@@ -1,10 +1,11 @@
-import React from "react";
-import classNames from "classnames";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { Grid } from "@teambit/base-ui.layout.grid-component";
-import { TableColumn } from "@teambit/documenter.ui.table-column";
-import styles from "./table-row.module.scss";
+import React from 'react';
+import classNames from 'classnames';
+import { Grid } from '@teambit/base-ui.layout.grid-component';
+import { TableColumn } from '@teambit/documenter.ui.table-column';
+import styles from './table-row.module.scss';
+
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/default-highlight';
+import xcode from 'react-syntax-highlighter/dist/esm/styles/hljs/xcode';
 
 export type DefaultValueProp = {
   value: string;
@@ -59,8 +60,8 @@ export function TableRow({
       })}
     >
       {headings.map((title, index) => {
-        if (title === "required") return;
-        if (title === "name") {
+        if (title === 'required') return;
+        if (title === 'name') {
           return (
             <TableColumn key={index}>
               <div
@@ -72,14 +73,14 @@ export function TableRow({
               </div>
               <div className={styles.columnContent}>
                 <div className={styles.name}>{row[title]}</div>
-                {row["required"] && (
+                {row['required'] && (
                   <div className={styles.required}>(Required)</div>
                 )}
               </div>
             </TableColumn>
           );
         }
-        if (title === "type") {
+        if (title === 'type') {
           return (
             <TableColumn className={styles.typeColumn} key={index}>
               <div
@@ -99,7 +100,7 @@ export function TableRow({
             </TableColumn>
           );
         }
-        if (title === "default") {
+        if (title === 'default') {
           return (
             <TableColumn key={index}>
               <div
@@ -110,12 +111,12 @@ export function TableRow({
                 {title}
               </div>
               <span className={styles.default}>
-                {(row[title] && row[title]?.value) || "-"}
+                {(row[title] && row[title]?.value) || '-'}
               </span>
             </TableColumn>
           );
         }
-        if (title === "description") {
+        if (title === 'description') {
           return <TableColumn key={index}>{row[title]}</TableColumn>;
         }
         return (

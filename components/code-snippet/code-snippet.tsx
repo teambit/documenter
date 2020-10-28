@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import copy from 'copy-to-clipboard';
-import SyntaxHighlighter, {
-  SyntaxHighlighterProps,
-} from 'react-syntax-highlighter';
-
 import { Icon } from '@teambit/evangelist.elements.icon';
 import { CopiedMessage } from '@teambit/documenter.ui.copied-message';
-import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs/';
+
+import type { SyntaxHighlighterProps } from 'react-syntax-highlighter';
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism-light';
+import tsxSyntax from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
+import defaultTheme from 'react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus';
 
 import styles from './code-snippet.module.scss';
+
+SyntaxHighlighter.registerLanguage('tsx', tsxSyntax);
+const customStyles = { fontFamily: 'roboto mono', fontSize: 12 };
 
 type CodeSnippetProps = {
   /**
@@ -33,7 +36,7 @@ type CodeSnippetProps = {
 export function CodeSnippet({
   className,
   frameClass,
-  theme,
+  theme = defaultTheme,
   children,
   ...rest
 }: CodeSnippetProps) {
@@ -50,12 +53,13 @@ export function CodeSnippet({
         {...rest}
         className={classNames(styles.codeSnippet, frameClass)}
         language="tsx"
-        style={theme || atomOneDark}
+        style={theme}
+        customStyle={customStyles}
       >
         {children}
       </SyntaxHighlighter>
       <Icon onClick={handleClick} className={styles.copyIcon} of="copy-cmp" />
-      <CopiedMessage show={isCopied} />
+      <CopiedMessage show={isCopied} className={styles.copyMessage} />
     </div>
   );
 }

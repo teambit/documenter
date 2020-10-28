@@ -10,8 +10,16 @@
   .copyIcon {
     color: white;
     position: absolute;
-    top: 8px;
+    top: 16px;
 	  right: 8px;
 	  cursor: pointer;
+  }
+  
+  code {
+    font-family: inherit !important;
+  }
+  
+  .copyMessage {
+    top: 14px;
   }
 }
