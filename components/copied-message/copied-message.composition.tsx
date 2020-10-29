@@ -21,6 +21,7 @@ export const CopiedMessageExample = () => {
     </ThemeContext>
   );
 };
+
 export const HiddenCopiedMessageExample = () => {
   const [isCopied, setIsCopied] = useState(false);
   

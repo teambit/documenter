@@ -24,8 +24,7 @@ export type TableProps = {
 } & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 /**
- * A table component that renders the properties of a component. The headings array determines how the data in the table is ordered.
- * The number of columns is 4 by default.
+ * A table component that renders the properties of a component.
  */
 export function Table({ headings, rows, colNumber, isListView, ...rest }: TableProps) {
   const cols = colNumber || 4;

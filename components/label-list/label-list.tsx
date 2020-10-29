@@ -20,7 +20,7 @@ type LabelListProps = {
 
 /**
  * 
- * renders an array of labels
+ * Renders an array of labels
  */
 export function LabelList({children, className, labelClass, onPick, ...rest}: LabelListProps) {
 

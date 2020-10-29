@@ -26,9 +26,8 @@ export const examples: Example[] = [
     title: 'Injecting dependencies',
     description: (
       <>
-        The prop <HighlightedText>scope</HighlightedText> defines any global
-        dependencies appearing in the code snippet. This includes React, which
-        is injected by default.
+        The <HighlightedText>scope</HighlightedText> prop defines the
+        dependencies used in the code snippet. React is set by default (though other objects from the React library should be set explicitly)
       </>
     ),
     scope: { Playground },
