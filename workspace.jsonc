@@ -6,7 +6,7 @@
   /**
    * main configuration of the Bit workspace.
   **/
-  "teambit.bit/workspace": {
+  "teambit.workspace/workspace": {
     /**
      * name of the workspace.
     **/
@@ -24,13 +24,13 @@
   /**
    * main configuration for component dependency resolution.
   **/
-  "teambit.bit/dependency-resolver": {
+  "teambit.dependencies/dependency-resolver": {
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
     */
-    "packageManager": "teambit.bit/pnpm",
+    "packageManager": "teambit.dependencies/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -52,21 +52,21 @@
        * This is not a part of the policy.
       **/
       "dependencies": {
-        "@teambit/base-ui.input.error": "^0.4.3",
-        "@teambit/base-ui.layout.breakpoints": "^0.4.3",
-        "@teambit/base-ui.layout.grid-component": "^0.4.3",
-        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "0.4.3",
-        "@teambit/base-ui.surfaces.split-pane.split-pane": "0.4.3",
-        "@teambit/base-ui.text.heading": "^0.4.3",
-        "@teambit/base-ui.text.muted-text": "^0.4.3",
-        "@teambit/base-ui.text.paragraph": "^0.4.3",
-        "@teambit/base-ui.text.themed-text": "^0.4.3",
-        "@teambit/base-ui.theme.colors": "^0.4.3",
-        "@teambit/base-ui.theme.sizes": "^0.4.3",
-        "@teambit/base-ui.theme.theme-provider": "^0.4.3",
-        "@teambit/evangelist.elements.icon": "^0.4.4",
-        "@teambit/evangelist.elements.image": "0.4.4",
-        "@teambit/evangelist.surfaces.dropdown": "0.4.4",
+        "@teambit/base-ui.input.error": "^0.5.2",
+        "@teambit/base-ui.layout.breakpoints": "^0.5.2",
+        "@teambit/base-ui.layout.grid-component": "^0.5.2",
+        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "0.5.2",
+        "@teambit/base-ui.surfaces.split-pane.split-pane": "0.5.2",
+        "@teambit/base-ui.text.heading": "^0.5.2",
+        "@teambit/base-ui.text.muted-text": "^0.5.2",
+        "@teambit/base-ui.text.paragraph": "^0.5.2",
+        "@teambit/base-ui.text.themed-text": "^0.5.2",
+        "@teambit/base-ui.theme.colors": "^0.5.2",
+        "@teambit/base-ui.theme.sizes": "^0.5.2",
+        "@teambit/base-ui.theme.theme-provider": "^0.5.2",
+        "@teambit/evangelist.elements.icon": "^0.5.2",
+        "@teambit/evangelist.elements.image": "0.5.2",
+        "@teambit/evangelist.surfaces.dropdown": "0.5.2",
         "@types/classnames": "^2.2.10",
         "@types/react": "16.9.43",
         "classnames": "^2.2.6",
@@ -82,7 +82,7 @@
       }
     }
   },
-  "teambit.bit/react": {
+  "teambit.react/react": {
     "reactVersion": "^16.0.0"
   },
   /**
@@ -90,14 +90,14 @@
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
   **/
-  "teambit.bit/variants": {
+  "teambit.workspace/variants": {
     // /**
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
     // **/
     "*": {
       "propagate": false,
-      "teambit.bit/pkg": {
+      "teambit.pkg/pkg": {
         "packageManagerPublishArgs": [
           "--access public"
         ],
@@ -106,7 +106,7 @@
           "private": false
         }
       },
-      "teambit.bit/react": {}
+      "teambit.react/react": {}
     }
   }
 }
