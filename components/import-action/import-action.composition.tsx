@@ -7,8 +7,10 @@ export const ImportActionExample = () => {
     <ThemeContext>
       <div style={styles}>
         <ImportAction
-          componentName="ImportAction"
-          copyLink="@teambit.documenter/ui/import-action"
+          componentName="Import-action"
+          bitLink="bit import @teambit.documenter/ui/import-action"
+          packageLink="@teambit/documenter.ui.import-action"
+          registryName="@teambit"
         />
       </div>
     </ThemeContext>

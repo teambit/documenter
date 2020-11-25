@@ -498,6 +498,66 @@
                 "name": "index.ts",
                 "relativePath": "index.ts",
                 "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "menu/index.ts",
+                "test": false
+            },
+            {
+                "name": "menu.module.scss",
+                "relativePath": "menu/menu.module.scss",
+                "test": false
+            },
+            {
+                "name": "menu.tsx",
+                "relativePath": "menu/menu.tsx",
+                "test": false
+            },
+            {
+                "name": "import.tsx",
+                "relativePath": "tab-content/import.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "tab-content/index.ts",
+                "test": false
+            },
+            {
+                "name": "install.tsx",
+                "relativePath": "tab-content/install.tsx",
+                "test": false
+            },
+            {
+                "name": "registry.tsx",
+                "relativePath": "tab-content/registry.tsx",
+                "test": false
+            },
+            {
+                "name": "tab-content.module.scss",
+                "relativePath": "tab-content/tab-content.module.scss",
+                "test": false
+            },
+            {
+                "name": "tab-content.tsx",
+                "relativePath": "tab-content/tab-content.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "tab/index.ts",
+                "test": false
+            },
+            {
+                "name": "tab.module.scss",
+                "relativePath": "tab/tab.module.scss",
+                "test": false
+            },
+            {
+                "name": "tab.tsx",
+                "relativePath": "tab/tab.tsx",
+                "test": false
             }
         ],
         "mainFile": "index.ts",

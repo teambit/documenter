@@ -1,0 +1,15 @@
+.tab {
+    margin-right: 8px;
+    padding-bottom: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    &.active {
+      color: var(--base-color);
+      border-bottom: 3px solid var(--base-color);
+      cursor: unset;
+    }
+  }
+  
