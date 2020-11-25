@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classNames from "classnames";
 import { Dropdown } from "@teambit/evangelist.surfaces.dropdown";
 import { Icon } from "@teambit/evangelist.elements.icon";
@@ -25,16 +25,18 @@ type ImportActionProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function ImportAction(props: ImportActionProps) {
+  const [activeTab, setActiveTab] = useState("import");
   return (
     <div className={styles.importDropdown}>
       <Dropdown
+        onChange={() => setActiveTab('import')}
         dropClass={styles.menu}
         placeholder=""
         clickToggles={false}
         clickPlaceholderToggles={true}
         PlaceholderComponent={Placeholder}
       >
-        <Menu {...props} />
+        <Menu {...props} activeTab={activeTab} setActiveTab={setActiveTab} />
       </Dropdown>
     </div>
   );

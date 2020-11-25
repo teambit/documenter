@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import classNames from "classnames";
+import React from "react";
 import { Icon } from "@teambit/evangelist.elements.icon";
 import { Registry, Import, Install } from "../tab-content";
 import { Tab } from "../tab";
@@ -22,15 +21,24 @@ export type MenuProps = {
    * component name to be presented
    */
   componentName: string;
+  /**
+   * currently active tab
+   */
+  activeTab: string;
+  /**
+   * change currently active tab
+   */
+  setActiveTab: (active: string) => void;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function Menu({
   packageLink,
   bitLink,
   registryName,
-  componentName
+  componentName,
+  activeTab,
+  setActiveTab
 }: MenuProps) {
-  const [activeTab, setActiveTab] = useState("import");
   if (activeTab === "registry") {
     return (
       <Registry
