@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { Icon } from "@teambit/evangelist.elements.icon";
 import { ExternalLink } from "@teambit/documenter.routing.external-link";
+import { Links } from "@teambit/documenter.docs.documentation-links";
 import { TabContent } from "./tab-content";
 import styles from "./tab-content.module.scss";
 
@@ -17,7 +18,7 @@ export function Import({
       titleLine={`Get ${componentName} and all its versions to your workspace`}
       copyString={copyLink}
     >
-      <ExternalLink href="https://bit-harmony-stg.netlify.app/docs/getting-started/install-bit">
+      <ExternalLink href={Links.installBit}>
         <div className={classNames(styles.link)}>
           <Icon of="download" />
           <span>Install Bit on your computer</span>

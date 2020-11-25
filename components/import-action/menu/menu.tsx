@@ -31,7 +31,6 @@ export function Menu({
   componentName
 }: MenuProps) {
   const [activeTab, setActiveTab] = useState("import");
-  console.log("active", activeTab);
   if (activeTab === "registry") {
     return (
       <Registry

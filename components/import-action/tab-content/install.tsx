@@ -16,7 +16,6 @@ export function Install({
   onClick: Function;
   registryName: string;
 }) {
-  console.log("iii");
   return (
     <TabContent
       titleLine={`Install ${componentName} with a package manager`}

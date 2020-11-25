@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { Icon } from "@teambit/evangelist.elements.icon";
 import { ExternalLink } from "@teambit/documenter.routing.external-link";
 import { HighlightedText } from "@teambit/documenter.ui.highlighted-text";
+import { Links } from "@teambit/documenter.docs.documentation-links";
 import { TabContent } from "../tab-content";
 import styles from "./tab-content.module.scss";
 
@@ -33,7 +34,7 @@ export function Registry({
         }
         copyString={copyLink}
       >
-        <ExternalLink href="https://docs.bit.dev/docs/installing-components#configuring-bit-registry">
+        <ExternalLink href={Links.scopedRegistry}>
           <div className={classNames(styles.link)}>
             <Icon of="information-sign" />
             <span>Learn more</span>
