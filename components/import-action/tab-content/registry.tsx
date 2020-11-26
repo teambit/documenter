@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { Icon } from "@teambit/evangelist.elements.icon";
-import { ExternalLink } from "@teambit/documenter.routing.external-link";
+import { Link } from "@teambit/ui.routing.link";
 import { HighlightedText } from "@teambit/documenter.ui.highlighted-text";
 import { links } from "@teambit/documenter.content.documentation-links";
 import { TabContent } from "../tab-content";
@@ -13,7 +13,11 @@ export type RegistryProps = {
   setActive: (active: string) => void;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function Registry({ registryName, copyString, setActive }: RegistryProps) {
+export function Registry({
+  registryName,
+  copyString,
+  setActive,
+}: RegistryProps) {
   return (
     <div>
       <div className={classNames(styles.back)}>
@@ -32,12 +36,10 @@ export function Registry({ registryName, copyString, setActive }: RegistryProps)
         }
         copyString={copyString}
       >
-        <ExternalLink href={links.scopedRegistry}>
-          <div className={classNames(styles.link)}>
+        <Link external href={links.scopedRegistry} className={classNames(styles.link)}>
             <Icon of="information-sign" />
             <span>Learn more</span>
-          </div>
-        </ExternalLink>
+        </Link>
       </TabContent>
     </div>
   );

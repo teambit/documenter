@@ -4,7 +4,7 @@ import { Registry, Import, Install } from "../tab-content";
 import { Tab } from "../tab";
 import styles from "./menu.module.scss";
 
-export type TabOptions = 'registry' | 'import' | 'install';
+export type TabOptions = "registry" | "import" | "install";
 
 export type ImportMenuProps = {
   /**
@@ -39,7 +39,7 @@ export function ImportMenu({
   registryName,
   componentName,
   activeTab,
-  setActiveTab
+  setActiveTab,
 }: ImportMenuProps) {
   if (activeTab === "registry") {
     return (
