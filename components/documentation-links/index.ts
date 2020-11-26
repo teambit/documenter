@@ -1,1 +1,1 @@
-export { Links } from "./documentation-links";
+export { links } from "./documentation-links";
