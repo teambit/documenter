@@ -1,42 +1,9 @@
-.importDropdown {
-  z-index: 1;
-  height: 100%;
-  > div {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .menu {
-    padding: 0;
-    right: 0;
-    font-size: var(--p-xs);
-    width: 400px;
-    z-index: 2;
-  }
-}
+
 .top {
   padding: 15px 24px;
   color: var(--text-color);
 }
-.bottom {
-  padding: 8px 0;
-}
-.installBit {
-  padding: 0 24px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  color: var(--text-highlight);
-  &:hover {
-    background-color: #ededed;
-  }
-  > span {
-    &:first-child {
-      margin-right: 8px;
-      font-size: var(--p-md);
-    }
-  }
-}
+
 .title {
   display: flex;
   align-items: center;
@@ -50,21 +17,8 @@
     }
   }
 }
-.text {
-  margin-bottom: 16px;
-}
 
 .tabs {
   display: flex;
   padding: 0 24px;
-}
-.tab {
-  margin-right: 8px;
-  padding-bottom: 7px;
-  font-size: 0.85em;
-  font-weight: bold;
-  &.active {
-    color: var(--base-color);
-    border-bottom: 3px solid var(--base-color);
-  }
 }
