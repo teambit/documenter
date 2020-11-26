@@ -12,11 +12,12 @@ export type ImportProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function Import({ componentName, copyString, ...rest }: ImportProps) {
+  const importString = `bit import ${copyString}`;
   return (
     <TabContent
       {...rest}
       titleLine={`Get ${componentName} and all its versions to your workspace`}
-      copyString={copyString}
+      copyString={importString}
     >
       <Link external href={links.installBit} className={classNames(styles.link)}>
           <Icon of="download" />

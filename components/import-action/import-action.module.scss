@@ -8,53 +8,10 @@
   .menu {
     padding: 0;
     right: 0;
-    // top: 43px;
     font-size: var(--p-xs);
     border-radius: 6px;
     width: 400px;
-    z-index: 5;
   }
-}
-.top {
-  border-bottom: 1px solid var(--border-color);
-  padding: 19px 24px 24px;
-  color: var(--text-color);
-}
-.bottom {
-  padding: 8px 0;
-}
-.installBit {
-  padding: 0 24px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  color: var(--text-highlight);
-  &:hover {
-    background-color: #ededed;
-  }
-  > span {
-    &:first-child {
-      margin-right: 8px;
-      font-size: var(--p-md);
-    }
-  }
-}
-.title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
-  font-size: var(--p-xs);
-  font-weight: bold;
-  > span {
-    &:first-child {
-      color: var(--text-highlight);
-      font-weight: bold;
-      margin-right: 8px;
-    }
-  }
-}
-.text {
-  margin-bottom: 16px;
 }
 
 .placeholder {

@@ -22,12 +22,16 @@ type ImportActionProps = {
    * component name to be presented
    */
   componentName: string;
+  /**
+   * override container class
+   */
+  containerClass?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function ImportAction(props: ImportActionProps) {
   const [activeTab, setActiveTab] = useState<TabOptions>("import");
   return (
-    <div className={styles.importDropdown}>
+    <div className={classNames(styles.importDropdown, props.containerClass)}>
       <Dropdown
         onChange={() => setActiveTab('import')}
         dropClass={styles.menu}

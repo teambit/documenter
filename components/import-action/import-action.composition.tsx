@@ -8,7 +8,7 @@ export const ImportActionExample = () => {
       <div style={styles}>
         <ImportAction
           componentName="Import-action"
-          bitLink="bit import @teambit.documenter/ui/import-action"
+          bitLink="teambit.documenter/ui/import-action"
           packageLink="@teambit/documenter.ui.import-action"
           registryName="@teambit"
         />
