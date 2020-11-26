@@ -1,5 +1,5 @@
-export {Install} from './install'
-export {Import} from './import'
-export {Registry} from './registry'
-export {TabContent} from './tab-content'
+export {Install, InstallProps} from './install'
+export {Import, ImportProps} from './import'
+export {Registry, RegistryProps} from './registry'
+export {TabContent, TabContentProps} from './tab-content'
 

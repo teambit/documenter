@@ -4,7 +4,9 @@ import { Registry, Import, Install } from "../tab-content";
 import { Tab } from "../tab";
 import styles from "./menu.module.scss";
 
-export type MenuProps = {
+export type TabOptions = 'registry' | 'import' | 'install';
+
+export type ImportMenuProps = {
   /**
    * package link to be copied
    */
@@ -24,27 +26,27 @@ export type MenuProps = {
   /**
    * currently active tab
    */
-  activeTab: string;
+  activeTab: TabOptions;
   /**
    * change currently active tab
    */
-  setActiveTab: (active: string) => void;
+  setActiveTab: (active: TabOptions) => void;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function Menu({
+export function ImportMenu({
   packageLink,
   bitLink,
   registryName,
   componentName,
   activeTab,
   setActiveTab
-}: MenuProps) {
+}: ImportMenuProps) {
   if (activeTab === "registry") {
     return (
       <Registry
         registryName={registryName}
-        copyLink={`npm config set '${registryName}:registry' https://node.bit.dev`}
-        onClick={setActiveTab}
+        copyString={`npm config set '${registryName}:registry' https://node.bit.dev`}
+        setActive={setActiveTab}
       />
     );
   }
@@ -58,14 +60,14 @@ export function Menu({
       </div>
       <Tabs activeTab={activeTab} onClick={setActiveTab} />
       {activeTab === "import" && (
-        <Import componentName={componentName} copyLink={bitLink} />
+        <Import componentName={componentName} copyString={bitLink} />
       )}
       {activeTab === "install" && (
         <Install
           componentName={componentName}
           registryName={registryName}
-          copyLink={packageLink}
-          onClick={setActiveTab}
+          copyString={packageLink}
+          setActive={setActiveTab}
         />
       )}
     </div>
@@ -76,8 +78,8 @@ function Tabs({
   onClick,
   activeTab,
 }: {
-  activeTab: string;
-  onClick: Function;
+  activeTab: TabOptions;
+  onClick: (active: string) => void;
 }) {
   return (
     <div className={styles.tabs}>

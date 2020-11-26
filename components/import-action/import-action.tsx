@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import { Dropdown } from "@teambit/evangelist.surfaces.dropdown";
 import { Icon } from "@teambit/evangelist.elements.icon";
-import { Menu } from "./menu/menu";
+import { ImportMenu, TabOptions } from "./menu/menu";
 import styles from "./import-action.module.scss";
 
 type ImportActionProps = {
@@ -25,7 +25,7 @@ type ImportActionProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function ImportAction(props: ImportActionProps) {
-  const [activeTab, setActiveTab] = useState("import");
+  const [activeTab, setActiveTab] = useState<TabOptions>("import");
   return (
     <div className={styles.importDropdown}>
       <Dropdown
@@ -36,7 +36,7 @@ export function ImportAction(props: ImportActionProps) {
         clickPlaceholderToggles={true}
         PlaceholderComponent={Placeholder}
       >
-        <Menu {...props} activeTab={activeTab} setActiveTab={setActiveTab} />
+        <ImportMenu {...props} activeTab={activeTab} setActiveTab={setActiveTab} />
       </Dropdown>
     </div>
   );

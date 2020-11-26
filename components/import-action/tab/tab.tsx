@@ -3,9 +3,9 @@ import classNames from "classnames";
 import styles from "./tab.module.scss";
 
 export type TabProps = {
-  isActive: Boolean;
+  isActive: boolean;
   title: string;
-  onClick: Function;
+  onClick: (target: string) => void;
 };
 
 export function Tab({ onClick, isActive, title }: TabProps) {

@@ -10,11 +10,11 @@ export type TabContentProps = {
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function TabContent({ titleLine, copyString, children }: TabContentProps) {
+export function TabContent({ titleLine, copyString, children, ...rest }: TabContentProps) {
   return (
-    <div>
+    <div {...rest}>
       <div className={styles.top}>
-        <div className={styles.text}>{titleLine}</div>
+        <div className={styles.title}>{titleLine}</div>
       </div>
       <div className={styles.middle}>
         <CopyBox>{copyString}</CopyBox>

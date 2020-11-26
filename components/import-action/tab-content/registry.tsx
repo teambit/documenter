@@ -3,23 +3,21 @@ import classNames from "classnames";
 import { Icon } from "@teambit/evangelist.elements.icon";
 import { ExternalLink } from "@teambit/documenter.routing.external-link";
 import { HighlightedText } from "@teambit/documenter.ui.highlighted-text";
-import { Links } from "@teambit/documenter.docs.documentation-links";
+import { links } from "@teambit/documenter.content.documentation-links";
 import { TabContent } from "../tab-content";
 import styles from "./tab-content.module.scss";
 
-export function Registry({
-  registryName,
-  copyLink,
-  onClick,
-}: {
+export type RegistryProps = {
   registryName: string;
-  copyLink: string;
-  onClick: Function;
-}) {
+  copyString: string;
+  setActive: (active: string) => void;
+} & React.HTMLAttributes<HTMLDivElement>;
+
+export function Registry({ registryName, copyString, setActive }: RegistryProps) {
   return (
     <div>
       <div className={classNames(styles.back)}>
-        <div onClick={() => onClick("install")}>
+        <div onClick={() => setActive("install")}>
           <Icon of="leftarrow" />
           <span>Back</span>
         </div>
@@ -32,9 +30,9 @@ export function Registry({
             Scoped Registry
           </div>
         }
-        copyString={copyLink}
+        copyString={copyString}
       >
-        <ExternalLink href={Links.scopedRegistry}>
+        <ExternalLink href={links.scopedRegistry}>
           <div className={classNames(styles.link)}>
             <Icon of="information-sign" />
             <span>Learn more</span>

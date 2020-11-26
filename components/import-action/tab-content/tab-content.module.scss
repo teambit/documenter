@@ -1,20 +1,19 @@
 .top {
-  padding: 15px 24px 7px;
-  color: var(--text-color);
+  padding: 16px 24px 8px;
 }
 
-.text {
+.title {
   margin-bottom: 11px;
 }
 
 .middle {
     // margin-bottom: 15px;
-    margin: 0 24px 15px;
+    margin: 0 24px 16px;
 }
 
 .bottom {
   padding: 8px 0;
-  border-top: 1px solid #ededed;
+  border-top: 1px solid var(--border-color);
 }
 .link {
   padding: 0 24px;
@@ -24,7 +23,7 @@
   color: var(--text-highlight);
   cursor: pointer;
   &:hover {
-    background-color: #ededed;
+    background-color: var(--border-color);
   }
   > span {
     &:first-child {
@@ -50,7 +49,7 @@
 }
 
 .back {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid var(--border-color);
   padding: 15px 24px;
   > div {
     display: flex;

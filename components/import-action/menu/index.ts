@@ -1,1 +1,1 @@
-export { Menu, MenuProps } from "./menu";
+export { ImportMenu, ImportMenuProps, TabOptions } from "./menu";
