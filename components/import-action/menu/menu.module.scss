@@ -1,0 +1,24 @@
+
+.top {
+  padding: 15px 24px;
+  color: var(--text-color);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: var(--p-xs);
+  font-weight: bold;
+  > span {
+    &:first-child {
+      color: var(--text-highlight);
+      font-weight: bold;
+      margin-right: 7px;
+    }
+  }
+}
+
+.tabs {
+  display: flex;
+  padding: 0 24px;
+}

@@ -1,0 +1,68 @@
+.top {
+  padding: 16px 24px 8px;
+}
+
+.title {
+  margin-bottom: 11px;
+}
+
+.middle {
+    // margin-bottom: 15px;
+    margin: 0 24px 16px;
+}
+
+.bottom {
+  padding: 8px 0;
+  border-top: 1px solid var(--border-color);
+}
+.link {
+  padding: 0 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--text-highlight);
+  cursor: pointer;
+  text-decoration: unset;
+  &:hover {
+    background-color: var(--border-color);
+  }
+  > span {
+    &:first-child {
+      margin-right: 8px;
+      font-size: var(--p-md);
+    }
+  }
+}
+
+
+.installLink {
+  justify-content: space-between;
+  > div {
+    display: flex;
+    align-items: center;
+    > span {
+      &:first-child {
+        margin-right: 8px;
+        font-size: var(--p-md);
+      }
+    }
+  }
+}
+
+.back {
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 24px;
+  > div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    > span:first-child {
+      margin-right: 5px;
+    }
+  }
+}
+
+.tabsPlaceholder {
+  height: 30px;
+}

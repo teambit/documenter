@@ -35,6 +35,30 @@
         "exported": true,
         "lanes": []
     },
+    "teambit.documenter/content/documentation-links@0.0.1": {
+        "files": [
+            {
+                "name": "documentation-links.docs.tsx",
+                "relativePath": "documentation-links.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "documentation-links.ts",
+                "relativePath": "documentation-links.ts",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/documentation-links",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
     "teambit.documenter/pages/error@0.2.3": {
         "files": [
             {
@@ -472,7 +496,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/ui/import-action@0.2.5": {
+    "teambit.documenter/ui/import-action@1.0.0": {
         "files": [
             {
                 "name": "import-action.composition.tsx",
@@ -497,6 +521,66 @@
             {
                 "name": "index.ts",
                 "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "menu/index.ts",
+                "test": false
+            },
+            {
+                "name": "menu.module.scss",
+                "relativePath": "menu/menu.module.scss",
+                "test": false
+            },
+            {
+                "name": "menu.tsx",
+                "relativePath": "menu/menu.tsx",
+                "test": false
+            },
+            {
+                "name": "import.tsx",
+                "relativePath": "tab-content/import.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "tab-content/index.ts",
+                "test": false
+            },
+            {
+                "name": "install.tsx",
+                "relativePath": "tab-content/install.tsx",
+                "test": false
+            },
+            {
+                "name": "registry.tsx",
+                "relativePath": "tab-content/registry.tsx",
+                "test": false
+            },
+            {
+                "name": "tab-content.module.scss",
+                "relativePath": "tab-content/tab-content.module.scss",
+                "test": false
+            },
+            {
+                "name": "tab-content.tsx",
+                "relativePath": "tab-content/tab-content.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "tab/index.ts",
+                "test": false
+            },
+            {
+                "name": "tab.module.scss",
+                "relativePath": "tab/tab.module.scss",
+                "test": false
+            },
+            {
+                "name": "tab.tsx",
+                "relativePath": "tab/tab.tsx",
                 "test": false
             }
         ],
