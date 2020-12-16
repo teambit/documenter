@@ -1,0 +1,11 @@
+.ul {
+    list-style: revert;
+    list-style-position: inside;
+    margin-left: 24px;
+    ul, ol {
+        margin-left: 24px;
+    }
+    li {
+        line-height: 2;
+    }
+}
