@@ -1,11 +1,12 @@
 .ol {
     list-style: revert;
-    list-style-position: inside;
-    margin-left: 24px;
+    list-style-position: outside;
+    margin-left: 32px;
     ol, ul {
         margin-left: 24px;
     }
     li {
-        line-height: 2;
+        line-height: 1.7em;
+        margin-bottom: 0.5em;
     }
 }
