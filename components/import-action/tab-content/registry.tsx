@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { Icon } from "@teambit/evangelist.elements.icon";
-import { Link } from "@teambit/ui.routing.link";
+// import { Link } from "@teambit/ui.routing.link";
 import { HighlightedText } from "@teambit/documenter.ui.highlighted-text";
 import { links } from "@teambit/documenter.content.documentation-links";
 import { TabContent } from "../tab-content";
@@ -11,12 +11,14 @@ export type RegistryProps = {
   registryName: string;
   copyString: string;
   setActive: (active: string) => void;
+  Link: any;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function Registry({
   registryName,
   copyString,
   setActive,
+  Link,
 }: RegistryProps) {
   return (
     <div>
