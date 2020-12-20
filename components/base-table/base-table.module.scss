@@ -2,6 +2,7 @@
     overflow: auto;
     display: block;
     width: fit-content;
+    max-width: 100%;
     border: 1px solid var(--border-color, #ededed);
     border-radius: 8px;
 
@@ -9,18 +10,12 @@
         background-color: var(--bg-dent, #f6f6f6);
     }
 
-    &:not(:first-child) {
-        padding-top: 16px;
-    }
-    &:not(:last-child) {
-        margin-bottom: 32px;
-    }
     thead {
         border-bottom: 1px solid var(--border-color, #ededed);
     }
     th {
         font-weight: bold;
-        padding: 20px;
+        padding: 12px 20px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;

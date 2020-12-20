@@ -6,10 +6,8 @@ export type TableProps = {} & React.HTMLAttributes<HTMLTableElement>;
 
 export function Table({ children, className, ...rest }: TableProps) {
   return (
-    <div>
       <table {...rest} className={classNames(styles.table, className)}>
         {children}
       </table>
-    </div>
   );
 }
