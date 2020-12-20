@@ -11,6 +11,7 @@ export const ImportActionExample = () => {
           bitLink="teambit.documenter/ui/import-action"
           packageLink="@teambit/documenter.ui.import-action"
           registryName="@teambit"
+          Link={(props) => <a {...props} />}
         />
       </div>
     </ThemeContext>
