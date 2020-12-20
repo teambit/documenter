@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { Icon } from "@teambit/evangelist.elements.icon";
-import { Link } from "@teambit/ui.routing.link";
+// import { Link } from "@teambit/ui.routing.link";
 import { links } from "@teambit/documenter.content.documentation-links";
 import { TabContent } from "./tab-content";
 import styles from "./tab-content.module.scss";
@@ -9,9 +9,10 @@ import styles from "./tab-content.module.scss";
 export type ImportProps = {
   componentName: string;
   copyString: string;
+  Link: any;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function Import({ componentName, copyString, ...rest }: ImportProps) {
+export function Import({ componentName, copyString, Link, ...rest }: ImportProps) {
   const importString = `bit import ${copyString}`;
   return (
     <TabContent

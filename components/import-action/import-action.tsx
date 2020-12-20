@@ -26,6 +26,11 @@ type ImportActionProps = {
    * override container class
    */
   containerClass?: string;
+  /**
+   * link component to use for routing
+   */
+  Link: any;
+
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function ImportAction(props: ImportActionProps) {
@@ -40,7 +45,7 @@ export function ImportAction(props: ImportActionProps) {
         clickPlaceholderToggles={true}
         PlaceholderComponent={Placeholder}
       >
-        <ImportMenu {...props} activeTab={activeTab} setActiveTab={setActiveTab} />
+        <ImportMenu {...props} Link={props.Link} activeTab={activeTab} setActiveTab={setActiveTab} />
       </Dropdown>
     </div>
   );

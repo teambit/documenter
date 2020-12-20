@@ -31,6 +31,8 @@ export type ImportMenuProps = {
    * change currently active tab
    */
   setActiveTab: (active: TabOptions) => void;
+  
+  Link: any;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function ImportMenu({
@@ -40,6 +42,7 @@ export function ImportMenu({
   componentName,
   activeTab,
   setActiveTab,
+  Link,
 }: ImportMenuProps) {
   if (activeTab === "registry") {
     return (
@@ -47,6 +50,7 @@ export function ImportMenu({
         registryName={registryName}
         copyString={`npm config set '${registryName}:registry' https://node.bit.dev`}
         setActive={setActiveTab}
+        Link={Link}
       />
     );
   }
@@ -60,7 +64,7 @@ export function ImportMenu({
       </div>
       <Tabs activeTab={activeTab} onClick={setActiveTab} />
       {activeTab === "import" && (
-        <Import componentName={componentName} copyString={bitLink} />
+        <Import componentName={componentName} Link={Link} copyString={bitLink} />
       )}
       {activeTab === "install" && (
         <Install
