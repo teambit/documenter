@@ -93,7 +93,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/pages/not-found@1.0.3": {
+    "teambit.documenter/pages/not-found@1.0.4": {
         "files": [
             {
                 "name": "index.ts",
@@ -127,7 +127,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/pages/server-error@1.0.3": {
+    "teambit.documenter/pages/server-error@1.0.4": {
         "files": [
             {
                 "name": "index.ts",
@@ -161,7 +161,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/routing/external-link@1.0.3": {
+    "teambit.documenter/routing/external-link@1.0.4": {
         "files": [
             {
                 "name": "external-link.module.scss",
@@ -273,6 +273,64 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/anchor",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/block-quote@0.0.1": {
+        "files": [
+            {
+                "name": "block-quote.composition.tsx",
+                "relativePath": "block-quote.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "block-quote.module.scss",
+                "relativePath": "block-quote.module.scss",
+                "test": false
+            },
+            {
+                "name": "block-quote.tsx",
+                "relativePath": "block-quote.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/block-quote",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/bold@0.0.1": {
+        "files": [
+            {
+                "name": "bold.compositions.tsx",
+                "relativePath": "bold.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "bold.module.scss",
+                "relativePath": "bold.module.scss",
+                "test": false
+            },
+            {
+                "name": "bold.tsx",
+                "relativePath": "bold.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/bold",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
@@ -496,6 +554,35 @@
         "exported": true,
         "lanes": []
     },
+    "teambit.documenter/ui/image@0.0.1": {
+        "files": [
+            {
+                "name": "image.composition.tsx",
+                "relativePath": "image.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "image.module.scss",
+                "relativePath": "image.module.scss",
+                "test": false
+            },
+            {
+                "name": "image.tsx",
+                "relativePath": "image.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/image",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
     "teambit.documenter/ui/import-action@1.0.3": {
         "files": [
             {
@@ -586,6 +673,35 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/import-action",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/italic@0.0.1": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "italic.compositions.tsx",
+                "relativePath": "italic.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "italic.module.scss",
+                "relativePath": "italic.module.scss",
+                "test": false
+            },
+            {
+                "name": "italic.tsx",
+                "relativePath": "italic.tsx",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/italic",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
@@ -722,6 +838,35 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/list",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/ol@0.0.1": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "ol.compositions.tsx",
+                "relativePath": "ol.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "ol.module.scss",
+                "relativePath": "ol.module.scss",
+                "test": false
+            },
+            {
+                "name": "ol.tsx",
+                "relativePath": "ol.tsx",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/ol",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
@@ -896,6 +1041,35 @@
         "exported": true,
         "lanes": []
     },
+    "teambit.documenter/ui/sup@0.0.1": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "sup.compositions.tsx",
+                "relativePath": "sup.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "sup.module.scss",
+                "relativePath": "sup.module.scss",
+                "test": false
+            },
+            {
+                "name": "sup.tsx",
+                "relativePath": "sup.tsx",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/sup",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
     "teambit.documenter/ui/table-column@1.0.3": {
         "files": [
             {
@@ -997,6 +1171,93 @@
         "exported": true,
         "lanes": []
     },
+    "teambit.documenter/ui/table/base-table@0.0.1": {
+        "files": [
+            {
+                "name": "base-table.compositions.tsx",
+                "relativePath": "base-table.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "base-table.module.scss",
+                "relativePath": "base-table.module.scss",
+                "test": false
+            },
+            {
+                "name": "base-table.tsx",
+                "relativePath": "base-table.tsx",
+                "test": false
+            },
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/base-table",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/table/td@0.0.1": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "td.compositions.tsx",
+                "relativePath": "td.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "td.module.scss",
+                "relativePath": "td.module.scss",
+                "test": false
+            },
+            {
+                "name": "td.tsx",
+                "relativePath": "td.tsx",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/td",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/table/tr@0.0.1": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "tr.compositions.tsx",
+                "relativePath": "tr.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "tr.module.scss",
+                "relativePath": "tr.module.scss",
+                "test": false
+            },
+            {
+                "name": "tr.tsx",
+                "relativePath": "tr.tsx",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/tr",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
     "teambit.documenter/ui/table@1.0.3": {
         "files": [
             {
@@ -1027,6 +1288,35 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "components/table",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.documenter/ui/ul@0.0.1": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "ul.compositions.tsx",
+                "relativePath": "ul.compositions.tsx",
+                "test": false
+            },
+            {
+                "name": "ul.module.scss",
+                "relativePath": "ul.module.scss",
+                "test": false
+            },
+            {
+                "name": "ul.tsx",
+                "relativePath": "ul.tsx",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "components/ul",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
@@ -1063,267 +1353,6 @@
         "rootDir": "components/version-tag",
         "origin": "AUTHORED",
         "exported": true,
-        "lanes": []
-    },
-    "ui/block-quote": {
-        "files": [
-            {
-                "name": "block-quote.composition.tsx",
-                "relativePath": "block-quote.composition.tsx",
-                "test": false
-            },
-            {
-                "name": "block-quote.module.scss",
-                "relativePath": "block-quote.module.scss",
-                "test": false
-            },
-            {
-                "name": "block-quote.tsx",
-                "relativePath": "block-quote.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/block-quote",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/bold": {
-        "files": [
-            {
-                "name": "bold.compositions.tsx",
-                "relativePath": "bold.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "bold.module.scss",
-                "relativePath": "bold.module.scss",
-                "test": false
-            },
-            {
-                "name": "bold.tsx",
-                "relativePath": "bold.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/bold",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/image": {
-        "files": [
-            {
-                "name": "image.composition.tsx",
-                "relativePath": "image.composition.tsx",
-                "test": false
-            },
-            {
-                "name": "image.module.scss",
-                "relativePath": "image.module.scss",
-                "test": false
-            },
-            {
-                "name": "image.tsx",
-                "relativePath": "image.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/image",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/italic": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            },
-            {
-                "name": "italic.compositions.tsx",
-                "relativePath": "italic.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "italic.module.scss",
-                "relativePath": "italic.module.scss",
-                "test": false
-            },
-            {
-                "name": "italic.tsx",
-                "relativePath": "italic.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/italic",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/sup": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            },
-            {
-                "name": "sup.compositions.tsx",
-                "relativePath": "sup.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "sup.module.scss",
-                "relativePath": "sup.module.scss",
-                "test": false
-            },
-            {
-                "name": "sup.tsx",
-                "relativePath": "sup.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/sup",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/table//base-table": {
-        "files": [
-            {
-                "name": "base-table.compositions.tsx",
-                "relativePath": "base-table.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "base-table.module.scss",
-                "relativePath": "base-table.module.scss",
-                "test": false
-            },
-            {
-                "name": "base-table.tsx",
-                "relativePath": "base-table.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/base-table",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/table/td": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            },
-            {
-                "name": "td.compositions.tsx",
-                "relativePath": "td.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "td.module.scss",
-                "relativePath": "td.module.scss",
-                "test": false
-            },
-            {
-                "name": "td.tsx",
-                "relativePath": "td.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/td",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/table/tr": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            },
-            {
-                "name": "tr.compositions.tsx",
-                "relativePath": "tr.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "tr.module.scss",
-                "relativePath": "tr.module.scss",
-                "test": false
-            },
-            {
-                "name": "tr.tsx",
-                "relativePath": "tr.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/tr",
-        "origin": "AUTHORED",
-        "exported": false,
-        "lanes": []
-    },
-    "ui/ul": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "index.ts",
-                "test": false
-            },
-            {
-                "name": "ul.compositions.tsx",
-                "relativePath": "ul.compositions.tsx",
-                "test": false
-            },
-            {
-                "name": "ul.module.scss",
-                "relativePath": "ul.module.scss",
-                "test": false
-            },
-            {
-                "name": "ul.tsx",
-                "relativePath": "ul.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "components/ul",
-        "origin": "AUTHORED",
-        "exported": false,
         "lanes": []
     },
     "version": "14.8.9-dev.228"
