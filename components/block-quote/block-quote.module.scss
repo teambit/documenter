@@ -1,0 +1,11 @@
+.blockQuote {
+    background-color: rgba(202, 200, 200, 0.2);
+    border-left: 5px solid #897dec; // TODO - add to pallete and replace with var
+    border-radius: 5px;
+    margin: 0 0 1em 0;
+    padding: 1em 10px 1em 18px;
+    margin-bottom: 1em;
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
