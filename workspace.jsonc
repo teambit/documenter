@@ -1,15 +1,15 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/{
+ **/ {
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
-  **/
+   **/
   "teambit.workspace/workspace": {
     /**
      * name of the workspace.
-    **/
+     **/
     "name": "documenter",
     "icon": "https://static.bit.dev/bit-logo.svg",
     /**
@@ -23,38 +23,15 @@
   },
   /**
    * main configuration for component dependency resolution.
-  **/
+   **/
   "teambit.dependencies/dependency-resolver": {
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
      * and 'librarian'. our recommendation is use 'librarian' which reduces package duplicates
      * and totally removes the need of a 'node_modules' directory in your project.
-    */
+     */
     "packageManager": "teambit.dependencies/pnpm",
-    /**
-    * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
-    * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
-    * an invalid state that can cause build failures or incompatible dependency versions.
-    * (For historical reasons, JavaScript package managers generally do not treat this invalid
-    * state as an error.)
-    *
-    * The default value is false to avoid legacy compatibility issues.
-    * It is strongly recommended to set strictPeerDependencies=true.
-    */
-    "strictPeerDependencies": true,
-    /**
-     * map of extra arguments to pass to the configured package manager upon the installation
-     * of dependencies.
-    */
-    "extraArgs": [],
     "policy": {
-      /** DevDependendies are defined by the type of file that imports the dependency.
-       * This is not a part of the policy.
-      **/
-      "peerDependencies": {
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1"
-      },
       "dependencies": {
         "@teambit/base-ui.input.error": "^0.5.9",
         "@teambit/base-ui.layout.breakpoints": "^0.5.9",
@@ -71,6 +48,7 @@
         "@teambit/evangelist.elements.icon": "^0.5.4",
         "@teambit/evangelist.elements.image": "0.5.4",
         "@teambit/evangelist.surfaces.dropdown": "0.5.4",
+        "@teambit/evangelist.theme.icon-font": "0.5.5",
         "@types/classnames": "^2.2.10",
         "@types/react": "16.9.43",
         "classnames": "^2.2.6",
@@ -81,8 +59,30 @@
         "react-use-dimensions": "^1.2.1",
         "reset-css": "^5.0.1",
         "use-debounce": "^3.4.3"
+      },
+      "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
       }
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": ["*.spec.ts"],
+    /**
+     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
+     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
+     * an invalid state that can cause build failures or incompatible dependency versions.
+     * (For historical reasons, JavaScript package managers generally do not treat this invalid
+     * state as an error.)
+     *
+     * The default value is false to avoid legacy compatibility issues.
+     * It is strongly recommended to set strictPeerDependencies=true.
+     */
+    "strictPeerDependencies": true,
+    /**
+     * map of extra arguments to pass to the configured package manager upon the installation
+     * of dependencies.
+     */
+    "extraArgs": []
   },
   "teambit.react/react": {
     "reactVersion": "^16.0.0"
@@ -91,7 +91,7 @@
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
-  **/
+   **/
   "teambit.workspace/variants": {
     // /**
     //  * wildcards can be used to configure components under a specific namespace.
@@ -100,9 +100,7 @@
     "*": {
       "propagate": false,
       "teambit.pkg/pkg": {
-        "packageManagerPublishArgs": [
-          "--access public"
-        ],
+        "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
           "name": "@teambit/documenter.{name}",
           "private": false
