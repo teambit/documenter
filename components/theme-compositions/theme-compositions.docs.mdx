@@ -1,0 +1,24 @@
+---
+labels: ['react', 'typescript', 'theme', 'compositions']
+description: 'concrete theme compositions'
+---
+
+import { CenterThemeContext } from './theme-context-compositions';
+export const examples = [
+  {
+    scope: {
+      CenterThemeContext,
+    },
+    title: 'Center theme context example:',
+    description: 'Using the Center composition for example.',
+    code: `
+      <CenterThemeContext>
+        <div>This is a center element</div>
+      </CenterThemeContext>
+      `,
+  },
+];
+
+### Overview
+
+This component is built on `@teambit/documenter.theme.theme-context` and used for compositions inside @teambit projects.
