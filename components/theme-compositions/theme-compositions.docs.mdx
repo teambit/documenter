@@ -4,21 +4,14 @@ description: 'concrete theme compositions'
 ---
 
 import { ThemeCompositions } from './theme-compositions';
-export const examples = [
-  {
-    scope: {
-      ThemeCompositions,
-    },
-    title: 'Using theme compositions example:',
-    description: 'use to center element for example.',
-    code: `
-      <ThemeCompositions>
-        <div>This is a center element</div>
-      </ThemeCompositions>
-      `,
-  },
-];
 
 ### Overview
 
-This component is built on `@teambit/documenter.theme.theme-context` and used for compositions inside @teambit projects.
+This component is built on `@teambit/documenter.theme.theme-context` and used for compositions inside @teambit projects.  
+Using theme compositions to center element for example:
+
+```js live
+<ThemeCompositions>
+  <div>This is a center element</div>
+</ThemeCompositions>
+```

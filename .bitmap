@@ -184,7 +184,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.documenter/theme/theme-compositions@1.0.1": {
+    "teambit.documenter/theme/theme-compositions@1.0.2": {
         "files": [
             {
                 "name": "index.ts",
