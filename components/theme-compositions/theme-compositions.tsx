@@ -6,7 +6,7 @@ import {
   ThemeDocumenterProps,
 } from '@teambit/documenter.theme.theme-context';
 
-import styles from './theme-compositions.module.scss'; // TODO - rename
+import styles from './theme-compositions.module.scss';
 
 const ICON_MOON_VERSION = 'mxd7i0';
 
