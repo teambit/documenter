@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import 'reset-css';
 import { Theme } from '@teambit/base-ui.theme.theme-provider';
+import { Roboto } from '@teambit/base-ui.theme.fonts.roboto';
 import sizes from './sizes.module.scss';
 import global from './global.module.scss'; // TODO - rename
 
@@ -17,6 +18,7 @@ export function ThemeDocumenter({
       {...rest}
       className={classNames(className, sizes.heading, global.overrides)}
     >
+      <Roboto />
       {children}
     </Theme>
   );

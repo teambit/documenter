@@ -11,6 +11,7 @@ importers:
       '@teambit/base-ui.text.paragraph': registry.npmjs.org/@teambit/base-ui.text.paragraph/0.5.10_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.text.themed-text': registry.npmjs.org/@teambit/base-ui.text.themed-text/0.5.9_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.colors': registry.npmjs.org/@teambit/base-ui.theme.colors/0.5.9_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.theme.fonts.roboto': registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.2_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.sizes': registry.npmjs.org/@teambit/base-ui.theme.sizes/0.5.9_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.theme-provider': registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.5.9_react-dom@16.14.0+react@16.14.0
       '@teambit/evangelist.elements.icon': registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.7_react-dom@16.14.0+react@16.14.0
@@ -34,7 +35,7 @@ importers:
       '@types/node': registry.npmjs.org/@types/node/12.19.11
       '@types/react': registry.npmjs.org/@types/react/16.9.43
       '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
-      core-js: registry.npmjs.org/core-js/3.8.1
+      core-js: registry.npmjs.org/core-js/3.8.2
     specifiers:
       '@babel/runtime': ^7.12.5
       '@teambit/base-ui.input.error': ^0.5.10
@@ -47,6 +48,7 @@ importers:
       '@teambit/base-ui.text.paragraph': ^0.5.10
       '@teambit/base-ui.text.themed-text': ^0.5.9
       '@teambit/base-ui.theme.colors': ^0.5.9
+      '@teambit/base-ui.theme.fonts.roboto': 0.6.2
       '@teambit/base-ui.theme.sizes': ^0.5.9
       '@teambit/base-ui.theme.theme-provider': ^0.5.9
       '@teambit/evangelist.elements.icon': ^0.5.7
@@ -60,7 +62,7 @@ importers:
       '@types/react-router-dom': ^5.1.7
       classnames: ^2.2.6
       copy-to-clipboard: ^3.3.1
-      core-js: ^3.8.1
+      core-js: ^3.8.2
       prism-react-renderer: ^1.1.1
       react: ^16.14.0
       react-dom: ^16.14.0
@@ -593,6 +595,21 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.fonts.book/-/base-ui.theme.fonts.book-0.5.9.tgz'
     version: 0.5.9
+  registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.2_react-dom@16.14.0+react@16.14.0:
+    dependencies:
+      react: registry.npmjs.org/react/16.14.0
+      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
+    dev: false
+    id: registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.2
+    name: '@teambit/base-ui.theme.fonts.roboto'
+    peerDependencies:
+      react: ^16.13.1
+      react-dom: ^16.13.1
+    resolution:
+      integrity: sha512-XIHufbCPomXFrxbDrjccpwIRDoFE/3Txwtob/E0zhwbVglELnJCRzN21gI+J6CRHG9rzLjR5AaWLKPfIBAB3OQ==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/-/base-ui.theme.fonts.roboto-0.6.2.tgz'
+    version: 0.6.2
   registry.npmjs.org/@teambit/base-ui.theme.heading-margin-definition/0.5.9_react-dom@16.14.0+react@16.14.0:
     dependencies:
       react: registry.npmjs.org/react/16.14.0
@@ -1097,15 +1114,15 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz'
     version: 2.6.12
-  registry.npmjs.org/core-js/3.8.1:
+  registry.npmjs.org/core-js/3.8.2:
     dev: true
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-9Id2xHY1W7m8hCl8NkhQn5CufmF/WuR30BTRewvCXc1aZd3kMECwNZ69ndLbekKfakw9Rf2Xyc+QR6E7Gg+obg==
+      integrity: sha512-FfApuSRgrR6G5s58casCBd9M2k+4ikuu4wbW6pJyYU7bd9zvFc9qf7vr5xmrZOhT9nn+8uwlH1oRR9jTnFoA3A==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.1.tgz'
-    version: 3.8.1
+      tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.2.tgz'
+    version: 3.8.2
   registry.npmjs.org/delegate/3.2.0:
     dev: false
     name: delegate
@@ -1231,14 +1248,6 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/hastscript/-/hastscript-6.0.0.tgz'
     version: 6.0.0
-  registry.npmjs.org/highlight.js/10.4.1:
-    dev: false
-    name: highlight.js
-    resolution:
-      integrity: sha512-yR5lWvNz7c85OhVAEAeFhVCc/GV4C30Fjzc/rCP0aCWzc1UUOPUk55dK/qdwTZHBvMZo+eZ2jpk62ndX/xMFlg==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/highlight.js/-/highlight.js-10.4.1.tgz'
-    version: 10.4.1
   registry.npmjs.org/highlight.js/10.5.0:
     dev: false
     name: highlight.js
@@ -1345,17 +1354,17 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz'
     version: 1.4.0
-  registry.npmjs.org/lowlight/1.17.0:
+  registry.npmjs.org/lowlight/1.18.0:
     dependencies:
       fault: registry.npmjs.org/fault/1.0.4
-      highlight.js: registry.npmjs.org/highlight.js/10.4.1
+      highlight.js: registry.npmjs.org/highlight.js/10.5.0
     dev: false
     name: lowlight
     resolution:
-      integrity: sha512-vmtBgYKD+QVNy7tIa7ulz5d//Il9R4MooOVh4nkOf9R9Cb/Dk5TXMSTieg/vDulkBkIWj59/BIlyFQxT9X1oAQ==
+      integrity: sha512-Zlc3GqclU71HRw5fTOy00zz5EOlqAdKMYhOFIO8ay4SQEDQgFuhR8JNwDIzAGMLoqTsWxe0elUNmq5o2USRAzw==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/lowlight/-/lowlight-1.17.0.tgz'
-    version: 1.17.0
+      tarball: 'https://registry.npmjs.org/lowlight/-/lowlight-1.18.0.tgz'
+    version: 1.18.0
   registry.npmjs.org/magic-string/0.25.7:
     dependencies:
       sourcemap-codec: registry.npmjs.org/sourcemap-codec/1.4.8
@@ -1437,16 +1446,6 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/prism-react-renderer/-/prism-react-renderer-1.1.1.tgz'
     version: 1.1.1
-  registry.npmjs.org/prismjs/1.22.0:
-    dev: false
-    name: prismjs
-    optionalDependencies:
-      clipboard: registry.npmjs.org/clipboard/2.0.6
-    resolution:
-      integrity: sha512-lLJ/Wt9yy0AiSYBf212kK3mM5L8ycwlyTlSxHBAneXLR0nzFMlZ5y7riFPF3E33zXOF2IH95xdY5jIyZbM9z/w==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/prismjs/-/prismjs-1.22.0.tgz'
-    version: 1.22.0
   registry.npmjs.org/prismjs/1.23.0:
     dev: false
     name: prismjs
@@ -1567,10 +1566,10 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
       highlight.js: registry.npmjs.org/highlight.js/10.5.0
-      lowlight: registry.npmjs.org/lowlight/1.17.0
+      lowlight: registry.npmjs.org/lowlight/1.18.0
       prismjs: registry.npmjs.org/prismjs/1.23.0
       react: registry.npmjs.org/react/16.14.0
-      refractor: registry.npmjs.org/refractor/3.2.0
+      refractor: registry.npmjs.org/refractor/3.3.0
     dev: false
     id: registry.npmjs.org/react-syntax-highlighter/13.5.3
     name: react-syntax-highlighter
@@ -1611,18 +1610,18 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/react/-/react-16.14.0.tgz'
     version: 16.14.0
-  registry.npmjs.org/refractor/3.2.0:
+  registry.npmjs.org/refractor/3.3.0:
     dependencies:
       hastscript: registry.npmjs.org/hastscript/6.0.0
       parse-entities: registry.npmjs.org/parse-entities/2.0.0
-      prismjs: registry.npmjs.org/prismjs/1.22.0
+      prismjs: registry.npmjs.org/prismjs/1.23.0
     dev: false
     name: refractor
     resolution:
-      integrity: sha512-hSo+EyMIZTLBvNNgIU5lW4yjCzNYMZ4dcEhBq/3nReGfqzd2JfVhdlPDfU9rEsgcAyWx+OimIIUoL4ZU7NtYHQ==
+      integrity: sha512-c/jEhQjk1NDyTF3hMgtu8PigaqkWUv+c5+mBffZCTnjyrNSJkG+0eoTOJV/u0XCTuPfaFzJyj6MM4HnF0Wr27Q==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/refractor/-/refractor-3.2.0.tgz'
-    version: 3.2.0
+      tarball: 'https://registry.npmjs.org/refractor/-/refractor-3.3.0.tgz'
+    version: 3.3.0
   registry.npmjs.org/regenerate-unicode-properties/8.2.0:
     dependencies:
       regenerate: registry.npmjs.org/regenerate/1.4.2
