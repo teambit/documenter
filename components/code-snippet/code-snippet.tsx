@@ -37,6 +37,7 @@ export function CodeSnippet({
   className,
   frameClass,
   theme = defaultTheme,
+  language = "tsx",
   children,
   ...rest
 }: CodeSnippetProps) {
@@ -52,7 +53,7 @@ export function CodeSnippet({
       <SyntaxHighlighter
         {...rest}
         className={classNames(styles.codeSnippet, frameClass)}
-        language="tsx"
+        language={language}
         style={theme}
         customStyle={customStyles}
       >

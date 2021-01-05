@@ -1,5 +1,10 @@
 .snippetWrapper {
   position: relative;
+  &:hover {
+    .copyIcon {
+      opacity: 1;
+    }
+  }
   .codeSnippet {
     padding: 20px !important;
     border-radius: 10px;
@@ -8,11 +13,17 @@
     font-size: var(--p-xs);
   }
   .copyIcon {
-    color: white;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: white;
+    opacity: 0;
+    font-size: 16px;
+    color: #414141;
     position: absolute;
     top: 16px;
 	  right: 8px;
-	  cursor: pointer;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out;
   }
   
   code {
@@ -20,6 +31,7 @@
   }
   
   .copyMessage {
-    top: 14px;
+    top: 19px;
+    right: 45px;
   }
 }
