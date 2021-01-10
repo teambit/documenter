@@ -1,0 +1,87 @@
+---
+labels: ['react', 'typescript', 'ui-component', 'table', 'properties']
+description: 'properties table component'
+---
+
+import { PropTable } from './prop-table';
+
+### Overview
+
+A table component that renders the properties of a component.  
+The headings array determines how the data in the table is ordered.  
+The number of columns is 4 by default.
+
+### Using the Prop Table component.
+
+The Prop Table renders an array of objects. The objects' shape and the corresponding table headers are not customizable.  
+Manually populating the Prop Table is discouraged as it should only use the component's code as a source of truth (this ensures the data displayed is always up-to-date).
+
+```js live
+() => {
+  const data = [
+    {
+      name: 'text',
+      type: 'string',
+      defaultValue: { value: 'hello' },
+      description: 'A demo text prop',
+    },
+    {
+      name: 'year',
+      type: 'number',
+      defaultValue: { value: '2020' },
+      description: 'A demo number prop',
+      required: true,
+    },
+  ];
+  return <PropTable rows={data} />;
+};
+```
+
+<br />
+Use the 'showListView' prop to display the data in a list view.
+
+```js live
+() => {
+  const data = [
+    {
+      name: 'text',
+      type: 'string',
+      defaultValue: { value: 'hello' },
+      description: 'A demo text prop',
+    },
+    {
+      name: 'year',
+      type: 'number',
+      defaultValue: { value: '2020' },
+      description: 'A demo number prop',
+      required: true,
+    },
+  ];
+  return <PropTable rows={data} showListView />;
+};
+```
+
+<br />
+The Props Table can be configured to display a list view on a specified breaking
+point, using the 'listViewResolution' prop.`
+
+```js live
+() => {
+  const data = [
+    {
+      name: 'text',
+      type: 'string',
+      defaultValue: { value: 'hello' },
+      description: 'A demo text prop',
+    },
+    {
+      name: 'year',
+      type: 'number',
+      defaultValue: { value: '2020' },
+      description: 'A demo number prop',
+      required: true,
+    },
+  ];
+  return <PropTable rows={data} listViewResolution={700} />;
+};
+```
