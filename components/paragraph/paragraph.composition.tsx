@@ -1,70 +1,70 @@
-import React from "react";
-import { Paragraph } from "./paragraph";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { Paragraph } from './paragraph';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 // tODO - make text stay single line
 
 export const ParagraphXxl = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="xxl">xxl text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const ParagraphXl = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="xl">xl text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const ParagraphLg = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="lg">lg text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const ParagraphMd = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="md">md text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const ParagraphSm = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="sm">sm text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const ParagraphXs = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="xs">xs text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 export const ParagraphXxs = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div>
         <Paragraph size="xxs">xxs text</Paragraph>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

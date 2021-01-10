@@ -1,12 +1,13 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Sup } from "./sup";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Sup } from './sup';
+
 export const SupExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <>
-      <Sup>superscript text example</Sup> next to regular text
+        <Sup>superscript text example</Sup> next to regular text
       </>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

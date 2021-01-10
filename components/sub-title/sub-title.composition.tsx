@@ -1,14 +1,14 @@
-import React from "react";
-import { Subtitle } from "./sub-title";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { Subtitle } from './sub-title';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 // tODO - make text stay single line
 export const SubtitleExample = () => {
   return (
-    <ThemeContext>
-      <div >
-      <Subtitle>A subtitile text</Subtitle>
+    <ThemeCompositions>
+      <div>
+        <Subtitle>A subtitile text</Subtitle>
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

@@ -1,25 +1,29 @@
-import React from "react";
-import { LinkedHeading } from "./linked-heading";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { LinkedHeading } from './linked-heading';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 export const Large = () => {
   return (
-    <ThemeContext>
-      <LinkedHeading size='xl' link="link">large</LinkedHeading>
-    </ThemeContext>
+    <ThemeCompositions>
+      <LinkedHeading size="xl" link="link">
+        large
+      </LinkedHeading>
+    </ThemeCompositions>
   );
 };
 export const Default = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <LinkedHeading link="link">default</LinkedHeading>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const Small = () => {
   return (
-    <ThemeContext>
-      <LinkedHeading size='xs' link="link">small</LinkedHeading>
-    </ThemeContext>
+    <ThemeCompositions>
+      <LinkedHeading size="xs" link="link">
+        small
+      </LinkedHeading>
+    </ThemeCompositions>
   );
 };

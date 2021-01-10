@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { CopiedMessage } from "./copied-message";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Icon } from "@teambit/evangelist.elements.icon";
-import { H5 } from "@teambit/documenter.ui.heading";
+import React, { useState } from 'react';
+import { CopiedMessage } from './copied-message';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Icon } from '@teambit/evangelist.elements.icon';
+import { H5 } from '@teambit/documenter.ui.heading';
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (
@@ -14,35 +14,28 @@ const codeString = `export function Anchor(props: AnchorProps) {
 
 export const CopiedMessageExample = () => {
   return (
-    <ThemeContext>
-      <div style={{position: 'relative'}}>
-        <CopiedMessage show={true} style={{top: '-10px', right: '-20px'}} />
+    <ThemeCompositions>
+      <div style={{ position: 'relative' }}>
+        <CopiedMessage show={true} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 export const HiddenCopiedMessageExample = () => {
   const [isCopied, setIsCopied] = useState(false);
-  
+
   const handleClick = () => {
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   };
   return (
-    <ThemeContext>
-      <div style={{position: 'relative', width: 200}}>
-      <H5>Click icon to copy</H5>
-      <Icon onClick={handleClick} of="copy-cmp" />
-        <CopiedMessage show={isCopied} 
-        style={{top: 23, right: 120}} 
-        />
+    <ThemeCompositions>
+      <div style={{ position: 'relative', width: 200 }}>
+        <H5>Click icon to copy</H5>
+        <Icon onClick={handleClick} of="copy-cmp" />
+        <CopiedMessage show={isCopied} style={{ top: 23, right: 120 }} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
-
-CopiedMessageExample.canvas = {
-  width: '100px',
-  height: '30px',
-}

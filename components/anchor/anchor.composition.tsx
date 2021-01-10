@@ -1,28 +1,27 @@
-import React from "react";
+import React from 'react';
 import { Anchor } from './anchor';
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { H1 } from "@teambit/documenter.ui.heading";
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { H1 } from '@teambit/documenter.ui.heading';
 
 export const AnchorComponentWithHeading = () => {
   return (
-    <ThemeContext>
-      <div style={{display: 'inline-flex', alignItems: 'center'}}>
-        <H1 style={{marginRight: '10px'}}>example</H1>
+    <ThemeCompositions>
+      <div style={{ display: 'inline-flex', alignItems: 'center' }}>
+        <H1 style={{ marginRight: '10px' }}>example</H1>
         <Anchor href="example" />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 export const SimpleAnchor = () => {
   return (
-    <ThemeContext>
-        <Anchor href="example" />
-    </ThemeContext>
+    <ThemeCompositions>
+      <Anchor href="example" />
+    </ThemeCompositions>
   );
 };
 
 SimpleAnchor.canvas = {
-  width: 50
-}
-
+  width: 50,
+};

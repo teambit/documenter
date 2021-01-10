@@ -1,10 +1,10 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { ImportAction } from "./import-action";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { ImportAction } from './import-action';
 
 export const ImportActionExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div style={styles}>
         <ImportAction
           componentName="Import-action"
@@ -14,16 +14,16 @@ export const ImportActionExample = () => {
           Link={(props) => <a {...props} />}
         />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 ImportActionExample.canvas = {
-  height: "300px",
-  display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "flex-start",
+  height: '300px',
+  display: 'flex',
+  justifyContent: 'flex-end',
+  alignItems: 'flex-start',
 };
 const styles = {
-  width: "400px",
+  width: '400px',
 };

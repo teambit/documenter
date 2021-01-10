@@ -1,9 +1,6 @@
 import React from 'react';
 import { CodeSnippet } from './code-snippet';
-import {
-  ThemeCompositions,
-  center,
-} from '@teambit/documenter.theme.theme-compositions';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (
@@ -15,12 +12,8 @@ const codeString = `export function Anchor(props: AnchorProps) {
 
 export const CodeSnippetExample = () => {
   return (
-    <ThemeCompositions className={center}>
+    <ThemeCompositions>
       <CodeSnippet>{codeString}</CodeSnippet>
     </ThemeCompositions>
   );
-};
-
-CodeSnippetExample.canvas = {
-  height: 200,
 };

@@ -1,17 +1,13 @@
-import React from "react";
-import { LabelList } from "./label-list";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { LabelList } from './label-list';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
-const list = [
-  'light label',
-  'light label2'
-]
-
+const list = ['light label', 'light label2'];
 
 export const LightLabel = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <LabelList>{list}</LabelList>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

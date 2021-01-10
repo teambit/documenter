@@ -1,10 +1,10 @@
 import React from 'react';
-import { ThemeContext } from '@teambit/documenter.theme.theme-context';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 import { TableRow } from './table-row';
 
 export function Basic() {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <TableRow
         row={{
           name: 'columns',
@@ -17,6 +17,6 @@ export function Basic() {
         headings={['one', 'two', 'three', 'four']}
         isListView
       />
-    </ThemeContext>
+    </ThemeCompositions>
   );
 }

@@ -1,26 +1,21 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { ErrorPage } from "./error-page";
-
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { ErrorPage } from './error-page';
 
 export const NotFound = () => {
-  
   return (
-    <ThemeContext>
-      <div style={{display: 'inline-flex', alignItems: 'center'}}>
-        <ErrorPage code={404} title='Page not found' />
+    <ThemeCompositions>
+      <div style={{ display: 'inline-flex', alignItems: 'center' }}>
+        <ErrorPage code={404} title="Page not found" />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 export const Error = () => {
   return (
-    <ThemeContext>
-        <ErrorPage code={500} title='Internal server error' />
-    </ThemeContext>
+    <ThemeCompositions>
+      <ErrorPage code={500} title="Internal server error" />
+    </ThemeCompositions>
   );
 };
-
-
-

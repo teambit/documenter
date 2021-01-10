@@ -1,14 +1,15 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Ol } from "./ol";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Ol } from './ol';
+
 export const OlExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Ol>
         <li>Ol text</li>
         <li>Ol text</li>
         <li>Ol text</li>
       </Ol>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

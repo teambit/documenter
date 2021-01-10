@@ -1,44 +1,37 @@
-import React from "react";
-
-import { ConsumableLink } from "./consumable-link";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { ConsumableLink } from './consumable-link';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 const link = {
-  title: "import using bit",
-  link: "bit import @bit.bit/test-scope/consumable-link",
+  title: 'import using bit',
+  link: 'bit import @bit.bit/test-scope/consumable-link',
 };
 const link2 = {
-  title: "install with npm",
-  link: "npm install @bit.bit.test-scope.consumable-link",
+  title: 'install with npm',
+  link: 'npm install @bit.bit.test-scope.consumable-link',
 };
 export const BitImportExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div style={styles}>
         <ConsumableLink {...link} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 export const NpmInstallExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <div style={styles}>
         <ConsumableLink {...link2} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
-
-// ExampleLinks.canvas = {
-//   width: 300,
-//   height: 300,
-// };
-
 const styles = {
-  minWidth: "700px",
-  margin: "auto",
-  marginTop: "20px",
+  minWidth: '700px',
+  margin: 'auto',
+  marginTop: '20px',
 };

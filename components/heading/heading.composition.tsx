@@ -1,35 +1,36 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { H1, H2, H3, H4, H5, H6 } from "./heading";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { H1, H2, H3, H4, H5, H6 } from './heading';
 
 export const HeadingXl = () => {
-    return (
-  <ThemeContext>
-    <H1 style={{whiteSpace: 'nowrap'}}>main header</H1>
-  </ThemeContext>
-)}
+  return (
+    <ThemeCompositions>
+      <H1 style={{ whiteSpace: 'nowrap' }}>main header</H1>
+    </ThemeCompositions>
+  );
+};
 export const HeadingLg = () => (
-  <ThemeContext>
-    <H2 style={{whiteSpace: 'nowrap'}}>main header</H2>
-  </ThemeContext>
-)
+  <ThemeCompositions>
+    <H2 style={{ whiteSpace: 'nowrap' }}>main header</H2>
+  </ThemeCompositions>
+);
 export const HeadingMd = () => (
-  <ThemeContext>
-    <H3 style={{whiteSpace: 'nowrap'}}>main header</H3>
-  </ThemeContext>
-)
+  <ThemeCompositions>
+    <H3 style={{ whiteSpace: 'nowrap' }}>main header</H3>
+  </ThemeCompositions>
+);
 export const HeadingSm = () => (
-  <ThemeContext>
-    <H4 style={{whiteSpace: 'nowrap'}}>main header</H4>
-  </ThemeContext>
-)
+  <ThemeCompositions>
+    <H4 style={{ whiteSpace: 'nowrap' }}>main header</H4>
+  </ThemeCompositions>
+);
 export const HeadingXs = () => (
-  <ThemeContext>
-    <H5 style={{whiteSpace: 'nowrap'}}>main header</H5>
-  </ThemeContext>
-)
+  <ThemeCompositions>
+    <H5 style={{ whiteSpace: 'nowrap' }}>main header</H5>
+  </ThemeCompositions>
+);
 export const HeadingXxs = () => (
-  <ThemeContext>
-    <H6 style={{whiteSpace: 'nowrap'}}>main header</H6>
-  </ThemeContext>
+  <ThemeCompositions>
+    <H6 style={{ whiteSpace: 'nowrap' }}>main header</H6>
+  </ThemeCompositions>
 );

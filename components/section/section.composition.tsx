@@ -1,13 +1,11 @@
-import React from "react";
-import { Section } from "./section";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { Section } from './section';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 export const Xxs = () => {
   return (
-    <ThemeContext>
-      <Section>
-          section content
-      </Section>
-    </ThemeContext>
+    <ThemeCompositions>
+      <Section>section content</Section>
+    </ThemeCompositions>
   );
 };

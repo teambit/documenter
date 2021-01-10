@@ -1,29 +1,31 @@
-import React from "react";
-import { Label } from "./label";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { Label } from './label';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 export const LightLabel = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Label>light label</Label>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 
 export const DarkLabel = () => {
   return (
-    <ThemeContext>
-      <Label style={{backgroundColor: '#414141', color: 'white'}}>dark label</Label>
-    </ThemeContext>
-  );  
+    <ThemeCompositions>
+      <Label style={{ backgroundColor: '#414141', color: 'white' }}>
+        dark label
+      </Label>
+    </ThemeCompositions>
+  );
 };
 
 const List = () => {
   return (
     <ul>
       <li>First</li>
-      <li >Second</li>
+      <li>Second</li>
       <li>Third</li>
     </ul>
-  )
-}
+  );
+};

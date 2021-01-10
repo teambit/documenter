@@ -14,7 +14,7 @@ importers:
       '@teambit/base-ui.theme.fonts.roboto': registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.2_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.sizes': registry.npmjs.org/@teambit/base-ui.theme.sizes/0.5.9_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.theme-provider': registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.5.9_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.elements.icon': registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.7_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.elements.icon': registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.8_react-dom@16.14.0+react@16.14.0
       '@teambit/evangelist.elements.image': registry.npmjs.org/@teambit/evangelist.elements.image/0.5.4_react-dom@16.14.0+react@16.14.0
       '@teambit/evangelist.surfaces.dropdown': registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/0.5.4_react-dom@16.14.0+react@16.14.0
       '@teambit/evangelist.theme.icon-font': registry.npmjs.org/@teambit/evangelist.theme.icon-font/0.5.5_react-dom@16.14.0+react@16.14.0
@@ -31,8 +31,8 @@ importers:
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
       '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.19
-      '@types/node': registry.npmjs.org/@types/node/12.19.11
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.19.12
       '@types/react': registry.npmjs.org/@types/react/16.9.43
       '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
       core-js: registry.npmjs.org/core-js/3.8.2
@@ -51,13 +51,13 @@ importers:
       '@teambit/base-ui.theme.fonts.roboto': 0.6.2
       '@teambit/base-ui.theme.sizes': ^0.5.9
       '@teambit/base-ui.theme.theme-provider': ^0.5.9
-      '@teambit/evangelist.elements.icon': ^0.5.7
+      '@teambit/evangelist.elements.icon': ^0.5.8
       '@teambit/evangelist.elements.image': 0.5.4
       '@teambit/evangelist.surfaces.dropdown': 0.5.4
       '@teambit/evangelist.theme.icon-font': 0.5.5
       '@types/classnames': ^2.2.11
-      '@types/jest': ~26.0.19
-      '@types/node': ^12.19.11
+      '@types/jest': ~26.0.20
+      '@types/node': ^12.19.12
       '@types/react': 16.9.43
       '@types/react-router-dom': ^5.1.7
       classnames: ^2.2.6
@@ -182,7 +182,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3
       '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.0
-      '@types/node': registry.npmjs.org/@types/node/12.19.11
+      '@types/node': registry.npmjs.org/@types/node/12.19.12
       '@types/yargs': registry.npmjs.org/@types/yargs/15.0.12
       chalk: registry.npmjs.org/chalk/4.1.0
     dev: true
@@ -707,22 +707,22 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/-/evangelist.css-components.fade-in-out-0.5.4.tgz'
     version: 0.5.4
-  registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.7_react-dom@16.14.0+react@16.14.0:
+  registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.8_react-dom@16.14.0+react@16.14.0:
     dependencies:
       '@teambit/base-ui.elements.icon': registry.npmjs.org/@teambit/base-ui.elements.icon/0.5.9_react-dom@16.14.0+react@16.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
-    id: registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.7
+    id: registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.8
     name: '@teambit/evangelist.elements.icon'
     peerDependencies:
       react: ^16.13.1
       react-dom: ^16.13.1
     resolution:
-      integrity: sha512-/PTXArg2+ZuWoeAinqA7TLCizSm+oxsM+7rkvYSJx9mRnpmKJdTbn5m9SVm787hMIZGOYfy9uTxJNCLvpskJxQ==
+      integrity: sha512-QkriB7icthhg55ukjDodInkIf8sdtB4/2noGi7jM9rduLNhZ63y/3wDKrQ7LpPIffjqdjLj0NEXv4VPwLHfppQ==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@teambit/evangelist.elements.icon/-/evangelist.elements.icon-0.5.7.tgz'
-    version: 0.5.7
+      tarball: 'https://registry.npmjs.org/@teambit/evangelist.elements.icon/-/evangelist.elements.icon-0.5.8.tgz'
+    version: 0.5.8
   registry.npmjs.org/@teambit/evangelist.elements.image/0.5.4_react-dom@16.14.0+react@16.14.0:
     dependencies:
       '@teambit/base-ui.constants.storage': registry.npmjs.org/@teambit/base-ui.constants.storage/0.5.9_react-dom@16.14.0+react@16.14.0
@@ -831,30 +831,30 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.0.tgz'
     version: 3.0.0
-  registry.npmjs.org/@types/jest/26.0.19:
+  registry.npmjs.org/@types/jest/26.0.20:
     dependencies:
       jest-diff: registry.npmjs.org/jest-diff/26.6.2
       pretty-format: registry.npmjs.org/pretty-format/26.6.2
     dev: true
     name: '@types/jest'
     resolution:
-      integrity: sha512-jqHoirTG61fee6v6rwbnEuKhpSKih0tuhqeFbCmMmErhtu3BYlOZaXWjffgOstMM4S/3iQD31lI5bGLTrs97yQ==
+      integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/jest/-/jest-26.0.19.tgz'
-    version: 26.0.19
-  registry.npmjs.org/@types/node/12.19.11:
+      tarball: 'https://registry.npmjs.org/@types/jest/-/jest-26.0.20.tgz'
+    version: 26.0.20
+  registry.npmjs.org/@types/node/12.19.12:
     dev: true
     name: '@types/node'
     resolution:
-      integrity: sha512-bwVfNTFZOrGXyiQ6t4B9sZerMSShWNsGRw8tC5DY1qImUNczS9SjT4G6PnzjCnxsu5Ubj6xjL2lgwddkxtQl5w==
+      integrity: sha512-UwfL2uIU9arX/+/PRcIkT08/iBadGN2z6ExOROA2Dh5mAuWTBj6iJbQX4nekiV5H8cTrEG569LeX+HRco9Cbxw==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/node/-/node-12.19.11.tgz'
-    version: 12.19.11
+      tarball: 'https://registry.npmjs.org/@types/node/-/node-12.19.12.tgz'
+    version: 12.19.12
   registry.npmjs.org/@types/react-router-dom/5.1.7:
     dependencies:
       '@types/history': registry.npmjs.org/@types/history/4.7.8
       '@types/react': registry.npmjs.org/@types/react/16.9.43
-      '@types/react-router': registry.npmjs.org/@types/react-router/5.1.9
+      '@types/react-router': registry.npmjs.org/@types/react-router/5.1.11
     dev: true
     name: '@types/react-router-dom'
     resolution:
@@ -862,17 +862,17 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.1.7.tgz'
     version: 5.1.7
-  registry.npmjs.org/@types/react-router/5.1.9:
+  registry.npmjs.org/@types/react-router/5.1.11:
     dependencies:
       '@types/history': registry.npmjs.org/@types/history/4.7.8
       '@types/react': registry.npmjs.org/@types/react/16.9.43
     dev: true
     name: '@types/react-router'
     resolution:
-      integrity: sha512-US6C0rq2Wt/7uje1roqO0R++Sr0jqplKaBChDY5sNg5k7GC/79YFK0ZsLEdemqUjW05wq1Y/9YYEUgfNZ8TlvA==
+      integrity: sha512-ofHbZMlp0Y2baOHgsWBQ4K3AttxY61bDMkwTiBOkPg7U6C/3UwwB5WaIx28JmSVi/eX3uFEMRo61BV22fDQIvg==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/react-router/-/react-router-5.1.9.tgz'
-    version: 5.1.9
+      tarball: 'https://registry.npmjs.org/@types/react-router/-/react-router-5.1.11.tgz'
+    version: 5.1.11
   registry.npmjs.org/@types/react/16.9.43:
     dependencies:
       '@types/prop-types': 15.7.3

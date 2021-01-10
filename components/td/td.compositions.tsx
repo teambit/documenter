@@ -1,11 +1,11 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Td } from './td';
 
-import { Td } from "./td";
 export const TdExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Td>Td text</Td>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

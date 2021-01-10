@@ -1,6 +1,6 @@
-import React from "react";
-import { Playground } from "./react-playground";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { Playground } from './react-playground';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 const codeString = `<div>hello playground</div>`;
 
@@ -17,19 +17,19 @@ const functionString = `
 
 export const HelloWorld = () => {
   return (
-    <ThemeContext>
-      <div style={{width: '400px'}}>
+    <ThemeCompositions>
+      <div style={{ width: '400px' }}>
         <Playground code={codeString} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
 export const FunctionExmple = () => {
   return (
-    <ThemeContext>
-      <div style={{width: '600px'}}>
+    <ThemeCompositions>
+      <div style={{ width: '600px' }}>
         <Playground code={functionString} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

@@ -1,23 +1,18 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Td } from "@teambit/documenter.ui.table.td";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Td } from '@teambit/documenter.ui.table.td';
 
-import { Tr } from "@teambit/documenter.ui.table.tr";
-import { Table } from "./base-table";
+import { Tr } from '@teambit/documenter.ui.table.tr';
+import { Table } from './base-table';
+
 export const TableExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Table>
         <Tr>
-          <th>
-            title1
-          </th>
-          <th>
-            title2
-          </th>
-          <th>
-            title3
-          </th>
+          <th>title1</th>
+          <th>title2</th>
+          <th>title3</th>
         </Tr>
         <Tr>
           <Td>cell</Td>
@@ -30,6 +25,6 @@ export const TableExample = () => {
           <Td>cell</Td>
         </Tr>
       </Table>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

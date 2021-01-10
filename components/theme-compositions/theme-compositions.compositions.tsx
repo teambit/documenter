@@ -1,8 +1,8 @@
 import React from 'react';
-import { ThemeCompositions } from './theme-compositions';
+import { ThemeCompositions, center } from './';
 
 export const CenterThemeContextExample = () => (
-  <ThemeCompositions>
+  <ThemeCompositions className={center}>
     <div>This is a center element</div>
   </ThemeCompositions>
 );

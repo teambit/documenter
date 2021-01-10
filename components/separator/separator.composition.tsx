@@ -1,14 +1,14 @@
-import React from "react";
-import { Separator } from "./separator";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import React from 'react';
+import { Separator } from './separator';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 // tODO - make text stay single line
 export const SeapartorExample = () => {
   return (
-    <ThemeContext>
-      <div >
-      <Separator style={{width: '100%'}} />
+    <ThemeCompositions>
+      <div>
+        <Separator style={{ width: '100%' }} />
       </div>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

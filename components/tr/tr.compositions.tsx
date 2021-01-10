@@ -1,16 +1,16 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Td } from "@teambit/documenter.ui.table.td";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Td } from '@teambit/documenter.ui.table.td';
 
-import { Tr } from "./tr";
+import { Tr } from './tr';
 export const TrExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Tr>
         <Td>Tr text</Td>
         <Td>Tr text</Td>
         <Td>Tr text</Td>
       </Tr>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

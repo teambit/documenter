@@ -1,14 +1,15 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Ul } from "./ul";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Ul } from './ul';
+
 export const UlExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Ul>
         <li>Ul text</li>
         <li>Ul text</li>
         <li>Ul text</li>
       </Ul>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };

@@ -1,10 +1,11 @@
-import React from "react";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
-import { Italic } from "./italic";
+import React from 'react';
+import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
+import { Italic } from './italic';
+
 export const ItalicExample = () => {
   return (
-    <ThemeContext>
+    <ThemeCompositions>
       <Italic>Italic text</Italic>
-    </ThemeContext>
+    </ThemeCompositions>
   );
 };
