@@ -12,7 +12,7 @@ export type LinkedHeadingProps = {
   /**
    * anchor link to section
    */
-  link: string,
+  link?: string,
 
   /**
    * font size override for title string [optional]
@@ -32,7 +32,7 @@ export function LinkedHeading({ children, link, size, className, ...rest }: Link
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
       <H3 className={styles.heading} size={size || 'sm'}>{children}</H3>
-      <Anchor className={styles.anchor} href={link}></Anchor>
+      {link && <Anchor className={styles.anchor} href={link}></Anchor>}
     </div>
   );
 }
