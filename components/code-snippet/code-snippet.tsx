@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, memo } from 'react';
 import classNames from 'classnames';
 import copy from 'copy-to-clipboard';
 import { Icon } from '@teambit/evangelist.elements.icon';
@@ -28,7 +28,6 @@ type CodeSnippetProps = {
    */
   theme?: any;
 } & SyntaxHighlighterProps;
-// & React.HTMLAttributes<HTMLDivElement> &
 
 /**
  * A code snippet component
@@ -48,19 +47,28 @@ export function CodeSnippet({
     setTimeout(() => setIsCopied(false), 2000);
     copy(children.toString());
   };
+
+  const trimmedChildren = useMemo(() => children.trim(), [children]);
+
   return (
     <div className={classNames(styles.snippetWrapper, className)}>
-      <SyntaxHighlighter
+      <Highlighter
         {...rest}
         className={classNames(styles.codeSnippet, frameClass)}
         language={language}
         style={theme}
         customStyle={customStyles}
       >
-        {children}
-      </SyntaxHighlighter>
+        {trimmedChildren}
+      </Highlighter>
       <Icon onClick={handleClick} className={styles.copyIcon} of="copy-cmp" />
       <CopiedMessage show={isCopied} className={styles.copyMessage} />
     </div>
   );
 }
+
+const Highlighter = memo(function SnippetWrapper(
+  props: SyntaxHighlighterProps
+) {
+  return <SyntaxHighlighter {...props} />;
+});

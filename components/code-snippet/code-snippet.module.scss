@@ -11,6 +11,7 @@
     background-color: white;
     font-family: Roboto mono;
     font-size: var(--p-xs);
+    margin: 0 !important; // this is so that the copy icon will consistantly sit at the corner of the snippet
   }
   .copyIcon {
     padding: 6px 8px;
@@ -20,8 +21,8 @@
     font-size: 16px;
     color: #414141;
     position: absolute;
-    top: 16px;
-	  right: 8px;
+    top: 6px;
+	  right: 6px;
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
   }
@@ -31,7 +32,7 @@
   }
   
   .copyMessage {
-    top: 19px;
+    top: 10px;
     right: 45px;
   }
 }
