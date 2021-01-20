@@ -6,14 +6,22 @@ import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions'
 export const PropertyTableExample = () => {
   return (
     <ThemeCompositions>
-      <PropTable rows={tableData.rows} />
+      <div style={{ minWidth: "600px" }}>
+        <PropTable rows={tableData.rows} listViewResolution={300} />
+      </div>
     </ThemeCompositions>
   );
 };
 export const PropertyTableListView = () => {
   return (
     <ThemeCompositions>
-      <PropTable rows={tableData.rows} listViewResolution={700} showListView />
+      <div style={{ minWidth: "100px" }}>
+        <PropTable
+          rows={tableData.rows}
+          listViewResolution={700}
+          showListView
+        />
+      </div>
     </ThemeCompositions>
   );
 };
@@ -58,5 +66,5 @@ const tableData = {
 };
 
 PropertyTableExample.canvas = {
-  minWidth: '800px',
+  width: '800px',
 };
