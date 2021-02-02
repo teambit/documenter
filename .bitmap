@@ -109,7 +109,7 @@
         "mainFile": "index.ts",
         "rootDir": "components/paragraph"
     },
-    "teambit.documenter/ui/property-table@2.0.5": {
+    "teambit.documenter/ui/property-table@2.0.6": {
         "mainFile": "index.ts",
         "rootDir": "components/prop-table"
     },
@@ -169,5 +169,5 @@
         "mainFile": "index.ts",
         "rootDir": "components/version-tag"
     },
-    "version": "14.8.9-dev.263"
+    "version": "14.8.9-dev.281"
 }
