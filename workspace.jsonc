@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/{
+ **/ {
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -33,19 +33,19 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@teambit/base-ui.input.error": "^0.6.3",
-        "@teambit/base-ui.layout.breakpoints": "^0.6.3",
-        "@teambit/base-ui.layout.grid-component": "^0.6.3",
-        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "^0.6.3",
-        "@teambit/base-ui.surfaces.split-pane.split-pane": "^0.6.3",
-        "@teambit/base-ui.text.heading": "^0.6.3",
-        "@teambit/base-ui.text.muted-text": "^0.6.3",
-        "@teambit/base-ui.text.paragraph": "^0.6.3",
-        "@teambit/base-ui.text.themed-text": "^0.6.3",
-        "@teambit/base-ui.theme.colors": "^0.6.3",
-        "@teambit/base-ui.theme.fonts.roboto": "0.6.3",
-        "@teambit/base-ui.theme.sizes": "^0.6.3",
-        "@teambit/base-ui.theme.theme-provider": "^0.6.3",
+        "@teambit/base-ui.input.error": "^0.6.7",
+        "@teambit/base-ui.layout.breakpoints": "^0.6.7",
+        "@teambit/base-ui.layout.grid-component": "^0.6.7",
+        "@teambit/base-ui.surfaces.split-pane.hover-splitter": "^0.6.7",
+        "@teambit/base-ui.surfaces.split-pane.split-pane": "^0.6.7",
+        "@teambit/base-ui.text.heading": "^0.6.7",
+        "@teambit/base-ui.text.muted-text": "^0.6.7",
+        "@teambit/base-ui.text.paragraph": "^0.6.7",
+        "@teambit/base-ui.text.themed-text": "^0.6.7",
+        "@teambit/base-ui.theme.colors": "^0.6.7",
+        "@teambit/base-ui.theme.fonts.roboto": "0.6.7",
+        "@teambit/base-ui.theme.sizes": "^0.6.7",
+        "@teambit/base-ui.theme.theme-provider": "^0.6.7",
         "@teambit/evangelist.elements.icon": "^0.5.20",
         "@teambit/evangelist.elements.image": "0.5.20",
         "@teambit/evangelist.surfaces.dropdown": "0.5.20",
@@ -67,9 +67,7 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": [
-      "*.spec.ts"
-    ],
+    "devFilePatterns": ["*.spec.ts"],
     /**
      * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
      * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -103,9 +101,7 @@
     "*": {
       "propagate": false,
       "teambit.pkg/pkg": {
-        "packageManagerPublishArgs": [
-          "--access public"
-        ],
+        "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
           "name": "@teambit/documenter.{name}",
           "private": false
