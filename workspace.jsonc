@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/ {
+ **/{
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -67,7 +67,9 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": ["*.spec.ts"],
+    "devFilePatterns": [
+      "*.spec.ts"
+    ],
     /**
      * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
      * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -101,7 +103,9 @@
     "*": {
       "propagate": false,
       "teambit.pkg/pkg": {
-        "packageManagerPublishArgs": ["--access public"],
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
         "packageJson": {
           "name": "@teambit/documenter.{name}",
           "private": false
