@@ -1,13 +1,16 @@
+export const legacyDocsUrl = 'https://docs.bit.dev'
+export const docsUrl = 'https://harmony-docs.bit.dev'
+
 export const links = {
   scopedRegistry:
-    "https://docs.bit.dev/docs/installing-components#configuring-bit-registry",
+    `${legacyDocsUrl}/docs/installing-components#configuring-bit-registry`,
   installBit:
-    "https://bit-harmony.netlify.app/docs/getting-started/install-bit",
+    `${docsUrl}/introduction/installation`,
   createCompositions:
-    "https://bit-harmony.netlify.app/docs/getting-started/add-components#add-compositions-render-component-instances-in-isolation",
-  testComponents: "https://bit-harmony.netlify.app/docs/getting-started/test",
+    `${docsUrl}/tutorial/render-component`,
+  testComponents: `${docsUrl}/tutorial/test`,
   bitIntroduction:
-    "https://bit-harmony.netlify.app/docs/getting-started/what-is-bit",
-  whatIsBit: "https://bit-harmony.netlify.app/docs/getting-started/what-is-bit",
-  tagComponentVersion: "https://docs.bit.dev/docs/tag-component-version",
+    `${docsUrl}/introduction/getting-started`,
+  whatIsBit: `${docsUrl}/introduction/why-bit`,
+  tagComponentVersion: `${legacyDocsUrl}/docs/tag-component-version`,
 };
