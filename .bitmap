@@ -9,7 +9,7 @@
     },
     "content/documentation-links": {
         "scope": "teambit.documenter",
-        "version": "3.0.10",
+        "version": "3.0.11",
         "mainFile": "index.ts",
         "rootDir": "components/documentation-links"
     },
@@ -117,7 +117,7 @@
     },
     "ui/import-action": {
         "scope": "teambit.documenter",
-        "version": "3.0.9",
+        "version": "3.0.10",
         "mainFile": "index.ts",
         "rootDir": "components/import-action"
     },
