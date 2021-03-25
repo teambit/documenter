@@ -1,1 +1,1 @@
-export { links, legacyDocsUrl, docsUrl } from './documentation-links'
+export { links, docsUrl } from './documentation-links'
