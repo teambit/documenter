@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/{
+ **/ {
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -43,14 +43,13 @@
         "@teambit/base-ui.text.paragraph": "^0.6.0",
         "@teambit/base-ui.text.themed-text": "^0.6.0",
         "@teambit/base-ui.theme.colors": "^0.6.0",
-        "@teambit/base-ui.theme.fonts.roboto": "0.6.0",
+        "@teambit/base-ui.theme.fonts.roboto": "^0.6.0",
         "@teambit/base-ui.theme.sizes": "^0.6.0",
         "@teambit/base-ui.theme.theme-provider": "^0.6.0",
         "@teambit/evangelist.elements.icon": "^0.5.0",
         "@teambit/evangelist.elements.image": "^0.5.0",
         "@teambit/evangelist.surfaces.dropdown": "^0.5.0",
         "@teambit/evangelist.theme.icon-font": "^0.5.0",
-        "@types/classnames": "^2.2.10",
         "@types/react": "16.9.43",
         "classnames": "^2.2.6",
         "copy-to-clipboard": "^3.3.1",
