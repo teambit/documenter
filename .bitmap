@@ -253,5 +253,5 @@
         "mainFile": "index.ts",
         "rootDir": "components/version-tag"
     },
-    "version": "14.8.9-dev.281"
+    "$schema-version": "14.9.0"
 }
