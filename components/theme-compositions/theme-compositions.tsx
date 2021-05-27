@@ -1,5 +1,6 @@
 import React from 'react';
 import { EvaIconFont } from '@teambit/evangelist.theme.icon-font';
+import 'reset-css';
 import {
   ThemeDocumenter,
   ThemeDocumenterProps,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 import { Table } from "@teambit/documenter.ui.table";
 import { List } from "@teambit/documenter.ui.list";
 
