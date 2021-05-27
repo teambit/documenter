@@ -1,5 +1,5 @@
 import { ConsumableLink } from "./consumable-link";
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 
 export const labels = ['react', 'ui-component']
 
@@ -9,14 +9,14 @@ export const examples = [
     {
     scope: {
         ConsumableLink,
-        ThemeContext
+        ThemeCompositions
     },
     title: "Using the Consumable Link component",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <div style={{maxWidth: "600px"}}>
         <ConsumableLink title="Component ID" link="@teambit/documenter.ui.consumable-link" />
     </div>
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]

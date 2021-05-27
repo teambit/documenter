@@ -1,4 +1,4 @@
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 import { Subtitle } from './sub-title'
 
 export const labels = ['react', 'ui-component', 'text'];
@@ -7,15 +7,15 @@ export const examples = [
     {
     scope: {
         Subtitle,
-        ThemeContext
+        ThemeCompositions
     },
     title: "Using the Subtitle component.",
     description: `The subtitle component renders a "muted" extra-large text (as a 'p' element).`,
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <Subtitle >
         This is a subtitle
     </Subtitle>
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]

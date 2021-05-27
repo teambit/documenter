@@ -1,9 +1,9 @@
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 import { Paragraph } from "./paragraph";
 
 export const labels = ['react', 'ui-component', 'text', 'paragraph', 'div', 'span'];
 
-const scope = {Paragraph, ThemeContext};
+const scope = {Paragraph, ThemeCompositions};
 
 export const examples = [
     {
@@ -11,7 +11,7 @@ export const examples = [
     title: "Using the Paragraph component.",
     description: "The Paragraph component renders a text as either a 'p', 'div' or 'span' element.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <Paragraph element="p" >
         This is a 'p' element.
     </Paragraph>
@@ -21,13 +21,13 @@ export const examples = [
     <Paragraph element="span" >
         This is a 'span' element.
     </Paragraph>
-</ThemeContext>
+</ThemeCompositions>
 `},
 {
     scope,
     description: "Selecting a font size.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <Paragraph size="xxm" >
         This is an xx-small font.
     </Paragraph>
@@ -37,6 +37,6 @@ export const examples = [
     <Paragraph size="xl" >
         This is an extra large font.
     </Paragraph>
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]

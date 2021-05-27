@@ -1,4 +1,4 @@
-import { ThemeContext } from "@teambit/documenter.theme.theme-context"
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions"
 import { Section } from "./section"
 
 export const labels = ['react', 'ui-component', 'container'];
@@ -7,14 +7,14 @@ export const examples = [
     {
     scope: {
         Section,
-        ThemeContext
+        ThemeCompositions
     },
     title: "Using the Section component.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <Section className="custom-section">
         This is a section.
     </Section>
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]

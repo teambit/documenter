@@ -1,9 +1,9 @@
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 import { List } from "./list";
 
 export const labels = ['react', 'ui-component', 'list', 'ol', 'ul']
 
-const scope = { List, ThemeContext };
+const scope = { List, ThemeCompositions };
 
 export const examples = [
     {
@@ -11,7 +11,7 @@ export const examples = [
     title: "Using the CopyBox component.",
     description: "The List component receives an array and renders a list. Choose between an ordered list and an unordered list.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
 // Ordered list
     <List element='ol'>
         {['First', 'Second', 'Third', 'Fourth']}
@@ -21,13 +21,13 @@ export const examples = [
 <List>
     {['Audi', 'Hyundai', 'Honda', 'Tesla']}
 </List>
-</ThemeContext>
+</ThemeCompositions>
 `},
 {
     scope,
     description: "Customize the spacing between the list items.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
 
     // Small spacing
     <List spacing='sm'>
@@ -39,13 +39,13 @@ export const examples = [
         {['Audi', 'Hyundai', 'Honda', 'Tesla']}
     </List>
 
-</ThemeContext>
+</ThemeCompositions>
 `},
 {
     scope,
     description: "Use the List component recursively.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <List element='ol'>
         {[
         'One',
@@ -59,7 +59,6 @@ export const examples = [
             </List>
         ]}
     </List>
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]
-
