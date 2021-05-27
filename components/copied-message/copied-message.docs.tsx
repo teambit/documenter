@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { CopiedMessage } from "@teambit/documenter.ui.copied-message"
-import { ThemeContext } from "@teambit/documenter.theme.theme-context"
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions"
 import { Icon } from "@teambit/evangelist.elements.icon";
 
 export const labels = ['react', 'ui-component']
@@ -12,7 +12,7 @@ export const examples = [
     scope: {
         CopiedMessage,
         Icon,
-        ThemeContext,
+        ThemeCompositions,
         useState
     },
     title: "Using the Copied Message component",
@@ -26,7 +26,7 @@ export const examples = [
           setTimeout(() => setIsCopied(false), 2000);
         };
         return (
-          <ThemeContext>
+          <ThemeCompositions>
             <div style={{position: 'relative', width: 205}}>       
                 <p style={{display: 'inline'}}>Click on the icon to copy!</p>
                 <CopiedMessage show={isCopied} style={{top: 0}} />
@@ -36,7 +36,7 @@ export const examples = [
                     style ={{paddingLeft: "5px"}} 
                     />
             </div>
-          </ThemeContext>
+          </ThemeCompositions>
         );
       };
 `}
@@ -50,12 +50,12 @@ export const examples = [
 //       setTimeout(() => setIsCopied(false), 2000);
 //     };
 //     return (
-//       <ThemeContext>
+//       <ThemeCompositions>
 //         <div>
 //             <p>Click on the icon to copy!</p>
 //             <Icon onClick={handleClick} of="copy-cmp" />
 //             <CopiedMessage show={isCopied} />
 //         </div>
-//       </ThemeContext>
+//       </ThemeCompositions>
 //     );
 //   };

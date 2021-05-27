@@ -1,4 +1,4 @@
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 import { Separator } from "./separator"
 import { Section } from "@teambit/documenter.ui.section"
 
@@ -9,11 +9,11 @@ export const examples = [
     scope: {
         Separator,
         Section,
-        ThemeContext
+        ThemeCompositions
     },
     title: "Using the Seperator component.",
     code: `
-<ThemeContext>
+<ThemeCompositions>
 
     <Section>
         SECTION A
@@ -25,6 +25,6 @@ export const examples = [
         SECTION B
     </Section>
     
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]

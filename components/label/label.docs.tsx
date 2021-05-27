@@ -1,33 +1,33 @@
 export const labels = ['react', 'ui-component', 'label'];
 
-import { ThemeContext } from "@teambit/documenter.theme.theme-context";
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions";
 import { Label } from "./label";
 
 export const examples = [
     {
     scope: {
         Label,
-        ThemeContext
+        ThemeCompositions
     },
     title: "Using the Label component",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <Label>
         Label
     </Label>
-</ThemeContext>
+</ThemeCompositions>
 `},
 {
     scope: {
         Label,
-        ThemeContext
+        ThemeCompositions
     },
     description: "Customizing styling",
     code: `
-<ThemeContext>
+<ThemeCompositions>
     <Label style={{backgroundColor: '#414141', color: 'white'}}>
         Dark Label
     </Label>
-</ThemeContext>
+</ThemeCompositions>
 `}
 ]
