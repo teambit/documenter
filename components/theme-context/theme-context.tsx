@@ -26,4 +26,4 @@ export function ThemeDocumenter({
 /**
  * @deprecated
  */
-export { ThemeDocumenter as ThemeContext }; 
+export { ThemeDocumenter as ThemeContext };
