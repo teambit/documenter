@@ -81,7 +81,7 @@
     },
     "ui/consumable-link": {
         "scope": "teambit.documenter",
-        "version": "3.0.13",
+        "version": "3.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/consumable-link"
     },
@@ -93,7 +93,7 @@
     },
     "ui/copy-box": {
         "scope": "teambit.documenter",
-        "version": "3.0.13",
+        "version": "3.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/copy-box"
     },
@@ -117,7 +117,7 @@
     },
     "ui/import-action": {
         "scope": "teambit.documenter",
-        "version": "3.0.16",
+        "version": "3.0.17",
         "mainFile": "index.ts",
         "rootDir": "components/import-action"
     },
@@ -147,7 +147,7 @@
     },
     "ui/list": {
         "scope": "teambit.documenter",
-        "version": "3.0.13",
+        "version": "3.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/list"
     },
@@ -165,7 +165,7 @@
     },
     "ui/property-table": {
         "scope": "teambit.documenter",
-        "version": "3.0.13",
+        "version": "3.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/prop-table"
     },
@@ -195,7 +195,7 @@
     },
     "ui/table": {
         "scope": "teambit.documenter",
-        "version": "3.0.13",
+        "version": "3.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/table"
     },
@@ -213,7 +213,7 @@
     },
     "ui/table-heading-row": {
         "scope": "teambit.documenter",
-        "version": "3.0.13",
+        "version": "3.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/table-heading-row"
     },
