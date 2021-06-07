@@ -1,5 +1,5 @@
 import React from 'react';
-import { EvaIconFont } from '@teambit/evangelist.theme.icon-font';
+import { IconFont } from '@teambit/design.theme.icons-font';
 import 'reset-css';
 import {
   ThemeDocumenter,
@@ -16,7 +16,7 @@ export const ThemeCompositions = ({
 }: ThemeCompositionsProps) => {
   return (
     <ThemeDocumenter {...rest}>
-      <EvaIconFont query={ICON_MOON_VERSION} />
+      <IconFont query={ICON_MOON_VERSION} />
       {children}
     </ThemeDocumenter>
   );
