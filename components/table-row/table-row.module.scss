@@ -1,6 +1,6 @@
 
 .propRow {
-    border-bottom: 1px solid var(--border-color, var(--border-color, #ededed));
+    border-bottom: 1px solid var(--bit-border-color-lightest, var(--bit-border-color-lightest, #ededed));
     margin-bottom: 8px;
     padding: 18px 20px;
     &.singleColumn {
@@ -14,10 +14,10 @@
         display: flex;
         flex-basis: 50%;
         min-width: 110px;
-        color: var(--text-muted);
+        color: var(--bit-text-color-light);
         font-weight: bold;
         text-transform: uppercase;
-        font-size: var(--p-xxs);
+        font-size: var(--bit-p-xxs);
     }
 }
 
@@ -40,14 +40,14 @@
 }
 
 .required {
-    color: var(--text-muted);
+    color: var(--bit-text-color-light);
     font-size: 12px;
 }
 
 .name {
     margin-right: 5px;
     font-family: Roboto mono;
-    font-size: var(--p-xxs);
+    font-size: var(--bit-p-xxs);
     color: #4646c6;
 }
 
@@ -56,7 +56,7 @@
     display: inline-block;
     background-color: var(--light-purple, #eceaff);
     font-family: Roboto mono;
-    font-size: var(--p-xxs);
+    font-size: var(--bit-p-xxs);
     width: fit-content;
     padding: 5px;
     border-radius: 4px;
@@ -66,7 +66,7 @@
     .highlighted {
         background: unset !important;
         font-family: Roboto mono;
-        font-size: var(--p-xxs);
+        font-size: var(--bit-p-xxs);
         padding: 0 !important;
         white-space: pre-wrap;
         flex-basis: 50%;
@@ -78,5 +78,5 @@
 
 .default {
     font-family: Roboto mono;
-    font-size: var(--p-xxs);
+    font-size: var(--bit-p-xxs);
 }

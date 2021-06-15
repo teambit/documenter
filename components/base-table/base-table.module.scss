@@ -3,15 +3,15 @@
     display: block;
     width: fit-content;
     max-width: 100%;
-    border: 1px solid var(--border-color, #ededed);
+    border: 1px solid var(--bit-border-color-lightest, #ededed);
     border-radius: 8px;
 
     tr:nth-child(even) {
-        background-color: var(--bg-dent, #f6f6f6);
+        background-color: var(--bit-bg-dent, #f6f6f6);
     }
 
     thead {
-        border-bottom: 1px solid var(--border-color, #ededed);
+        border-bottom: 1px solid var(--bit-border-color-lightest, #ededed);
     }
     th {
         font-weight: bold;
@@ -19,8 +19,8 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        color: var(--text-highlight, #2b2b2b);
-        font-size: var(--p-xs);
+        color: var(--bit-text-color-heavy, #2b2b2b);
+        font-size: var(--bit-p-xs);
     }
     td {
         overflow: hidden;

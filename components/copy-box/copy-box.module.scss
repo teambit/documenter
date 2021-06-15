@@ -1,8 +1,8 @@
 .copyBox {
   border-radius: 6px;
-  font-size: var(--p-xs);
-  background: var(--bg-dent);
-  border: 1px solid var(--border-color);
+  font-size: var(--bit-p-xs);
+  background: var(--bit-bg-dent);
+  border: 1px solid var(--bit-border-color-lightest);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +25,8 @@
   cursor: pointer;
   box-sizing: border-box;
   border: none;
-  background-color: var(--bg-topping-highlight);
-  color: var(--base-color);
+  background-color: var(--bit-bg-color-highlight);
+  color: var(--bit-accent-color);
   outline: none;
 }
 .rightSection {
@@ -35,5 +35,5 @@
 }
 
 .copyIcon {
-  font-size: var(--p-lg);
+  font-size: var(--bit-p-lg);
 }

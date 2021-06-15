@@ -1,17 +1,17 @@
 
 .top {
   padding: 15px 24px;
-  color: var(--text-color);
+  color: var(--bit-text-color);
 }
 
 .title {
   display: flex;
   align-items: center;
-  font-size: var(--p-xs);
+  font-size: var(--bit-p-xs);
   font-weight: bold;
   > span {
     &:first-child {
-      color: var(--text-highlight);
+      color: var(--bit-text-color-heavy);
       font-weight: bold;
       margin-right: 7px;
     }

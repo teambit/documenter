@@ -1,6 +1,6 @@
 
 .propRow {
-    border: 1px solid var(--border-color, var(--light-grey, #ededed));
+    border: 1px solid var(--bit-border-color-lightest, var(--light-grey, #ededed));
     border-radius: 5px;
     margin-bottom: 8px;
     padding: 18px 20px;
@@ -37,7 +37,7 @@
 }
 
 .required {
-    color: var(--text-muted);
+    color: var(--bit-text-color-light);
     font-size: 13px;
 }
 

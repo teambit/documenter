@@ -1,12 +1,12 @@
 .label {
 	display: inline-block;
-	color: var(--base-highlight);
-	background: var(--muted-color);
+	color: var(--bit-accent-heavy);
+	background: var(--bit-accent-bg);
 
 	padding: 4px 8px;
 	border-radius: 6px;
 
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: var(--p-xxs, 12px);
+	font-size: var(--bit-p-xxs, 12px);
 }
