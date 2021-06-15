@@ -13,23 +13,23 @@
 
 .bottom {
   padding: 8px 0;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--bit-border-color-lightest);
 }
 .link {
   padding: 0 24px;
   height: 40px;
   display: flex;
   align-items: center;
-  color: var(--text-highlight);
+  color: var(--bit-text-color-heavy);
   cursor: pointer;
   text-decoration: unset;
   &:hover {
-    background-color: var(--border-color);
+    background-color: var(--bit-border-color-lightest);
   }
   > span {
     &:first-child {
       margin-right: 8px;
-      font-size: var(--p-md);
+      font-size: var(--bit-p-md);
     }
   }
 }
@@ -43,14 +43,14 @@
     > span {
       &:first-child {
         margin-right: 8px;
-        font-size: var(--p-md);
+        font-size: var(--bit-p-md);
       }
     }
   }
 }
 
 .back {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--bit-border-color-lightest);
   padding: 15px 24px;
   > div {
     display: flex;

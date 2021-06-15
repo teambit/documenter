@@ -7,12 +7,12 @@
   right: 0;
   width: 100%;
   font-size: 11px;
-  color: var(--error-color);
-  background-color: var(--bg-base);
+  color: var(--bit-error-color);
+  background-color: var(--bit-bg-color);
   transition: all 1000ms ease-in-out;
-  color: var(--error-color);
-  border: 1px solid var(--error-color);
-  background-color: var(--bg-base);
+  color: var(--bit-error-color);
+  border: 1px solid var(--bit-error-color);
+  background-color: var(--bit-bg-color);
   transition: all 1000ms ease-in-out;
   overflow: auto;
   border-top-right-radius: 6px;
@@ -21,7 +21,7 @@
   box-sizing: border-box;
   border-left: none;
   &.column {
-    border: 1px solid var(--error-color);
+    border: 1px solid var(--bit-error-color);
     border-bottom: none;
     border-top-left-radius: 6px;
     border-bottom-right-radius: 0;
@@ -76,12 +76,12 @@
   position: relative;
   overflow: auto;
   min-height: 100px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--bit-border-color-lightest);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-left: none;
   &.column {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--bit-border-color-lightest);
     border-bottom: none;
     min-height: 220px;
     border-bottom-right-radius: 0;

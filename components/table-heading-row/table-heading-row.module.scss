@@ -1,5 +1,5 @@
 .titleRow {
-  border-bottom: 1px solid var(--border-color, var(--border-color, #ededed));
+  border-bottom: 1px solid var(--bit-border-color-lightest, var(--bit-border-color-lightest, #ededed));
   padding: 18px 20px;
   display: grid;
   &.hide {
@@ -9,5 +9,5 @@
 
 .titleCol {
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--bit-text-color-light);
 }

@@ -7,8 +7,8 @@
     user-select: none;
     cursor: pointer;
     &.active {
-      color: var(--base-color);
-      border-bottom: 3px solid var(--base-color);
+      color: var(--bit-accent-color);
+      border-bottom: 3px solid var(--bit-accent-color);
       cursor: unset;
     }
   }

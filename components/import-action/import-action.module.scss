@@ -8,7 +8,7 @@
   .menu {
     padding: 0;
     right: 0;
-    font-size: var(--p-xs);
+    font-size: var(--bit-p-xs);
     border-radius: 6px;
     width: 400px;
   }
@@ -28,16 +28,16 @@
   user-select: none;
   transition: background-color 300ms, color 300ms ease-in-out;
   &:hover {
-    background-color: var(--bg-dent);
+    background-color: var(--bit-bg-dent);
     color: white;
     background-color: #2e945a;
     border-color: #2e945a;
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     padding: 0 8px;
     .content {
       display: none;
-    } 
+    }
   }
   > span {
     &:first-child {
@@ -54,4 +54,3 @@
     padding: 0 6px;
   }
 }
-
