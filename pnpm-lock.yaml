@@ -16,7 +16,7 @@ importers:
       '@teambit/design.theme.icons-font': registry.npmjs.org/@teambit/design.theme.icons-font/1.0.0_react-dom@16.14.0+react@16.14.0
       '@teambit/evangelist.elements.icon': registry.npmjs.org/@teambit/evangelist.elements.icon/1.0.1_react-dom@16.14.0+react@16.14.0
       '@teambit/evangelist.elements.image': registry.npmjs.org/@teambit/evangelist.elements.image/1.0.1_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.surfaces.dropdown': registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/1.0.0_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.surfaces.dropdown': registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/1.0.1_react-dom@16.14.0+react@16.14.0
       classnames: registry.npmjs.org/classnames/2.3.1
       copy-to-clipboard: registry.npmjs.org/copy-to-clipboard/3.3.1
       core-js: registry.npmjs.org/core-js/3.14.0
@@ -53,7 +53,7 @@ importers:
       '@teambit/design.theme.icons-font': ^1.0.0
       '@teambit/evangelist.elements.icon': ^1.0.1
       '@teambit/evangelist.elements.image': ^1.0.1
-      '@teambit/evangelist.surfaces.dropdown': ^1.0.0
+      '@teambit/evangelist.surfaces.dropdown': ^1.0.1
       '@types/jest': ^26.0.23
       '@types/node': 12.20.4
       '@types/react': ^17.0.11
@@ -761,22 +761,22 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@teambit/design.theme.icons-font/-/design.theme.icons-font-1.0.0.tgz
     version: 1.0.0
-  registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/1.0.0_react-dom@16.14.0+react@16.14.0:
+  registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/1.0.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
       core-js: registry.npmjs.org/core-js/3.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
-    id: registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/1.0.0
+    id: registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/1.0.1
     name: '@teambit/evangelist.css-components.fade-in-out'
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
       react-dom: ^16.8.0 || ^17.0.0
     resolution:
-      integrity: sha512-XnQJYCWrQcT3MdCCSXPe0PMHtMRhXRiMCBt1chC5555PTA9jMvCEqYanRMDFTEd0PhS0APKmgYfryLkCTCJ2/Q==
+      integrity: sha512-oi5xKYxUqVUXP3Ae6eZS2LSaVe9sthO4nA3f95SnFnJ8O5HAX4O/xGi4WCYoxNPDo1muzp5/mfJkdmyRiILLRA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/-/evangelist.css-components.fade-in-out-1.0.0.tgz
-    version: 1.0.0
+      tarball: https://registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/-/evangelist.css-components.fade-in-out-1.0.1.tgz
+    version: 1.0.1
   registry.npmjs.org/@teambit/evangelist.elements.icon/0.5.20:
     dependencies:
       '@teambit/base-ui.elements.icon': registry.npmjs.org/@teambit/base-ui.elements.icon/0.6.3
@@ -825,29 +825,29 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@teambit/evangelist.elements.image/-/evangelist.elements.image-1.0.1.tgz
     version: 1.0.1
-  registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/1.0.0_react-dom@16.14.0+react@16.14.0:
+  registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/1.0.1_react-dom@16.14.0+react@16.14.0:
     dependencies:
       '@teambit/base-ui.css-components.elevation': registry.npmjs.org/@teambit/base-ui.css-components.elevation/1.0.0_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.css-components.roundness': registry.npmjs.org/@teambit/base-ui.css-components.roundness/1.0.0_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.surfaces.abs-container': registry.npmjs.org/@teambit/base-ui.surfaces.abs-container/1.0.0_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.surfaces.background': registry.npmjs.org/@teambit/base-ui.surfaces.background/1.0.0_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.surfaces.drawer': registry.npmjs.org/@teambit/base-ui.surfaces.drawer/1.0.0_react-dom@16.14.0+react@16.14.0
-      '@teambit/evangelist.css-components.fade-in-out': registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/1.0.0_react-dom@16.14.0+react@16.14.0
+      '@teambit/evangelist.css-components.fade-in-out': registry.npmjs.org/@teambit/evangelist.css-components.fade-in-out/1.0.1_react-dom@16.14.0+react@16.14.0
       classnames: registry.npmjs.org/classnames/2.3.1
       core-js: registry.npmjs.org/core-js/3.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
-    id: registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/1.0.0
+    id: registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/1.0.1
     name: '@teambit/evangelist.surfaces.dropdown'
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
       react-dom: ^16.8.0 || ^17.0.0
     resolution:
-      integrity: sha512-cog68nUrm7r7tCHLAb2Y4XzLR5ciBxMTG2Z421RRXsbBuM+sHGxVmW1JULB4KjB6Q/I6oVFn5ptUYAzOCWgWfA==
+      integrity: sha512-K3WlxVsCRhKXGIEVzAct5FJURUAc/PMAkJXI/z6j3Pw5Cim67nLoiqF3n6774Mn1xH4BEdswzvqLmq/tszP2Lw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/-/evangelist.surfaces.dropdown-1.0.0.tgz
-    version: 1.0.0
+      tarball: https://registry.npmjs.org/@teambit/evangelist.surfaces.dropdown/-/evangelist.surfaces.dropdown-1.0.1.tgz
+    version: 1.0.1
   registry.npmjs.org/@types/hast/2.3.1:
     dependencies:
       '@types/unist': registry.npmjs.org/@types/unist/2.0.3
