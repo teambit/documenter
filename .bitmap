@@ -19,6 +19,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/pages/error-page"
     },
+    "pages/markdown": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/pages/markdown"
+    },
     "pages/not-found": {
         "scope": "teambit.documenter",
         "version": "4.0.1",
@@ -120,6 +126,12 @@
         "version": "4.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/ui/import-action"
+    },
+    "ui/inline-code": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/ui/inline-code"
     },
     "ui/italic": {
         "scope": "teambit.documenter",

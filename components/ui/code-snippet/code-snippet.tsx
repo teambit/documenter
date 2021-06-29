@@ -14,7 +14,7 @@ import styles from './code-snippet.module.scss';
 SyntaxHighlighter.registerLanguage('tsx', tsxSyntax);
 const customStyles = { fontFamily: 'roboto mono', fontSize: 12 };
 
-type CodeSnippetProps = {
+export type CodeSnippetProps = {
   /**
    * the code string to show and to be copied to clipboard
    */
