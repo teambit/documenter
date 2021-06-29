@@ -1,12 +1,21 @@
 .ul {
     list-style: revert;
     list-style-position: outside;
-    
+
     margin: 0; // reset browser default css
     padding: 0; // reset browser default css
+    margin-bottom: 16px;
     padding-left: 32px;
 
-    ul, ol {
+    > li {
+        > ul,
+        > ol {
         padding-left: 18px;
+        margin-bottom: 0;
+        }
+    }
+
+    > li > p {
+        margin-bottom: none;
     }
 }

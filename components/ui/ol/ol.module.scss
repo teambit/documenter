@@ -4,9 +4,14 @@
     
     margin: 0; // reset browser default css
     padding: 0; // reset browser default css
+    margin-bottom: 16px;
     padding-left: 32px;
 
     ul, ol {
         padding-left: 18px;
+    }
+
+    > li > p {
+        margin-bottom: 0;
     }
 }

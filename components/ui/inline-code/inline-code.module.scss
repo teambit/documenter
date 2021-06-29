@@ -6,5 +6,9 @@
   border-radius: 0.25em;
   padding: 0.2em 0.4em;
   font-size: 0.85em;
-  background-color: var(--bit-bg-heaviest, #ededed);
+  
+  // transparent black.
+  // should be similar to #ededed on white bg
+  background-color: #a6a6a633;
+  // background-color: var(--bit-bg-heaviest, #ededed);
 }
