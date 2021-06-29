@@ -17,10 +17,8 @@
     text-overflow: ellipsis;
     font-family: monospace;
   }
-  .copiedMessage {
-    top: 1px;
-  }
 }
+
 .button {
   cursor: pointer;
   box-sizing: border-box;
@@ -31,6 +29,7 @@
 }
 .rightSection {
   display: flex;
+  align-items: center;
   position: relative;
 }
 

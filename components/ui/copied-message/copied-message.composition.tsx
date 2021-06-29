@@ -4,20 +4,12 @@ import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions'
 import { Icon } from '@teambit/evangelist.elements.icon';
 import { H5 } from '@teambit/documenter.ui.heading';
 
-const codeString = `export function Anchor(props: AnchorProps) {
-  return (
-    <a {...props} id={props.href} href={href} className={styles.anchor}>
-      <Icon of="anchor" className={styles.anchorIcon}></Icon>
-    </a>
-  );
-}`;
-
 export const CopiedMessageExample = () => {
   return (
-    <ThemeCompositions>
-      <div style={{ position: 'relative' }}>
-        <CopiedMessage show={true} />
-      </div>
+    <ThemeCompositions
+      style={{ position: 'relative', paddingLeft: 50, height: 20 }}
+    >
+      <CopiedMessage show={true} />
     </ThemeCompositions>
   );
 };
@@ -31,10 +23,14 @@ export const HiddenCopiedMessageExample = () => {
   };
   return (
     <ThemeCompositions>
-      <div style={{ position: 'relative', width: 200 }}>
+      <div style={{ position: 'relative' }}>
         <H5>Click icon to copy</H5>
-        <Icon onClick={handleClick} of="copy-cmp" />
-        <CopiedMessage show={isCopied} style={{ top: 23, right: 120 }} />
+        <Icon
+          onClick={handleClick}
+          of="copy-cmp"
+          style={{ marginRight: 60, cursor: 'pointer' }}
+        />
+        <CopiedMessage show={isCopied} />
       </div>
     </ThemeCompositions>
   );

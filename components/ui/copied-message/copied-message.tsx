@@ -14,7 +14,7 @@ type AnchorProps = {
  */
 export function CopiedMessage({ className, show, ...rest }: AnchorProps) {
   return (
-    <div
+    <span
       {...rest}
       className={classNames(
         styles.copiedMessage,
@@ -25,7 +25,7 @@ export function CopiedMessage({ className, show, ...rest }: AnchorProps) {
       )}
     >
       Copied
-    </div>
+    </span>
   );
 }
 
