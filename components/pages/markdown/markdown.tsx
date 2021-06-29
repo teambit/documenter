@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { components } from './components';
+import styles from './markdown.module.scss';
 
 export type MarkdownProps = {
   children: string;
@@ -10,8 +11,8 @@ export function Markdown({ children }: MarkdownProps) {
   const childrenWithLineEndings = useRegularNewlines(children);
 
   return (
-    <div style={{ lineHeight: 1.5 }}>
-      <ReactMarkdown components={components} >
+    <div className={styles.md}>
+      <ReactMarkdown components={components}>
         {childrenWithLineEndings}
       </ReactMarkdown>
     </div>
