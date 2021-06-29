@@ -1,11 +1,12 @@
-.ol {
+.ol {    
     list-style: revert;
     list-style-position: outside;
-    margin-left: 32px;
-    ol, ul {
-        margin-left: 24px;
-    }
-    li {
-        line-height: 2em;
+    
+    margin: 0; // reset browser default css
+    padding: 0; // reset browser default css
+    padding-left: 32px;
+
+    ul, ol {
+        padding-left: 18px;
     }
 }

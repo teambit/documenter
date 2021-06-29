@@ -1,6 +1,9 @@
 .list {
 	list-style: revert;
 	list-style-position: inside;
+	// reset browser's built-in padding:
+	padding: 0;
+	
 	&.sm {
 		> li {
 			margin: 5px 0;

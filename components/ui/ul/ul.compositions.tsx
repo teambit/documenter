@@ -13,3 +13,25 @@ export const UlExample = () => {
     </ThemeCompositions>
   );
 };
+
+export const NestedList = () => {
+  return (
+    <ThemeCompositions>
+      <Ul>
+        <li>Ul text</li>
+        <li>Ul text</li>
+        <li>Ul text</li>
+        <Ul>
+          <li>Ul text</li>
+          <li>Ul text</li>
+          <Ul>
+            <li>Ul text</li>
+            <li>Ul text</li>
+            <li>Ul text</li>
+          </Ul>
+          <li>Ul text</li>
+        </Ul>
+      </Ul>
+    </ThemeCompositions>
+  );
+};

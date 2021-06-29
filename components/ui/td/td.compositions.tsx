@@ -5,7 +5,13 @@ import { Td } from './td';
 export const TdExample = () => {
   return (
     <ThemeCompositions>
-      <Td>Td text</Td>
+      <table>
+        <tbody>
+          <tr>
+            <Td>Td text</Td>
+          </tr>
+        </tbody>
+      </table>
     </ThemeCompositions>
   );
 };

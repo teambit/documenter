@@ -7,7 +7,7 @@ export const SubtitleExample = () => {
   return (
     <ThemeCompositions>
       <div>
-        <Subtitle>A subtitile text</Subtitle>
+        <Subtitle>A subtitle text</Subtitle>
       </div>
     </ThemeCompositions>
   );

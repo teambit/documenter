@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconFont } from '@teambit/design.theme.icons-font';
-import 'reset-css';
+// import 'reset-css';  // do not include, instead make sure each component resets its own styles
 import {
   ThemeDocumenter,
   ThemeDocumenterProps,

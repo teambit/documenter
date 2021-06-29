@@ -3,7 +3,6 @@ import classNames from "classnames";
 import { HeadingProps, Heading } from "@teambit/base-ui.text.heading";
 import sizeStyles from "./heading-sizes.module.scss";
 import styles from "./heading.module.scss";
-import margins from "./margins.module.scss";
 
 export type Sizes = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 
@@ -26,7 +25,6 @@ export function H1(props: HeaderProps) {
       {...props}
       className={classNames(
         styles.h1,
-        margins.h1,
         sizeStyles[props.size || "lg"],
         props.className
       )}

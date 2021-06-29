@@ -70,8 +70,15 @@
         padding: 0 !important;
         white-space: pre-wrap;
         flex-basis: 50%;
+
+        margin: 0; // reset browser's default css
+
         > code > span {
             color: rgb(57, 115, 0);
+        }
+        
+        > code {
+            font-family: inherit; // reset browser's default css
         }
     }
 }
