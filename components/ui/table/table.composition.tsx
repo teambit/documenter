@@ -5,9 +5,7 @@ import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions'
 export const PropertyTableExample = () => {
   return (
     <ThemeCompositions>
-      <div>
-        <Table headings={tableData.headings} rows={tableData.rows} />
-      </div>
+      <Table headings={tableData.headings} rows={tableData.rows} />
     </ThemeCompositions>
   );
 };

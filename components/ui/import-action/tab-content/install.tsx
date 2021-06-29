@@ -1,14 +1,14 @@
-import React from "react";
-import classNames from "classnames";
-import { Icon } from "@teambit/evangelist.elements.icon";
-import { HighlightedText } from "@teambit/documenter.ui.highlighted-text";
-import { TabContent } from "./tab-content";
-import styles from "./tab-content.module.scss";
+import React from 'react';
+import classNames from 'classnames';
+import { Icon } from '@teambit/evangelist.elements.icon';
+import { HighlightedText } from '@teambit/documenter.ui.highlighted-text';
+import { TabContent } from './tab-content';
+import styles from './tab-content.module.scss';
 
 export type InstallProps = {
   componentName: string;
   copyString: string;
-  setActive: (active: string) => void;
+  setActive: (active: 'registry') => void;
   registryName: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
@@ -27,7 +27,7 @@ export function Install({
     >
       <div
         className={classNames(styles.link, styles.installLink)}
-        onClick={() => setActive("registry")}
+        onClick={() => setActive('registry')}
       >
         <div>
           <Icon of="settings" />

@@ -2,13 +2,13 @@ import React from "react";
 import classNames from "classnames";
 import styles from "./tab.module.scss";
 
-export type TabProps = {
+export type TabProps<T extends string> = {
   isActive: boolean;
-  title: string;
-  onClick: (target: string) => void;
+  title: T;
+  onClick: (target: T) => void;
 };
 
-export function Tab({ onClick, isActive, title }: TabProps) {
+export function Tab<T extends string>({ onClick, isActive, title }: TabProps<T>) {
   return (
     <div
       className={classNames(styles.tab, isActive && styles.active)}

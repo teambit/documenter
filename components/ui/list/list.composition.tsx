@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 import { List } from './list';
 import { HighlightedText } from '@teambit/documenter.ui.highlighted-text';
@@ -130,6 +130,6 @@ export const NumberedListWithBlockElement = () => {
   );
 };
 
-function CanvasWrapper({ children }) {
+function CanvasWrapper({ children }: { children: ReactNode }) {
   return <div style={{ minWidth: 200 }}>{children}</div>;
 }
