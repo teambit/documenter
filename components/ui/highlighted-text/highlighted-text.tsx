@@ -1,9 +1,9 @@
-import React from "react";
-import classNames from "classnames";
-import { Paragraph, ParagraphProps } from "@teambit/documenter.ui.paragraph";
-import styles from "./highlighted-text.module.scss";
+import React from 'react';
+import classNames from 'classnames';
+import { Paragraph, ParagraphProps } from '@teambit/documenter.ui.paragraph';
+import styles from './highlighted-text.module.scss';
 
-export type HighlightedTextProps = {} & ParagraphProps;
+export type HighlightedTextProps = React.HTMLAttributes<HTMLElement>;
 
 /**
  * A <p> element with text highlighting
@@ -14,11 +14,8 @@ export function HighlightedText({
   ...rest
 }: HighlightedTextProps) {
   return (
-    <Paragraph
-      {...rest}
-      className={classNames(styles.highlightedText, className)}
-    >
+    <code {...rest} className={classNames(styles.highlightedText, className)}>
       {children}
-    </Paragraph>
+    </code>
   );
 }

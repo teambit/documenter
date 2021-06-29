@@ -1,17 +1,16 @@
 import React from 'react';
 import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
-import { HighlightedText } from './highlighted-text';
+import { InlineCode } from './inline-code';
 
 export function Preview() {
-  return <HighlightedText>highlighted text</HighlightedText>;
+  return <InlineCode>highlighted text</InlineCode>;
 }
 
 export const LargeText = () => {
   return (
     <ThemeCompositions>
       <div style={{ fontSize: 20 }}>
-        Use <HighlightedText>highlighted text</HighlightedText> to highlight
-        code
+        Use <InlineCode>highlighted text</InlineCode> to highlight code
       </div>
     </ThemeCompositions>
   );
@@ -21,8 +20,7 @@ export function SmallText() {
   return (
     <ThemeCompositions>
       <div style={{ fontSize: 18 }}>
-        Use <HighlightedText>highlighted text</HighlightedText> to highlight
-        code
+        Use <InlineCode>highlighted text</InlineCode> to highlight code
       </div>
     </ThemeCompositions>
   );

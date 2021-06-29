@@ -32,8 +32,7 @@ export function Install({
         <div>
           <Icon of="settings" />
           <span>
-            Configure{" "}
-            <HighlightedText size="xxs">{registryName}</HighlightedText> as a
+            Configure <HighlightedText>{registryName}</HighlightedText> as a
             Scoped Registry
           </span>
         </div>

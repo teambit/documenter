@@ -31,8 +31,7 @@ export function Registry({
       <TabContent
         titleLine={
           <div>
-            Configure{" "}
-            <HighlightedText size="xxs">{registryName}</HighlightedText> as a
+            Configure <HighlightedText>{registryName}</HighlightedText> as a
             Scoped Registry
           </div>
         }

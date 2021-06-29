@@ -1,6 +1,4 @@
-.highlightedText {
-  background-color: var(--bit-accent-bg, #eceaff);
-
+.inlineCode {
   // some browsers shrinks monospace automatically,
   // putting another font in the end alleviates this
   font-family: monospace, sans-serif;
@@ -8,4 +6,5 @@
   border-radius: 0.25em;
   padding: 0.2em 0.4em;
   font-size: 0.85em;
+  background-color: var(--bit-bg-heaviest, #ededed);
 }
