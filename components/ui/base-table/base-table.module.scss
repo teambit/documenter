@@ -30,4 +30,24 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
+    
+// to allow user to control column alignment via mdx table
+    table,
+    th,
+    td,
+    tr,
+    thead {
+        text-align: start;
+        &[align='center'] {
+            text-align: center;
+        }
+
+        &[align='left'] {
+            text-align: start;
+        }
+
+        &[align='right'] {
+            text-align: end;
+        }
+    }
 }
