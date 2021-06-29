@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
 import { BlockQuote } from '@teambit/documenter.ui.block-quote';
@@ -35,6 +35,8 @@ export const components = {
   hr: Separator,
   img: Image,
   p: Paragraph,
+  // code includes it's own pre tag
+  pre: ({ children }: { children: ReactNode }) => <>{children}</>,
   strong: Bold,
   sup: Sup,
   table: Table,
