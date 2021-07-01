@@ -13,17 +13,23 @@
         "mainFile": "index.ts",
         "rootDir": "components/content/documentation-links"
     },
+    "markdown/heading": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/markdown/heading"
+    },
+    "markdown/md": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/markdown/md"
+    },
     "pages/error": {
         "scope": "teambit.documenter",
         "version": "4.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/pages/error-page"
-    },
-    "pages/markdown": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "components/pages/markdown"
     },
     "pages/not-found": {
         "scope": "teambit.documenter",
