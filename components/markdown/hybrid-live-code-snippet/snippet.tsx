@@ -1,7 +1,12 @@
 import React from 'react';
 import { CodeSnippet } from '@teambit/documenter.ui.code-snippet';
-import { Playground, CodeScope } from '@teambit/documenter.code.react-playground';
+import {
+  Playground,
+  CodeScope,
+} from '@teambit/documenter.code.react-playground';
 import styles from './snippet.module.scss';
+
+export type { CodeScope } from '@teambit/documenter.code.react-playground';
 
 export type SnippetProps = {
   children: string;

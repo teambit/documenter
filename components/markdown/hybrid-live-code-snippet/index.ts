@@ -1,2 +1,2 @@
 export { Snippet } from './snippet';
-export type { SnippetProps } from './snippet';
+export type { SnippetProps, CodeScope } from './snippet';
