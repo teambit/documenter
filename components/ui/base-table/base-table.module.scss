@@ -1,6 +1,7 @@
 .table {
     overflow: auto;
     display: block;
+    margin-bottom: 16px;
     width: fit-content;
     max-width: 100%;
     border: 1px solid var(--bit-border-color-lightest, #ededed);
