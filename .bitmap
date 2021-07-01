@@ -19,11 +19,23 @@
         "mainFile": "index.ts",
         "rootDir": "components/markdown/heading"
     },
+    "markdown/hybrid-live-code-snippet": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/markdown/hybrid-live-code-snippet"
+    },
     "markdown/md": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/md"
+    },
+    "markdown/mdx": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/markdown/mdx"
     },
     "pages/error": {
         "scope": "teambit.documenter",

@@ -33,6 +33,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@mdx-js/react": "1.6.22",
         "@teambit/base-ui.input.error": "^1.0.0",
         "@teambit/base-ui.layout.breakpoints": "^1.0.0",
         "@teambit/base-ui.layout.grid-component": "^1.0.0",
@@ -48,7 +49,9 @@
         "@teambit/design.theme.icons-font": "^1.0.0",
         "@teambit/evangelist.elements.icon": "^1.0.0",
         "@teambit/evangelist.elements.image": "^1.0.0",
-        "@teambit/evangelist.surfaces.dropdown": "^1.0.0",
+        "@teambit/evangelist.surfaces.dropdown": "1.0.1",
+        "@testing-library/react": "12.0.0",
+        "@types/mdx-js__react": "1.5.3",
         "@types/react": "16.9.43",
         "@types/react-syntax-highlighter": "13.5.0",
         "classnames": "^2.2.6",
@@ -81,6 +84,8 @@
      * It is strongly recommended to set strictPeerDependencies=true.
      */
     "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": "",
     /**
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
