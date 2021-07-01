@@ -29,13 +29,15 @@ export type PlaygroundProps = {
    * css inline styles object to override the outer styles of the playground
    */
   style?: React.CSSProperties;
+  /** class name of the wrapping element */
+  className?: string,
 };
 
 /**
  *
  * A react-live wrapper with document oriented features.
  */
-export function Playground({ code, scope, style, ...rest }: PlaygroundProps) {
+export function Playground({ code, scope, style, className, ...rest }: PlaygroundProps) {
   const [ref, { width }] = useDimensions();
   const debouncedSize = useDebounce(width, 300, { leading: true });
 
@@ -47,12 +49,13 @@ export function Playground({ code, scope, style, ...rest }: PlaygroundProps) {
   return (
     <LiveProvider code={code} scope={scope} theme={prismTheme}>
       <div
-        style={style}
         ref={ref}
         className={classNames(
+          className,
           styles.playground,
           isColumn ? styles.column : styles.row
         )}
+        {...rest}
       >
         <SplitPane className={styles.main} size={'50%'} layout={placement}>
           <Pane className={classNames(styles.codePane)}>
