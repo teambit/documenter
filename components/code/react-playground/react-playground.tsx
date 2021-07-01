@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import classNames from 'classnames';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import {
@@ -30,14 +30,26 @@ export type PlaygroundProps = {
    */
   style?: React.CSSProperties;
   /** class name of the wrapping element */
-  className?: string,
+  className?: string;
 };
 
 /**
  *
  * A react-live wrapper with document oriented features.
  */
-export function Playground({ code, scope, style, className, ...rest }: PlaygroundProps) {
+export function Playground({
+  code,
+  scope,
+  style,
+  className,
+  ...rest
+}: PlaygroundProps) {
+  // don't show trailing new line at the end of the file
+  const _code = useMemo(
+    () => code?.toString().replace(/\n$/, '').trim(),
+    [code]
+  );
+
   const [ref, { width }] = useDimensions();
   const debouncedSize = useDebounce(width, 300, { leading: true });
 
@@ -47,7 +59,7 @@ export function Playground({ code, scope, style, className, ...rest }: Playgroun
   if (!width) return <div ref={ref} />;
 
   return (
-    <LiveProvider code={code} scope={scope} theme={prismTheme}>
+    <LiveProvider code={_code} scope={scope} theme={prismTheme}>
       <div
         ref={ref}
         className={classNames(

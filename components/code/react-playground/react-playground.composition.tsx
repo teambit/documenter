@@ -60,7 +60,7 @@ export const HorizontalExample = () => {
 
 export const VerticalExample = () => {
   return (
-    <ThemeCompositions style={{ height: 600, width: 400 }}>
+    <ThemeCompositions style={{ height: 450, width: 400 }}>
       <Playground code={longFunction} />
     </ThemeCompositions>
   );
