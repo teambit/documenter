@@ -64,6 +64,7 @@
 .editor {
   width: fit-content; // for horizontal scroll
   min-width: 100%;
+  max-width: unset !important; // allows horizontal scrolling, override global mdx styles
 
   font-size: 11px;
   font-family: Roboto mono !important;

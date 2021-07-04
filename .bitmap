@@ -3,7 +3,7 @@
 {
     "code/react-playground": {
         "scope": "teambit.documenter",
-        "version": "4.1.2",
+        "version": "4.1.3",
         "mainFile": "index.ts",
         "rootDir": "components/code/react-playground"
     },
@@ -21,7 +21,7 @@
     },
     "markdown/hybrid-live-code-snippet": {
         "scope": "teambit.documenter",
-        "version": "0.1.2",
+        "version": "0.1.3",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/hybrid-live-code-snippet"
     },
@@ -33,7 +33,7 @@
     },
     "markdown/mdx": {
         "scope": "teambit.documenter",
-        "version": "0.1.2",
+        "version": "0.1.3",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/mdx"
     },
