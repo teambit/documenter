@@ -3,25 +3,23 @@ import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions'
 import { InlineCode } from './inline-code';
 
 export function Preview() {
-  return <InlineCode>highlighted text</InlineCode>;
+  return <InlineCode>inline-code</InlineCode>;
 }
 
 export const LargeText = () => {
   return (
     <ThemeCompositions>
       <div style={{ fontSize: 20 }}>
-        Use <InlineCode>highlighted text</InlineCode> to highlight code
+        Use <InlineCode>highlighted text</InlineCode> to insert code
       </div>
     </ThemeCompositions>
   );
 };
 
-export function SmallText() {
+export const Highlighted = () => {
   return (
     <ThemeCompositions>
-      <div style={{ fontSize: 18 }}>
-        Use <InlineCode>highlighted text</InlineCode> to highlight code
-      </div>
+      Use <InlineCode highlight>highlighted text</InlineCode> to highlight code
     </ThemeCompositions>
   );
-}
+};

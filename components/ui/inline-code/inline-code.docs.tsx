@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { InlineCode } from './inline-code';
 
 export const labels = ['react', 'ui-component', 'text'];
@@ -12,47 +12,43 @@ export const examples = [
     code: `
 <>
   This is a 
-  <InlineCode element='p'>
+  <InlineCode>
     element.
   </InlineCode>
   This is a 
-  <InlineCode element='div'>
+  <InlineCode>
     div element. 
   </InlineCode>
   This is a 
-  <InlineCode element='span'>
+  <InlineCode>
     span element. 
   </InlineCode>
 </>
 `,
   },
   {
-    scope: { InlineCode },
+    scope: { InlineCode, useState },
     description: 'Choose one of seven available sizes from "xxs" to "xxl"',
     code: `
-<>
-  <InlineCode size='xxs'>
-    XX-Small Text
-  </InlineCode>
-  <InlineCode size='xm'>
-    Small Text
-  </InlineCode>
-  <InlineCode size='sm'>
-    Small Text
-  </InlineCode>
-  <InlineCode size='md'>
-    Medium Text
-  </InlineCode>
-  <InlineCode size='lg'>
-    Small Text
-  </InlineCode>
-  <InlineCode size='xl'>
-    X-Large Text
-  </InlineCode>
-  <InlineCode size='xxl'>
-    XX-Large Text
-  </InlineCode>
-</>
+() => {
+  const [size, setSize] = useState(16);
+  
+  return (<>
+    <div>use font-size to change the component size.</div>
+    <input
+      type="range" min="10" max="40"
+      value={size}
+      onChange={e => setSize(e.target.value)}
+    />
+    <br/>
+    <br/>
+    <div style={{ fontSize: size + "px" }}>
+      <InlineCode>
+        inline code
+      </InlineCode>
+    </div>
+  </>
+)}
     `,
   },
 ];
