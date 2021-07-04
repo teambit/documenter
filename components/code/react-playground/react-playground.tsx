@@ -75,10 +75,10 @@ export function Playground({
           </Pane>
           <HoverSplitter className={styles.splitter}></HoverSplitter>
           <Pane className={classNames(styles.previewPane)}>
-            <div className={styles.previewBox}>
-              <LivePreview />
+            <>
+              <LivePreview className={styles.previewBox} />
               <LiveError className={classNames(errorClass, styles.error)} />
-            </div>
+            </>
           </Pane>
         </SplitPane>
       </div>

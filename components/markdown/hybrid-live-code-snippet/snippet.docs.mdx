@@ -21,6 +21,9 @@ Live code snippet example:
 ```js live
 () => {
   const code = `<div>simple div element</div>`;
-  return <Snippet live>{code}</Snippet>;
+  return <div>
+    (partially working when nested in itself)
+    <Snippet live>{code}</Snippet>
+  </div>
 };
 ```

@@ -33,7 +33,12 @@ Manually populating the Prop Table is discouraged as it should only use the comp
       required: true,
     },
   ];
-  return <PropTable rows={data} />;
+  return (
+    <div>
+      <div>property table:</div>
+      <PropTable rows={data} />
+    </div>
+  );
 };
 ```
 
@@ -57,7 +62,12 @@ Use the 'showListView' prop to display the data in a list view.
       required: true,
     },
   ];
-  return <PropTable rows={data} showListView />;
+  return (
+    <div>
+      <div>property table:</div>
+      <PropTable rows={data} showListView />.
+    </div>
+  );
 };
 ```
 
@@ -82,6 +92,11 @@ point, using the 'listViewResolution' prop.`
       required: true,
     },
   ];
-  return <PropTable rows={data} listViewResolution={700} />;
+  return (
+    <div>
+      <div>property table:</div>
+      <PropTable rows={data} listViewResolution={700} />
+    </div>
+  );
 };
 ```

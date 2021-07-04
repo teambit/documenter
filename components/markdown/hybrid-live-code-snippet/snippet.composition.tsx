@@ -14,7 +14,7 @@ export const SnippetExample = () => {
 
 export const SnippetLiveExample = () => {
   return (
-    <ThemeCompositions>
+    <ThemeCompositions style={{ width: 600, height: 100 }}>
       <Snippet live>{code}</Snippet>
     </ThemeCompositions>
   );
