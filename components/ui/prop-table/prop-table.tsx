@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore - missing types
 import useDimensions from "react-use-dimensions";
 import { useDebounce } from "use-debounce";
 import { Table } from "@teambit/documenter.ui.table";

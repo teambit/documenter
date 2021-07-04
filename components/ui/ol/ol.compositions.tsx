@@ -13,3 +13,26 @@ export const OlExample = () => {
     </ThemeCompositions>
   );
 };
+
+
+export const NestedList = () => {
+  return (
+    <ThemeCompositions>
+      <Ol>
+        <li>Ol text</li>
+        <li>Ol text</li>
+        <li>Ol text</li>
+        <Ol>
+          <li>Ol text</li>
+          <li>Ol text</li>
+          <Ol>
+            <li>Ol text</li>
+            <li>Ol text</li>
+            <li>Ol text</li>
+          </Ol>
+          <li>Ol text</li>
+        </Ol>
+      </Ol>
+    </ThemeCompositions>
+  );
+};

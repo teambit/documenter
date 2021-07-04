@@ -1,24 +1,14 @@
-import React from "react";
-import classNames from "classnames";
-import { Paragraph, ParagraphProps } from "@teambit/documenter.ui.paragraph";
-import styles from "./highlighted-text.module.scss";
+import React from 'react';
+import {
+  InlineCode,
+  InlineCodeProps,
+} from '@teambit/documenter.ui.inline-code';
 
-export type HighlightedTextProps = {} & ParagraphProps;
+export type HighlightedTextProps = Omit<InlineCodeProps, 'highlight'>;
 
 /**
  * A <p> element with text highlighting
  */
-export function HighlightedText({
-  children,
-  className,
-  ...rest
-}: HighlightedTextProps) {
-  return (
-    <Paragraph
-      {...rest}
-      className={classNames(styles.highlightedText, className)}
-    >
-      {children}
-    </Paragraph>
-  );
+export function HighlightedText(props: HighlightedTextProps) {
+  return <InlineCode {...props} highlight />;
 }

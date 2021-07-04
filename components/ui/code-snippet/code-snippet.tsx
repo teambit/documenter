@@ -14,7 +14,7 @@ import styles from './code-snippet.module.scss';
 SyntaxHighlighter.registerLanguage('tsx', tsxSyntax);
 const customStyles = { fontFamily: 'roboto mono', fontSize: 12 };
 
-type CodeSnippetProps = {
+export type CodeSnippetProps = {
   /**
    * the code string to show and to be copied to clipboard
    */
@@ -36,7 +36,7 @@ export function CodeSnippet({
   className,
   frameClass,
   theme = defaultTheme,
-  language = "tsx",
+  language = 'tsx',
   children,
   ...rest
 }: CodeSnippetProps) {
@@ -61,8 +61,11 @@ export function CodeSnippet({
       >
         {trimmedChildren}
       </Highlighter>
-      <Icon onClick={handleClick} className={styles.copyIcon} of="copy-cmp" />
-      <CopiedMessage show={isCopied} className={styles.copyMessage} />
+
+      <div className={styles.copy}>
+        <CopiedMessage show={isCopied} />
+        <Icon onClick={handleClick} className={styles.copyIcon} of="copy-cmp" />
+      </div>
     </div>
   );
 }

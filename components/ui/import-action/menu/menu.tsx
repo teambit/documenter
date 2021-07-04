@@ -83,7 +83,7 @@ function Tabs({
   activeTab,
 }: {
   activeTab: TabOptions;
-  onClick: (active: string) => void;
+  onClick: (active: "import" | "install") => void;
 }) {
   return (
     <div className={styles.tabs}>

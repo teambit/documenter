@@ -1,7 +1,10 @@
 .separator {
     border-bottom: 1px solid var(--bit-border-color-lightest);
     border-top: none;
+    border-left: none;
+    border-right: none;
     border-radius: 5px;
+
     // TODO - remove hard coded margin
     margin-bottom: 40px;
     margin-top: 30px;

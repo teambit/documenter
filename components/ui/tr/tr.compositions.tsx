@@ -6,11 +6,15 @@ import { Tr } from './tr';
 export const TrExample = () => {
   return (
     <ThemeCompositions>
-      <Tr>
-        <Td>Tr text</Td>
-        <Td>Tr text</Td>
-        <Td>Tr text</Td>
-      </Tr>
+      <table>
+        <tbody>
+          <Tr>
+            <Td>Tr text</Td>
+            <Td>Tr text</Td>
+            <Td>Tr text</Td>
+          </Tr>
+        </tbody>
+      </table>
     </ThemeCompositions>
   );
 };

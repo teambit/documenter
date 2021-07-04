@@ -10,6 +10,6 @@ export type SectionProps = {
  * 
  * A wrapper component that separates the page into semantic sections.
  */
-export function Section({ className, children, ...rest }: SectionProps) {
+export function Section({ className, children, ...rest}: SectionProps) {
   return <div className={classNames(styles.spacer, styles.sectionMargin, className)} {...rest}>{children}</div>
 }

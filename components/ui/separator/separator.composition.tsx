@@ -3,12 +3,14 @@ import { Separator } from './separator';
 import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 // tODO - make text stay single line
-export const SeapartorExample = () => {
+export const SeparatorExample = () => {
   return (
     <ThemeCompositions>
-      <div>
-        <Separator style={{ width: '100%' }} />
-      </div>
+      <Separator />
     </ThemeCompositions>
   );
+};
+
+SeparatorExample.canvas = {
+  width: '100%',
 };

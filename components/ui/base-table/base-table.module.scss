@@ -1,10 +1,14 @@
 .table {
     overflow: auto;
     display: block;
+    margin-bottom: 16px;
     width: fit-content;
     max-width: 100%;
     border: 1px solid var(--bit-border-color-lightest, #ededed);
     border-radius: 8px;
+
+    border-collapse: collapse; // reset the browser defaults
+    border-spacing: 0; // reset the browser defaults
 
     tr:nth-child(even) {
         background-color: var(--bit-bg-dent, #f6f6f6);
@@ -26,5 +30,25 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+    }
+    
+// to allow user to control column alignment via mdx table
+    table,
+    th,
+    td,
+    tr,
+    thead {
+        text-align: start;
+        &[align='center'] {
+            text-align: center;
+        }
+
+        &[align='left'] {
+            text-align: start;
+        }
+
+        &[align='right'] {
+            text-align: end;
+        }
     }
 }

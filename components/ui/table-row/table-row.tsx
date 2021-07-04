@@ -19,6 +19,7 @@ export type RowType = {
   description: string;
   required: boolean;
   default?: DefaultValueProp;
+  [key: string]: string | any;
 };
 
 export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
@@ -35,7 +36,7 @@ export type TableRowProps = {
   /**
    * the heading row, by which the row data is ordered
    */
-  headings: string[];
+  headings: string[]
   /**
    * display mobile styles
    */
@@ -119,6 +120,8 @@ export function TableRow({
         if (title === 'description') {
           return <TableColumn key={index}>{row[title]}</TableColumn>;
         }
+
+        // default
         return (
           <TableColumn key={index}>
             <div

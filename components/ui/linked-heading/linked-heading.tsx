@@ -4,6 +4,7 @@ import { H3, Sizes } from '@teambit/documenter.ui.heading';
 import { Anchor } from '@teambit/documenter.ui.anchor';
 import styles from './linked-heading.module.scss';
 
+export type { Sizes } from '@teambit/documenter.ui.heading';
 export type LinkedHeadingProps = {
   /**
    * title string

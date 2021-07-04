@@ -1,16 +1,20 @@
 .copiedMessage {
+  // this keeps the component in place, without taking space in the dom.
   position: absolute;
-  right: 30px;
-  top: 9px;
-  display: flex;
-  align-items: center;
+  // this renders the component leftwards
+  transform: translate(-100%, 0);
+  // prevent user from accidentally clicking on it
+  pointer-events: none;
+
   padding: 2px 5px;
   border-radius: 12px;
   font-size: 12px;
   color: var(--bit-text-on-accent, #ffffff);
   background-color: var(--bit-accent-color, #6c5ce7);
-  visibility: hidden;
+
+  // hidden:
   opacity: 0;
+  visibility: hidden;
   transition: visibility 500ms, opacity 500ms ease-in-out;
 }
 .showMessage {
