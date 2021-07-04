@@ -98,6 +98,9 @@
 .previewBox {
   // centers preview, assuming parent is flex
   margin: auto;
+  // fixes content not rendering when initial size is 0x0
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .playground {
