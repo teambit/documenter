@@ -15,18 +15,18 @@ import { Td } from '@teambit/documenter.ui.table.td';
 import { Tr } from '@teambit/documenter.ui.table.tr';
 import { Ul } from '@teambit/documenter.ui.ul';
 
-import { createHeading } from './create-heading';
+import { h1, h2, h3, h4, h5, h6 } from '@teambit/documenter.markdown.heading';
 import { Code } from './code';
 
 // inline functions removes unwanted props, that should not become html attributes
 
 export const components = {
-  h1: createHeading('lg'),
-  h2: createHeading('md'),
-  h3: createHeading('sm'),
-  h4: createHeading('xs'),
-  h5: createHeading('xxs'),
-  h6: createHeading('xxs'),
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
 
   a: ExternalLink,
   blockquote: BlockQuote,

@@ -27,7 +27,7 @@
     },
     "markdown/md": {
         "scope": "teambit.documenter",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/md"
     },
