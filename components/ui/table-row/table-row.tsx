@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Grid } from '@teambit/base-ui.layout.grid-component';
+import { Grid, GridProps } from '@teambit/base-ui.layout.grid-component';
 import { TableColumn } from '@teambit/documenter.ui.table-column';
 import styles from './table-row.module.scss';
 
@@ -36,12 +36,12 @@ export type TableRowProps = {
   /**
    * the heading row, by which the row data is ordered
    */
-  headings: string[]
+  headings: string[];
   /**
    * display mobile styles
    */
   isListView?: boolean;
-};
+} & GridProps;
 
 /**
  *
@@ -52,19 +52,24 @@ export function TableRow({
   colNumber = 4,
   headings,
   isListView,
+  className,
 }: TableRowProps) {
   return (
     <Grid
       col={colNumber}
-      className={classNames(styles.propRow, {
-        [styles.singleColumn]: isListView,
-      })}
+      className={classNames(
+        styles.propRow,
+        {
+          [styles.singleColumn]: isListView,
+        },
+        className
+      )}
     >
       {headings.map((title, index) => {
         if (title === 'required') return;
         if (title === 'name') {
           return (
-            <TableColumn key={index}>
+            <TableColumn className={styles.breakWord} key={index}>
               <div
                 className={classNames(styles.mobileTitle, {
                   [styles.show]: isListView,
@@ -83,7 +88,7 @@ export function TableRow({
         }
         if (title === 'type') {
           return (
-            <TableColumn className={styles.typeColumn} key={index}>
+            <TableColumn className={classNames(styles.breakWord, styles.typeColumn)}  key={index}>
               <div
                 className={classNames(styles.mobileTitle, {
                   [styles.show]: isListView,
@@ -103,7 +108,7 @@ export function TableRow({
         }
         if (title === 'default') {
           return (
-            <TableColumn key={index}>
+            <TableColumn className={styles.breakWord} key={index}>
               <div
                 className={classNames(styles.mobileTitle, {
                   [styles.show]: isListView,
@@ -118,12 +123,12 @@ export function TableRow({
           );
         }
         if (title === 'description') {
-          return <TableColumn key={index}>{row[title]}</TableColumn>;
+          return <TableColumn className={styles.breakWord} key={index}>{row[title]}</TableColumn>;
         }
 
         // default
         return (
-          <TableColumn key={index}>
+          <TableColumn className={styles.breakWord} key={index}>
             <div
               className={classNames(styles.mobileTitle, {
                 [styles.show]: isListView,

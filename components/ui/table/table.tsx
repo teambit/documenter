@@ -1,6 +1,8 @@
 import React from "react";
+import classNames from 'classnames';
 import { HeadingRow } from "@teambit/documenter.ui.table-heading-row";
 import { TableRow, RowType } from "@teambit/documenter.ui.table-row";
+import styles from './table.module.scss';
 
 export type ColNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // TODO - export Grid ColProps and use here
 
@@ -21,15 +23,15 @@ export type TableProps = {
    * display mobile styles
    */
   isListView?: boolean;
-} & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+} & React.HTMLAttributes<HTMLDivElement>; 
 
 /**
  * A table component that renders the properties of a component.
  */
-export function Table({ headings, rows, colNumber, isListView, ...rest }: TableProps) {
+export function Table({ headings, rows, colNumber, isListView, className, ...rest }: TableProps) {
   const cols = colNumber || 4;
   return (
-    <div {...rest}>
+    <div {...rest} className={classNames(styles.table, className)}>
       <HeadingRow
         isListView={isListView}
         colNumber={cols}

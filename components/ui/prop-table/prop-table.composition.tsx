@@ -12,6 +12,7 @@ export const PropertyTableExample = () => {
     </ThemeCompositions>
   );
 };
+
 export const PropertyTableListView = () => {
   return (
     <ThemeCompositions>
@@ -61,6 +62,13 @@ const tableData = {
       description: 'An element type to render.',
       required: true,
       default: { value: 'h1' },
+    },
+    {
+      name: 'TypographyVariants',
+      type: 'TypographyVariants.Headline1 | TypographyVariants.Headline2 | TypographyVariants.Headline3',
+      description: 'size of the element',
+      required: true,
+      default: { value: '20' },
     },
   ],
 };

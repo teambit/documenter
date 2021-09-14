@@ -36,7 +36,7 @@
         "@mdx-js/react": "1.6.22",
         "@teambit/base-ui.input.error": "^1.0.0",
         "@teambit/base-ui.layout.breakpoints": "^1.0.0",
-        "@teambit/base-ui.layout.grid-component": "^1.0.0",
+        "@teambit/base-ui.layout.grid-component": "^1.0.1",
         "@teambit/base-ui.surfaces.split-pane.hover-splitter": "^1.0.0",
         "@teambit/base-ui.surfaces.split-pane.split-pane": "^1.0.0",
         "@teambit/base-ui.text.heading": "^1.0.0",
