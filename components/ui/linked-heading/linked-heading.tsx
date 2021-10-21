@@ -9,30 +9,39 @@ export type LinkedHeadingProps = {
   /**
    * title string
    */
-  children: React.ReactNode,
+  children: React.ReactNode;
+
   /**
    * anchor link to section
    */
-  link?: string,
+  link?: string;
 
   /**
    * font size override for title string [optional]
    */
-  size?: Sizes
+  size?: Sizes;
 
   /**
    * class name to attach.
    */
-  className?: string
+  className?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * section heading with anchor link
  */
-export function LinkedHeading({ children, link, size, className, ...rest }: LinkedHeadingProps) {
+export function LinkedHeading({
+  children,
+  link,
+  size,
+  className,
+  ...rest
+}: LinkedHeadingProps) {
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
-      <H3 className={styles.heading} size={size || 'sm'}>{children}</H3>
+      <H3 className={styles.heading} size={size || 'sm'} id={link}>
+        {children}
+      </H3>
       {link && <Anchor className={styles.anchor} href={link}></Anchor>}
     </div>
   );
