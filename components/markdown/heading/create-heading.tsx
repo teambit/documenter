@@ -4,10 +4,10 @@ import { LinkedHeading, Sizes } from '@teambit/documenter.ui.linked-heading';
 import type { LinkedHeadingProps } from '@teambit/documenter.ui.linked-heading';
 import styles from './create-heading.module.scss';
 
-export type HeadingProps = HTMLAttributes<HTMLHeadingElement>;
+export type HeadingProps = HTMLAttributes<HTMLHeadingElement> & LinkedHeadingProps;
 
 export function createHeading(size: Sizes) {
-  return function Heading({ children, className, ...rest }: HeadingProps & LinkedHeadingProps) {
+  return function Heading({ children, className, ...rest }: HeadingProps) {
     const isMainHeading = size === 'lg' || size === 'md';
     return (
       <LinkedHeading
