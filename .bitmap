@@ -17,49 +17,49 @@
     },
     "content/documentation-links": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/content/documentation-links"
     },
     "markdown/heading": {
         "scope": "teambit.documenter",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/heading"
     },
     "markdown/hybrid-live-code-snippet": {
         "scope": "teambit.documenter",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/hybrid-live-code-snippet"
     },
     "markdown/md": {
         "scope": "teambit.documenter",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/md"
     },
     "markdown/mdx": {
         "scope": "teambit.documenter",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/mdx"
     },
     "pages/error": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/pages/error-page"
     },
     "pages/not-found": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/pages/not-found-page"
     },
     "pages/server-error": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/pages/server-error-page"
     },
@@ -83,13 +83,13 @@
     },
     "types/docs-file": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/types/docs-file"
     },
     "ui/anchor": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/ui/anchor"
     },
@@ -107,31 +107,31 @@
     },
     "ui/code-snippet": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/code-snippet"
     },
     "ui/consumable-link": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/ui/consumable-link"
     },
     "ui/copied-message": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/copied-message"
     },
     "ui/copy-box": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/copy-box"
     },
     "ui/heading": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.tsx",
         "rootDir": "components/ui/heading"
     },
@@ -149,7 +149,7 @@
     },
     "ui/import-action": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/import-action"
     },
@@ -179,13 +179,13 @@
     },
     "ui/linked-heading": {
         "scope": "teambit.documenter",
-        "version": "4.1.4",
+        "version": "4.1.5",
         "mainFile": "index.ts",
         "rootDir": "components/ui/linked-heading"
     },
     "ui/list": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/list"
     },
@@ -203,7 +203,7 @@
     },
     "ui/property-table": {
         "scope": "teambit.documenter",
-        "version": "4.1.4",
+        "version": "4.1.5",
         "mainFile": "index.ts",
         "rootDir": "components/ui/prop-table"
     },
@@ -233,7 +233,7 @@
     },
     "ui/table": {
         "scope": "teambit.documenter",
-        "version": "4.1.3",
+        "version": "4.1.4",
         "mainFile": "index.ts",
         "rootDir": "components/ui/table"
     },
@@ -251,7 +251,7 @@
     },
     "ui/table-heading-row": {
         "scope": "teambit.documenter",
-        "version": "4.0.5",
+        "version": "4.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/ui/table-heading-row"
     },
