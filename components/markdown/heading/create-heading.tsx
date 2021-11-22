@@ -1,12 +1,12 @@
 import React, { HTMLAttributes } from 'react';
 import classnames from 'classnames';
 import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
-import type { LinkedHeadingProps, Sizes, HeadingType } from '@teambit/documenter.ui.linked-heading';
+import type { LinkedHeadingProps, Sizes, Element } from '@teambit/documenter.ui.linked-heading';
 import styles from './create-heading.module.scss';
 
 export type HeadingProps = HTMLAttributes<HTMLHeadingElement> & LinkedHeadingProps;
 
-export function createHeading(size: Sizes, element?: HeadingType) {
+export function createHeading(size: Sizes, element?: Element) {
   return function Heading({ children, className, ...rest }: HeadingProps) {
     const isMainHeading = size === 'lg' || size === 'md';
     return (
