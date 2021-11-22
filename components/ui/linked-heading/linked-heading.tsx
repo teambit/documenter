@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { H1, H2, H3, H4, H5 } from '@teambit/documenter.ui.heading';
+import { H1, H2, H3, H4, H5, H6 } from '@teambit/documenter.ui.heading';
 import type { Sizes } from '@teambit/documenter.ui.heading';
 import { Anchor } from '@teambit/documenter.ui.anchor';
 import styles from './linked-heading.module.scss';
@@ -23,16 +23,23 @@ export type LinkedHeadingProps = {
   size?: Sizes;
 
   /**
+   * heading html element ("h1", "h2", etc)
+   */
+  element?: HeadingElement;
+
+  /**
    * class name to attach.
    */
   className?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
+export type HeadingElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
 /**
  * section heading with anchor link
  */
-export function LinkedHeading({ children, link, size, className, ...rest }: LinkedHeadingProps) {
-  const Element = headerBySizes(size);
+export function LinkedHeading({ children, link, size, element = 'h3', className, ...rest }: LinkedHeadingProps) {
+  const Element = headerElement(element);
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
       <Element className={styles.heading} size={size || 'sm'} id={link}>
@@ -43,18 +50,20 @@ export function LinkedHeading({ children, link, size, className, ...rest }: Link
   );
 }
 
-const headerBySizes = (size?: Sizes) => {
-  switch (size) {
-    case 'lg':
+const headerElement = (element?: HeadingElement) => {
+  switch (element) {
+    case 'h1':
       return H1;
-    case 'md':
+    case 'h2':
       return H2;
-    case 'sm':
+    case 'h3':
       return H3;
-    case 'xs':
+    case 'h4':
       return H4;
-    case 'xxs':
+    case 'h5':
       return H5;
+    case 'h6':
+      return H6;
     default:
       return H3;
   }

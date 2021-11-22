@@ -1,12 +1,12 @@
 import React, { HTMLAttributes } from 'react';
 import classnames from 'classnames';
-import { LinkedHeading, Sizes } from '@teambit/documenter.ui.linked-heading';
-import type { LinkedHeadingProps } from '@teambit/documenter.ui.linked-heading';
+import { LinkedHeading } from '@teambit/documenter.ui.linked-heading';
+import type { LinkedHeadingProps, Sizes, HeadingElement } from '@teambit/documenter.ui.linked-heading';
 import styles from './create-heading.module.scss';
 
 export type HeadingProps = HTMLAttributes<HTMLHeadingElement> & LinkedHeadingProps;
 
-export function createHeading(size: Sizes) {
+export function createHeading(size: Sizes, element?: HeadingElement) {
   return function Heading({ children, className, ...rest }: HeadingProps) {
     const isMainHeading = size === 'lg' || size === 'md';
     return (
@@ -14,6 +14,7 @@ export function createHeading(size: Sizes) {
         {...rest}
         className={classnames(className, styles.mdxLinkedHeading, isMainHeading && styles.mainHeadingStyles)}
         size={size}
+        element={element}
       >
         {children}
       </LinkedHeading>
@@ -21,9 +22,9 @@ export function createHeading(size: Sizes) {
   };
 }
 
-export const h1 = createHeading('lg');
-export const h2 = createHeading('md');
-export const h3 = createHeading('sm');
-export const h4 = createHeading('xs');
-export const h5 = createHeading('xxs');
-export const h6 = createHeading('xxs');
+export const h1 = createHeading('lg', 'h1');
+export const h2 = createHeading('md', 'h2');
+export const h3 = createHeading('sm', 'h3');
+export const h4 = createHeading('xs', 'h4');
+export const h5 = createHeading('xxs', 'h5');
+export const h6 = createHeading('xxs', 'h6');
