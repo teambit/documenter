@@ -25,7 +25,7 @@ export type LinkedHeadingProps = {
   /**
    * heading html element ("h1", "h2", etc)
    */
-  element?: HeadingElement;
+  element?: HeadingType;
 
   /**
    * class name to attach.
@@ -33,7 +33,7 @@ export type LinkedHeadingProps = {
   className?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export type HeadingElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+export type HeadingType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
 /**
  * section heading with anchor link
@@ -50,7 +50,7 @@ export function LinkedHeading({ children, link, size, element = 'h3', className,
   );
 }
 
-const headerElement = (element?: HeadingElement) => {
+const headerElement = (element?: HeadingType) => {
   switch (element) {
     case 'h1':
       return H1;
