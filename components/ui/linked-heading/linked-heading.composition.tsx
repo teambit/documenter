@@ -5,12 +5,13 @@ import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions'
 export const Large = () => {
   return (
     <ThemeCompositions>
-      <LinkedHeading size="xl" link="link">
+      <LinkedHeading size="lg" link="link">
         large
       </LinkedHeading>
     </ThemeCompositions>
   );
 };
+
 export const Default = () => {
   return (
     <ThemeCompositions>
@@ -18,10 +19,11 @@ export const Default = () => {
     </ThemeCompositions>
   );
 };
+
 export const Small = () => {
   return (
     <ThemeCompositions>
-      <LinkedHeading size="xs" link="link">
+      <LinkedHeading size="sm" link="link">
         small
       </LinkedHeading>
     </ThemeCompositions>

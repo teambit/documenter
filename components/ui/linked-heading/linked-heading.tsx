@@ -1,10 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
-import { H3, Sizes } from '@teambit/documenter.ui.heading';
+import { H1, H2, H3, H4, H5 } from '@teambit/documenter.ui.heading';
+import type { Sizes } from '@teambit/documenter.ui.heading';
 import { Anchor } from '@teambit/documenter.ui.anchor';
 import styles from './linked-heading.module.scss';
 
-export type { Sizes } from '@teambit/documenter.ui.heading';
+export type { Sizes };
 export type LinkedHeadingProps = {
   /**
    * title string
@@ -30,19 +31,31 @@ export type LinkedHeadingProps = {
 /**
  * section heading with anchor link
  */
-export function LinkedHeading({
-  children,
-  link,
-  size,
-  className,
-  ...rest
-}: LinkedHeadingProps) {
+export function LinkedHeading({ children, link, size, className, ...rest }: LinkedHeadingProps) {
+  const Element = headerBySizes(size);
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
-      <H3 className={styles.heading} size={size || 'sm'} id={link}>
+      <Element className={styles.heading} size={size || 'sm'} id={link}>
         {children}
-      </H3>
+      </Element>
       {link && <Anchor className={styles.anchor} href={link}></Anchor>}
     </div>
   );
 }
+
+const headerBySizes = (size?: Sizes) => {
+  switch (size) {
+    case 'lg':
+      return H1;
+    case 'md':
+      return H2;
+    case 'sm':
+      return H3;
+    case 'xs':
+      return H4;
+    case 'xxs':
+      return H5;
+    default:
+      return H3;
+  }
+};
