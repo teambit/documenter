@@ -5,8 +5,8 @@ import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions'
 export const Large = () => {
   return (
     <ThemeCompositions>
-      <LinkedHeading size="lg" link="link">
-        large
+      <LinkedHeading element="h1" link="link">
+        large h1
       </LinkedHeading>
     </ThemeCompositions>
   );

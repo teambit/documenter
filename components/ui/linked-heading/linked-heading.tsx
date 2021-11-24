@@ -26,29 +26,16 @@ export type LinkedHeadingProps = {
    * heading html element ("h1", "h2", etc)
    */
   element?: Element;
-
-  /**
-   * class name to attach.
-   */
-  headerClassName?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * section heading with anchor link
  */
-export function LinkedHeading({
-  children,
-  link,
-  size,
-  element = 'h3',
-  headerClassName,
-  className,
-  ...rest
-}: LinkedHeadingProps) {
+export function LinkedHeading({ children, link, size, element = 'h3', className, ...rest }: LinkedHeadingProps) {
   const Element = headerElement(element);
   return (
     <div className={classNames(styles.linkedHeading, className)} {...rest}>
-      <Element className={classNames(styles.heading, headerClassName)} size={size} id={link}>
+      <Element className={styles.heading} size={size} id={link}>
         {children}
       </Element>
       {link && <Anchor className={styles.anchor} href={link}></Anchor>}
