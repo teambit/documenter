@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
-import { createHeading } from './create-heading';
+import { createHeading, h1 as H1, h5 as H5 } from './create-heading';
 
 export const CreateH1Example = () => {
   const Heading = createHeading('lg');
@@ -52,6 +52,22 @@ export const CreateH6Example = () => {
   return (
     <ThemeCompositions>
       <Heading data-testid="test-create-heading">H6 size</Heading>
+    </ThemeCompositions>
+  );
+};
+
+export const LinkedH1Example = () => {
+  return (
+    <ThemeCompositions>
+      <H1 link="link">Linked H1</H1>
+    </ThemeCompositions>
+  );
+};
+
+export const LinkedH5Example = () => {
+  return (
+    <ThemeCompositions>
+      <H5 link="link">Linked H5</H5>
     </ThemeCompositions>
   );
 };
