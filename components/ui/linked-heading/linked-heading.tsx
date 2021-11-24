@@ -26,11 +26,6 @@ export type LinkedHeadingProps = {
    * heading html element ("h1", "h2", etc)
    */
   element?: Element;
-
-  /**
-   * class name to attach.
-   */
-  className?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**

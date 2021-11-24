@@ -23,7 +23,7 @@
     },
     "markdown/heading": {
         "scope": "teambit.documenter",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/heading"
     },
@@ -35,13 +35,13 @@
     },
     "markdown/md": {
         "scope": "teambit.documenter",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/md"
     },
     "markdown/mdx": {
         "scope": "teambit.documenter",
-        "version": "0.1.6",
+        "version": "0.1.7",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/mdx"
     },
@@ -179,7 +179,7 @@
     },
     "ui/linked-heading": {
         "scope": "teambit.documenter",
-        "version": "4.1.5",
+        "version": "4.1.6",
         "mainFile": "index.ts",
         "rootDir": "components/ui/linked-heading"
     },
