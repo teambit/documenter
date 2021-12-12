@@ -1,0 +1,36 @@
+---
+labels: ['react', 'ui-component', 'list', 'ol', 'ul']
+description: 'A list component. Can be an ordered or an un-ordered list.'
+---
+
+import { List } from './list';
+
+The List component receives an array and renders a list. Choose between an ordered list and an unordered list.
+
+Using the CopyBox component:
+
+```js live
+<>
+  // Ordered list
+  <List element="ol">{['First', 'Second', 'Third', 'Fourth']}</List>
+  // Unordered list
+  <List>{['Audi', 'Hyundai', 'Honda', 'Tesla']}</List>
+</>
+```
+
+Customize the spacing between the list items:
+
+```js live
+<>
+  // Small spacing
+  <List spacing="sm">{['Audi', 'Hyundai', 'Honda', 'Tesla']}</List>
+  // Large spacing
+  <List spacing="lg">{['Audi', 'Hyundai', 'Honda', 'Tesla']}</List>
+</>
+```
+
+Use the List component recursively:
+
+```js live
+<List element="ol">{['One', 'Two', 'Three', <List element="ol">{['Three and a half', 'Four']}</List>]}</List>
+```

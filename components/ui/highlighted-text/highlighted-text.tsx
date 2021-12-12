@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  InlineCode,
-  InlineCodeProps,
-} from '@teambit/documenter.ui.inline-code';
+import { InlineCode, InlineCodeProps } from '@teambit/documenter.ui.inline-code';
 
 export type HighlightedTextProps = Omit<InlineCodeProps, 'highlight'>;
 

@@ -1,6 +1,6 @@
-import React from "react";
-import classNames from "classnames";
-import styles from "./copied-message.module.scss";
+import React from 'react';
+import classNames from 'classnames';
+import styles from './copied-message.module.scss';
 
 type AnchorProps = {
   /**
@@ -12,7 +12,7 @@ type AnchorProps = {
 /**
  * A component to indicate when the required text has been copied
  */
-export function CopiedMessage({ className, show, ...rest }: AnchorProps) {
+export function CopiedMessage({ className, show = false, ...rest }: AnchorProps) {
   return (
     <span
       {...rest}
@@ -28,7 +28,3 @@ export function CopiedMessage({ className, show, ...rest }: AnchorProps) {
     </span>
   );
 }
-
-CopiedMessage.defaultProps = {
-  show: false,
-};

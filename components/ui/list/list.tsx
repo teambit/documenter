@@ -24,15 +24,15 @@ type ListProps = {
 /**
  * A list component. Can be an ordered or an un-ordered list.
  */
-export function List({className, itemClass, children, element, spacing, ...rest}: ListProps) {
+export function List({ className, itemClass, children, element = 'ul', spacing, ...rest }: ListProps) {
   const Element = element || 'ul';
   return (
     <Element {...rest} className={classNames(styles.list, styles[spacing || 'none'], className)}>
-      {children.map((item, index) => <li key={index} className={classNames(styles.item, itemClass)}>{item}</li>)}
+      {children.map((item, index) => (
+        <li key={index} className={classNames(styles.item, itemClass)}>
+          {item}
+        </li>
+      ))}
     </Element>
   );
-}
-
-List.defaultProps = {
-  element: 'ul'
 }

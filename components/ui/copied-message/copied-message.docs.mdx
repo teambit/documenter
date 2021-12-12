@@ -1,0 +1,31 @@
+---
+labels: ['react', 'ui-component', 'copy']
+description: 'Indicates when a text has been copied.'
+---
+
+import { useState } from 'react';
+import { Icon } from '@teambit/evangelist.elements.icon';
+import { CopiedMessage } from './copied-message';
+
+A component to indicate when the required text has been copied.
+
+Using the Copied Message component:
+
+```js live
+() => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleClick = () => {
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
+  };
+
+  return (
+    <div style={{ position: 'relative', width: 205 }}>
+      <p style={{ display: 'inline' }}>Click on the icon to copy!</p>
+      <CopiedMessage show={isCopied} style={{ top: 0 }} />
+      <Icon of="copy-cmp" onClick={handleClick} style={{ paddingLeft: '5px' }} />
+    </div>
+  );
+};
+```

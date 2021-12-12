@@ -1,0 +1,28 @@
+---
+labels: ['react', 'ui-component', 'text', 'paragraph', 'div', 'span']
+description: 'Paragraph component prototype. Accepts all properties of a native Paragraph element.'
+---
+
+import { Paragraph } from './paragraph';
+
+The Paragraph component renders a text as either a 'p', 'div' or 'span' element.
+
+Using the Paragraph component:
+
+```js live
+<>
+  <Paragraph element="p">This is a 'p' element.</Paragraph>
+  <Paragraph element="div">This is a 'div' element.</Paragraph>
+  <Paragraph element="span">This is a 'span' element.</Paragraph>
+</>
+```
+
+Selecting a font size:
+
+```js live
+<>
+  <Paragraph size="xxm">This is an xx-small font.</Paragraph>
+  <Paragraph size="md">This is a medium size font.</Paragraph>
+  <Paragraph size="xl">This is an extra large font.</Paragraph>
+</>
+```

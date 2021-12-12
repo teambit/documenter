@@ -1,6 +1,5 @@
 import React from 'react';
 import { ConsumableLink } from './consumable-link';
-import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 const link = {
   title: 'import using bit',
@@ -12,21 +11,17 @@ const link2 = {
 };
 export const BitImportExample = () => {
   return (
-    <ThemeCompositions>
-      <div style={styles}>
-        <ConsumableLink {...link} />
-      </div>
-    </ThemeCompositions>
+    <div style={styles}>
+      <ConsumableLink {...link} />
+    </div>
   );
 };
 
 export const NpmInstallExample = () => {
   return (
-    <ThemeCompositions>
-      <div style={styles}>
-        <ConsumableLink {...link2} />
-      </div>
-    </ThemeCompositions>
+    <div style={styles}>
+      <ConsumableLink {...link2} />
+    </div>
   );
 };
 
