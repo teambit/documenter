@@ -1,29 +1,10 @@
 import React from 'react';
-import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 import { CopyBox } from './copy-box';
 
 export const WideCopyBoxExample = () => {
-  return (
-    <ThemeCompositions>
-      <CopyBox style={styles}>npm install @bit.bit.test-scope.copy-box</CopyBox>
-    </ThemeCompositions>
-  );
+  return <CopyBox style={{ maxWidth: '600px' }}>npm install @bit.bit.test-scope.copy-box</CopyBox>;
 };
 
 export const NarrowCopyBoxExample = () => {
-  return (
-    <ThemeCompositions>
-      <CopyBox style={styles2}>
-        npm install @bit.bit.test-scope.copy-box2
-      </CopyBox>
-    </ThemeCompositions>
-  );
-};
-
-const styles = {
-  maxWidth: '600px',
-};
-
-const styles2 = {
-  maxWidth: '200px',
+  return <CopyBox style={{ maxWidth: '200px' }}>npm install @bit.bit.test-scope.copy-box2</CopyBox>;
 };

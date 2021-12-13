@@ -1,6 +1,5 @@
 import React from 'react';
 import { CodeSnippet } from './code-snippet';
-import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 const codeString = `export function Anchor(props: AnchorProps) {
   return (
@@ -11,9 +10,5 @@ const codeString = `export function Anchor(props: AnchorProps) {
 }`;
 
 export const CodeSnippetExample = () => {
-  return (
-    <ThemeCompositions>
-      <CodeSnippet>{codeString}</CodeSnippet>
-    </ThemeCompositions>
-  );
+  return <CodeSnippet data-testid="test-code-snippet">{codeString}</CodeSnippet>;
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Playground } from './react-playground';
-import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 const codeString = `<div>hello playground</div>`;
 
@@ -44,34 +43,34 @@ const nested = `
 
 export const Preview = () => {
   return (
-    <ThemeCompositions style={{ height: 400, width: 600 }}>
+    <div style={{ height: 400, width: 600 }}>
       <Playground code={codeString} />
-    </ThemeCompositions>
+    </div>
   );
 };
 
 export const HorizontalExample = () => {
   return (
-    <ThemeCompositions style={{ height: 400, width: 600 }}>
+    <div style={{ height: 400, width: 600 }}>
       <Playground code={longFunction} />
-    </ThemeCompositions>
+    </div>
   );
 };
 
 export const VerticalExample = () => {
   return (
-    <ThemeCompositions style={{ height: 450, width: 400 }}>
+    <div style={{ height: 450, width: 400 }}>
       <Playground code={longFunction} />
-    </ThemeCompositions>
+    </div>
   );
 };
 
 export const Nested = () => {
   const scope = { Playground };
   return (
-    <ThemeCompositions style={{ height: 400, width: 600 }}>
+    <div style={{ height: 400, width: 600 }}>
       (currently broken, hover-splitter breaks when in nested in another split-spane)
       <Playground code={nested} scope={scope} />
-    </ThemeCompositions>
+    </div>
   );
 };

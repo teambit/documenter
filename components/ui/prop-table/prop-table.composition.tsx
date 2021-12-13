@@ -1,29 +1,20 @@
 import React from 'react';
 import { PropTable } from './prop-table';
-import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 // tODO - make text stay single line
 export const PropertyTableExample = () => {
   return (
-    <ThemeCompositions>
-      <div style={{ minWidth: "600px" }}>
-        <PropTable rows={tableData.rows} listViewResolution={300} />
-      </div>
-    </ThemeCompositions>
+    <div style={{ minWidth: '600px' }}>
+      <PropTable rows={tableData.rows} listViewResolution={300} />
+    </div>
   );
 };
 
 export const PropertyTableListView = () => {
   return (
-    <ThemeCompositions>
-      <div style={{ minWidth: "100px" }}>
-        <PropTable
-          rows={tableData.rows}
-          listViewResolution={700}
-          showListView
-        />
-      </div>
-    </ThemeCompositions>
+    <div style={{ minWidth: '100px' }}>
+      <PropTable rows={tableData.rows} listViewResolution={700} showListView />
+    </div>
   );
 };
 

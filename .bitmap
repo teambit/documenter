@@ -21,6 +21,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/content/documentation-links"
     },
+    "envs/documenter-react": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/envs/documenter-react"
+    },
     "markdown/heading": {
         "scope": "teambit.documenter",
         "version": "0.1.6",

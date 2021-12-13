@@ -1,13 +1,8 @@
 import React from 'react';
 import { Table } from './table';
-import { ThemeCompositions } from '@teambit/documenter.theme.theme-compositions';
 
 export const PropertyTableExample = () => {
-  return (
-    <ThemeCompositions>
-      <Table headings={tableData.headings} rows={tableData.rows} />
-    </ThemeCompositions>
-  );
+  return <Table headings={tableData.headings} rows={tableData.rows} />;
 };
 
 const tableData = {
