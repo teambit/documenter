@@ -11,6 +11,6 @@ Run the following commands to start this Workspace:
 
 ```
 bit install
-bit compile
+bit compile && bit compile
 bit start
 ```
