@@ -3,3 +3,14 @@
 # Documenter
 
 Design system components for documenting components in Bit.
+
+# Start this Workspace
+
+[Bit Harmony](https://harmony-docs.bit.dev) is required.
+Run the following commands to start this Workspace:
+
+```
+bit install
+bit compile
+bit start
+```
