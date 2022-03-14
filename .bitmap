@@ -17,7 +17,7 @@
     },
     "content/documentation-links": {
         "scope": "teambit.documenter",
-        "version": "4.0.7",
+        "version": "4.1.0",
         "mainFile": "index.ts",
         "rootDir": "components/content/documentation-links"
     },
@@ -59,13 +59,13 @@
     },
     "pages/not-found": {
         "scope": "teambit.documenter",
-        "version": "4.0.7",
+        "version": "4.1.0",
         "mainFile": "index.ts",
         "rootDir": "components/pages/not-found-page"
     },
     "pages/server-error": {
         "scope": "teambit.documenter",
-        "version": "4.0.7",
+        "version": "4.1.0",
         "mainFile": "index.ts",
         "rootDir": "components/pages/server-error-page"
     },
@@ -155,7 +155,7 @@
     },
     "ui/import-action": {
         "scope": "teambit.documenter",
-        "version": "4.1.5",
+        "version": "4.1.6",
         "mainFile": "index.ts",
         "rootDir": "components/ui/import-action"
     },

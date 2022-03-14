@@ -1,9 +1,9 @@
-import React from "react";
-import { Image } from "@teambit/evangelist.elements.image";
-import { ExternalLink } from "@teambit/documenter.routing.external-link";
-import { Icon } from "@teambit/evangelist.elements.icon";
-import { ErrorPage } from "@teambit/documenter.pages.error";
-import styles from "./server-error-page.module.scss";
+import React from 'react';
+import { Image } from '@teambit/evangelist.elements.image';
+import { ExternalLink } from '@teambit/documenter.routing.external-link';
+import { Icon } from '@teambit/evangelist.elements.icon';
+import { ErrorPage } from '@teambit/documenter.pages.error';
+import styles from './server-error-page.module.scss';
 
 type ServerErrorPageProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -20,11 +20,10 @@ export function ServerErrorPage({ ...rest }: ServerErrorPageProps) {
         <ExternalLink href="https://github.com/teambit/bit">
           <Icon of="github-logo" className={styles.github} />
         </ExternalLink>
-        <ExternalLink href="https://docs.bit.dev/docs/quick-start">
+        <ExternalLink href="https://bit.dev/docs">
           <Image alt="bit-logo" className={styles.logo} src="bit-logo.svg" />
         </ExternalLink>
       </div>
     </ErrorPage>
   );
 }
-
