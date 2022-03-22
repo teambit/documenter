@@ -1,13 +1,11 @@
 import React, { useState, useMemo, memo } from 'react';
 import classNames from 'classnames';
 import copy from 'copy-to-clipboard';
-import { Icon } from '@teambit/evangelist.elements.icon';
-import { CopiedMessage } from '@teambit/documenter.ui.copied-message';
-
 import type { SyntaxHighlighterProps } from 'react-syntax-highlighter';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism-light';
 import tsxSyntax from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
 import defaultTheme from 'react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus';
+import { CopiedMessage } from '@teambit/documenter.ui.copied-message';
 
 import styles from './code-snippet.module.scss';
 
@@ -64,14 +62,17 @@ export function CodeSnippet({
 
       <div className={styles.copy}>
         <CopiedMessage show={isCopied} />
-        <Icon onClick={handleClick} className={styles.copyIcon} of="copy-cmp" />
+        <img
+          src="https://static.bit.cloud/Community/icons/copy.svg"
+          onClick={handleClick}
+          className={styles.copyIcon}
+          alt="Copy"
+        />
       </div>
     </div>
   );
 }
 
-const Highlighter = memo(function SnippetWrapper(
-  props: SyntaxHighlighterProps
-) {
+const Highlighter = memo(function SnippetWrapper(props: SyntaxHighlighterProps) {
   return <SyntaxHighlighter {...props} />;
 });
