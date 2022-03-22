@@ -25,10 +25,10 @@ importers:
       '@teambit/evangelist.surfaces.dropdown': ^1.0.0
       '@teambit/harmony': 0.2.11
       '@testing-library/react': 12.0.0
-      '@types/jest': 26.0.20
+      '@types/jest': ^26.0.0
       '@types/mdx-js__react': 1.5.3
       '@types/node': 12.20.4
-      '@types/react': 16.9.43
+      '@types/react': ^17.0.8
       '@types/react-dom': ^17.0.5
       '@types/react-syntax-highlighter': 13.5.0
       '@types/testing-library__jest-dom': 5.9.5
@@ -74,9 +74,9 @@ importers:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
       react-live: registry.npmjs.org/react-live/2.3.0_react-dom@16.14.0+react@16.14.0
-      react-markdown: registry.npmjs.org/react-markdown/6.0.2_954e5dffcd41fac34bbd87b790a0f911
+      react-markdown: registry.npmjs.org/react-markdown/6.0.2_9c2caa5def150fe28c34e751504ebdd9
       react-syntax-highlighter: registry.npmjs.org/react-syntax-highlighter/13.5.3_react@16.14.0
-      react-use-dimensions: registry.npmjs.org/react-use-dimensions/1.2.1_954e5dffcd41fac34bbd87b790a0f911
+      react-use-dimensions: registry.npmjs.org/react-use-dimensions/1.2.1_9c2caa5def150fe28c34e751504ebdd9
       reset-css: registry.npmjs.org/reset-css/5.0.1
       use-debounce: registry.npmjs.org/use-debounce/3.4.3_react@16.14.0
     devDependencies:
@@ -84,7 +84,7 @@ importers:
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/mdx-js__react': registry.npmjs.org/@types/mdx-js__react/1.5.3
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
+      '@types/react': registry.npmjs.org/@types/react/17.0.37
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
       '@types/react-syntax-highlighter': registry.npmjs.org/@types/react-syntax-highlighter/13.5.0
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
@@ -96,10 +96,7 @@ importers:
     specifiers: {}
 
   components/envs/documenter-react:
-    specifiers:
-      '@types/react': ^17.0.8
-    devDependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.37
+    specifiers: {}
 
   components/markdown/heading:
     specifiers: {}
@@ -126,16 +123,10 @@ importers:
     specifiers: {}
 
   components/theme/theme-compositions:
-    specifiers:
-      '@types/react': ^17.0.8
-    devDependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.37
+    specifiers: {}
 
   components/theme/theme-context:
-    specifiers:
-      '@types/react': ^17.0.8
-    devDependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.37
+    specifiers: {}
 
   components/types/docs-file:
     specifiers: {}
@@ -1033,15 +1024,6 @@ packages:
       '@types/react': registry.npmjs.org/@types/react/17.0.37
     dev: true
 
-  registry.npmjs.org/@types/react/16.9.43:
-    resolution: {integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react/-/react-16.9.43.tgz}
-    name: '@types/react'
-    version: 16.9.43
-    dependencies:
-      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.4
-      csstype: registry.npmjs.org/csstype/2.6.20
-    dev: true
-
   registry.npmjs.org/@types/react/17.0.37:
     resolution: {integrity: sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react/-/react-17.0.37.tgz}
     name: '@types/react'
@@ -1289,12 +1271,6 @@ packages:
     name: core-util-is
     version: 1.0.3
     dev: false
-
-  registry.npmjs.org/csstype/2.6.20:
-    resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/csstype/-/csstype-2.6.20.tgz}
-    name: csstype
-    version: 2.6.20
-    dev: true
 
   registry.npmjs.org/csstype/3.0.10:
     resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz}
@@ -1829,7 +1805,7 @@ packages:
       - react-dom
     dev: false
 
-  registry.npmjs.org/react-markdown/6.0.2_954e5dffcd41fac34bbd87b790a0f911:
+  registry.npmjs.org/react-markdown/6.0.2_9c2caa5def150fe28c34e751504ebdd9:
     resolution: {integrity: sha512-Et2AjXAsbmPP1nLQQRqmVgcqzfwcz8uQJ8VAdADs8Nk/aaUA0YeU9RDLuCtD+GwajCnm/+Iiu2KPmXzmD/M3vA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/react-markdown/-/react-markdown-6.0.2.tgz}
     id: registry.npmjs.org/react-markdown/6.0.2
     name: react-markdown
@@ -1839,7 +1815,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/hast': registry.npmjs.org/@types/hast/2.3.4
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
+      '@types/react': registry.npmjs.org/@types/react/17.0.37
       '@types/unist': registry.npmjs.org/@types/unist/2.0.6
       comma-separated-tokens: registry.npmjs.org/comma-separated-tokens/1.0.8
       prop-types: registry.npmjs.org/prop-types/15.7.2
@@ -1886,7 +1862,7 @@ packages:
       refractor: registry.npmjs.org/refractor/3.5.0
     dev: false
 
-  registry.npmjs.org/react-use-dimensions/1.2.1_954e5dffcd41fac34bbd87b790a0f911:
+  registry.npmjs.org/react-use-dimensions/1.2.1_9c2caa5def150fe28c34e751504ebdd9:
     resolution: {integrity: sha512-XL+Rup9Hosxx3Ap9xpyQMbVwuUa4BSqiOjfBb2zDuGs4uv2FesFV+m8Z/huRx2BNptMd9ARPqFuSNA62zhCozg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/react-use-dimensions/-/react-use-dimensions-1.2.1.tgz}
     id: registry.npmjs.org/react-use-dimensions/1.2.1
     name: react-use-dimensions
@@ -1896,7 +1872,7 @@ packages:
       react: ^16.8.x
       typescript: ^3.5.2
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
+      '@types/react': registry.npmjs.org/@types/react/17.0.37
       react: registry.npmjs.org/react/16.14.0
     dev: false
 

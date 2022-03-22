@@ -16,14 +16,15 @@
 
   .copyIcon {
     margin-left: 8px;
-    padding: 6px 8px;
+    padding: 4px;
     border-radius: 8px;
     background-color: white;
     opacity: 0;
-    font-size: 16px;
     color: #414141;
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
+    box-sizing: border-box;
+    width: 32px;
   }
 
   code {
@@ -34,7 +35,6 @@
 .copy {
   display: flex;
   align-items: center;
-
   position: absolute;
   top: 6px;
   right: 6px;
