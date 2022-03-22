@@ -2,6 +2,12 @@ import { MainRuntime } from '@teambit/cli';
 import { ReactAspect, ReactMain } from '@teambit/react';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
 import { DocumenterReactAspect } from './documenter-react.aspect';
+// import { previewConfigTransformer, devServerConfigTransformer } from './webpack/webpack-transformers';
+
+/**
+ * Uncomment to include config files for overrides of Typescript or Webpack
+ */
+// const tsconfig = require('./typescript/tsconfig');
 
 export class DocumenterReactMain {
   static slots = [];
@@ -12,6 +18,16 @@ export class DocumenterReactMain {
 
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
     const templatesReactEnv = envs.compose(react.reactEnv, [
+      /**
+       * Uncomment to override the config files for TypeScript, Webpack or Jest
+       * Your config gets merged with the defaults
+       */
+
+      // react.overrideTsConfig(tsconfig),
+      // react.useWebpack({
+      //   previewConfig: [previewConfigTransformer],
+      //   devServerConfig: [devServerConfigTransformer],
+      // }),
       react.overrideJestConfig(require.resolve('./jest/jest.config')),
 
       /**
