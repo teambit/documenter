@@ -17,7 +17,7 @@
     },
     "content/documentation-links": {
         "scope": "teambit.documenter",
-        "version": "4.1.1",
+        "version": "4.1.2",
         "mainFile": "index.ts",
         "rootDir": "components/content/documentation-links"
     },
@@ -35,19 +35,19 @@
     },
     "markdown/hybrid-live-code-snippet": {
         "scope": "teambit.documenter",
-        "version": "0.1.8",
+        "version": "0.1.9",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/hybrid-live-code-snippet"
     },
     "markdown/md": {
         "scope": "teambit.documenter",
-        "version": "0.1.8",
+        "version": "0.1.9",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/md"
     },
     "markdown/mdx": {
         "scope": "teambit.documenter",
-        "version": "0.1.9",
+        "version": "0.1.10",
         "mainFile": "index.ts",
         "rootDir": "components/markdown/mdx"
     },
@@ -89,7 +89,7 @@
     },
     "types/docs-file": {
         "scope": "teambit.documenter",
-        "version": "4.0.8",
+        "version": "4.0.9",
         "mainFile": "index.ts",
         "rootDir": "components/types/docs-file"
     },
@@ -113,7 +113,7 @@
     },
     "ui/code-snippet": {
         "scope": "teambit.documenter",
-        "version": "4.2.0",
+        "version": "4.2.1",
         "mainFile": "index.ts",
         "rootDir": "components/ui/code-snippet"
     },
@@ -155,7 +155,7 @@
     },
     "ui/import-action": {
         "scope": "teambit.documenter",
-        "version": "4.1.7",
+        "version": "4.1.8",
         "mainFile": "index.ts",
         "rootDir": "components/ui/import-action"
     },
